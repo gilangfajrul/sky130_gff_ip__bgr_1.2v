@@ -117,30 +117,13 @@ C {devices/launcher.sym} 770 -85 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/launcher.sym} 980 -85 0 0 {name=h2
-descr="View Raw file" 
-tclcommand="textwindow $netlist_dir/bgr.raw"}
 C {devices/vdd.sym} 300 -355 0 0 {name=l5 lab=VDD}
-C {devices/vsource.sym} 45 -240 0 0 {name=V1 value=1.8 savecurrent=false}
+C {devices/vsource.sym} 45 -240 0 0 {name=V1 value="ac 1 sin(1.8 0.1 1)" savecurrent=false}
 C {devices/vdd.sym} 45 -280 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 45 -195 0 0 {name=l4 lab=GND}
-C {devices/code.sym} 940 -230 0 0 {name=params only_toplevel=true value="
+C {devices/code.sym} 830 -230 0 0 {name=params only_toplevel=true value="
 .param L=1.5
 .param W=80
-"}
-C {devices/code.sym} 830 -230 0 0 {name=TempSweep only_toplevel=true value="
-** Analysis Requests **
-** Outputs Requests **
-.option wnflag=1
-.option savecurrents
-.control
-save all
-dc temp -40 125 5
-plot vref
-op
-save all
-write bgr.raw
-.endc
 "}
 C {devices/gnd.sym} 400 -230 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 200 -230 0 0 {name=l2 lab=GND}
@@ -254,3 +237,61 @@ L=19
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
+C {devices/simulator_commands_shown.sym} 945 -985 0 0 {name=COMMANDS1
+simulator=ngspice
+only_toplevel=false 
+value="
+.option savecurrents
+.control
+save all
+op
+remzerovec
+write bgr.raw
+set appendwrite
+
+dc temp -40 85 1
+remzerovec
+write bgr.raw
+plot (ptat-ctat) ctat
+plot vref
+
+********TC********
+meas dc temp_avg_vref avg v(vref)
+meas dc temp_vref_27 find v(vref) when temp-sweep=27
+meas dc temp_pp_vref PP v(vref)
+meas dc temp_vref_max max v(vref)
+meas dc temp_max_vref when v(vref)='temp_vref_max'
+meas dc temp_vref_min min v(vref)
+meas dc temp_min_vref when v(vref)='temp_vref_min'
+let vref_tc='((temp_pp_vref*1000000)/(125*temp_avg_vref))'
+print vref_tc
+
+******PSRR******
+ac dec 1000 1 10Meg
+write bgr.raw
+remzerovec
+plot vdb(vref)
+meas ac psrr find vdb(vref) at=1k
+
+****Power****
+tran 0.1 5
+write bgr.raw
+remzerovec
+meas tran ave_v avg vdd
+meas tran ave_i avg i(v1)
+let ave_power='ave_v*(-ave_i)
+*plot vdd vref
+*plot -i(v1)
+print ave_power
+
+*******LS******
+dc v1 0 3.5 0.1
+write bgr.raw
+remzerovec
+meas dc vref_max max v(vref) from=1.62 to=1.98
+meas dc vref_min min v(vref) from=1.62 to=1.98
+let ls='(vref_max-vref_min)/(1.98-1.62)'
+print ls
+
+.endc
+"}

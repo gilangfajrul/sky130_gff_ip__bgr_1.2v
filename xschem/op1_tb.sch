@@ -17,6 +17,10 @@ N 30 -200 30 -185 {
 lab=GND}
 N 30 -145 30 -130 {
 lab=+}
+N 315 -300 330 -300 {
+lab=VDD}
+N 315 -220 315 -205 {
+lab=GND}
 N 240 -280 255 -280 {
 lab=-}
 N 240 -235 255 -235 {
@@ -27,14 +31,6 @@ N 390 -260 405 -260 {
 lab=out}
 N 405 -200 405 -190 {
 lab=GND}
-N 310 -300 320 -300 {
-lab=VDD}
-N 320 -300 330 -300 {
-lab=VDD}
-N 310 -220 310 -205 {
-lab=GND}
-N 370 -260 375 -260 {
-lab=out}
 C {devices/vsource.sym} 35 -350 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/vdd.sym} 35 -395 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 35 -305 0 0 {name=l4 lab=GND}
@@ -97,14 +93,14 @@ plot phase vdb(out)
 .endc
 "}
 C {devices/vdd.sym} 330 -300 0 0 {name=l1 lab=VDD}
-C {devices/gnd.sym} 310 -205 0 0 {name=l2 lab=GND}
+C {devices/gnd.sym} 315 -205 0 0 {name=l2 lab=GND}
 C {devices/lab_wire.sym} 240 -280 0 0 {name=p3 sig_type=std_logic lab=-}
 C {devices/lab_wire.sym} 240 -235 0 0 {name=p4 sig_type=std_logic lab=+}
 C {devices/lab_wire.sym} 390 -260 0 1 {name=p5 sig_type=std_logic lab=out}
+C {op1.sym} 125 -55 0 0 {name=x1}
 C {devices/capa.sym} 405 -230 0 0 {name=C1
 m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 405 -190 0 0 {name=l7 lab=GND}
-C {op.sym} 10 -20 0 0 {name=x1}

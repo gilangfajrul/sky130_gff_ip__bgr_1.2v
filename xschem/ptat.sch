@@ -128,7 +128,7 @@ C {devices/code.sym} 955 -215 0 0 {name=TempSweep only_toplevel=true value="
 .control
 save all
 dc temp -40 125 5
-plot ctat-ptat
+plot ptat-ctat
 plot vref
 op
 save all
