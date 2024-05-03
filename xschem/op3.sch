@@ -18,9 +18,9 @@ lab=GND}
 N 275 -70 310 -70 {
 lab=bias}
 N 170 -220 190 -220 {
-lab=plus}
-N 510 -220 525 -220 {
 lab=minus}
+N 510 -220 525 -220 {
+lab=plus}
 N 275 -10 275 0 {
 lab=GND}
 N 640 -475 680 -475 {
@@ -45,59 +45,60 @@ N 230 -385 600 -385 {
 lab=#net2}
 N 600 -305 600 -245 {
 lab=#net5}
-N 640 -215 680 -215 {
+N 640 -200 680 -200 {
 lab=bias3}
-N 600 -185 600 -155 {
+N 600 -170 600 -140 {
 lab=#net6}
-N 720 -185 720 -155 {
+N 720 -170 720 -140 {
 lab=#net7}
-N 600 -95 600 -80 {
+N 600 -80 600 -65 {
 lab=GND}
-N 600 -80 720 -80 {
+N 600 -65 720 -65 {
 lab=GND}
-N 720 -95 720 -80 {
+N 720 -80 720 -65 {
 lab=GND}
-N 640 -125 680 -125 {
-lab=#net5}
-N 600 -260 650 -260 {
-lab=#net5}
-N 650 -260 650 -125 {
-lab=#net5}
 N 720 -375 720 -365 {
 lab=#net4}
 N 720 -440 720 -435 {
 lab=#net3}
 N 600 -410 600 -365 {
 lab=#net2}
-C {devices/code.sym} 880 -290 0 0 {name=params only_toplevel=false value="
+N 720 -245 720 -230 {
+lab=out}
+N 600 -245 600 -230 {
+lab=#net5}
+N 720 -235 830 -235 {
+lab=out}
+N 640 -110 680 -110 {
+lab=#net5}
+N 660 -260 660 -110 {
+lab=#net5}
+N 600 -260 660 -260 {
+lab=#net5}
+C {devices/code.sym} 880 -355 0 0 {name=params only_toplevel=false value="
+**diffpair**
 .param L1=1
-.param W1=1
-.param M1=2
+.param W1=5
+.param M1=1
+
+**PMOS**
 .param L2=1
 .param W2=2
-.param M2=2
-.param L3=1
-.param W3=5
-.param M3=2
+.param M2=1
+
+**NMOS**
+.param L3=10
+.param W3=1
+.param M3=1
+
+**Current control**
+.param L4=5
+.param W4=2.5
+.param M4=1
 "}
 C {devices/gnd.sym} 350 -30 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 170 -220 0 0 {name=p3 sig_type=std_logic lab=plus}
-C {devices/lab_wire.sym} 525 -220 0 1 {name=p4 sig_type=std_logic lab=minus}
 C {devices/vsource.sym} 275 -40 0 0 {name=V4 value="dc 0.6" savecurrent=false}
 C {devices/gnd.sym} 275 0 0 0 {name=l7 lab=GND}
-C {devices/code.sym} 1000 -285 0 0 {name=ngspice only_toplevel=false value="
-.option savecurrents
-.control
-save all
-op
-remzerovec
-write op3.raw
-set appendwrite
-dc v4 0 1.8 0.1
-plot i(vbias) i(vbias1) i(vbias2)
-
-.endc
-"}
 C {devices/lab_wire.sym} 290 -70 0 1 {name=p5 sig_type=std_logic lab=bias}
 C {sky130_fd_pr/nfet3_01v8.sym} 210 -220 0 0 {name=M1
 L=\{L1\}
@@ -115,11 +116,11 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 330 -70 0 0 {name=M3
-L=5
-W=3
+L=\{L4\}
+W=\{W4\}
 body=GND
 nf=1
-mult=2
+mult=\{M4\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -129,30 +130,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/vsource.sym} 60 -310 0 0 {name=V1 value=1.8 savecurrent=false}
-C {devices/vdd.sym} 60 -340 0 0 {name=l3 lab=VDD}
-C {devices/gnd.sym} 60 -280 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} 60 -190 0 0 {name=V2 value=0.9 savecurrent=false}
-C {devices/gnd.sym} 60 -160 0 0 {name=l6 lab=GND}
-C {devices/lab_pin.sym} 60 -220 0 0 {name=p1 sig_type=std_logic lab=plus}
-C {devices/vsource.sym} 60 -80 0 0 {name=V3 value="ac sin(0.9 1 1)" savecurrent=false}
-C {devices/gnd.sym} 60 -50 0 0 {name=l5 lab=GND}
-C {devices/lab_pin.sym} 60 -110 0 0 {name=p2 sig_type=std_logic lab=minus}
-C {devices/code.sym} 1120 -290 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-
-spice_ignore=false}
 C {devices/vdd.sym} 660 -520 0 0 {name=l2 lab=VDD}
-C {devices/launcher.sym} 955 -145 0 0 {name=h1
-descr="Annotate OP" 
-tclcommand="set show_hidden_texts 1; xschem annotate_op"
-}
 C {devices/ammeter.sym} 350 -130 0 0 {name=Vbias savecurrent=true}
 C {sky130_fd_pr/nfet3_01v8.sym} 490 -220 0 1 {name=M2
 L=\{L1\}
@@ -173,8 +151,8 @@ C {sky130_fd_pr/pfet3_01v8.sym} 620 -335 0 1 {name=M7
 L=\{L3\}
 W=\{W3\}
 body=VDD
-nf=\{M3\}
-mult=1
+nf=1
+mult=\{M3\}
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -184,7 +162,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 620 -215 0 1 {name=M8
+C {sky130_fd_pr/nfet3_01v8.sym} 620 -200 0 1 {name=M8
 L=\{L2\}
 W=\{W2\}
 body=GND
@@ -199,7 +177,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 620 -125 0 1 {name=M9
+C {sky130_fd_pr/nfet3_01v8.sym} 620 -110 0 1 {name=M9
 L=\{L2\}
 W=\{W2\}
 body=GND
@@ -214,7 +192,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 700 -215 0 0 {name=M10
+C {sky130_fd_pr/nfet3_01v8.sym} 700 -200 0 0 {name=M10
 L=\{L2\}
 W=\{W2\}
 body=GND
@@ -229,7 +207,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 700 -125 0 0 {name=M11
+C {sky130_fd_pr/nfet3_01v8.sym} 700 -110 0 0 {name=M11
 L=\{L2\}
 W=\{W2\}
 body=GND
@@ -242,51 +220,6 @@ ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet3_01v8.sym} 700 -335 0 0 {name=M6
-L=\{L3\}
-W=\{W3\}
-body=VDD
-nf=\{M3\}
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet3_01v8.sym} 700 -475 0 0 {name=M4
-L=\{L3\}
-W=\{W3\}
-body=VDD
-nf=\{M3\}
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet3_01v8.sym} 620 -475 0 1 {name=M5
-L=\{L3\}
-W=\{W3\}
-body=VDD
-nf=\{M3\}
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
 spiceprefix=X
 }
 C {devices/vsource.sym} 65 -450 0 0 {name=V5 value="dc 0.6" savecurrent=false}
@@ -298,9 +231,63 @@ C {devices/gnd.sym} 250 -420 0 0 {name=l10 lab=GND}
 C {devices/ammeter.sym} 720 -405 0 0 {name=Vbias1 savecurrent=true}
 C {devices/lab_wire.sym} 660 -475 0 1 {name=p6 sig_type=std_logic lab=bias1}
 C {devices/lab_wire.sym} 655 -335 0 1 {name=p7 sig_type=std_logic lab=bias2}
-C {devices/lab_wire.sym} 655 -215 0 1 {name=p8 sig_type=std_logic lab=bias3}
+C {devices/lab_wire.sym} 655 -200 0 1 {name=p8 sig_type=std_logic lab=bias3}
 C {devices/lab_wire.sym} 65 -480 0 1 {name=p9 sig_type=std_logic lab=bias1}
 C {devices/lab_wire.sym} 155 -480 0 1 {name=p10 sig_type=std_logic lab=bias2}
 C {devices/lab_wire.sym} 250 -480 0 1 {name=p11 sig_type=std_logic lab=bias3}
 C {devices/ammeter.sym} 720 -275 0 0 {name=Vbias2 savecurrent=true}
-C {devices/gnd.sym} 665 -80 0 0 {name=l11 lab=GND}
+C {devices/gnd.sym} 665 -65 0 0 {name=l11 lab=GND}
+C {devices/lab_pin.sym} 720 -240 0 1 {name=p12 sig_type=std_logic lab=out}
+C {sky130_fd_pr/pfet3_01v8.sym} 620 -475 0 1 {name=M4
+L=\{L3\}
+W=\{W3\}
+body=VDD
+nf=1
+mult=\{M3\}
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 700 -335 0 0 {name=M5
+L=\{L3\}
+W=\{W3\}
+body=VDD
+nf=1
+mult=\{M3\}
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet3_01v8.sym} 700 -475 0 0 {name=M6
+L=\{L3\}
+W=\{W3\}
+body=VDD
+nf=1
+mult=\{M3\}
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/iopin.sym} 630 -505 3 0 {name=p14 lab=VDD}
+C {devices/iopin.sym} 720 -65 0 0 {name=p15 lab=GND}
+C {devices/iopin.sym} 170 -220 0 1 {name=p16 lab=minus}
+C {devices/iopin.sym} 525 -220 0 0 {name=p17 lab=plus}
+C {devices/iopin.sym} 830 -235 0 0 {name=p18 lab=out}
+C {devices/ngspice_probe.sym} 600 -280 0 0 {name=r1}
+C {devices/ngspice_probe.sym} 600 -150 0 0 {name=r2}
+C {devices/ngspice_probe.sym} 600 -420 0 0 {name=r3}

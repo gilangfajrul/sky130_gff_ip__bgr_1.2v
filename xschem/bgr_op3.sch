@@ -5,8 +5,6 @@ K {}
 V {}
 S {}
 E {}
-N 345 -260 365 -260 {
-lab=GND}
 N 210 -50 210 -40 {
 lab=GND}
 N 290 -40 410 -40 {
@@ -41,12 +39,6 @@ N 305 -40 305 -35 {
 lab=GND}
 N 210 -200 210 -185 {
 lab=#net2}
-N 330 -200 410 -200 {
-lab=ptat}
-N 210 -200 285 -200 {
-lab=#net2}
-N 250 -260 265 -260 {
-lab=VDD}
 N 210 -215 210 -200 {
 lab=#net2}
 N 305 -400 305 -360 {
@@ -67,6 +59,16 @@ N 210 -345 210 -275 {
 lab=#net3}
 N 305 -360 305 -320 {
 lab=out}
+N 335 -200 410 -200 {
+lab=ptat}
+N 210 -200 280 -200 {
+lab=#net2}
+N 330 -200 335 -200 {
+lab=ptat}
+N 350 -260 360 -260 {
+lab=VDD}
+N 245 -260 260 -260 {
+lab=GND}
 C {sky130_fd_pr/pnp_05v5.sym} 230 -80 0 1 {name=Q1
 model=pnp_05v5_W3p40L3p40
 m=1
@@ -77,18 +79,18 @@ model=pnp_05v5_W3p40L3p40
 m=8
 spiceprefix=X
 }
-C {devices/vdd.sym} 250 -260 0 0 {name=l1 lab=VDD}
-C {devices/gnd.sym} 365 -260 0 0 {name=l2 lab=GND}
+C {devices/vdd.sym} 360 -260 0 0 {name=l1 lab=VDD}
+C {devices/gnd.sym} 245 -260 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 305 -35 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 310 -445 0 0 {name=l4 lab=VDD}
 C {devices/code.sym} 735 -335 0 0 {name=params only_toplevel=false value="
 .param L1=0.15
 .param W1=1
-.param R=489k
+.param R=495k
 "}
 C {devices/vdd.sym} 40 -295 0 0 {name=l5 lab=VDD}
 C {devices/gnd.sym} 40 -205 0 0 {name=l6 lab=GND}
-C {devices/code.sym} 855 -335 0 0 {name=TT_MODELS
+C {devices/code.sym} 845 -335 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -150,8 +152,8 @@ set appendwrite
 dc temp -40 85 1
 remzerovec
 write bgr_op3.raw
-*plot (ptat-ctat)
-*plot ctat
+plot (ptat-ctat)
+plot ctat
 plot vref
 
 ********TC********
@@ -187,6 +189,7 @@ print ave_power
 dc v1 0 3.5 0.1
 write bgr_op3.raw
 remzerovec
+plot vdd vref
 meas dc vref_max max v(vref) from=1.62 to=1.98
 meas dc vref_min min v(vref) from=1.62 to=1.98
 let ls='(vref_max-vref_min)/(1.98-1.62)'
@@ -209,4 +212,4 @@ value=\{R\}
 footprint=1206
 device=resistor
 m=1}
-C {op.sym} 545 40 3 0 {name=x1}
+C {op3.sym} 220 -355 1 1 {name=x1}
