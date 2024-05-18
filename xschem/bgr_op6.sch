@@ -208,9 +208,3 @@ footprint=1206
 device=resistor
 m=1}
 C {op6.sym} 440 -200 3 0 {name=x1}
-C {devices/capa.sym} 350 -320 3 0 {name=C1
-m=1
-value=1p
-footprint=1206
-device="ceramic capacitor"}
-C {devices/gnd.sym} 380 -320 0 0 {name=l7 lab=GND}

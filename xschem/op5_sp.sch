@@ -170,7 +170,8 @@ C {devices/code.sym} 745 -115 0 0 {name=params only_toplevel=false value="
 **************
 *PMOS cms
 .param L1=20
-.param W1=1
+.param W1=0.5
+
 **************
 *PMOS current differential
 .param L7=10
@@ -179,7 +180,7 @@ C {devices/code.sym} 745 -115 0 0 {name=params only_toplevel=false value="
 **************
 *differential Pair
 .param L4=10
-.param W4=0.8
+.param W4=0.6
 
 **************
 *NMOS current control
@@ -190,6 +191,17 @@ C {devices/code.sym} 745 -115 0 0 {name=params only_toplevel=false value="
 *Second Stage
 .param L2=5
 .param W2=1
+
+**************
+*NMOS current second stage
+.param L3=10
+.param W3=1
+
+**************
+*Current source Stage
+.param L5=10
+.param W5=1
+
 "}
 C {devices/iopin.sym} 615 -355 3 0 {name=p3 lab=VDD}
 C {sky130_fd_pr/nfet3_01v8.sym} 1035 -165 0 0 {name=M11
@@ -223,6 +235,21 @@ L=0.4
 model=res_high_po_0p35
 spiceprefix=X
 mult=2}
+C {sky130_fd_pr/nfet3_01v8.sym} 505 -165 0 0 {name=M12
+L=\{L4\}
+W=\{W4\}
+body=GND
+nf=1
+mult=4
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
 C {sky130_fd_pr/nfet3_01v8.sym} 730 -165 0 1 {name=M3
 L=\{L4\}
 W=\{W4\}
@@ -302,24 +329,10 @@ C {devices/gnd.sym} 170 -120 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 250 -175 0 0 {name=p2 sig_type=std_logic lab=bias
 value=0.9}
 C {devices/vdd.sym} 255 -360 0 0 {name=l5 lab=VDD}
+C {devices/gnd.sym} 295 -140 2 0 {name=l10 lab=GND}
 C {devices/gnd.sym} 220 -140 2 0 {name=l11 lab=GND}
 C {sky130_fd_pr/res_high_po_0p35.sym} 220 -120 1 0 {name=R4
 L=0.4
 model=res_high_po_0p35
 spiceprefix=X
 mult=4}
-C {sky130_fd_pr/nfet3_01v8.sym} 505 -165 0 0 {name=M4
-L=\{L4\}
-W=\{W4\}
-body=GND
-nf=1
-mult=4
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}

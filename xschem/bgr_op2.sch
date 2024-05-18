@@ -107,7 +107,7 @@ C {devices/lab_pin.sym} 410 -200 0 1 {name=p1 sig_type=std_logic lab=ptat}
 C {devices/lab_pin.sym} 410 -115 0 0 {name=p2 sig_type=std_logic lab=ctat}
 C {devices/lab_pin.sym} 320 -400 0 1 {name=p3 sig_type=std_logic lab=out}
 C {devices/lab_pin.sym} 410 -305 0 1 {name=p4 sig_type=std_logic lab=vref}
-C {devices/vsource.sym} 40 -250 0 0 {name=V1 value="ac 1 sin(1.8 0.1 1)" savecurrent=false
+C {devices/vsource.sym} 40 -250 0 0 {name=V1 value="pulse(0 1.8 2ns 2ns)" savecurrent=false
 *ac 1 sin(1.8 0.1 1)
 *pulse(0 1.8 2ns 2ns)}
 C {sky130_fd_pr/pfet3_01v8.sym} 390 -400 0 0 {name=M1
@@ -150,10 +150,11 @@ write bgr_op2.raw
 set appendwrite
 
 dc temp -40 85 1
+show >bgr_op2.lis
 remzerovec
 write bgr_op2.raw
-*plot (ptat-ctat)
-*plot ctat
+plot (ptat-ctat)
+plot ctat
 plot vref
 
 ********TC********

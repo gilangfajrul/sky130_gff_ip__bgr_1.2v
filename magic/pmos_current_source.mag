@@ -1,0 +1,115 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1716023295
+<< nwell >>
+rect -86 1612 2754 1720
+rect 3555 1612 8453 1720
+rect -86 1027 8453 1612
+rect -86 982 3952 1027
+rect -86 978 3961 982
+rect -86 977 3962 978
+rect -86 923 3966 977
+rect 4035 923 8453 1027
+rect -86 79 8453 923
+rect -86 1 2754 79
+rect 3555 1 8453 79
+<< poly >>
+rect 684 726 1496 906
+rect 2754 726 3554 906
+rect 4812 726 5613 905
+rect 6870 726 7670 906
+<< viali >>
+rect 696 752 1496 880
+rect 2754 752 3554 880
+rect 4812 752 5614 881
+rect 6870 752 7670 880
+<< metal1 >>
+rect 44 626 90 1006
+rect 684 880 1508 886
+rect 684 752 696 880
+rect 1496 752 1508 880
+rect 684 746 1508 752
+rect 2102 87 2148 1662
+rect 2742 881 3566 886
+rect 4160 881 4206 1166
+rect 4800 881 5626 887
+rect 2742 880 4812 881
+rect 2742 752 2754 880
+rect 3554 752 4812 880
+rect 5614 752 5626 881
+rect 2742 751 5626 752
+rect 2742 746 3566 751
+rect 4160 522 4206 751
+rect 4800 746 5626 751
+rect 6218 87 6264 1662
+rect 6858 880 7682 886
+rect 6858 752 6870 880
+rect 7670 752 7682 880
+rect 6858 746 7682 752
+rect 8276 626 8322 1006
+<< via1 >>
+rect 696 752 1496 880
+rect 2754 752 3554 880
+rect 4812 752 5612 880
+rect 6870 752 7670 880
+<< metal2 >>
+rect 696 880 1496 890
+rect 2754 880 3554 890
+rect 1496 752 2754 880
+rect 696 742 1496 752
+rect 2754 742 3554 752
+rect 4812 880 5612 890
+rect 6870 880 7670 890
+rect 5612 752 6870 880
+rect 4812 742 5612 752
+rect 6870 742 7670 752
+use sky130_fd_pr__pfet_01v8_2XU96L  sky130_fd_pr__pfet_01v8_2XU96L_0
+timestamp 1716023091
+transform 1 0 23 0 1 1006
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XU96L  sky130_fd_pr__pfet_01v8_2XU96L_1
+timestamp 1716023091
+transform 1 0 23 0 1 1558
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XU96L  sky130_fd_pr__pfet_01v8_2XU96L_2
+timestamp 1716023091
+transform 1 0 23 0 1 191
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XU96L  sky130_fd_pr__pfet_01v8_2XU96L_3
+timestamp 1716023091
+transform 1 0 23 0 1 626
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_0
+timestamp 1716023091
+transform 1 0 8343 0 1 191
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_1
+timestamp 1716023091
+transform 1 0 8343 0 1 1558
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_2
+timestamp 1716023091
+transform 1 0 8343 0 1 1006
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_3
+timestamp 1716023091
+transform 1 0 8343 0 1 626
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_UKGYDC  sky130_fd_pr__pfet_01v8_UKGYDC_0
+timestamp 1716023091
+transform 1 0 4183 0 1 1558
+box -4181 -162 4181 162
+use sky130_fd_pr__pfet_01v8_UKGYDC  sky130_fd_pr__pfet_01v8_UKGYDC_1
+timestamp 1716023091
+transform 1 0 4183 0 1 191
+box -4181 -162 4181 162
+use sky130_fd_pr__pfet_01v8_UKGYDC  sky130_fd_pr__pfet_01v8_UKGYDC_2
+timestamp 1716023091
+transform 1 0 4183 0 1 626
+box -4181 -162 4181 162
+use sky130_fd_pr__pfet_01v8_UKGYDC  sky130_fd_pr__pfet_01v8_UKGYDC_3
+timestamp 1716023091
+transform 1 0 4183 0 1 1006
+box -4181 -162 4181 162
+<< end >>

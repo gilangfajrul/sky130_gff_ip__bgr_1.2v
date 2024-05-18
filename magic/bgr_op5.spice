@@ -1,0 +1,326 @@
+** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/bgr_op5.sch
+**.subckt bgr_op5
+XQ1 GND GND net1 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1
+XQ2 GND GND ctat sky130_fd_pr__pnp_05v5_W3p40L3p40 m=8
+Vctat start net1 0
+.save i(vctat)
+V1 VDD GND pulse(0 1.8 2ns 2ns)
+XM1 vref out vdde VDD sky130_fd_pr__pfet_01v8 L={L8} W={W8} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM2 net3 out vdde VDD sky130_fd_pr__pfet_01v8 L={L8} W={W8} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+x1 vdde out start ptat GND op5
+XM15 vdde GND VDD VDD sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+Vctat1 net2 ctat 0
+.save i(vctat1)
+x2 net4 vref ptat vbgtc vbgsc Resistor492k_1
+x3 net5 net3 start net6 net7 Resistor492k_1
+x4 net2 ptat Resistor50k_1
+x5 vdde vgstart vg1 start GND Startup
+**** begin user architecture code
+
+
+.param L8=10
+.param W8=1
+.param L10=1
+.param W10=1
+.param R=492k
+
+
+
+
+.option savecurrents
+.control
+save all
+op
+remzerovec
+write bgr_op5.raw
+
+set appendwrite
+set wr_singlescale
+set wr_vecnames
+option numdgt=3
+
+dc temp -40 85 1
+remzerovec
+write bgr_op5.raw
+*write VREFFS.raw vref
+*plot (ptat-ctat)
+*plot ctat
+plot vref
+*wrdata vref5.csv vref
+*plot vbgsc vbgtc
+
+********TC********
+meas dc temp_avg_vref avg v(vref)
+meas dc temp_vref_27 find v(vref) when temp-sweep=27
+meas dc temp_pp_vref PP v(vref)
+meas dc temp_vref_max max v(vref)
+meas dc temp_max_vref when v(vref)='temp_vref_max'
+meas dc temp_vref_min min v(vref)
+meas dc temp_min_vref when v(vref)='temp_vref_min'
+let vref_tc='((temp_pp_vref*1000000)/(125*temp_avg_vref))'
+print vref_tc
+
+******PSRR******
+ac dec 1000 1 10Meg
+write bgr_op5.raw
+write PSRRFS.raw vdb(vref)
+remzerovec
+plot vdb(vref)
+*wrdata PSRR5.csv vdb(vref)
+meas ac psrr find vdb(vref) at=1k
+
+****Power****
+tran 10us 50ms
+write bgr_op5.raw
+set altshow
+show >> bgr_op5.lis
+remzerovec
+meas tran ave_v avg vdd
+meas tran ave_i avg i(v1)
+let ave_power='ave_v*(-ave_i)
+plot vdd vref
+plot vg1 vgstart start
+*plot -i(v1)
+print ave_power
+
+*******LS******
+dc v1 0 3.5 0.1
+write bgr_op5.raw
+remzerovec
+plot vdd vref
+meas dc vbg_27 find v(vref) at=1.8
+meas dc vbgsc_27 find v(vbgsc) at=1.8
+meas dc vbgtc_27 find v(vbgtc) at=1.8
+meas dc vref_max max v(vref) from=1.62 to=1.98
+meas dc vref_min min v(vref) from=1.62 to=1.98
+let ls='(vref_max-vref_min)/(1.98-1.62)'
+print ls
+
+.endc
+
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /home/gilang_fajrul/pdk/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /home/gilang_fajrul/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /home/gilang_fajrul/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /home/gilang_fajrul/pdk/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  op5.sym # of pins=5
+** sym_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/op5.sym
+** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/op5.sch
+.subckt op5 VDD out - + GND
+*.iopin GND
+*.iopin -
+*.iopin +
+*.iopin VDD
+*.iopin out
+XM8 net1 net2 VDD VDD sky130_fd_pr__pfet_01v8 L={L7} W={W7} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM9 net2 net2 VDD VDD sky130_fd_pr__pfet_01v8 L={L7} W={W7} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM5 net3 bias GND GND sky130_fd_pr__nfet_01v8 L={L6} W={W6} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM10 out net1 VDD VDD sky130_fd_pr__pfet_01v8 L={L2} W={W2} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+**** begin user architecture code
+
+
+**************
+*PMOS cms
+.param L1=20
+.param W1=1
+**************
+*PMOS current differential
+.param L7=10
+.param W7=1
+
+**************
+*differential Pair
+.param L4=10
+.param W4=0.8
+
+**************
+*NMOS current control
+.param L6=20
+.param W6=1
+
+**************
+*Second Stage
+.param L2=5
+.param W2=1
+
+
+**** end user architecture code
+XM11 out bias GND GND sky130_fd_pr__nfet_01v8 L={L6} W={W6} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XC1 net5 out sky130_fd_pr__cap_mim_m3_1 W=17 L=15 MF=4 m=4
+XR1 net1 net4 GND sky130_fd_pr__res_high_po_0p35 L=0.4 mult=2 m=2
+XR2 net4 net5 GND sky130_fd_pr__res_high_po_0p35 L=0.4 mult=2 m=2
+XM3 net1 + net3 GND sky130_fd_pr__nfet_01v8 L={L4} W={W4} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM1 bias net6 VDD VDD sky130_fd_pr__pfet_01v8 L={L1} W={W1} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 net6 net6 VDD VDD sky130_fd_pr__pfet_01v8 L={L1} W={W1} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM6 net6 bias GND GND sky130_fd_pr__nfet_01v8 L={L6} W={W6} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM7 bias bias net7 GND sky130_fd_pr__nfet_01v8 L={L6} W={W6} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XR4 GND net7 GND sky130_fd_pr__res_high_po_0p35 L=0.4 mult=4 m=4
+XM4 net2 - net3 GND sky130_fd_pr__nfet_01v8 L={L4} W={W4} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+
+* expanding   symbol:  Resistor492k_1.sym # of pins=5
+** sym_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/Resistor492k_1.sym
+** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/Resistor492k_1.sch
+.subckt Resistor492k_1 VBG A B VBGTC VBGSC
+*.iopin A
+*.iopin VBGTC
+*.iopin B
+*.iopin VBGSC
+*.iopin VBG
+XR1 net1 A GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR2 net2 net1 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR3 VBG net2 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR4 net3 VBG GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR5 net4 net3 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+**** begin user architecture code
+
+
+.param L=17
+
+
+**** end user architecture code
+XR6 net5 net6 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR7 VBGSC net5 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR8 VBGTC VBGSC GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR9 net7 VBGTC GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR10 net4 net7 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR11 net8 net6 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR12 net9 net8 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR13 net11 net9 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR14 net10 net11 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR15 net12 net10 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR16 net13 net14 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR17 net15 net13 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR18 net17 net15 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR19 net16 net17 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR20 net12 net16 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR21 net18 net14 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR22 B net18 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+.ends
+
+
+* expanding   symbol:  Resistor50k_1.sym # of pins=2
+** sym_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/Resistor50k_1.sym
+** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/Resistor50k_1.sch
+.subckt Resistor50k_1 B A
+*.iopin A
+*.iopin B
+XR2 net2 net1 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+**** begin user architecture code
+
+
+.param L=17
+.param La=8.5
+.param L1=1
+.param W1=15
+
+
+**** end user architecture code
+XR3 A net2 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR1 net1 net3 GND sky130_fd_pr__res_high_po_0p35 L={La} mult=2 m=2
+XR4 net3 net4 GND sky130_fd_pr__res_high_po_0p35 L={La} mult=4 m=4
+XR5 net4 net5 GND sky130_fd_pr__res_high_po_0p35 L={La} mult=8 m=8
+XR6 net5 B GND sky130_fd_pr__res_high_po_0p35 L={La} mult=16 m=16
+V1 net6 GND 1.8
+XM4 net1 net6 net3 GND sky130_fd_pr__nfet_01v8_lvt L={L1} W={W1} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net3 GND net4 GND sky130_fd_pr__nfet_01v8_lvt L={L1} W={W1} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net4 GND net5 GND sky130_fd_pr__nfet_01v8_lvt L={L1} W={W1} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net5 GND B GND sky130_fd_pr__nfet_01v8_lvt L={L1} W={W1} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  Startup.sym # of pins=5
+** sym_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/Startup.sym
+** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/Startup.sch
+.subckt Startup vdd 2 1 out gnd
+*.iopin vdd
+*.iopin gnd
+*.iopin out
+*.iopin 1
+*.iopin 2
+XM1 1 out gnd GND sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM2 2 1 vdd VDD sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 1 1 vdd VDD sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 out 2 vdd VDD sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2)
++ * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x1 gnd 2 ResistorStart
+.ends
+
+
+* expanding   symbol:  ResistorStart.sym # of pins=2
+** sym_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/ResistorStart.sym
+** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/ResistorStart.sch
+.subckt ResistorStart B A
+*.iopin A
+*.iopin B
+XR1 net1 A GND sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR2 net2 net1 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR3 net4 net2 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR4 net3 net4 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR5 net5 net3 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+**** begin user architecture code
+
+
+.param L=17
+
+
+**** end user architecture code
+XR6 net6 net7 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR7 net8 net6 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR8 net10 net8 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR9 net9 net10 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR10 net5 net9 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR11 net11 net7 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR12 net12 net11 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR13 net14 net12 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR14 net13 net14 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR15 net15 net13 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR16 net16 net17 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR17 net18 net16 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR18 net20 net18 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR19 net19 net20 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR20 net15 net19 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR21 net21 net17 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR22 net22 net21 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR23 net23 net22 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR24 net24 net23 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR25 net25 net24 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR26 net26 B GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR27 net27 net26 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR28 net28 net27 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR29 net29 net28 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+XR30 net25 net29 GND sky130_fd_pr__res_high_po_0p35 L={L} mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

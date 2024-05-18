@@ -36,7 +36,7 @@ lab=#net1}
 N 305 -40 305 -35 {
 lab=GND}
 N 210 -200 210 -185 {
-lab=start}
+lab=#net2}
 N 305 -400 305 -320 {
 lab=out}
 N 410 -200 410 -185 {
@@ -52,7 +52,7 @@ lab=ctat}
 N 410 -120 410 -110 {
 lab=ctat}
 N 570 -185 570 -180 {
-lab=#net2}
+lab=#net3}
 N 250 -80 305 -80 {
 lab=GND}
 N 410 -370 410 -360 {
@@ -60,9 +60,9 @@ lab=vref}
 N 410 -220 410 -200 {
 lab=ptat}
 N 210 -370 210 -360 {
-lab=#net3}
+lab=#net4}
 N 210 -220 210 -200 {
-lab=start}
+lab=#net2}
 N 450 -250 515 -250 {
 lab=vbgsc}
 N 450 -285 515 -285 {
@@ -74,19 +74,17 @@ lab=vbgtc}
 N 335 -200 335 -190 {
 lab=ptat}
 N 280 -200 280 -190 {
-lab=start}
+lab=#net2}
 N 210 -190 220 -190 {
-lab=start}
+lab=#net2}
 N 395 -190 410 -190 {
 lab=ptat}
 N 220 -190 280 -190 {
-lab=start}
+lab=#net2}
 N 335 -190 395 -190 {
 lab=ptat}
 N 450 -320 580 -320 {
-lab=#net4}
-N 190 -190 210 -190 {
-lab=start}
+lab=#net5}
 C {sky130_fd_pr/pnp_05v5.sym} 230 -80 0 1 {name=Q1
 model=pnp_05v5_W3p40L3p40
 m=1
@@ -156,8 +154,7 @@ C {devices/code.sym} 805 -315 0 0 {name=ngspice only_toplevel=false value="
 save all
 op
 remzerovec
-write bgr_op5.raw
-
+*write bgr_op5.raw
 set appendwrite
 set wr_singlescale
 set wr_vecnames
@@ -165,7 +162,6 @@ option numdgt=3
 
 dc temp -40 85 1
 remzerovec
-write bgr_op5.raw
 *write VREFFS.raw vref
 *plot (ptat-ctat)
 *plot ctat
@@ -186,7 +182,6 @@ print vref_tc
 
 ******PSRR******
 ac dec 1000 1 10Meg
-write bgr_op5.raw
 write PSRRFS.raw vdb(vref)
 remzerovec
 plot vdb(vref)
@@ -194,8 +189,8 @@ plot vdb(vref)
 meas ac psrr find vdb(vref) at=1k
 
 ****Power****
-tran 10us 50ms
-write bgr_op5.raw
+tran 10ms 500ms
+*write bgr_op5.raw
 set altshow
 show >> bgr_op5.lis
 remzerovec
@@ -203,7 +198,6 @@ meas tran ave_v avg vdd
 meas tran ave_i avg i(v1)
 let ave_power='ave_v*(-ave_i)
 plot vdd vref
-plot vg1 vgstart start
 *plot -i(v1)
 print ave_power
 
@@ -244,7 +238,7 @@ C {devices/lab_pin.sym} -105 -285 0 0 {name=p5 sig_type=std_logic lab=vdde}
 C {devices/gnd.sym} -170 -330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 360 -445 1 0 {name=p7 sig_type=std_logic lab=vdde}
 C {devices/ammeter.sym} 570 -150 0 0 {name=Vctat1 savecurrent=true}
-C {sky130_fd_pr/corner.sym} 1025 -315 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 1025 -315 0 0 {name=CORNER only_toplevel=false corner=fs}
 C {devices/lab_pin.sym} 580 -285 0 1 {name=p8 sig_type=std_logic lab=vbgtc}
 C {devices/lab_pin.sym} 580 -250 0 1 {name=p9 sig_type=std_logic lab=vbgsc}
 C {Resistor492k_1.sym} 360 -150 0 0 {name=x2}
@@ -252,9 +246,3 @@ C {Resistor492k_1.sym} 260 -150 0 1 {name=x3}
 C {Resistor50k_1.sym} 400 -125 0 0 {name=x4}
 C {devices/lab_pin.sym} 260 -260 1 0 {name=p6 sig_type=std_logic lab=vdde}
 C {devices/ngspice_probe.sym} 410 -365 0 0 {name=r1}
-C {Startup.sym} 70 -50 0 0 {name=x5}
-C {devices/lab_pin.sym} 150 -230 0 0 {name=p10 sig_type=std_logic lab=vdde}
-C {devices/gnd.sym} 150 -150 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 110 -200 0 0 {name=p11 sig_type=std_logic lab=vg1}
-C {devices/lab_pin.sym} 110 -180 0 0 {name=p12 sig_type=std_logic lab=vgstart}
-C {devices/lab_pin.sym} 255 -190 0 0 {name=p13 sig_type=std_logic lab=start}

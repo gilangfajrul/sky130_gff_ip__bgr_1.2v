@@ -100,13 +100,7 @@ lab=vout}
 N 550 -130 620 -130 {
 lab=vout}
 N 220 -60 250 -60 {
-lab=#net8}
-N 220 -0 280 -0 {
-lab=GND}
-N 280 -0 290 0 {
-lab=GND}
-N 290 -10 290 0 {
-lab=GND}
+lab=bias}
 C {sky130_fd_pr/pfet3_01v8.sym} 270 -400 0 0 {name=M1
 L=\{L1\}
 W=\{W1\}
@@ -299,7 +293,7 @@ device=resistor
 m=1}
 C {devices/vdd.sym} 490 -440 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 490 -10 0 0 {name=l2 lab=GND}
-C {devices/code.sym} 975 -215 0 0 {name=params only_toplevel=false value="
+C {devices/code.sym} 840 -210 0 0 {name=params only_toplevel=false value="
 ***PMOS***
 .param L1=1
 .param W1=1
@@ -340,7 +334,6 @@ C {devices/iopin.sym} 690 -10 0 0 {name=p2 lab=GND}
 C {devices/iopin.sym} 550 -170 0 0 {name=p3 lab=vout}
 C {devices/iopin.sym} 650 -210 0 0 {name=p4 lab=vip}
 C {devices/iopin.sym} 330 -210 2 0 {name=p5 lab=vin}
-C {devices/vsource.sym} 220 -30 0 0 {name=V1 value=0.6 savecurrent=false}
 C {devices/iopin.sym} 690 -180 0 0 {name=p6 lab=vout2}
 C {devices/ngspice_probe.sym} 450 -360 0 0 {name=r2}
 C {devices/ngspice_probe.sym} 490 -340 0 0 {name=r3}
@@ -348,3 +341,4 @@ C {devices/ngspice_probe.sym} 340 -260 0 0 {name=r4}
 C {devices/ngspice_probe.sym} 490 -240 0 0 {name=r5}
 C {devices/ngspice_probe.sym} 430 -150 0 0 {name=r6}
 C {devices/ngspice_probe.sym} 690 -350 0 0 {name=r7}
+C {devices/iopin.sym} 220 -60 2 0 {name=p7 lab=bias}

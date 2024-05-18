@@ -47,7 +47,7 @@ value="
 
 "
 spice_ignore=false}
-C {devices/launcher.sym} 600 -225 0 0 {name=h15
+C {devices/launcher.sym} 590 -225 0 0 {name=h15
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
@@ -65,9 +65,6 @@ op
 remzerovec
 write op5_tb.raw
 set appendwrite
-set wr_singlescale
-set wr_vecnames
-option numdgt=3
 
 tran 0.1n 100n
 meas tran ave_v avg vdd
@@ -92,7 +89,6 @@ meas ac gain_margin find vdb(out) when vp(out)='-pi'
 meas ac '-3db_voutbw' when vdb(out)='gain_max-3'
 let phase='vp(out)/pi*180'
 plot phase vdb(out)
-wrdata op5_tb.csv vdb(out) phase
 
 .endc
 "}
