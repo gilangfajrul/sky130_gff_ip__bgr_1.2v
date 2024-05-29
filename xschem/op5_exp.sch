@@ -97,11 +97,13 @@ N 250 -120 265 -120 {
 lab=GND}
 N 265 -120 325 -120 {
 lab=GND}
+C {devices/gnd.sym} 610 -35 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 520 -75 0 0 {name=p7 sig_type=std_logic lab=bias
 value=0.9}
+C {devices/gnd.sym} 1055 -115 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 980 -165 2 1 {name=p8 sig_type=std_logic lab=bias
 value=0.9}
-C {devices/iopin.sym} 1055 -115 0 0 {name=p9 lab=GND}
+C {devices/iopin.sym} 1055 -125 0 0 {name=p9 lab=GND}
 C {devices/iopin.sym} 485 -190 2 0 {name=p11 lab=-}
 C {devices/iopin.sym} 750 -185 2 1 {name=p12 lab=+}
 C {sky130_fd_pr/pfet3_01v8.sym} 690 -305 0 0 {name=M8
@@ -206,8 +208,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/iopin.sym} 1055 -215 0 0 {name=p1 lab=out}
+C {devices/gnd.sym} 855 -255 2 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 690 -355 0 0 {name=l4 lab=VDD}
 C {devices/vdd.sym} 1055 -310 0 0 {name=l6 lab=VDD}
+C {devices/gnd.sym} 925 -255 2 0 {name=l9 lab=GND}
 C {sky130_fd_pr/nfet3_01v8.sym} 730 -165 0 1 {name=M3
 L=\{L4\}
 W=\{W4\}
@@ -283,9 +287,11 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/gnd.sym} 300 -120 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 250 -175 0 0 {name=p2 sig_type=std_logic lab=bias
 value=0.9}
 C {devices/vdd.sym} 255 -360 0 0 {name=l5 lab=VDD}
+C {devices/gnd.sym} 220 -140 2 0 {name=l11 lab=GND}
 C {sky130_fd_pr/res_high_po_0p35.sym} 220 -120 1 0 {name=R4
 L=3
 model=res_high_po_0p35
@@ -316,9 +322,8 @@ L=3
 model=res_high_po_0p35
 spiceprefix=X
 mult=4}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1025 -235 1 0 {name=C1 model=cap_mim_m3_1 W=17 L=17 MF=4 spiceprefix=X}
-C {devices/gnd.sym} 610 -35 0 0 {name=l1 lab=GND}
-C {devices/gnd.sym} 220 -140 2 0 {name=l2 lab=GND}
-C {devices/gnd.sym} 290 -120 0 0 {name=l3 lab=GND}
-C {devices/gnd.sym} 855 -255 2 0 {name=l7 lab=GND}
-C {devices/gnd.sym} 925 -255 2 0 {name=l8 lab=GND}
+C {sky130_fd_pr/vpp_cap.sym} 1025 -235 3 0 {name=C1
+model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5_top
+mult=1
+spiceprefix=X}
+C {devices/gnd.sym} 1035 -215 0 0 {name=l1 lab=GND}

@@ -5,125 +5,115 @@ K {}
 V {}
 S {}
 E {}
-N 210 -50 210 -40 {
-lab=GND}
-N 305 -40 410 -40 {
-lab=GND}
-N 410 -50 410 -40 {
-lab=GND}
-N 210 -40 305 -40 {
-lab=GND}
-N 305 -80 305 -40 {
-lab=GND}
-N 305 -80 370 -80 {
-lab=GND}
-N 210 -445 210 -430 {
+N 195 -55 195 -45 {
+lab=avss}
+N 295 -45 400 -45 {
+lab=avss}
+N 400 -55 400 -45 {
+lab=avss}
+N 195 -45 290 -45 {
+lab=avss}
+N 295 -85 295 -45 {
+lab=avss}
+N 295 -85 360 -85 {
+lab=avss}
+N 195 -620 195 -605 {
 lab=vdde}
-N 210 -445 410 -445 {
+N 195 -620 395 -620 {
 lab=vdde}
-N 410 -445 410 -430 {
+N 395 -620 395 -605 {
 lab=vdde}
-N -110 -145 -110 -130 {
-lab=GND}
-N -110 -220 -110 -205 {
-lab=VDD}
-N 250 -400 305 -400 {
+N 235 -575 290 -575 {
 lab=out}
-N 305 -400 370 -400 {
+N 290 -575 355 -575 {
 lab=out}
-N 210 -125 210 -110 {
+N 195 -130 195 -115 {
 lab=#net1}
-N 305 -40 305 -35 {
-lab=GND}
-N 210 -200 210 -185 {
+N 295 -45 295 -40 {
+lab=avss}
+N 195 -375 195 -360 {
 lab=start}
-N 305 -400 305 -320 {
+N 290 -575 290 -495 {
 lab=out}
-N 410 -200 410 -185 {
+N 395 -375 395 -360 {
 lab=ptat}
-N -105 -375 -105 -360 {
-lab=VDD}
-N -170 -330 -145 -330 {
-lab=GND}
-N -105 -300 -105 -285 {
+N -80 -355 -80 -340 {
+lab=avdd}
+N -145 -310 -120 -310 {
+lab=ena}
+N -80 -280 -80 -265 {
 lab=vdde}
-N 410 -120 570 -120 {
+N 400 -125 400 -115 {
 lab=ctat}
-N 410 -120 410 -110 {
-lab=ctat}
-N 570 -185 570 -180 {
-lab=#net2}
-N 250 -80 305 -80 {
-lab=GND}
-N 410 -370 410 -360 {
+N 235 -85 290 -85 {
+lab=avss}
+N 395 -545 395 -535 {
 lab=vref}
-N 410 -220 410 -200 {
+N 395 -395 395 -375 {
 lab=ptat}
-N 210 -370 210 -360 {
+N 195 -545 195 -535 {
+lab=#net2}
+N 195 -395 195 -375 {
+lab=start}
+N 435 -425 500 -425 {
 lab=#net3}
-N 210 -220 210 -200 {
-lab=start}
-N 450 -250 515 -250 {
-lab=vbgsc}
-N 450 -285 515 -285 {
-lab=vbgtc}
-N 515 -250 580 -250 {
-lab=vbgsc}
-N 515 -285 580 -285 {
-lab=vbgtc}
-N 335 -200 335 -190 {
-lab=ptat}
-N 280 -200 280 -190 {
-lab=start}
-N 210 -190 220 -190 {
-lab=start}
-N 395 -190 410 -190 {
-lab=ptat}
-N 220 -190 280 -190 {
-lab=start}
-N 335 -190 395 -190 {
-lab=ptat}
-N 450 -320 580 -320 {
+N 435 -460 500 -460 {
 lab=#net4}
-N 190 -190 210 -190 {
+N 320 -375 320 -365 {
+lab=ptat}
+N 265 -375 265 -365 {
 lab=start}
-C {sky130_fd_pr/pnp_05v5.sym} 230 -80 0 1 {name=Q1
+N 195 -365 205 -365 {
+lab=start}
+N 380 -365 395 -365 {
+lab=ptat}
+N 205 -365 265 -365 {
+lab=start}
+N 320 -365 380 -365 {
+lab=ptat}
+N 460 -490 460 -395 {
+lab=vena}
+N 290 -85 295 -85 {
+lab=avss}
+N 290 -45 295 -45 {
+lab=avss}
+N 195 -360 195 -190 {
+lab=start}
+N 355 -575 495 -575 {
+lab=out}
+N 395 -620 535 -620 {
+lab=vdde}
+N 535 -620 535 -605 {
+lab=vdde}
+C {sky130_fd_pr/pnp_05v5.sym} 215 -85 0 1 {name=Q1
 model=pnp_05v5_W3p40L3p40
 m=1
 spiceprefix=X
 }
-C {sky130_fd_pr/pnp_05v5.sym} 390 -80 0 0 {name=Q2
+C {sky130_fd_pr/pnp_05v5.sym} 380 -85 0 0 {name=Q2
 model=pnp_05v5_W3p40L3p40
 m=8
 spiceprefix=X
 }
-C {devices/gnd.sym} 350 -260 0 0 {name=l2 lab=GND}
-C {devices/gnd.sym} 305 -35 0 0 {name=l3 lab=GND}
-C {devices/code.sym} 915 -315 0 0 {name=params only_toplevel=false value="
+C {devices/code.sym} 640 -345 0 0 {name=params only_toplevel=false value="
 .param L8=10
 .param W8=1
 .param L10=1
 .param W10=1
 .param R=492k
 "}
-C {devices/vdd.sym} -110 -220 0 0 {name=l5 lab=VDD}
-C {devices/gnd.sym} -110 -130 0 0 {name=l6 lab=GND}
-C {devices/launcher.sym} 735 -155 0 0 {name=h1
+C {devices/launcher.sym} 600 -175 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/ammeter.sym} 210 -155 0 0 {name=Vctat savecurrent=true}
-C {devices/lab_pin.sym} 410 -215 0 1 {name=p1 sig_type=std_logic lab=ptat}
-C {devices/lab_pin.sym} 410 -120 0 0 {name=p2 sig_type=std_logic lab=ctat}
-C {devices/lab_pin.sym} 320 -400 0 1 {name=p3 sig_type=std_logic lab=out}
-C {devices/lab_pin.sym} 410 -365 0 1 {name=p4 sig_type=std_logic lab=vref}
-C {devices/vsource.sym} -110 -175 0 0 {name=V1 value="ac 1 sin(1.8 1 1)" savecurrent=false
-*ac 1 sin(1.8 1 1)
-*pulse(0 1.8 2ns 2ns)}
-C {sky130_fd_pr/pfet3_01v8.sym} 390 -400 0 0 {name=M1
+C {devices/ammeter.sym} 195 -160 0 0 {name=Vctat savecurrent=true}
+C {devices/lab_pin.sym} 395 -390 0 1 {name=p1 sig_type=std_logic lab=ptat}
+C {devices/lab_pin.sym} 400 -125 0 0 {name=p2 sig_type=std_logic lab=ctat}
+C {devices/lab_pin.sym} 305 -575 0 1 {name=p3 sig_type=std_logic lab=out}
+C {sky130_fd_pr/pfet3_01v8.sym} 375 -575 0 0 {name=M1
 L=\{L8\}
 W=\{W8\}
-body=VDD
+body=AVDD
 nf=1
 mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -135,10 +125,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8.sym} 230 -400 0 1 {name=M2
+C {sky130_fd_pr/pfet3_01v8.sym} 215 -575 0 1 {name=M2
 L=\{L8\}
 W=\{W8\}
-body=VDD
+body=AVDD
 nf=1
 mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -150,84 +140,12 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/code.sym} 805 -315 0 0 {name=ngspice only_toplevel=false value="
-.option savecurrents
-.control
-save all
-op
-remzerovec
-write bgr_op5.raw
-
-set appendwrite
-set wr_singlescale
-set wr_vecnames
-option numdgt=3
-
-dc temp -40 85 1
-remzerovec
-write bgr_op5.raw
-*write VREFFS.raw vref
-*plot (ptat-ctat)
-*plot ctat
-plot vref
-*wrdata vref5.csv vref
-*plot vbgsc vbgtc
-
-********TC********
-meas dc temp_avg_vref avg v(vref)
-meas dc temp_vref_27 find v(vref) when temp-sweep=27
-meas dc temp_pp_vref PP v(vref)
-meas dc temp_vref_max max v(vref)
-meas dc temp_max_vref when v(vref)='temp_vref_max'
-meas dc temp_vref_min min v(vref)
-meas dc temp_min_vref when v(vref)='temp_vref_min'
-let vref_tc='((temp_pp_vref*1000000)/(125*temp_avg_vref))'
-print vref_tc
-
-******PSRR******
-ac dec 1000 1 10Meg
-write bgr_op5.raw
-write PSRRFS.raw vdb(vref)
-remzerovec
-plot vdb(vref)
-*wrdata PSRR5.csv vdb(vref)
-meas ac psrr find vdb(vref) at=1k
-
-****Power****
-tran 10us 50ms
-write bgr_op5.raw
-set altshow
-show >> bgr_op5.lis
-remzerovec
-meas tran ave_v avg vdd
-meas tran ave_i avg i(v1)
-let ave_power='ave_v*(-ave_i)
-plot vdd vref
-plot vg1 vgstart start
-*plot -i(v1)
-print ave_power
-
-*******LS******
-dc v1 0 3.5 0.1
-write bgr_op5.raw
-remzerovec
-plot vdd vref
-meas dc vbg_27 find v(vref) at=1.8
-meas dc vbgsc_27 find v(vbgsc) at=1.8
-meas dc vbgtc_27 find v(vbgtc) at=1.8
-meas dc vref_max max v(vref) from=1.62 to=1.98
-meas dc vref_min min v(vref) from=1.62 to=1.98
-let ls='(vref_max-vref_min)/(1.98-1.62)'
-print ls
-
-.endc
-"}
-C {op5.sym} 430 -195 3 0 {name=x1}
-C {devices/ngspice_probe.sym} 210 -195 0 0 {name=r3}
-C {sky130_fd_pr/pfet3_01v8.sym} -125 -330 0 0 {name=M15
+C {op5.sym} 415 -370 3 0 {name=x1}
+C {devices/ngspice_probe.sym} 195 -370 0 0 {name=r3}
+C {sky130_fd_pr/pfet3_01v8.sym} -100 -310 0 0 {name=M15
 L=10
 W=1
-body=VDD
+body=DVDD
 nf=1
 mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -239,22 +157,82 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/vdd.sym} -105 -375 0 0 {name=l7 lab=VDD}
-C {devices/lab_pin.sym} -105 -285 0 0 {name=p5 sig_type=std_logic lab=vdde}
-C {devices/gnd.sym} -170 -330 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} 360 -445 1 0 {name=p7 sig_type=std_logic lab=vdde}
-C {devices/ammeter.sym} 570 -150 0 0 {name=Vctat1 savecurrent=true}
-C {sky130_fd_pr/corner.sym} 1025 -315 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/lab_pin.sym} 580 -285 0 1 {name=p8 sig_type=std_logic lab=vbgtc}
-C {devices/lab_pin.sym} 580 -250 0 1 {name=p9 sig_type=std_logic lab=vbgsc}
-C {Resistor492k_1.sym} 360 -150 0 0 {name=x2}
-C {Resistor492k_1.sym} 260 -150 0 1 {name=x3}
-C {Resistor50k_1.sym} 400 -125 0 0 {name=x4}
-C {devices/lab_pin.sym} 260 -260 1 0 {name=p6 sig_type=std_logic lab=vdde}
-C {devices/ngspice_probe.sym} 410 -365 0 0 {name=r1}
-C {Startup.sym} 70 -50 0 0 {name=x5}
-C {devices/lab_pin.sym} 150 -230 0 0 {name=p10 sig_type=std_logic lab=vdde}
-C {devices/gnd.sym} 150 -150 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 110 -200 0 0 {name=p11 sig_type=std_logic lab=vg1}
-C {devices/lab_pin.sym} 110 -180 0 0 {name=p12 sig_type=std_logic lab=vgstart}
-C {devices/lab_pin.sym} 255 -190 0 0 {name=p13 sig_type=std_logic lab=start}
+C {devices/lab_pin.sym} -80 -265 0 0 {name=p5 sig_type=std_logic lab=vdde}
+C {devices/ammeter.sym} 400 -155 0 0 {name=Vctat1 savecurrent=true}
+C {Resistor492k_1.sym} 625 -495 0 0 {name=x2}
+C {Resistor492k_1.sym} -35 -495 0 1 {name=x3}
+C {Resistor50k_1.sym} 535 -670 1 0 {name=x4}
+C {devices/ngspice_probe.sym} 395 -540 0 0 {name=r1}
+C {Startup.sym} 55 -225 0 0 {name=x5}
+C {devices/lab_pin.sym} 240 -365 3 0 {name=p13 sig_type=std_logic lab=start}
+C {devices/ngspice_probe.sym} 505 -460 0 0 {name=r2}
+C {devices/ngspice_probe.sym} 480 -425 0 0 {name=r4}
+C {devices/ngspice_probe.sym} 460 -445 0 0 {name=r5}
+C {sky130_fd_pr/nfet3_01v8_lvt.sym} 480 -490 0 0 {name=M3
+W=1
+L=1
+nf=1
+mult=1
+body=DVSS
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_01v8_lvt.sym} 480 -395 2 1 {name=M4
+W=1
+L=1
+nf=1
+mult=1
+body=DVSS
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 135 -405 0 0 {name=p6 sig_type=std_logic lab=vdde}
+C {devices/lab_pin.sym} 245 -435 0 0 {name=p7 sig_type=std_logic lab=vdde}
+C {devices/lab_pin.sym} 295 -620 0 0 {name=p10 sig_type=std_logic lab=vdde}
+C {devices/lab_pin.sym} 135 -325 3 0 {name=p19 sig_type=std_logic lab=avss}
+C {devices/iopin.sym} -145 -310 2 0 {name=p14 lab=ena}
+C {devices/iopin.sym} 500 -520 0 0 {name=p8 lab=vbgtc}
+C {devices/iopin.sym} 500 -365 0 0 {name=p9 lab=vbgsc}
+C {devices/lab_pin.sym} 335 -435 2 0 {name=p25 sig_type=std_logic lab=avss}
+C {devices/iopin.sym} 460 -440 0 0 {name=p15 lab=vena}
+C {devices/iopin.sym} -80 -355 3 0 {name=p16 lab=avdd}
+C {devices/iopin.sym} 295 -40 1 0 {name=p17 lab=avss}
+C {devices/lab_pin.sym} 455 -320 2 0 {name=p18 sig_type=std_logic lab=avss}
+C {devices/iopin.sym} 455 -220 0 0 {name=p20 lab=dvss}
+C {devices/iopin.sym} 455 -300 0 0 {name=p21 lab=trim0}
+C {devices/iopin.sym} 455 -280 0 0 {name=p22 lab=trim1}
+C {devices/iopin.sym} 455 -260 0 0 {name=p23 lab=trim2}
+C {devices/iopin.sym} 455 -240 0 0 {name=p24 lab=trim3}
+C {devices/lab_pin.sym} 355 -485 0 0 {name=p26 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 235 -485 2 0 {name=p27 sig_type=std_logic lab=avss}
+C {devices/iopin.sym} -65 -215 2 0 {name=p28 lab=dvdd}
+C {devices/lab_pin.sym} -65 -215 2 0 {name=p29 sig_type=std_logic lab=dvdd}
+C {devices/iopin.sym} 395 -540 0 0 {name=p4 lab=vref}
+C {devices/iopin.sym} 535 -545 0 0 {name=p11 lab=iptat}
+C {sky130_fd_pr/pfet3_01v8.sym} 515 -575 0 0 {name=M5
+L=\{L8\}
+W=\{W8\}
+body=AVDD
+nf=1
+mult=4
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}

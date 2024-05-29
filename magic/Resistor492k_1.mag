@@ -1,0 +1,112 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1716599839
+<< checkpaint >>
+rect -1239 -2860 1282 -339
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR1
+timestamp 0
+transform 1 0 0 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR2
+timestamp 0
+transform 1 0 1 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR3
+timestamp 0
+transform 1 0 2 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR4
+timestamp 0
+transform 1 0 3 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR5
+timestamp 0
+transform 1 0 4 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR6
+timestamp 0
+transform 1 0 5 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR7
+timestamp 0
+transform 1 0 6 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR8
+timestamp 0
+transform 1 0 7 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR9
+timestamp 0
+transform 1 0 8 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR10
+timestamp 0
+transform 1 0 9 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR11
+timestamp 0
+transform 1 0 10 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR12
+timestamp 0
+transform 1 0 11 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR13
+timestamp 0
+transform 1 0 12 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR14
+timestamp 0
+transform 1 0 13 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR15
+timestamp 0
+transform 1 0 14 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR16
+timestamp 0
+transform 1 0 15 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR17
+timestamp 0
+transform 1 0 16 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR18
+timestamp 0
+transform 1 0 17 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR19
+timestamp 0
+transform 1 0 18 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR20
+timestamp 0
+transform 1 0 19 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR21
+timestamp 0
+transform 1 0 20 0 1 -1600
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR22
+timestamp 0
+transform 1 0 21 0 1 -1600
+box 0 0 1 1
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 VBG
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 A
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 B
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 VBGTC
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 VBGSC
+port 4 nsew
+<< end >>

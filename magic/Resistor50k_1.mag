@@ -1,0 +1,89 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1716599839
+<< checkpaint >>
+rect -1307 1258 1635 1311
+rect -1307 1205 2004 1258
+rect -1307 1152 2373 1205
+rect -1307 -1713 2742 1152
+rect -938 -1766 2742 -1713
+rect -569 -1819 2742 -1766
+rect -200 -1872 2742 -1819
+<< error_s >>
+rect 304 -19 339 15
+rect 305 -38 339 -19
+rect 135 -87 193 -81
+rect 135 -121 147 -87
+rect 135 -127 193 -121
+rect 135 -281 193 -275
+rect 135 -315 147 -281
+rect 135 -321 193 -315
+rect 324 -417 339 -38
+rect 358 -72 393 -38
+rect 673 -72 708 -38
+rect 358 -417 392 -72
+rect 674 -91 708 -72
+rect 504 -140 562 -134
+rect 504 -174 516 -140
+rect 504 -180 562 -174
+rect 504 -334 562 -328
+rect 504 -368 516 -334
+rect 504 -374 562 -368
+rect 358 -451 373 -417
+rect 693 -470 708 -91
+rect 727 -125 762 -91
+rect 727 -470 761 -125
+rect 873 -193 931 -187
+rect 873 -227 885 -193
+rect 873 -233 931 -227
+rect 873 -387 931 -381
+rect 873 -421 885 -387
+rect 873 -427 931 -421
+rect 727 -504 742 -470
+use sky130_fd_pr__nfet_01v8_lvt_L7T3GD  XM1
+timestamp 0
+transform 1 0 533 0 1 -254
+box -211 -252 211 252
+use sky130_fd_pr__nfet_01v8_lvt_L7T3GD  XM2
+timestamp 0
+transform 1 0 902 0 1 -307
+box -211 -252 211 252
+use sky130_fd_pr__nfet_01v8_lvt_L7T3GD  XM3
+timestamp 0
+transform 1 0 1271 0 1 -360
+box -211 -252 211 252
+use sky130_fd_pr__nfet_01v8_lvt_L7T3GD  XM4
+timestamp 0
+transform 1 0 164 0 1 -201
+box -211 -252 211 252
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR1
+timestamp 0
+transform 1 0 2 0 1 -400
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR2
+timestamp 0
+transform 1 0 0 0 1 -400
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR3
+timestamp 0
+transform 1 0 1 0 1 -400
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR4
+timestamp 0
+transform 1 0 3 0 1 -400
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR5
+timestamp 0
+transform 1 0 4 0 1 -400
+box 0 0 1 1
+use sky130_fd_pr__res_high_po_0p35_YVVSCA  XR6
+timestamp 0
+transform 1 0 5 0 1 -400
+box 0 0 1 1
+<< labels >>
+flabel space 0 0 200 200 0 FreeSans 256 0 0 0 B
+port 0 nsew
+flabel space 0 -400 200 -200 0 FreeSans 256 0 0 0 A
+port 1 nsew
+<< end >>

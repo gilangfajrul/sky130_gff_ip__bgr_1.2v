@@ -1,0 +1,52 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1716599135
+<< nwell >>
+rect -262 -1431 262 1431
+<< nsubdiff >>
+rect -226 1361 -130 1395
+rect 130 1361 226 1395
+rect -226 1299 -192 1361
+rect 192 1299 226 1361
+rect -226 -1361 -192 -1299
+rect 192 -1361 226 -1299
+rect -226 -1395 -130 -1361
+rect 130 -1395 226 -1361
+<< nsubdiffcont >>
+rect -130 1361 130 1395
+rect -226 -1299 -192 1299
+rect 192 -1299 226 1299
+rect -130 -1395 130 -1361
+<< xpolycontact >>
+rect -35 824 35 1256
+rect -35 -1256 35 -824
+<< ppolyres >>
+rect -35 -824 35 824
+<< locali >>
+rect -226 1361 -130 1395
+rect 130 1361 226 1395
+rect -226 1299 -192 1361
+rect 192 1299 226 1361
+rect -226 -1361 -192 -1299
+rect 192 -1361 226 -1299
+rect -226 -1395 -130 -1361
+rect 130 -1395 226 -1361
+<< viali >>
+rect -19 841 19 1238
+rect -19 -1238 19 -841
+<< metal1 >>
+rect -25 1238 25 1250
+rect -25 841 -19 1238
+rect 19 841 25 1238
+rect -25 829 25 841
+rect -25 -841 25 -829
+rect -25 -1238 -19 -841
+rect 19 -1238 25 -841
+rect -25 -1250 25 -1238
+<< properties >>
+string FIXED_BBOX -209 -1378 209 1378
+string gencell sky130_fd_pr__res_high_po_0p35
+string library sky130
+string parameters w 0.350 l 8.4 m 1 nx 1 wmin 0.350 lmin 0.50 rho 319.8 val 8.788k dummy 0 dw 0.0 term 194.82 sterm 0.0 caplen 0 guard 1 glc 1 grc 1 gtc 1 gbc 1 compatible {sky130_fd_pr__res_high_po_0p35  sky130_fd_pr__res_high_po_0p69 sky130_fd_pr__res_high_po_1p41  sky130_fd_pr__res_high_po_2p85 sky130_fd_pr__res_high_po_5p73} snake 0 full_metal 1 wmax 0.350 vias 1 n_guard 1 hv_guard 0 viagb 0 viagt 0 viagl 0 viagr 0
+<< end >>

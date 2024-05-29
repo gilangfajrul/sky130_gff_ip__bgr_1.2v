@@ -107,4 +107,4 @@ value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 405 -185 0 0 {name=l7 lab=GND}
-C {op5.sym} 250 -130 0 0 {name=x1}
+C {op5_exp.sym} 180 -180 0 0 {name=x1}
