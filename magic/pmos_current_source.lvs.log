@@ -42,7 +42,7 @@ Circuit sky130_fd_pr__pfet_01v8 contains no devices.
 Contents of circuit 1:  Circuit: 'pmos_current_source'
 Circuit pmos_current_source contains 24 device instances.
   Class: sky130_fd_pr__pfet_01v8 instances:  24
-Circuit contains 29 nets, and 1 disconnected pin.
+Circuit contains 6 nets.
 Contents of circuit 2:  Circuit: 'pmos_current_source'
 Circuit pmos_current_source contains 7 device instances.
   Class: sky130_fd_pr__pfet_01v8 instances:   7
@@ -54,17 +54,18 @@ New circuit summary:
 Contents of circuit 1:  Circuit: 'pmos_current_source'
 Circuit pmos_current_source contains 7 device instances.
   Class: sky130_fd_pr__pfet_01v8 instances:   7
-Circuit contains 29 nets, and 1 disconnected pin.
+Circuit contains 6 nets.
 Contents of circuit 2:  Circuit: 'pmos_current_source'
 Circuit pmos_current_source contains 7 device instances.
   Class: sky130_fd_pr__pfet_01v8 instances:   7
 Circuit contains 6 nets.
 
 Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
-Circuit 1 contains 12 nets,    Circuit 2 contains 6 nets. *** MISMATCH ***
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
 
 
 Final result: 
-Netlists do not match.
+Circuits match uniquely.
+.
 Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/pmos_current_source.lvs.out" disabled
 LVS Done.

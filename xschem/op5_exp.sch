@@ -322,8 +322,5 @@ L=3
 model=res_high_po_0p35
 spiceprefix=X
 mult=4}
-C {sky130_fd_pr/vpp_cap.sym} 1025 -235 3 0 {name=C1
-model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5_top
-mult=1
-spiceprefix=X}
 C {devices/gnd.sym} 1035 -215 0 0 {name=l1 lab=GND}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1025 -235 1 0 {name=C1 model=cap_mim_m3_1 W=17 L=17 MF=4 spiceprefix=X}

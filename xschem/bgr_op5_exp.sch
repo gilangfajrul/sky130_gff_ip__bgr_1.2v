@@ -91,16 +91,6 @@ N 580 -250 650 -250 {
 lab=#net4}
 N 610 -315 610 -220 {
 lab=#net7}
-C {sky130_fd_pr/pnp_05v5.sym} 230 -80 0 1 {name=Q1
-model=pnp_05v5_W0p68L0p68
-m=1
-spiceprefix=X
-}
-C {sky130_fd_pr/pnp_05v5.sym} 390 -80 0 0 {name=Q2
-model=pnp_05v5_W0p68L0p68
-m=8
-spiceprefix=X
-}
 C {devices/gnd.sym} 350 -260 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 305 -35 0 0 {name=l3 lab=GND}
 C {devices/code.sym} 915 -315 0 0 {name=params only_toplevel=false value="
@@ -299,3 +289,13 @@ C {Resistor492k_exp.sym} 340 -200 0 0 {name=x2}
 C {Resistor492k_exp.sym} 280 -200 0 1 {name=x3}
 C {Resistor50k_exp.sym} 390 -155 0 0 {name=x4}
 C {op5_exp.sym} 380 -125 3 0 {name=x1}
+C {sky130_fd_pr/pnp_05v5.sym} 390 -80 0 0 {name=Q2
+model=pnp_05v5_W3p40L3p40
+m=8
+spiceprefix=X
+}
+C {sky130_fd_pr/pnp_05v5.sym} 230 -80 0 1 {name=Q1
+model=pnp_05v5_W3p40L3p40
+m=1
+spiceprefix=X
+}

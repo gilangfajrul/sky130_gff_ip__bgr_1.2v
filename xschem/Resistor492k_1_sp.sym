@@ -1,0 +1,31 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 280 -80 320 -80 {}
+L 4 320 -80 320 20 {}
+L 4 280 20 320 20 {}
+L 4 280 -80 280 20 {}
+L 7 320 -60 340 -60 {}
+L 7 300 -100 300 -80 {}
+L 7 300 20 300 40 {}
+L 7 320 -25 340 -25 {}
+L 7 320 10 340 10 {}
+B 5 337.5 -62.5 342.5 -57.5 {name=VBG dir=inout}
+B 5 297.5 -102.5 302.5 -97.5 {name=A dir=inout}
+B 5 297.5 37.5 302.5 42.5 {name=B dir=inout}
+B 5 337.5 -27.5 342.5 -22.5 {name=VBGTC dir=inout}
+B 5 337.5 7.5 342.5 12.5 {name=VBGSC dir=inout}
+T {VBG} 345 -74 0 1 0.2 0.2 {}
+T {@symname} 306 -62 1 0 0.15 0.15 {}
+T {@name} 268 20 3 0 0.2 0.2 {}
+T {A} 296 -75 3 1 0.2 0.2 {}
+T {B} 309 15 1 1 0.2 0.2 {}
+T {VBGTC} 355 -44 0 1 0.2 0.2 {}
+T {VBGSC} 355 -9 0 1 0.2 0.2 {}

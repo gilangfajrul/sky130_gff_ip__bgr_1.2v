@@ -68,7 +68,7 @@ spiceprefix=X
 mult=1}
 C {devices/code.sym} 2205 245 0 0 {name=params only_toplevel=false value="
 .param L=17
-.param La=8.4
+.param La=8.8
 .param L1=1
 .param W1=4
 "}

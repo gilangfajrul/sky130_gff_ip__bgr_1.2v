@@ -95,17 +95,13 @@ model=pnp_05v5_W3p40L3p40
 m=8
 spiceprefix=X
 }
-C {devices/code.sym} 640 -345 0 0 {name=params only_toplevel=false value="
+C {devices/code.sym} 645 -345 0 0 {name=params only_toplevel=false value="
 .param L8=10
 .param W8=1
 .param L10=1
 .param W10=1
 .param R=492k
 "}
-C {devices/launcher.sym} 600 -175 0 0 {name=h1
-descr="Annotate OP" 
-tclcommand="set show_hidden_texts 1; xschem annotate_op"
-}
 C {devices/ammeter.sym} 195 -160 0 0 {name=Vctat savecurrent=true}
 C {devices/lab_pin.sym} 395 -390 0 1 {name=p1 sig_type=std_logic lab=ptat}
 C {devices/lab_pin.sym} 400 -125 0 0 {name=p2 sig_type=std_logic lab=ctat}
@@ -140,7 +136,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {op5.sym} 415 -370 3 0 {name=x1}
+C {op5.sym} 365 -160 3 0 {name=x1}
 C {devices/ngspice_probe.sym} 195 -370 0 0 {name=r3}
 C {sky130_fd_pr/pfet3_01v8.sym} -100 -310 0 0 {name=M15
 L=10

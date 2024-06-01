@@ -90,9 +90,17 @@ lab=#net16}
 N 2005 930 2085 930 {
 lab=GND}
 N 1875 910 1895 910 {
-lab=B}
+lab=#net17}
 N 1925 930 2005 930 {
 lab=GND}
+N 1925 1165 2005 1165 {
+lab=GND}
+N 1875 1145 1895 1145 {
+lab=#net17}
+N 1875 910 1875 1145 {
+lab=#net17}
+N 1955 1145 1975 1145 {
+lab=#net18}
 C {sky130_fd_pr/res_high_po_0p35.sym} 1925 210 3 0 {name=R1
 L=\{L\}
 model=res_high_po_0p35
@@ -182,7 +190,7 @@ C {devices/gnd.sym} 2065 695 0 0 {name=l3 lab=GND}
 C {devices/iopin.sym} 1875 210 2 0 {name=p2 lab=A}
 C {devices/iopin.sym} 2125 440 3 0 {name=p3 lab=VBGTC}
 C {devices/ngspice_probe.sym} 2045 440 0 0 {name=r62}
-C {devices/iopin.sym} 1875 910 2 0 {name=p1 lab=B}
+C {devices/iopin.sym} 2035 1145 0 0 {name=p1 lab=B}
 C {devices/iopin.sym} 2045 440 3 0 {name=p4 lab=VBGSC}
 C {devices/iopin.sym} 2120 210 3 0 {name=p5 lab=VBG}
 C {devices/gnd.sym} 2245 930 0 0 {name=l4 lab=GND}
@@ -206,3 +214,14 @@ L=\{L\}
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 2005 1145 3 0 {name=R21
+L=\{L\}
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1925 1145 3 0 {name=R22
+L=\{L\}
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/gnd.sym} 1965 1165 0 0 {name=l5 lab=GND}

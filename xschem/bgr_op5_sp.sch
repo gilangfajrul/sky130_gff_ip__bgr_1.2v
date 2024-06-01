@@ -154,7 +154,7 @@ C {devices/code.sym} 805 -315 0 0 {name=ngspice only_toplevel=false value="
 save all
 op
 remzerovec
-write bgr_op5.raw
+write bgr_op5_sp.raw
 set appendwrite
 
 dc temp -40 85 1
@@ -178,7 +178,7 @@ print vref_tc
 
 ******PSRR******
 ac dec 1000 1 10Meg
-write bgr_op5.raw
+write bgr_op5_sp.raw
 remzerovec
 plot vdb(vref)
 let phase='vp(out)/pi*180'
@@ -187,7 +187,7 @@ meas ac psrr find vdb(vref) at=1k
 
 ****Power****
 tran 10ms 500ms
-write bgr_op5.raw
+write bgr_op5_sp.raw
 set altshow
 show >> bgr_op5.lis
 remzerovec
@@ -200,7 +200,7 @@ print ave_power
 
 *******LS******
 dc v1 0 3.5 0.1
-write bgr_op5.raw
+write bgr_op5_sp.raw
 remzerovec
 plot vdd vref
 meas dc vbg_27 find v(vref) at=1.8
@@ -213,7 +213,6 @@ print ls
 
 .endc
 "}
-C {op5.sym} 430 -195 3 0 {name=x1}
 C {devices/ngspice_probe.sym} 210 -195 0 0 {name=r3}
 C {sky130_fd_pr/pfet3_01v8.sym} -125 -330 0 0 {name=M15
 L=10
@@ -238,8 +237,9 @@ C {devices/ammeter.sym} 570 -150 0 0 {name=Vctat1 savecurrent=true}
 C {sky130_fd_pr/corner.sym} 1025 -315 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/lab_pin.sym} 580 -285 0 1 {name=p8 sig_type=std_logic lab=vbgtc}
 C {devices/lab_pin.sym} 580 -250 0 1 {name=p9 sig_type=std_logic lab=vbgsc}
-C {Resistor492k_1.sym} 360 -150 0 0 {name=x2}
-C {Resistor492k_1.sym} 260 -150 0 1 {name=x3}
-C {Resistor50k_1.sym} 400 -125 0 0 {name=x4}
 C {devices/lab_pin.sym} 260 -260 1 0 {name=p6 sig_type=std_logic lab=vdde}
 C {devices/ngspice_probe.sym} 410 -365 0 0 {name=r1}
+C {Resistor492k_1_sp.sym} 110 -260 0 0 {name=x1}
+C {op5_sp.sym} 320 15 3 0 {name=x2}
+C {Resistor492k_1_sp.sym} 510 -260 0 1 {name=x3}
+C {Resistor50k_1_sp.sym} 350 -105 0 0 {name=x4}

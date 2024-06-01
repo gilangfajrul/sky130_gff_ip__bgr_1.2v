@@ -21,6 +21,8 @@ N 325 -120 360 -120 {
 lab=vbgsc}
 N 325 -160 360 -160 {
 lab=vref}
+N 220 -10 260 -10 {
+lab=GND}
 C {bgr_op5.sym} -135 25 0 0 {name=x1}
 C {devices/gnd.sym} 0 -65 0 0 {name=l6 lab=GND}
 C {devices/vsource.sym} 0 -110 0 0 {name=V1 value="ac 1 sin(1.8 1 1)" savecurrent=false
@@ -100,8 +102,7 @@ print ls
 .endc
 "}
 C {sky130_fd_pr/corner.sym} 545 -145 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/gnd.sym} 220 -10 0 0 {name=l1 lab=GND}
-C {devices/gnd.sym} 260 -10 0 0 {name=l2 lab=GND}
+C {devices/gnd.sym} 240 -10 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 220 -210 0 0 {name=l4 lab=VDD}
 C {devices/vdd.sym} 260 -210 0 0 {name=l5 lab=VDD}
 C {devices/gnd.sym} -55 -65 0 0 {name=l7 lab=GND}
@@ -110,9 +111,13 @@ C {devices/vsource.sym} -55 -110 0 0 {name=V2 value="1.8" savecurrent=false
 *pulse(0 1.8 2ns 2ns)}
 C {devices/lab_pin.sym} -55 -155 0 0 {name=p1 sig_type=std_logic lab=trim}
 C {devices/lab_pin.sym} 155 -155 0 0 {name=p2 sig_type=std_logic lab=trim}
-C {devices/gnd.sym} 155 -95 1 0 {name=l8 lab=GND}
+C {devices/gnd.sym} 155 -115 1 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 360 -140 2 0 {name=p3 sig_type=std_logic lab=vbgtc}
 C {devices/lab_pin.sym} 360 -120 2 0 {name=p4 sig_type=std_logic lab=vbgsc}
-C {devices/lab_pin.sym} 155 -75 0 0 {name=p5 sig_type=std_logic lab=trim}
 C {devices/gnd.sym} 155 -55 1 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 360 -160 2 0 {name=p6 sig_type=std_logic lab=vref}
+C {devices/launcher.sym} 770 -105 0 0 {name=h1
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}
+C {devices/lab_pin.sym} 155 -75 0 0 {name=p5 sig_type=std_logic lab=trim}
