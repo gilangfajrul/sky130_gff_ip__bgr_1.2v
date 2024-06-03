@@ -32,10 +32,10 @@ lab=GND}
 C {devices/vsource.sym} 35 -350 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/vdd.sym} 35 -395 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 35 -305 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} 30 -230 0 0 {name=V2 value=0.9 savecurrent=false}
+C {devices/vsource.sym} 30 -230 0 0 {name=V2 value=0.685 savecurrent=false}
 C {devices/gnd.sym} 30 -185 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 30 -55 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 30 -100 0 0 {name=V3 value="ac 1 sin(0.9 1 1) dc 0.9"}
+C {devices/vsource.sym} 30 -100 0 0 {name=V3 value="ac 1 sin(0.685 1 1) dc 0.685"}
 C {devices/lab_wire.sym} 30 -275 0 0 {name=p1 sig_type=std_logic lab=-}
 C {devices/lab_wire.sym} 30 -145 0 0 {name=p2 sig_type=std_logic lab=+}
 C {devices/code.sym} 525 -425 0 0 {name=TT_MODELS
@@ -107,4 +107,4 @@ value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 405 -185 0 0 {name=l7 lab=GND}
-C {op5_exp.sym} 180 -180 0 0 {name=x1}
+C {/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/op5_TT.sym} 0 -170 0 0 {name=x1}

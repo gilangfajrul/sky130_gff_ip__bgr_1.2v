@@ -81,8 +81,8 @@ remzerovec
 meas tran ave_v avg vdd
 meas tran ave_i avg i(v1)
 let ave_power='ave_v*(-ave_i)
-*plot vdd vref
-*plot vg1 vgstart start
+plot vdd vref
+plot vg1 vgstart start
 *plot -i(v1)
 print ave_power
 
@@ -116,7 +116,7 @@ C {devices/lab_pin.sym} 360 -140 2 0 {name=p3 sig_type=std_logic lab=vbgtc}
 C {devices/lab_pin.sym} 360 -120 2 0 {name=p4 sig_type=std_logic lab=vbgsc}
 C {devices/gnd.sym} 155 -55 1 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 360 -160 2 0 {name=p6 sig_type=std_logic lab=vref}
-C {devices/launcher.sym} 770 -105 0 0 {name=h1
+C {devices/launcher.sym} 505 0 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }

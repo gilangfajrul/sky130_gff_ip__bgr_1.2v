@@ -1,0 +1,41 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C2SSBD in circuit pmos_current_tt (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_8WJSP2 in circuit pmos_current_tt (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN in circuit pmos_current_tt (0)(4 instances)
+
+Class pmos_current_tt (0):  Merged 8 parallel devices.
+Subcircuit summary:
+Circuit 1: pmos_current_tt                 |Circuit 2: pmos_current_tt                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (12->4)            |sky130_fd_pr__pfet_01v8 (12->4)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: pmos_current_tt                 |Circuit 2: pmos_current_tt                 
+-------------------------------------------|-------------------------------------------
+D8                                         |D8                                         
+VDD                                        |VDD                                        
+D9                                         |D9                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pmos_current_tt and pmos_current_tt are equivalent.
+
+Final result: Circuits match uniquely.
+.

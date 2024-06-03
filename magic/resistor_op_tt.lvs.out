@@ -1,0 +1,64 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po_0p35  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_4E8R5J in circuit resistor_op_tt (0)(1 instance)
+
+Class resistor_op_tt (0):  Merged 7 parallel devices.
+Class resistor_op_tt (0):  Merged 1 series devices.
+Class resistor_op_tt (0):  Merged 1 parallel devices.
+Class resistor_op_tt (1):  Merged 2 parallel devices.
+Class resistor_op_tt (1):  Merged 1 series devices.
+Class resistor_op_tt (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: resistor_op_tt                  |Circuit 2: resistor_op_tt                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_high_po_0p35 (12->3)     |sky130_fd_pr__res_high_po_0p35 (12->3)     
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sky130_fd_pr__res_high_po_0p35_4E8R5J_0/sky130_fd_pr__res_high_po_0p35:2 vs. sky130_fd_pr__res_high_po_0p35:R1:
+ l circuit1: 3   circuit2: 6   (delta=66.7%, cutoff=1%)
+ M circuit1: 3   circuit2: 2   (delta=1, cutoff=0)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /sky130_fd_pr__res_high_po_0p35_4E8R5J_0/sky130_fd_pr__res_high_po_0p35:2 network:
+  l = 3
+  M = 3
++
+  l = 3
+Circuit 2 instance sky130_fd_pr__res_high_po_0p35:R1 network:
+  m = 2
+  mult = 2
+  L = 6
+  S = 1
+
+Subcircuit pins:
+Circuit 1: resistor_op_tt                  |Circuit 2: resistor_op_tt                  
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+D                                          |D                                          
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes resistor_op_tt and resistor_op_tt are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ resistor_op_tt

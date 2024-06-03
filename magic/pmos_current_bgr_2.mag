@@ -1,0 +1,82 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717421032
+<< nwell >>
+rect -88 -1296 4334 362
+<< metal1 >>
+rect 42 59 88 112
+rect 42 13 593 59
+rect 1586 13 2682 59
+rect 29 -320 39 -144
+rect 91 -320 101 -144
+rect 590 -444 1598 -411
+rect 2648 -444 3656 -412
+rect 4158 -444 4204 -322
+rect 42 -490 4204 -444
+rect 42 -611 88 -490
+rect 590 -518 1598 -490
+rect 2648 -519 3656 -490
+rect 4145 -790 4155 -614
+rect 4207 -790 4217 -614
+rect 1575 -993 2671 -947
+rect 3624 -993 4204 -947
+rect 4158 -1041 4204 -993
+<< via1 >>
+rect 39 -320 91 -144
+rect 4155 -790 4207 -614
+<< metal2 >>
+rect 39 -144 91 -134
+rect 39 -441 91 -320
+rect 39 -493 4207 -441
+rect 4155 -614 4207 -493
+rect 4155 -800 4207 -790
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_0
+timestamp 1717421032
+transform 1 0 21 0 1 -702
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_1
+timestamp 1717421032
+transform 1 0 4225 0 1 -1134
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_2
+timestamp 1717421032
+transform 1 0 4225 0 1 -702
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_3
+timestamp 1717421032
+transform 1 0 4225 0 1 -232
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_4
+timestamp 1717421032
+transform 1 0 4225 0 1 200
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_5
+timestamp 1717421032
+transform 1 0 21 0 1 200
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_6
+timestamp 1717421032
+transform 1 0 21 0 1 -232
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_7
+timestamp 1717421032
+transform 1 0 21 0 1 -1134
+box -109 -162 109 162
+use sky130_fd_pr__pfet_01v8_8RMJP2  sky130_fd_pr__pfet_01v8_8RMJP2_0
+timestamp 1717421032
+transform 1 0 2123 0 1 -1098
+box -2123 -198 2123 164
+use sky130_fd_pr__pfet_01v8_8RMJP2  sky130_fd_pr__pfet_01v8_8RMJP2_1
+timestamp 1717421032
+transform 1 0 2123 0 1 -666
+box -2123 -198 2123 164
+use sky130_fd_pr__pfet_01v8_CVRJBD  sky130_fd_pr__pfet_01v8_CVRJBD_0
+timestamp 1717421032
+transform 1 0 2123 0 1 -268
+box -2123 -164 2123 198
+use sky130_fd_pr__pfet_01v8_CVRJBD  sky130_fd_pr__pfet_01v8_CVRJBD_1
+timestamp 1717421032
+transform 1 0 2123 0 1 164
+box -2123 -164 2123 198
+<< end >>

@@ -65,6 +65,7 @@ Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
 
 
 Final result: 
-Netlists do not match.
+Circuits match uniquely.
+.
 Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/nmos_tail_current.lvs.out" disabled
 LVS Done.

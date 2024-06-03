@@ -1,0 +1,62 @@
+Netgen 1.5.272 compiled on Sen 18 Mar 2024 02:03:33  CST
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.ext.spc
+Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Creating placeholder cell definition.
+Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.sch.spc
+Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Creating placeholder cell definition.
+
+Reading setup file /home/gilang_fajrul/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Model sky130_fd_pr__res_high_po_0p35 pin 1 == 2
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property value found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property mult found for device sky130_fd_pr__res_high_po_0p35
+Model sky130_fd_pr__res_high_po_0p35 pin 1 == 2
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property value found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+Comparison output logged to file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out
+Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out" enabled
+Circuit sky130_fd_pr__res_high_po_0p35 contains no devices.
+
+Contents of circuit 1:  Circuit: 'resistor_op_tt'
+Circuit resistor_op_tt contains 12 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  12
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'resistor_op_tt'
+Circuit resistor_op_tt contains 7 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   7
+Circuit contains 8 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'resistor_op_tt'
+Circuit resistor_op_tt contains 3 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   3
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'resistor_op_tt'
+Circuit resistor_op_tt contains 3 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   3
+Circuit contains 7 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+No more changes can be made to series/parallel networks.
+
+Final result: 
+Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ resistor_op_tt
+
+Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out" disabled
+LVS Done.

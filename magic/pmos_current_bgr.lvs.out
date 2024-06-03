@@ -1,0 +1,49 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C2SJBD in circuit pmos_current_bgr (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_8WJJP2 in circuit pmos_current_bgr (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN in circuit pmos_current_bgr (0)(8 instances)
+
+Class pmos_current_bgr (0):  Merged 18 parallel devices.
+Subcircuit summary:
+Circuit 1: pmos_current_bgr                |Circuit 2: pmos_current_bgr                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (24->6)            |sky130_fd_pr__pfet_01v8 (24->6)            
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__pfet_01v8_C2SJBD_0/sky130_fd_pr__pfet_01v8:1 vs. sky130_fd_pr__pfet_01v8:M3:
+ l circuit1: 10   circuit2: 8   (delta=22.2%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: pmos_current_bgr                |Circuit 2: pmos_current_bgr                
+-------------------------------------------|-------------------------------------------
+G10                                        |G10                                        
+D1                                         |D1                                         
+D10                                        |D10                                        
+G                                          |G                                          
+D2                                         |D2                                         
+vdde                                       |vdde                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pmos_current_bgr and pmos_current_bgr are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ pmos_current_bgr

@@ -1,0 +1,49 @@
+Netgen 1.5.272 compiled on Sen 18 Mar 2024 02:03:33  CST
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bjt.ext.spc
+Call to undefined subcircuit sky130_fd_pr__pnp_05v5_W3p40L3p40
+Creating placeholder cell definition.
+Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bjt.sch.spc
+Call to undefined subcircuit sky130_fd_pr__pnp_05v5_W3p40L3p40
+Creating placeholder cell definition.
+
+Reading setup file /home/gilang_fajrul/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+No property mult found for device sky130_fd_pr__pnp_05v5_W3p40L3p40
+No property mult found for device sky130_fd_pr__pnp_05v5_W3p40L3p40
+No property mult found for device sky130_fd_pr__rf_pnp_05v5_W3p40L3p40
+Comparison output logged to file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bjt.lvs.out
+Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bjt.lvs.out" enabled
+Circuit sky130_fd_pr__pnp_05v5_W3p40L3p40 contains no devices.
+
+Contents of circuit 1:  Circuit: 'bjt'
+Circuit bjt contains 25 device instances.
+  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:  25
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'bjt'
+Circuit bjt contains 3 device instances.
+  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
+Circuit contains 3 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'bjt'
+Circuit bjt contains 3 device instances.
+  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'bjt'
+Circuit bjt contains 3 device instances.
+  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
+Circuit contains 3 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bjt.lvs.out" disabled
+LVS Done.

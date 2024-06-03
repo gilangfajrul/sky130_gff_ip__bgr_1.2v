@@ -1,0 +1,28 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717383984
+<< nwell >>
+rect 0 -1296 3446 362
+<< poly >>
+rect 94 -538 3352 -396
+<< metal1 >>
+rect 1284 13 2163 59
+rect 1274 -993 2153 -947
+use sky130_fd_pr__pfet_01v8_9XL9W9  sky130_fd_pr__pfet_01v8_9XL9W9_0
+timestamp 1717383984
+transform 1 0 1723 0 1 -1098
+box -1723 -198 1723 164
+use sky130_fd_pr__pfet_01v8_9XL9W9  sky130_fd_pr__pfet_01v8_9XL9W9_1
+timestamp 1717383984
+transform 1 0 1723 0 1 -666
+box -1723 -198 1723 164
+use sky130_fd_pr__pfet_01v8_CVR9SD  sky130_fd_pr__pfet_01v8_CVR9SD_1
+timestamp 1717383984
+transform 1 0 1723 0 1 164
+box -1723 -164 1723 198
+use sky130_fd_pr__pfet_01v8_CVR9SD  sky130_fd_pr__pfet_01v8_CVR9SD_2
+timestamp 1717383984
+transform 1 0 1723 0 1 -268
+box -1723 -164 1723 198
+<< end >>

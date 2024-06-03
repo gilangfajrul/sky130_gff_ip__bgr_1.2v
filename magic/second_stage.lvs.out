@@ -1,0 +1,51 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9QGYG3 in circuit second_stage (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XU96L in circuit second_stage (0)(2 instances)
+
+Class second_stage (0):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: second_stage                    |Circuit 2: second_stage                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (6->2)             |sky130_fd_pr__pfet_01v8 (8->2)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4 **Mismatch**             |Number of nets: 3 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: second_stage                    |Circuit 2: second_stage                    
+
+---------------------------------------------------------------------------------------
+Net: w_680_15#                             |Net: G                                     
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/4 = 2            |                                           
+                                           |                                           
+Net: a_4307_408#                           |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__pfet_01v8/4 = 2            
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: (no pins)                             |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: second_stage                    |Circuit 2: second_stage                    
+-------------------------------------------|-------------------------------------------
+Cell pin lists are equivalent.
+Device classes second_stage and second_stage are equivalent.
+
+Final result: Netlists do not match.

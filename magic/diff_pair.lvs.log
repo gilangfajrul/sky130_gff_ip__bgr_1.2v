@@ -1,10 +1,10 @@
 Netgen 1.5.272 compiled on Sen 18 Mar 2024 02:03:33  CST
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
-Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/nmos_tail_current_a.ext.spc
+Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/diff_pair.ext.spc
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
-Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/nmos_tail_current_a.sch.spc
+Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/diff_pair.sch.spc
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
 
@@ -35,36 +35,38 @@ No property nrs found for device sky130_fd_pr__nfet_01v8
 No property area found for device sky130_fd_pr__nfet_01v8
 No property perim found for device sky130_fd_pr__nfet_01v8
 No property topography found for device sky130_fd_pr__nfet_01v8
-Comparison output logged to file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/nmos_tail_current_a.lvs.out
-Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/nmos_tail_current_a.lvs.out" enabled
+Comparison output logged to file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/diff_pair.lvs.out
+Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/diff_pair.lvs.out" enabled
 Circuit sky130_fd_pr__nfet_01v8 contains no devices.
+Duplicate pin GND in cell diff_pair (1)
 
-Contents of circuit 1:  Circuit: 'nmos_tail_current_a'
-Circuit nmos_tail_current_a contains 16 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:  16
-Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'nmos_tail_current_a'
-Circuit nmos_tail_current_a contains 8 device instances.
+Contents of circuit 1:  Circuit: 'diff_pair'
+Circuit diff_pair contains 8 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   8
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'diff_pair'
+Circuit diff_pair contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
 Circuit contains 6 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
-Contents of circuit 1:  Circuit: 'nmos_tail_current_a'
-Circuit nmos_tail_current_a contains 8 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   8
+Contents of circuit 1:  Circuit: 'diff_pair'
+Circuit diff_pair contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
 Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'nmos_tail_current_a'
-Circuit nmos_tail_current_a contains 8 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   8
+Contents of circuit 2:  Circuit: 'diff_pair'
+Circuit diff_pair contains 4 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
 Circuit contains 6 nets.
 
-Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
 Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
 
 
 Final result: 
-Netlists do not match.
-Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/nmos_tail_current_a.lvs.out" disabled
+Circuits match uniquely.
+.
+Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/diff_pair.lvs.out" disabled
 LVS Done.

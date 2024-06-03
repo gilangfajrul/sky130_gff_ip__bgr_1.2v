@@ -21,8 +21,8 @@ X0 a_2000_n100# a_n2000_n126# a_n2058_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.2
 .ends
 
 .subckt nmos_tail_current D1 D4 D3 D2 GND S2
-Xsky130_fd_pr__nfet_01v8_3YKU97_0 S2 D2 D2 GND sky130_fd_pr__nfet_01v8_3YKU97
-Xsky130_fd_pr__nfet_01v8_P5G96Q_1 D2 GND D1 GND sky130_fd_pr__nfet_01v8_P5G96Q
+Xsky130_fd_pr__nfet_01v8_3YKU97_0 GND D2 D2 GND sky130_fd_pr__nfet_01v8_3YKU97
+Xsky130_fd_pr__nfet_01v8_P5G96Q_1 D2 S2 D1 GND sky130_fd_pr__nfet_01v8_P5G96Q
 Xsky130_fd_pr__nfet_01v8_P5G96Q_4 D2 D3 GND GND sky130_fd_pr__nfet_01v8_P5G96Q
 Xsky130_fd_pr__nfet_01v8_P5G96Q_6 D2 D4 GND GND sky130_fd_pr__nfet_01v8_P5G96Q
 Xsky130_fd_pr__nfet_01v8_P5G96Q_5 D2 GND D4 GND sky130_fd_pr__nfet_01v8_P5G96Q
@@ -35,7 +35,7 @@ Xsky130_fd_pr__nfet_01v8_6H9P4D_4 D2 GND GND GND sky130_fd_pr__nfet_01v8_6H9P4D
 Xsky130_fd_pr__nfet_01v8_6H9P4D_6 D4 GND GND GND sky130_fd_pr__nfet_01v8_6H9P4D
 Xsky130_fd_pr__nfet_01v8_6H9P4D_5 D3 GND GND GND sky130_fd_pr__nfet_01v8_6H9P4D
 Xsky130_fd_pr__nfet_01v8_6H9P4D_7 D1 GND GND GND sky130_fd_pr__nfet_01v8_6H9P4D
-Xsky130_fd_pr__nfet_01v8_3KF9AC_0 D2 S2 D2 GND sky130_fd_pr__nfet_01v8_3KF9AC
-Xsky130_fd_pr__nfet_01v8_BSRS8Q_0 D2 D1 GND GND sky130_fd_pr__nfet_01v8_BSRS8Q
+Xsky130_fd_pr__nfet_01v8_3KF9AC_0 D2 GND D2 GND sky130_fd_pr__nfet_01v8_3KF9AC
+Xsky130_fd_pr__nfet_01v8_BSRS8Q_0 D2 D1 S2 GND sky130_fd_pr__nfet_01v8_BSRS8Q
 .ends
 
