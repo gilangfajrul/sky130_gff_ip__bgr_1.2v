@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717408181
+timestamp 1717437593
 << nwell >>
 rect -227 -1446 8585 509
 << nsubdiff >>
@@ -348,35 +348,35 @@ rect 8257 -1224 8267 -1048
 rect 8323 -1224 8333 -1048
 rect 8257 -1229 8333 -1224
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_0
-timestamp 1717356782
+timestamp 1717421032
 transform 1 0 19 0 1 -704
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_1
-timestamp 1717356782
+timestamp 1717421032
 transform 1 0 8339 0 1 -1136
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_2
-timestamp 1717356782
+timestamp 1717421032
 transform 1 0 8339 0 1 -704
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_3
-timestamp 1717356782
+timestamp 1717421032
 transform 1 0 8339 0 1 -234
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_4
-timestamp 1717356782
+timestamp 1717421032
 transform 1 0 8339 0 1 198
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_5
-timestamp 1717356782
+timestamp 1717421032
 transform 1 0 19 0 1 198
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_6
-timestamp 1717356782
+timestamp 1717421032
 transform 1 0 19 0 1 -234
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_8
-timestamp 1717356782
+timestamp 1717421032
 transform 1 0 19 0 1 -1136
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_8WJJP2  sky130_fd_pr__pfet_01v8_8WJJP2_0

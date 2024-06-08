@@ -68,10 +68,6 @@ Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
 
 Final result: 
 Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- pmos_current_bgr
-
+.
 Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/pmos_current_bgr.lvs.out" disabled
 LVS Done.

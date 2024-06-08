@@ -6,6 +6,6 @@ XM7 D1 G vdde vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=4
 XM8 D2 G vdde vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=4
 XM1 D10 vdde vdde vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=4
 XM2 D2 vdde vdde vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=4
-XM3 vdde vdde vdde vdde sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 m=4
+XM3 vdde vdde vdde vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=4
 .ends
 .end

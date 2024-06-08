@@ -5,31 +5,31 @@ K {}
 V {}
 S {}
 E {}
-N 0 -80 0 -65 {
+N 130 -120 130 -105 {
 lab=GND}
-N 0 -155 0 -140 {
+N 130 -195 130 -180 {
 lab=VDD}
-N -55 -80 -55 -65 {
+N 75 -120 75 -105 {
 lab=GND}
-N -55 -155 -55 -140 {
+N 75 -195 75 -180 {
 lab=trim}
-N 155 -135 155 -95 {
+N 285 -175 285 -135 {
 lab=GND}
-N 325 -140 360 -140 {
+N 455 -180 490 -180 {
 lab=vbgtc}
-N 325 -120 360 -120 {
+N 455 -160 490 -160 {
 lab=vbgsc}
-N 325 -160 360 -160 {
+N 455 -200 490 -200 {
 lab=vref}
-N 220 -10 260 -10 {
+N 350 -50 390 -50 {
 lab=GND}
-C {bgr_op5.sym} -135 25 0 0 {name=x1}
-C {devices/gnd.sym} 0 -65 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 0 -110 0 0 {name=V1 value="ac 1 sin(1.8 1 1)" savecurrent=false
+C {bgr_op5.sym} -5 -15 0 0 {name=x1}
+C {devices/gnd.sym} 130 -105 0 0 {name=l6 lab=GND}
+C {devices/vsource.sym} 130 -150 0 0 {name=V1 value="ac 1 sin(1.8 1 1)" savecurrent=false
 *ac 1 sin(1.8 1 1)
 *pulse(0 1.8 2ns 2ns)}
-C {devices/vdd.sym} 0 -155 0 0 {name=l3 lab=VDD}
-C {devices/code.sym} 430 -145 0 0 {name=ngspice only_toplevel=false value="
+C {devices/vdd.sym} 130 -195 0 0 {name=l3 lab=VDD}
+C {devices/code.sym} 560 -185 0 0 {name=ngspice only_toplevel=false value="
 .option savecurrents
 .control
 save all
@@ -101,23 +101,23 @@ print ls
 
 .endc
 "}
-C {sky130_fd_pr/corner.sym} 545 -145 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/gnd.sym} 240 -10 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 220 -210 0 0 {name=l4 lab=VDD}
-C {devices/vdd.sym} 260 -210 0 0 {name=l5 lab=VDD}
-C {devices/gnd.sym} -55 -65 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} -55 -110 0 0 {name=V2 value="1.8" savecurrent=false
+C {sky130_fd_pr/corner.sym} 675 -185 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {devices/gnd.sym} 370 -50 0 0 {name=l1 lab=GND}
+C {devices/vdd.sym} 350 -250 0 0 {name=l4 lab=VDD}
+C {devices/vdd.sym} 390 -250 0 0 {name=l5 lab=VDD}
+C {devices/gnd.sym} 75 -105 0 0 {name=l7 lab=GND}
+C {devices/vsource.sym} 75 -150 0 0 {name=V2 value="1.8" savecurrent=false
 *ac 1 sin(1.8 1 1)
 *pulse(0 1.8 2ns 2ns)}
-C {devices/lab_pin.sym} -55 -155 0 0 {name=p1 sig_type=std_logic lab=trim}
-C {devices/lab_pin.sym} 155 -155 0 0 {name=p2 sig_type=std_logic lab=trim}
-C {devices/gnd.sym} 155 -115 1 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} 360 -140 2 0 {name=p3 sig_type=std_logic lab=vbgtc}
-C {devices/lab_pin.sym} 360 -120 2 0 {name=p4 sig_type=std_logic lab=vbgsc}
-C {devices/gnd.sym} 155 -55 1 0 {name=l10 lab=GND}
-C {devices/lab_pin.sym} 360 -160 2 0 {name=p6 sig_type=std_logic lab=vref}
-C {devices/launcher.sym} 505 0 0 0 {name=h1
+C {devices/lab_pin.sym} 75 -195 0 0 {name=p1 sig_type=std_logic lab=trim}
+C {devices/lab_pin.sym} 285 -195 0 0 {name=p2 sig_type=std_logic lab=trim}
+C {devices/gnd.sym} 285 -155 1 0 {name=l8 lab=GND}
+C {devices/lab_pin.sym} 490 -180 2 0 {name=p3 sig_type=std_logic lab=vbgtc}
+C {devices/lab_pin.sym} 490 -160 2 0 {name=p4 sig_type=std_logic lab=vbgsc}
+C {devices/gnd.sym} 285 -95 1 0 {name=l10 lab=GND}
+C {devices/lab_pin.sym} 490 -200 2 0 {name=p6 sig_type=std_logic lab=vref}
+C {devices/launcher.sym} 635 -40 0 0 {name=h1
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/lab_pin.sym} 155 -75 0 0 {name=p5 sig_type=std_logic lab=trim}
+C {devices/lab_pin.sym} 285 -115 0 0 {name=p5 sig_type=std_logic lab=trim}

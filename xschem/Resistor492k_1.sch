@@ -103,34 +103,8 @@ N 1875 910 1875 1130 {
 lab=#net13}
 N 1955 910 1975 910 {
 lab=#net18}
-N 2005 1155 2085 1155 {
-lab=avss}
 N 2035 1135 2055 1135 {
 lab=B}
-N 2085 1155 2165 1155 {
-lab=avss}
-N 2115 1135 2135 1135 {
-lab=#net19}
-N 2165 1155 2245 1155 {
-lab=avss}
-N 2195 1135 2215 1135 {
-lab=#net20}
-N 2275 1135 2295 1135 {
-lab=#net21}
-N 2035 1355 2055 1355 {
-lab=#net22}
-N 2085 1375 2165 1375 {
-lab=avss}
-N 2115 1355 2135 1355 {
-lab=#net23}
-N 2165 1375 2245 1375 {
-lab=avss}
-N 2195 1355 2215 1355 {
-lab=#net24}
-N 2275 1355 2295 1355 {
-lab=#net21}
-N 2295 1135 2295 1355 {
-lab=#net21}
 C {sky130_fd_pr/res_high_po_0p35.sym} 1925 210 3 0 {name=R1
 L=\{L\}
 model=res_high_po_0p35
@@ -237,7 +211,7 @@ mult=1}
 C {devices/iopin.sym} 1875 210 2 0 {name=p2 lab=A}
 C {devices/iopin.sym} 2125 440 3 0 {name=p3 lab=VBGTC}
 C {devices/ngspice_probe.sym} 2125 440 0 0 {name=r62}
-C {devices/iopin.sym} 2045 1135 3 0 {name=p1 lab=B}
+C {devices/iopin.sym} 2055 1135 0 0 {name=p1 lab=B}
 C {devices/iopin.sym} 2045 440 3 0 {name=p4 lab=VBGSC}
 C {devices/iopin.sym} 2120 210 3 0 {name=p5 lab=VBG}
 C {sky130_fd_pr/res_high_po_0p35.sym} 1925 1135 3 0 {name=R21
@@ -255,34 +229,3 @@ C {devices/lab_pin.sym} 2055 460 3 0 {name=p7 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 2050 695 3 0 {name=p8 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 2050 930 3 0 {name=p9 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1960 1155 3 0 {name=p10 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2085 1135 3 0 {name=R23
-L=\{L\}
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2165 1135 3 0 {name=R24
-L=\{L\}
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2245 1135 3 0 {name=R25
-L=\{L\}
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {devices/lab_pin.sym} 2125 1375 3 0 {name=p11 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2085 1355 3 0 {name=R28
-L=\{L\}
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2165 1355 3 0 {name=R29
-L=\{L\}
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2245 1355 3 0 {name=R30
-L=\{L\}
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}

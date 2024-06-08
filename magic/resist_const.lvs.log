@@ -1,0 +1,61 @@
+Netgen 1.5.272 compiled on Sen 18 Mar 2024 02:03:33  CST
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resist_const.ext.spc
+Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Creating placeholder cell definition.
+Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resist_const.sch.spc
+Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Creating placeholder cell definition.
+
+Reading setup file /home/gilang_fajrul/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Model sky130_fd_pr__res_high_po_0p35 pin 1 == 2
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property value found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property mult found for device sky130_fd_pr__res_high_po_0p35
+Model sky130_fd_pr__res_high_po_0p35 pin 1 == 2
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+No property value found for device sky130_fd_pr__res_high_po_0p35
+No property w found for device sky130_fd_pr__res_high_po_0p35
+Comparison output logged to file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resist_const.lvs.out
+Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resist_const.lvs.out" enabled
+Circuit sky130_fd_pr__res_high_po_0p35 contains no devices.
+
+Contents of circuit 1:  Circuit: 'resist_const'
+Circuit resist_const contains 60 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  60
+Circuit contains 60 nets.
+Contents of circuit 2:  Circuit: 'resist_const'
+Circuit resist_const contains 60 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  60
+Circuit contains 60 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'resist_const'
+Circuit resist_const contains 10 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
+Circuit contains 11 nets.
+Contents of circuit 2:  Circuit: 'resist_const'
+Circuit resist_const contains 10 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
+Circuit contains 11 nets.
+
+Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
+Circuit 1 contains 11 nets,    Circuit 2 contains 11 nets.
+
+
+Final result: 
+Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ resist_const
+
+Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resist_const.lvs.out" disabled
+LVS Done.

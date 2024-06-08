@@ -147,7 +147,7 @@ C {Resistor492k_1.sym} 625 -495 0 0 {name=x2}
 C {Resistor492k_1.sym} -35 -495 0 1 {name=x3}
 C {Resistor50k_1.sym} 535 -670 1 0 {name=x4}
 C {devices/ngspice_probe.sym} 395 -540 0 0 {name=r1}
-C {Startup.sym} 55 -225 0 0 {name=x5}
+C {Startup.sym} -145 -275 0 0 {name=x5}
 C {devices/lab_pin.sym} 240 -365 3 0 {name=p13 sig_type=std_logic lab=start}
 C {devices/ngspice_probe.sym} 505 -460 0 0 {name=r2}
 C {devices/ngspice_probe.sym} 480 -425 0 0 {name=r4}
@@ -182,10 +182,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 135 -405 0 0 {name=p6 sig_type=std_logic lab=vdde}
+C {devices/lab_pin.sym} 105 -385 1 0 {name=p6 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 245 -432.5 0 0 {name=p7 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 290 -620 1 0 {name=p10 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 135 -325 3 0 {name=p19 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 105 -235 3 0 {name=p19 sig_type=std_logic lab=avss}
 C {devices/iopin.sym} -135 -280 2 0 {name=p14 lab=ena}
 C {devices/iopin.sym} 500 -520 0 0 {name=p8 lab=vbgtc}
 C {devices/iopin.sym} 500 -365 0 0 {name=p9 lab=vbgsc}
@@ -222,7 +222,7 @@ spiceprefix=X
 }
 C {op5.sym} 360 -75 3 0 {name=x1}
 C {sky130_fd_pr/pfet3_01v8.sym} -90 -280 0 0 {name=M6
-L=10
+L=2
 W=1
 body=DVDD
 nf=1

@@ -1,0 +1,66 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1717511436
+<< checkpaint >>
+rect -774 139 4138 192
+rect 6296 139 9194 1731
+rect -774 -2966 9194 139
+rect 1565 -3019 9194 -2966
+rect 3904 -3072 9194 -3019
+<< error_s >>
+rect 91 -189 137 -172
+rect 63 -217 165 -200
+rect 63 -400 165 -379
+rect 91 -428 137 -407
+rect 63 -800 165 -797
+rect 91 -828 137 -825
+rect 469 -1068 503 -1050
+rect 469 -1104 539 -1068
+rect 486 -1138 557 -1104
+rect 2807 -1138 2842 -1104
+rect 486 -1617 556 -1138
+rect 2808 -1157 2842 -1138
+rect 486 -1653 539 -1617
+rect 2827 -1670 2842 -1157
+rect 2861 -1191 2896 -1157
+rect 2861 -1670 2895 -1191
+rect 2861 -1704 2876 -1670
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+use ResistorStart  x1
+timestamp 1716599840
+transform 1 0 7556 0 1 -1359
+box 0 -453 378 1830
+use sky130_fd_pr__nfet_01v8_7FXQ3K  XM1
+timestamp 0
+transform 1 0 243 0 1 -716
+box -296 -937 296 937
+use sky130_fd_pr__pfet_01v8_BH47BA  XM2
+timestamp 0
+transform 1 0 1682 0 1 -1387
+box -1196 -319 1196 319
+use sky130_fd_pr__pfet_01v8_BH47BA  XM3
+timestamp 0
+transform 1 0 4021 0 1 -1440
+box -1196 -319 1196 319
+use sky130_fd_pr__pfet_01v8_BH47BA  XM4
+timestamp 0
+transform 1 0 6360 0 1 -1493
+box -1196 -319 1196 319
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 vdd
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 2
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 1
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 out
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 gnd
+port 4 nsew
+<< end >>

@@ -1,0 +1,43 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po_0p35  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_9NXREG in circuit resistorstart (0)(1 instance)
+
+Class resistorstart (0):  Merged 37 series devices.
+Class resistorstart (0):  Merged 1 parallel devices.
+Class resistorstart (1):  Merged 37 series devices.
+Class resistorstart (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: resistorstart                   |Circuit 2: resistorstart                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_high_po_0p35 (40->2)     |sky130_fd_pr__res_high_po_0p35 (40->2)     
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 3                          |Number of nets: 3                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: resistorstart                   |Circuit 2: resistorstart                   
+-------------------------------------------|-------------------------------------------
+B                                          |B                                          
+A                                          |A                                          
+AVSS                                       |AVSS                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes resistorstart and resistorstart are equivalent.
+
+Final result: Circuits match uniquely.
+.

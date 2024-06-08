@@ -1,0 +1,65 @@
+** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resist_const.sch
+.subckt resist_const A VBGTC B VBGSC avss C D F E
+*.PININFO A:B VBGTC:B B:B VBGSC:B avss:B C:B D:B F:B E:B
+XR1 net1 A avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR2 net2 net1 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR3 net4 net2 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR4 net3 net4 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR5 net5 net3 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR7 VBGSC net6 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR8 VBGTC VBGSC avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR9 net8 VBGTC avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR10 net5 net8 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR12 net10 net9 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR13 net12 net10 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR14 net11 net12 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR15 net13 net11 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR17 net15 net19 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR18 net17 net15 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR19 net16 net17 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR20 net13 net16 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR22 B net18 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR23 net20 C avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR24 net21 net20 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR25 net23 net21 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR26 net22 net23 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR27 net24 net22 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR30 net29 net27 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR31 net28 net29 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR32 net24 net28 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR33 net30 net26 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR34 net31 net30 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR35 net33 net31 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR36 net32 net33 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR37 net34 net32 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR39 net36 net40 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR40 net38 net36 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR41 net37 net38 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR42 net34 net37 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR44 net39 net35 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR45 D net39 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR46 net41 E avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR47 F net41 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR48 net42 avss avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR49 net43 net42 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR50 net45 net43 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR51 net44 net45 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR52 net46 net44 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR57 net46 avss avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR53 net47 avss avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR54 net48 net47 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR55 net50 net48 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR56 net49 net50 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR58 net51 net49 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR59 net51 avss avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR60 net13 net13 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR61 net26 net26 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR28 net25 net26 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR6 net6 net7 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR16 net19 net14 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR11 net9 net7 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR21 net18 net14 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR38 net40 net35 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR29 net27 net25 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+.ends
+.end

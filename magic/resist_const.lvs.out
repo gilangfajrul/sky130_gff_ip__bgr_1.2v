@@ -1,0 +1,60 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po_0p35  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_NUNB4Q in circuit resist_const (0)(1 instance)
+
+Class resist_const (0):  Merged 49 series devices.
+Class resist_const (0):  Merged 1 parallel devices.
+Class resist_const (1):  Merged 49 series devices.
+Class resist_const (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: resist_const                    |Circuit 2: resist_const                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_high_po_0p35 (60->10)    |sky130_fd_pr__res_high_po_0p35 (60->10)    
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:21 vs. sky130_fd_pr__res_high_po_0p35:R7:
+ l circuit1: 102   circuit2: 119   (delta=15.4%, cutoff=1%)
+sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:39 vs. sky130_fd_pr__res_high_po_0p35:R17:
+ l circuit1: 136   circuit2: 119   (delta=13.3%, cutoff=1%)
+sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:20 vs. sky130_fd_pr__res_high_po_0p35:R28:
+ l circuit1: 153   circuit2: 170   (delta=10.5%, cutoff=1%)
+sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:5 vs. sky130_fd_pr__res_high_po_0p35:R44:
+ l circuit1: 221   circuit2: 204   (delta=8%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: resist_const                    |Circuit 2: resist_const                    
+-------------------------------------------|-------------------------------------------
+VBGSC                                      |VBGSC                                      
+VBGTC                                      |VBGTC                                      
+A                                          |A                                          
+C                                          |C                                          
+D                                          |D                                          
+B                                          |B                                          
+E                                          |E                                          
+F                                          |F                                          
+AVSS                                       |avss                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes resist_const and resist_const are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ resist_const

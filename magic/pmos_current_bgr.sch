@@ -127,7 +127,7 @@ spiceprefix=X
 C {devices/iopin.sym} 780 -275 1 0 {name=p9 lab=D2}
 C {devices/lab_pin.sym} 760 -335 1 0 {name=p10 sig_type=std_logic lab=vdde}
 C {sky130_fd_pr/pfet3_01v8.sym} 535 -160 0 0 {name=M3
-L=8
+L=10
 W=1
 body=vdde
 nf=1
