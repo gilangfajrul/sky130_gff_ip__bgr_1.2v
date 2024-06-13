@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717694564
+timestamp 1717930986
 << nwell >>
 rect -191 -509 4437 439
 << nsubdiff >>
@@ -100,36 +100,36 @@ rect 2097 288 2149 298
 rect 2097 -182 2149 112
 rect 2097 -368 2149 -358
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_1
-timestamp 1717694033
+timestamp 1717765832
 transform 1 0 4225 0 1 -270
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_2
-timestamp 1717694033
+timestamp 1717765832
 transform 1 0 21 0 1 200
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_3
-timestamp 1717694033
+timestamp 1717765832
 transform 1 0 4225 0 1 200
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_4
-timestamp 1717694033
+timestamp 1717765832
 transform 1 0 21 0 1 -270
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_8RMJP2  sky130_fd_pr__pfet_01v8_8RMJP2_0
-timestamp 1717694033
+timestamp 1717765832
 transform 1 0 2123 0 1 -234
 box -2123 -198 2123 164
 use sky130_fd_pr__pfet_01v8_CVRJBD  sky130_fd_pr__pfet_01v8_CVRJBD_1
-timestamp 1717694033
+timestamp 1717765832
 transform 1 0 2123 0 1 164
 box -2123 -164 2123 198
 << labels >>
-flabel metal1 2116 -416 2116 -416 0 FreeSans 1600 0 0 0 AVDD
-port 0 nsew
 flabel metal1 62 24 62 24 0 FreeSans 1600 0 0 0 D3
 port 1 nsew
 flabel metal1 4184 50 4184 50 0 FreeSans 1600 0 0 0 D2
 port 2 nsew
 flabel metal1 4180 -390 4180 -390 0 FreeSans 1600 0 0 0 D4
 port 3 nsew
+flabel metal1 2116 -418 2116 -418 0 FreeSans 1600 0 0 0 VDDE
+port 4 nsew
 << end >>

@@ -24,8 +24,9 @@ X14 c1_160_n3560# m3_120_n3600# sky130_fd_pr__cap_mim_m3_1 l=17 w=17
 X15 c1_4172_n3560# m3_4132_n3600# sky130_fd_pr__cap_mim_m3_1 l=17 w=17
 .ends
 
-.subckt cap_op A B GND
-Xsky130_fd_pr__cap_mim_m3_1_SXWHWZ_0 GND GND GND GND GND GND B A A GND A GND A GND
-+ GND GND GND GND GND GND GND GND B GND GND GND GND GND GND B GND B sky130_fd_pr__cap_mim_m3_1_SXWHWZ
+.subckt cap_op A B AVSS
+Xsky130_fd_pr__cap_mim_m3_1_SXWHWZ_0 AVSS AVSS AVSS AVSS AVSS AVSS B A A AVSS A AVSS
++ A AVSS AVSS AVSS B AVSS AVSS AVSS AVSS B B AVSS AVSS AVSS AVSS AVSS AVSS B AVSS
++ B sky130_fd_pr__cap_mim_m3_1_SXWHWZ
 .ends
 

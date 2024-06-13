@@ -13,8 +13,9 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C2SJBD in circuit pmos_current_bgr (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_8WJJP2 in circuit pmos_current_bgr (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C2SJBD in circuit pmos_current_bgr (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_8WJJP2 in circuit pmos_current_bgr (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_HVJJBB in circuit pmos_current_bgr (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN in circuit pmos_current_bgr (0)(8 instances)
 
 Class pmos_current_bgr (0):  Merged 18 parallel devices.
@@ -23,18 +24,17 @@ Circuit 1: pmos_current_bgr                |Circuit 2: pmos_current_bgr
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (24->6)            |sky130_fd_pr__pfet_01v8 (24->6)            
 Number of devices: 6                       |Number of devices: 6                       
-Number of nets: 6                          |Number of nets: 6                          
+Number of nets: 5                          |Number of nets: 5                          
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: pmos_current_bgr                |Circuit 2: pmos_current_bgr                
 -------------------------------------------|-------------------------------------------
-G10                                        |G10                                        
-D1                                         |D1                                         
-D10                                        |D10                                        
-G                                          |G                                          
-D2                                         |D2                                         
+D2                                         |d2                                         
+G10                                        |g10                                        
+D1                                         |d1                                         
+D10                                        |d10                                        
 vdde                                       |vdde                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.

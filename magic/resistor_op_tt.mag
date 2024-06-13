@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717269541
+timestamp 1717870769
 << viali >>
 rect -259 5446 -221 5480
 rect 571 5446 609 5480
@@ -100,6 +100,6 @@ flabel metal1 98 2361 98 2361 0 FreeSans 160 0 0 0 C
 port 2 nsew
 flabel metal1 -11 5410 -11 5410 0 FreeSans 160 0 0 0 D
 port 4 nsew
-flabel metal1 -250 5426 -250 5426 0 FreeSans 160 0 0 0 GND
-port 7 nsew
+flabel metal1 -244 5418 -244 5418 0 FreeSans 1600 0 0 0 AVSS
+port 5 nsew
 << end >>

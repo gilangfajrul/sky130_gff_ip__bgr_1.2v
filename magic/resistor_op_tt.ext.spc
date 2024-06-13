@@ -19,9 +19,9 @@ X10 a_n450_1052# a_n450_52# a_n580_n1614# sky130_fd_pr__res_high_po_0p35 l=3
 X11 a_380_n484# a_380_n1484# a_n580_n1614# sky130_fd_pr__res_high_po_0p35 l=3
 .ends
 
-.subckt resistor_op_tt A B C D GND
-Xsky130_fd_pr__res_high_po_0p35_4E8R5J_0 GND m1_565_3792# A D B B GND A m1_n99_3842#
-+ C GND m1_n265_3803# GND m1_565_3792# m1_n99_3842# GND m1_n265_3803# m1_n99_3842#
+.subckt resistor_op_tt A B C D AVSS
+Xsky130_fd_pr__res_high_po_0p35_4E8R5J_0 AVSS m1_565_3792# A D B B AVSS A m1_n99_3842#
++ C AVSS m1_n265_3803# AVSS m1_565_3792# m1_n99_3842# AVSS m1_n265_3803# m1_n99_3842#
 + A B D B A C m1_n99_3842# sky130_fd_pr__res_high_po_0p35_4E8R5J
 .ends
 

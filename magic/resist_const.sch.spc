@@ -1,5 +1,5 @@
 ** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resist_const.sch
-.subckt resist_const A VBGTC B VBGSC avss C D F E
+.subckt resist_const F E C A avss VBGTC VBGSC D B
 *.PININFO A:B VBGTC:B B:B VBGSC:B avss:B C:B D:B F:B E:B
 XR1 net1 A avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR2 net2 net1 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1

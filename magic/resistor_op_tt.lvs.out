@@ -38,7 +38,7 @@ A                                          |a
 B                                          |b                                          
 C                                          |c                                          
 D                                          |d                                          
-GND                                        |GND                                        
+AVSS                                       |AVSS                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes resistor_op_tt and resistor_op_tt are equivalent.

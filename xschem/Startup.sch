@@ -6,7 +6,7 @@ V {}
 S {}
 E {}
 N 180 -330 450 -330 {
-lab=AVDD}
+lab=VDDE}
 N 180 -270 180 -170 {
 lab=1}
 N 220 -300 270 -300 {
@@ -53,7 +53,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 290 -300 0 0 {name=M2
 L=10
 W=1
-body=AVDD
+body=VDDE
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -68,7 +68,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 200 -300 0 1 {name=M3
 L=10
 W=1
-body=AVDD
+body=VDDE
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -83,7 +83,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 430 -300 0 0 {name=M4
 L=10
 W=1
-body=AVDD
+body=VDDE
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -95,7 +95,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 250 -330 3 0 {name=p1 lab=AVDD}
+C {devices/iopin.sym} 250 -330 3 0 {name=p1 lab=VDDE}
 C {devices/iopin.sym} 150 -90 2 0 {name=p2 lab=AVSS
 }
 C {devices/iopin.sym} 450 -190 0 0 {name=p3 lab=out}

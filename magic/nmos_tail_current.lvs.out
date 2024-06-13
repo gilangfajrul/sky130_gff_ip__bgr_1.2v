@@ -39,7 +39,7 @@ D3                                         |D3
 D4                                         |D4                                         
 S2                                         |S2                                         
 D2                                         |D2                                         
-GND                                        |GND                                        
+AVSS                                       |AVSS                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nmos_tail_current and nmos_tail_current are equivalent.

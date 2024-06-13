@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717425192
+timestamp 1717930986
 << nwell >>
 rect -225 -1450 4471 516
 << nsubdiff >>
@@ -276,51 +276,51 @@ rect 2090 -790 2091 -614
 rect 2155 -790 2156 -614
 rect 2090 -791 2156 -790
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_0
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 21 0 1 -702
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_1
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 4225 0 1 -1134
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_2
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 4225 0 1 -702
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_3
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 4225 0 1 -232
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_4
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 4225 0 1 200
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_5
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 21 0 1 200
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_6
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 21 0 1 -232
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_2XUZHN  sky130_fd_pr__pfet_01v8_2XUZHN_7
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 21 0 1 -1134
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_8RMJP2  sky130_fd_pr__pfet_01v8_8RMJP2_0
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 2123 0 1 -1098
 box -2123 -198 2123 164
 use sky130_fd_pr__pfet_01v8_8RMJP2  sky130_fd_pr__pfet_01v8_8RMJP2_1
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 2123 0 1 -666
 box -2123 -198 2123 164
 use sky130_fd_pr__pfet_01v8_CVRJBD  sky130_fd_pr__pfet_01v8_CVRJBD_0
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 2123 0 1 -268
 box -2123 -164 2123 198
 use sky130_fd_pr__pfet_01v8_CVRJBD  sky130_fd_pr__pfet_01v8_CVRJBD_1
-timestamp 1717421032
+timestamp 1717765832
 transform 1 0 2123 0 1 164
 box -2123 -164 2123 198
 << labels >>

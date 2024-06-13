@@ -13,12 +13,12 @@ Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_SXWHWZ in circuit cap_op (0)(1 instance)
 
-Class cap_op (0):  Merged 14 parallel devices.
+Class cap_op (0):  Merged 13 parallel devices.
 Subcircuit summary:
 Circuit 1: cap_op                          |Circuit 2: cap_op                          
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__cap_mim_m3_1 (16->2)         |sky130_fd_pr__cap_mim_m3_1 (16->2)         
-Number of devices: 2                       |Number of devices: 2                       
+sky130_fd_pr__cap_mim_m3_1 (16->3)         |sky130_fd_pr__cap_mim_m3_1 (16->3)         
+Number of devices: 3                       |Number of devices: 3                       
 Number of nets: 3                          |Number of nets: 3                          
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
@@ -28,7 +28,7 @@ Circuit 1: cap_op                          |Circuit 2: cap_op
 -------------------------------------------|-------------------------------------------
 A                                          |A                                          
 B                                          |B                                          
-GND                                        |GND                                        
+AVSS                                       |AVSS                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes cap_op and cap_op are equivalent.

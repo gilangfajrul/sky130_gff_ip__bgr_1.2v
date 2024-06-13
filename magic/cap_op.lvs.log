@@ -29,23 +29,23 @@ Circuit cap_op contains 16 device instances.
   Class: sky130_fd_pr__cap_mim_m3_1 instances:  16
 Circuit contains 3 nets.
 Contents of circuit 2:  Circuit: 'cap_op'
-Circuit cap_op contains 2 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   2
+Circuit cap_op contains 3 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
 Circuit contains 3 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'cap_op'
-Circuit cap_op contains 2 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   2
+Circuit cap_op contains 3 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
 Circuit contains 3 nets.
 Contents of circuit 2:  Circuit: 'cap_op'
-Circuit cap_op contains 2 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   2
+Circuit cap_op contains 3 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
 Circuit contains 3 nets.
 
-Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
 Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
 
 

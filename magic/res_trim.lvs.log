@@ -30,33 +30,28 @@ Circuit res_trim contains 48 device instances.
   Class: sky130_fd_pr__res_high_po_0p35 instances:  48
 Circuit contains 6 nets.
 Contents of circuit 2:  Circuit: 'res_trim'
-Circuit res_trim contains 7 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:   7
+Circuit res_trim contains 11 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  11
 Circuit contains 6 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'res_trim'
-Circuit res_trim contains 6 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:   6
-Circuit contains 5 nets.
+Circuit res_trim contains 7 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   7
+Circuit contains 6 nets.
 Contents of circuit 2:  Circuit: 'res_trim'
-Circuit res_trim contains 6 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:   6
-Circuit contains 5 nets.
+Circuit res_trim contains 7 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   7
+Circuit contains 6 nets.
 
-Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
-Circuit 1 contains 5 nets,    Circuit 2 contains 5 nets.
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
 
-No more changes can be made to series/parallel networks.
 
 Final result: 
 Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- res_trim
-
+.
 Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/res_trim.lvs.out" disabled
 LVS Done.

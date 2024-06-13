@@ -15,33 +15,28 @@ Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35
 Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_KQ9YC9 in circuit res_trim (0)(1 instance)
 
 Class res_trim (0):  Merged 41 parallel devices.
-Class res_trim (0):  Merged 1 series devices.
-Class res_trim (1):  Merged 1 series devices.
+Class res_trim (1):  Merged 4 parallel devices.
 Subcircuit summary:
 Circuit 1: res_trim                        |Circuit 2: res_trim                        
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__res_high_po_0p35 (48->6)     |sky130_fd_pr__res_high_po_0p35 (48->6)     
-Number of devices: 6                       |Number of devices: 6                       
-Number of nets: 5                          |Number of nets: 5                          
+sky130_fd_pr__res_high_po_0p35 (48->7)     |sky130_fd_pr__res_high_po_0p35 (48->7)     
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with property errors.
-sky130_fd_pr__res_high_po_0p35_KQ9YC9_0/sky130_fd_pr__res_high_po_0p35:2 vs. sky130_fd_pr__res_high_po_0p35:R1:
- M circuit1: 5   circuit2: 2   (delta=3, cutoff=0)
-sky130_fd_pr__res_high_po_0p35_KQ9YC9_0/sky130_fd_pr__res_high_po_0p35:2 vs. sky130_fd_pr__res_high_po_0p35:R1:
- M circuit1: 1   circuit2: 4   (delta=3, cutoff=0)
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: res_trim                        |Circuit 2: res_trim                        
 -------------------------------------------|-------------------------------------------
 A                                          |A                                          
 AVSS                                       |AVSS                                       
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
 B                                          |B                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes res_trim and res_trim are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- res_trim
+.

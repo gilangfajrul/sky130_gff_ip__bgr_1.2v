@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717000582
+timestamp 1717930986
 << nwell >>
 rect -186 -102 4412 720
 << nsubdiff >>
@@ -103,7 +103,7 @@ timestamp 1717000582
 transform 1 0 11 0 1 162
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_UK8NHF  sky130_fd_pr__pfet_01v8_UK8NHF_0
-timestamp 1717000582
+timestamp 1717265618
 transform 1 0 2113 0 1 309
 box -2123 -309 2123 309
 << end >>
