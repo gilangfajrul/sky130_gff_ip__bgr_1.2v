@@ -28,20 +28,20 @@ Number of nets: 11                         |Number of nets: 11
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
 Netlists match uniquely with property errors.
-sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:21 vs. sky130_fd_pr__res_high_po_0p35:R7:
- l circuit1: 102   circuit2: 119   (delta=15.4%, cutoff=1%)
 sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:39 vs. sky130_fd_pr__res_high_po_0p35:R17:
  l circuit1: 136   circuit2: 119   (delta=13.3%, cutoff=1%)
 sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:20 vs. sky130_fd_pr__res_high_po_0p35:R28:
  l circuit1: 153   circuit2: 170   (delta=10.5%, cutoff=1%)
 sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:5 vs. sky130_fd_pr__res_high_po_0p35:R44:
  l circuit1: 221   circuit2: 204   (delta=8%, cutoff=1%)
+sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:21 vs. sky130_fd_pr__res_high_po_0p35:R6:
+ l circuit1: 102   circuit2: 119   (delta=15.4%, cutoff=1%)
 
 Subcircuit pins:
 Circuit 1: resist_const                    |Circuit 2: resist_const                    
 -------------------------------------------|-------------------------------------------
-VBGSC                                      |VBGSC                                      
 VBGTC                                      |VBGTC                                      
+VBGSC                                      |VBGSC                                      
 A                                          |A                                          
 C                                          |C                                          
 D                                          |D                                          

@@ -16,7 +16,7 @@ X1 a_229_n431# a_29_n457# a_n29_n431# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=1.16 
 X0 a_15_n400# a_n15_n426# a_n73_n400# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=0.15
 .ends
 
-.subckt trim D S G DVSS
+.subckt trim DVSS S G D
 Xsky130_fd_pr__nfet_01v8_lvt_UG4D4N_0 G D G D S DVSS sky130_fd_pr__nfet_01v8_lvt_UG4D4N
 Xsky130_fd_pr__nfet_01v8_lvt_TGDTCU_0 D G D G S DVSS sky130_fd_pr__nfet_01v8_lvt_TGDTCU
 Xsky130_fd_pr__nfet_01v8_lvt_QJFS9J_0 D DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt_QJFS9J

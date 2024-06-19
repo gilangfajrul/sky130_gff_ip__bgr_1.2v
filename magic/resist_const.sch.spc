@@ -6,7 +6,6 @@ XR2 net2 net1 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR3 net4 net2 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR4 net3 net4 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR5 net5 net3 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR7 VBGSC net6 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR8 VBGTC VBGSC avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR9 net8 VBGTC avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR10 net5 net8 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
@@ -61,5 +60,6 @@ XR11 net9 net7 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR21 net18 net14 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR38 net40 net35 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR29 net27 net25 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR7 VBGSC net6 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 .ends
 .end

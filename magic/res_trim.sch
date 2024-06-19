@@ -27,23 +27,17 @@ N 325 -275 385 -275 {
 lab=3}
 N 325 -290 325 -275 {
 lab=3}
-N 345 -275 345 -120 {
-lab=3}
 N 305 -290 305 -275 {
 lab=B}
 N 245 -275 305 -275 {
 lab=B}
 N 245 -290 245 -275 {
 lab=B}
-N 265 -275 265 -120 {
-lab=B}
 N 465 -290 465 -275 {
 lab=2}
 N 405 -275 465 -275 {
 lab=2}
 N 405 -290 405 -275 {
-lab=2}
-N 425 -275 425 -120 {
 lab=2}
 N 505 -120 505 215 {
 lab=1}
@@ -73,40 +67,46 @@ N 585 -275 585 -120 {
 lab=A}
 N 575 -275 585 -275 {
 lab=A}
+N 345 -275 345 -120 {
+lab=3}
+N 265 -275 265 -120 {
+lab=B}
+N 425 -275 425 -120 {
+lab=2}
 C {devices/iopin.sym} 255 -120 2 0 {name=p1 lab=B}
 C {sky130_fd_pr/res_high_po_0p35.sym} 545 -120 3 0 {name=R1
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po_0p35.sym} 465 -120 3 0 {name=R4
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po_0p35.sym} 385 -120 3 0 {name=R5
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=8}
 C {sky130_fd_pr/res_high_po_0p35.sym} 305 -120 3 0 {name=R6
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=16}
 C {devices/iopin.sym} 595 -120 0 0 {name=p2 lab=A}
 C {sky130_fd_pr/res_high_po_0p35.sym} 355 -290 1 0 {name=R2
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=9}
 C {sky130_fd_pr/res_high_po_0p35.sym} 275 -290 1 0 {name=R3
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=8}
 C {sky130_fd_pr/res_high_po_0p35.sym} 435 -290 1 0 {name=R7
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
@@ -119,30 +119,30 @@ C {devices/lab_pin.sym} 275 -310 1 0 {name=p4 sig_type=std_logic lab=AVSS
 }
 C {devices/iopin.sym} 505 -120 1 0 {name=p11 lab=1}
 C {devices/iopin.sym} 425 -120 1 0 {name=p12 lab=2}
-C {devices/iopin.sym} 345 -165 0 0 {name=p13 lab=3}
+C {devices/iopin.sym} 345 -120 1 0 {name=p13 lab=3}
 C {sky130_fd_pr/res_high_po_0p35.sym} 465 15 3 0 {name=R8
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 465 35 2 0 {name=p7 sig_type=std_logic lab=AVSS
 }
 C {sky130_fd_pr/res_high_po_0p35.sym} 465 155 3 0 {name=R9
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 465 175 2 0 {name=p8 sig_type=std_logic lab=AVSS
 }
 C {sky130_fd_pr/res_high_po_0p35.sym} 465 295 3 0 {name=R10
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 465 315 2 0 {name=p9 sig_type=std_logic lab=AVSS
 }
 C {sky130_fd_pr/res_high_po_0p35.sym} 545 -275 1 0 {name=R11
-L=8.4
+L=8.8
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}

@@ -269,14 +269,14 @@ N 865 -660 925 -660 {
 lab=#net13}
 N 925 -660 925 -640 {
 lab=#net13}
-N 865 -640 865 -575 {
-lab=#net13}
 N 1075 -895 1075 -875 {
 lab=#net26}
 N 1015 -895 1075 -895 {
 lab=#net26}
 N 1015 -895 1015 -875 {
 lab=#net26}
+N 865 -640 865 -575 {
+lab=#net13}
 N 1075 -875 1075 -810 {
 lab=#net26}
 C {sky130_fd_pr/res_high_po_0p35.sym} 495 -1040 3 0 {name=R1
@@ -569,7 +569,6 @@ L=17
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/lab_pin.sym} 1045 -855 1 1 {name=p29 sig_type=std_logic lab=avss}
 C {sky130_fd_pr/res_high_po_0p35.sym} 1125 -810 3 0 {name=R28
 L=17
 model=res_high_po_0p35
@@ -610,3 +609,4 @@ L=17
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
+C {devices/lab_pin.sym} 1045 -855 1 1 {name=p31 sig_type=std_logic lab=avss}

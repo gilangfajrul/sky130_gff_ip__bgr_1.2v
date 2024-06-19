@@ -16,7 +16,7 @@ X0 a_429_n64# a_29_n128# a_n29_n64# w_n523_n164# sky130_fd_pr__pfet_01v8 ad=0.29
 X1 a_n29_n64# a_n429_n128# a_n487_n64# w_n523_n164# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=2
 .ends
 
-.subckt pmos_ena DVDD AVDD VDDE G
+.subckt pmos_ena G VDDE AVDD DVDD
 Xsky130_fd_pr__pfet_01v8_2XUZDN_1 DVDD DVDD VDDE DVDD sky130_fd_pr__pfet_01v8_2XUZDN
 Xsky130_fd_pr__pfet_01v8_2XUZDN_2 DVDD DVDD VDDE DVDD sky130_fd_pr__pfet_01v8_2XUZDN
 Xsky130_fd_pr__pfet_01v8_2XUZDN_3 VDDE DVDD DVDD DVDD sky130_fd_pr__pfet_01v8_2XUZDN

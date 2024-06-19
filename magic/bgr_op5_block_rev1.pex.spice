@@ -1,0 +1,1109 @@
+* PEX produced on Rab 19 Jun 2024 02:46:55  WIB using ./iic-pex.sh with m=2 and s=1
+* NGSPICE file created from bgr_op5_block_rev1.ext - technology: sky130A
+
+.subckt bgr_op5_block_rev1 AVDD DVDD ENA VREF VBGTC TRIM3 IPTAT VENA TRIM1 DVSS TRIM0
++ TRIM2 AVSS VBGSC
+X0 pmos_current_bgr_0.D2 digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X1 AVDD ENA digital_0.vdde DVDD sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=2
+X2 pmos_current_bgr_2_0.D4 AVSS AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X3 DVDD DVDD digital_0.vdde DVDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X4 digital_0.S1 TRIM1 digital_0.S2 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X5 pmos_iptat_0.G resistor_op_tt_0.C digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X6 AVSS AVSS bjt_0.B sky130_fd_pr__pnp_05v5_W3p40L3p40
+X7 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X8 pmos_startup_0.D3 pmos_startup_0.D4 AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=1
+X9 resistor_op_tt_0.A AVSS AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X10 digital_0.vdde pmos_current_bgr_2_0.D4 pmos_current_bgr_2_0.D4 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X11 resistor_op_tt_0.D a_968_14999# AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X12 a_n4883_22159# a_n547_22325# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X13 a_n17355_21661# a_n13555_21661# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X14 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X15 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X16 pmos_current_bgr_2_0.D4 digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X17 pmos_startup_0.D3 AVSS AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X18 digital_0.vdde ENA AVDD DVDD sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=2
+X19 digital_0.vdde digital_0.vdde pmos_startup_0.D3 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X20 a_n13555_21329# a_n9219_21163# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X21 AVSS AVSS differential_pair_0.D4 AVSS sky130_fd_pr__nfet_01v8 ad=0.232 pd=2.18 as=0.116 ps=1.09 w=0.8 l=0.15
+X22 a_n13555_20997# a_n9219_20997# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X23 AVSS AVSS pmos_startup_0.D3 AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X24 a_968_14833# AVSS AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X25 a_n9219_19433# a_n4883_19433# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X26 pmos_current_bgr_2_0.D3 pmos_current_bgr_2_0.D3 AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=20
+X27 DVSS DVSS VBGSC DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X28 VBGTC VENA digital_0.svbgtc DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=1
+X29 differential_pair_0.D4 AVSS AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.116 pd=1.09 as=0.232 ps=2.18 w=0.8 l=0.15
+X30 a_n4883_22325# a_n547_22159# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X31 a_n17355_21495# a_n13555_21495# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X32 a_n9219_20595# a_n4883_20595# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X33 a_n4883_19931# a_n547_19931# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X34 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X35 digital_0.S1 bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X36 resistor_op_tt_0.D pmos_iptat_0.G sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X37 bjt_0.B digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X38 IPTAT digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X39 digital_0.vdde digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=13.63 ps=121.26 w=1 l=10
+X40 AVSS pmos_current_bgr_2_0.D3 differential_pair_0.S AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=20
+X41 a_n547_22159# a_3789_22325# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X42 digital_0.vdde digital_0.vdde pmos_current_bgr_0.D2 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X43 VREF pmos_iptat_0.G digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X44 AVSS a_968_14833# AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X45 a_n9219_21827# digital_0.svbgsc AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X46 a_n4883_19765# a_n547_19765# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X47 digital_0.S2 digital_0.S3 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X48 pmos_iptat_0.G AVSS AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X49 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X50 a_n4883_20429# a_n547_20429# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X51 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X52 DVSS DVSS digital_0.D3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.15
+X53 digital_0.vdde pmos_startup_0.D2 pmos_startup_0.D4 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X54 a_3789_22159# a_8125_21993# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X55 digital_0.S3 DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.15
+X56 a_n9219_21163# a_n4883_21329# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X57 DVSS DVSS digital_0.S3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.15
+X58 AVSS AVSS bjt_0.B sky130_fd_pr__pnp_05v5_W3p40L3p40
+X59 a_n547_22325# a_3789_22159# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X60 a_n547_19931# a_3789_19931# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X61 resistor_op_tt_0.C differential_pair_0.D4 digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X62 VBGTC DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X63 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X64 AVSS AVSS pmos_current_bgr_2_0.D3 AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X65 a_n4883_19599# a_n547_19599# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X66 pmos_startup_0.D3 pmos_startup_0.D4 AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=1
+X67 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X68 a_n4883_21661# digital_0.D3 AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X69 digital_0.S2 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X70 pmos_iptat_0.G digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X71 VBGSC VENA digital_0.svbgsc DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=1
+X72 digital_0.svbgtc VENA VBGTC DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=1
+X73 a_n4883_22491# a_n547_22491# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X74 a_3789_22325# a_8125_21827# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X75 a_3789_19931# a_8125_19931# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X76 pmos_startup_0.D3 AVSS AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X77 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X78 digital_0.S3 TRIM2 digital_0.S2 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X79 pmos_current_bgr_0.D2 pmos_iptat_0.G digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X80 differential_pair_0.S pmos_current_bgr_2_0.D3 AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=20
+X81 a_n547_19765# a_3789_19765# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X82 digital_0.vdde pmos_iptat_0.G pmos_current_bgr_0.D2 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X83 AVSS AVSS pmos_startup_0.D3 AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X84 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X85 differential_pair_0.plus a_n13555_21163# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X86 a_n547_20429# a_3789_20429# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X87 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X88 digital_0.S2 DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.15
+X89 AVSS a_n13555_20997# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X90 a_n9219_20263# a_n4883_20263# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X91 bjt_0.B digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X92 digital_0.S1 bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X93 VBGSC DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X94 DVSS DVSS digital_0.S2 DVSS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.15
+X95 AVSS AVSS bjt_0.B sky130_fd_pr__pnp_05v5_W3p40L3p40
+X96 differential_pair_0.S differential_pair_0.plus resistor_op_tt_0.C AVSS sky130_fd_pr__nfet_01v8 ad=0.116 pd=1.09 as=0.116 ps=1.09 w=0.8 l=10
+X97 a_3789_19765# a_8125_19599# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X98 digital_0.vdde differential_pair_0.D4 differential_pair_0.D4 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X99 a_3789_20429# a_8125_20263# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X100 differential_pair_0.D4 digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X101 digital_0.S3 TRIM3 digital_0.D3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X102 a_n547_19599# a_3789_19599# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X103 AVSS pmos_startup_0.D4 pmos_startup_0.D3 AVSS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=1
+X104 digital_0.S2 TRIM2 digital_0.S3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X105 a_n547_21993# a_3789_21827# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X106 digital_0.S2 TRIM1 digital_0.S1 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X107 a_n13555_22159# a_n9219_22325# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X108 differential_pair_0.plus a_n4883_21661# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X109 digital_0.S1 TRIM0 bjt_0.B DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X110 a_n547_22491# a_3789_22491# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X111 a_n9219_20097# a_n4883_20097# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X112 a_n4883_19433# a_n547_19433# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X113 digital_0.S1 digital_0.S2 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X114 digital_0.vdde pmos_iptat_0.G VREF digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X115 digital_0.vdde digital_0.vdde pmos_current_bgr_2_0.D4 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X116 resistor_op_tt_0.D pmos_iptat_0.G sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X117 a_3789_19599# a_8125_19599# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X118 AVSS pmos_current_bgr_2_0.D3 pmos_current_bgr_2_0.D3 AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=20
+X119 digital_0.svbgtc a_8125_21827# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X120 a_n4883_20595# a_n547_20595# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X121 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X122 AVSS AVSS differential_pair_0.S AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X123 digital_0.vdde pmos_iptat_0.G IPTAT digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X124 digital_0.vdde DVDD DVDD DVDD sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X125 bjt_0.B TRIM0 digital_0.S1 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X126 digital_0.S1 DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.15
+X127 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X128 a_3789_22491# AVSS AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X129 bjt_0.B digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X130 digital_0.vdde digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0 ps=0 w=1 l=10
+X131 a_n13555_22325# a_n9219_22159# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X132 a_n9219_21661# a_n4883_21495# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X133 a_n13019_19765# a_n9219_19931# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X134 digital_0.S3 digital_0.S2 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X135 digital_0.vdde digital_0.vdde differential_pair_0.D4 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X136 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X137 digital_0.vdde digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0 ps=0 w=1 l=0.15
+X138 pmos_iptat_0.G digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X139 a_n9219_21993# a_n547_21993# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X140 pmos_startup_0.D3 pmos_startup_0.D3 digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X141 a_n547_19433# a_3789_19433# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X142 digital_0.S1 digital_0.S2 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X143 digital_0.vdde digital_0.vdde IPTAT digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X144 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X145 a_n13019_19765# a_n9219_19765# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X146 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X147 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X148 AVSS a_n9219_20429# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X149 digital_0.S1 bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X150 differential_pair_0.S AVSS AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X151 a_n4883_21163# a_n547_21329# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X152 a_n547_20595# a_3789_20595# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X153 bjt_0.B digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X154 bjt_0.B bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X155 IPTAT pmos_iptat_0.G digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X156 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X157 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X158 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X159 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X160 a_3789_19433# AVSS AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X161 digital_0.vdde resistor_op_tt_0.C pmos_iptat_0.G digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X162 pmos_iptat_0.G pmos_iptat_0.G sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X163 a_3789_20595# AVSS AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X164 pmos_startup_0.D2 a_n9219_19599# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X165 AVSS pmos_startup_0.D4 pmos_startup_0.D3 AVSS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=1
+X166 a_n13555_21993# a_n9219_21827# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X167 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X168 digital_0.svbgsc digital_0.svbgtc AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X169 bjt_0.B bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X170 bjt_0.B bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X171 a_n13555_22491# a_n9219_22491# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X172 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X173 digital_0.S1 bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X174 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X175 digital_0.vdde digital_0.vdde pmos_current_bgr_2_0.D3 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X176 pmos_iptat_0.G pmos_current_bgr_2_0.D3 AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=20
+X177 VREF a_n13555_22325# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X178 a_n4883_20263# a_n547_20263# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X179 digital_0.vdde digital_0.vdde pmos_current_bgr_0.D2 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X180 digital_0.S1 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X181 bjt_0.B digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X182 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X183 resistor_op_tt_0.C differential_pair_0.plus differential_pair_0.S AVSS sky130_fd_pr__nfet_01v8 ad=0.116 pd=1.09 as=0.116 ps=1.09 w=0.8 l=10
+X184 resistor_op_tt_0.C AVSS AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.116 pd=1.09 as=0.232 ps=2.18 w=0.8 l=0.15
+X185 a_3789_21827# a_8125_21993# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X186 a_n547_21163# a_3789_21329# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X187 bjt_0.B digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X188 resistor_op_tt_0.D pmos_iptat_0.G sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X189 a_n9219_21329# a_n4883_21163# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X190 a_n9219_20997# a_n4883_20997# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X191 digital_0.vdde digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0 ps=0 w=1 l=10
+X192 digital_0.D3 DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.15
+X193 digital_0.S3 DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.15
+X194 DVSS DVSS digital_0.S3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.15
+X195 a_n4883_21495# a_n4883_21495# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X196 a_3789_21163# a_8125_21329# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X197 digital_0.D3 digital_0.S3 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X198 pmos_current_bgr_0.D2 a_n13555_22159# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X199 a_n4883_20097# a_n547_20097# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X200 digital_0.S2 digital_0.S3 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X201 pmos_startup_0.D2 digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X202 digital_0.S1 digital_0.S2 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X203 digital_0.svbgsc VENA VBGSC DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=1
+X204 digital_0.D3 TRIM3 digital_0.S3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X205 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X206 AVSS a_n9219_19433# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X207 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X208 digital_0.S3 TRIM2 digital_0.S2 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X209 AVSS AVSS bjt_0.B sky130_fd_pr__pnp_05v5_W3p40L3p40
+X210 a_n547_20263# a_3789_20263# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X211 pmos_current_bgr_0.D2 digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X212 pmos_current_bgr_0.D2 pmos_iptat_0.G digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X213 DVSS DVSS digital_0.S1 DVSS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.15
+X214 a_n9219_21495# a_n547_21495# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X215 AVSS a_n9219_20595# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X216 digital_0.S2 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X217 AVSS AVSS resistor_op_tt_0.C AVSS sky130_fd_pr__nfet_01v8 ad=0.232 pd=2.18 as=0.116 ps=1.09 w=0.8 l=0.15
+X218 AVSS AVSS pmos_iptat_0.G AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X219 IPTAT digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X220 digital_0.vdde resistor_op_tt_0.C pmos_iptat_0.G digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X221 digital_0.S1 TRIM1 digital_0.S2 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X222 a_3789_20263# a_8125_20263# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X223 a_n547_21495# a_3789_21661# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X224 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X225 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X226 digital_0.S3 TRIM3 digital_0.D3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X227 AVSS AVSS bjt_0.B sky130_fd_pr__pnp_05v5_W3p40L3p40
+X228 a_n547_20097# a_3789_20097# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X229 a_n13555_21827# a_n9219_21993# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X230 digital_0.S3 digital_0.S2 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X231 digital_0.S1 bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X232 digital_0.vdde DVDD DVDD DVDD sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X233 AVDD ENA digital_0.vdde DVDD sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=2
+X234 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X235 DVDD DVDD digital_0.vdde DVDD sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X236 digital_0.S1 TRIM0 bjt_0.B DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X237 a_n17355_21661# a_n13555_21827# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X238 digital_0.S3 digital_0.D3 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X239 AVSS a_n13555_22491# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X240 a_3789_21495# a_8125_21329# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X241 bjt_0.B digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X242 resistor_op_tt_0.A pmos_current_bgr_2_0.D3 pmos_current_bgr_2_0.D4 AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=20
+X243 a_n13555_21163# a_n9219_21329# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X244 a_3789_20097# a_8125_19931# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X245 a_n4883_21495# a_3789_21495# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X246 digital_0.vdde pmos_iptat_0.G VREF digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X247 pmos_current_bgr_2_0.D4 pmos_current_bgr_2_0.D3 resistor_op_tt_0.A AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=20
+X248 bjt_0.B TRIM0 digital_0.S1 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X249 digital_0.S1 DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.15
+X250 digital_0.S1 bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X251 digital_0.vdde ENA AVDD DVDD sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=2
+X252 a_968_15663# AVSS AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X253 digital_0.vdde digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0 ps=0 w=1 l=10
+X254 digital_0.vdde digital_0.vdde pmos_iptat_0.G digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X255 bjt_0.B bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X256 a_3789_21661# a_8125_21163# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X257 digital_0.S1 digital_0.S2 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X258 bjt_0.B bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X259 DVSS DVSS VBGTC DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X260 VREF pmos_iptat_0.G digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X261 digital_0.vdde digital_0.vdde resistor_op_tt_0.C digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X262 AVSS AVSS bjt_0.B sky130_fd_pr__pnp_05v5_W3p40L3p40
+X263 pmos_current_bgr_2_0.D4 pmos_current_bgr_2_0.D4 digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X264 digital_0.S2 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X265 AVSS resistor_op_tt_0.A AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X266 a_n9219_22159# a_n4883_22325# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X267 a_n4883_21329# a_n547_21163# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X268 a_n4883_20997# a_n547_20997# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X269 a_n13019_20097# a_n9219_20263# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X270 DVSS DVSS digital_0.D3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.15
+X271 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X272 AVSS a_968_15663# AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X273 differential_pair_0.D4 differential_pair_0.D4 digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X274 AVSS AVSS bjt_0.B sky130_fd_pr__pnp_05v5_W3p40L3p40
+X275 pmos_iptat_0.G resistor_op_tt_0.C digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X276 digital_0.vdde pmos_startup_0.D3 pmos_startup_0.D2 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X277 a_n13555_21495# a_n9219_21661# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X278 digital_0.S2 digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X279 digital_0.S1 bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X280 AVSS AVSS pmos_current_bgr_2_0.D4 AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X281 differential_pair_0.S bjt_0.A differential_pair_0.D4 AVSS sky130_fd_pr__nfet_01v8 ad=0.116 pd=1.09 as=0.116 ps=1.09 w=0.8 l=10
+X282 a_n9219_22325# a_n4883_22159# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X283 a_n13019_20097# a_n9219_20097# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X284 a_n9219_19931# a_n4883_19931# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X285 bjt_0.B bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X286 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X287 AVSS AVSS bjt_0.B sky130_fd_pr__pnp_05v5_W3p40L3p40
+X288 AVSS pmos_current_bgr_2_0.D3 pmos_iptat_0.G AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=20
+X289 bjt_0.B digital_0.S1 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X290 digital_0.vdde pmos_iptat_0.G pmos_current_bgr_0.D2 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X291 pmos_current_bgr_2_0.D3 digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X292 digital_0.vdde pmos_current_bgr_2_0.D4 pmos_current_bgr_2_0.D3 digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X293 resistor_op_tt_0.D a_968_14999# AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X294 a_n17355_21495# a_n13555_21993# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X295 digital_0.vdde pmos_iptat_0.G IPTAT digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X296 a_n547_21329# a_3789_21163# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X297 a_n547_20997# a_3789_20997# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X298 a_n13555_21661# a_n9219_21495# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X299 digital_0.S1 bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X300 resistor_op_tt_0.D pmos_iptat_0.G sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X301 digital_0.S2 DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.15
+X302 a_968_14999# resistor_op_tt_0.C AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X303 a_n9219_19765# a_n4883_19765# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X304 digital_0.S2 digital_0.S2 AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X305 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X306 DVSS DVSS digital_0.S2 DVSS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.15
+X307 bjt_0.A a_n13555_21329# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X308 a_n9219_20429# a_n4883_20429# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X309 resistor_op_tt_0.C digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X310 digital_0.vdde differential_pair_0.D4 resistor_op_tt_0.C digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X311 digital_0.D3 DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=0.15
+X312 AVSS AVSS bjt_0.A sky130_fd_pr__pnp_05v5_W3p40L3p40
+X313 bjt_0.B bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X314 digital_0.vdde digital_0.vdde pmos_iptat_0.G digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X315 pmos_startup_0.D4 digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=0.15
+X316 a_3789_21329# a_8125_21163# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X317 a_3789_20997# AVSS AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X318 bjt_0.B bjt_0.B AVSS sky130_fd_pr__res_high_po_0p35 l=8.8
+X319 IPTAT pmos_iptat_0.G digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X320 digital_0.S2 TRIM2 digital_0.S3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X321 digital_0.vdde digital_0.vdde digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0 ps=0 w=1 l=10
+X322 digital_0.vdde digital_0.vdde IPTAT digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=0.15
+X323 pmos_current_bgr_2_0.D3 pmos_current_bgr_2_0.D4 digital_0.vdde digital_0.vdde sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=10
+X324 digital_0.S2 TRIM1 digital_0.S1 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X325 a_968_14999# resistor_op_tt_0.C AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X326 a_n9219_19599# a_n4883_19599# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X327 digital_0.D3 TRIM3 digital_0.S3 DVSS sky130_fd_pr__nfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=1
+X328 AVSS resistor_op_tt_0.A AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X329 a_n9219_21993# a_n9219_21993# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X330 pmos_current_bgr_2_0.D3 AVSS AVSS AVSS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+X331 AVSS AVSS sky130_fd_pr__cap_mim_m3_1 l=17 w=17
+X332 differential_pair_0.D4 bjt_0.A differential_pair_0.S AVSS sky130_fd_pr__nfet_01v8 ad=0.116 pd=1.09 as=0.116 ps=1.09 w=0.8 l=10
+X333 resistor_op_tt_0.A AVSS AVSS sky130_fd_pr__res_high_po_0p35 l=3
+X334 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40
+X335 a_n9219_22491# a_n4883_22491# AVSS sky130_fd_pr__res_high_po_0p35 l=17
+X336 DVSS DVSS digital_0.S1 DVSS sky130_fd_pr__nfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=0.15
+C0 differential_pair_0.plus resistor_op_tt_0.A 0.743191f
+C1 VREF a_n17355_21661# 0.0295f
+C2 a_n4883_20595# a_n4883_20429# 0.623462f
+C3 digital_0.D3 resistor_op_tt_0.A 0.263729f
+C4 pmos_startup_0.D3 resistor_op_tt_0.C 0.076658f
+C5 VREF AVSS 4.30328f
+C6 a_8125_19931# a_8125_19599# 0.296258f
+C7 differential_pair_0.D4 pmos_startup_0.D4 0.075381f
+C8 digital_0.svbgtc a_3789_20097# 0.056848f
+C9 differential_pair_0.plus a_n9219_21661# 0.43595f
+C10 digital_0.svbgsc digital_0.vdde 0.540578f
+C11 digital_0.S3 a_n4883_19931# 0.010485f
+C12 digital_0.svbgtc digital_0.svbgsc 5.19891f
+C13 a_3789_21495# a_3789_21661# 0.797116f
+C14 TRIM2 DVDD 0.266175f
+C15 a_n9219_20263# a_n9219_20097# 0.623462f
+C16 a_n547_19931# digital_0.D3 0.067156f
+C17 a_n4883_21661# a_n9219_21495# 0.078905f
+C18 bjt_0.A digital_0.S3 1.06443f
+C19 differential_pair_0.D4 resistor_op_tt_0.A 0.691758f
+C20 pmos_startup_0.D2 digital_0.S1 0.94466f
+C21 a_3789_21163# a_3789_21329# 0.797116f
+C22 a_n4883_21661# digital_0.svbgsc 0.243373f
+C23 a_3789_19433# digital_0.S1 0.134235f
+C24 a_n13555_21495# a_n13555_21163# 0.022047f
+C25 AVSS a_n4883_22491# 0.402751f
+C26 a_3789_19599# a_3789_19433# 0.623462f
+C27 VREF resistor_op_tt_0.C 0.030922f
+C28 AVSS a_n13555_22491# 0.402919f
+C29 a_n13555_21495# a_n13555_21329# 0.299959f
+C30 a_3789_22159# a_3789_22325# 0.797698f
+C31 resistor_op_tt_0.D digital_0.S1 0.528381f
+C32 a_n4883_21495# a_n9219_21495# 0.621706f
+C33 digital_0.svbgtc a_3789_21827# 0.852896f
+C34 AVDD AVSS 0.108516f
+C35 digital_0.svbgtc a_3789_21329# 0.082753f
+C36 a_n9219_19599# bjt_0.A 0.014179f
+C37 a_n4883_21495# a_n4883_21163# 0.023463f
+C38 a_n9219_21993# digital_0.vdde 0.052723f
+C39 a_n4883_21495# digital_0.svbgsc 0.520989f
+C40 a_n9219_22491# a_n9219_22325# 0.302205f
+C41 a_n547_22159# a_n547_22491# 0.322755f
+C42 a_n547_21329# a_n547_21163# 0.794627f
+C43 DVDD digital_0.S1 0.11702f
+C44 digital_0.D3 a_n547_21163# 0.106416f
+C45 a_n4883_20997# a_n4883_21329# 0.302205f
+C46 a_n547_21163# a_n547_20997# 0.302205f
+C47 a_n4883_22159# a_n4883_22491# 0.302205f
+C48 a_n547_20429# AVSS 0.064308f
+C49 pmos_startup_0.D2 pmos_startup_0.D4 0.386993f
+C50 pmos_startup_0.D3 digital_0.vdde 5.40932f
+C51 AVSS a_n9219_21329# 0.107567f
+C52 digital_0.S2 bjt_0.A 1.75954f
+C53 AVSS a_3789_22325# 0.107567f
+C54 digital_0.S2 digital_0.S3 3.94035f
+C55 pmos_current_bgr_0.D2 a_n13555_20997# 0.048086f
+C56 a_n547_19599# digital_0.D3 0.072452f
+C57 a_n13019_20097# bjt_0.A 0.017295f
+C58 a_n4883_21661# a_n9219_21993# 0.574746f
+C59 a_n4883_20097# a_n4883_19931# 0.623462f
+C60 resistor_op_tt_0.D pmos_startup_0.D4 0.011474f
+C61 AVSS a_n4883_20429# 0.064308f
+C62 a_n17355_21495# differential_pair_0.plus 0.072958f
+C63 digital_0.S1 pmos_current_bgr_2_0.D3 0.265838f
+C64 AVDD DVSS 0.036888f
+C65 bjt_0.B bjt_0.A 1.76125f
+C66 AVSS a_n9219_20097# 0.064308f
+C67 a_8125_19931# a_8125_20263# 0.296258f
+C68 resistor_op_tt_0.D resistor_op_tt_0.A 0.864642f
+C69 bjt_0.B digital_0.S3 0.747918f
+C70 a_n13555_22325# AVSS 0.108398f
+C71 VREF digital_0.vdde 0.40032f
+C72 a_n547_19433# digital_0.S3 0.02632f
+C73 bjt_0.A a_n13019_19765# 0.017593f
+C74 pmos_startup_0.D4 pmos_current_bgr_2_0.D3 0.084029f
+C75 a_n13555_21661# a_n13555_21163# 0.299959f
+C76 digital_0.svbgsc a_n547_20595# 0.06034f
+C77 a_968_14999# a_968_15663# 0.322622f
+C78 digital_0.D3 differential_pair_0.plus 0.082272f
+C79 a_n13555_21329# a_n13555_21661# 0.046388f
+C80 digital_0.svbgsc digital_0.S1 0.21693f
+C81 a_n547_21329# digital_0.D3 0.064071f
+C82 a_968_14999# digital_0.S1 0.014661f
+C83 AVSS a_n4883_22325# 0.106973f
+C84 a_3789_19599# digital_0.svbgsc 0.022539f
+C85 a_n547_21329# a_n547_20997# 0.322755f
+C86 pmos_current_bgr_0.D2 bjt_0.A 2.05465f
+C87 digital_0.D3 a_n547_20997# 0.069027f
+C88 digital_0.S2 bjt_0.B 6.03682f
+C89 resistor_op_tt_0.A pmos_current_bgr_2_0.D3 0.826416f
+C90 a_n4883_19599# digital_0.S3 0.020057f
+C91 a_n4883_22491# digital_0.vdde 0.034126f
+C92 pmos_iptat_0.G bjt_0.A 4.40972f
+C93 pmos_iptat_0.G digital_0.S3 1.93498f
+C94 a_n13555_20997# AVSS 0.467364f
+C95 a_n13555_22491# digital_0.vdde 0.034126f
+C96 a_8125_21993# AVSS 0.50822f
+C97 a_n4883_22159# a_n4883_22325# 0.797698f
+C98 a_n13555_21993# differential_pair_0.plus 0.017953f
+C99 TRIM0 bjt_0.A 0.013685f
+C100 AVDD digital_0.vdde 0.67163f
+C101 VENA VBGTC 0.222849f
+C102 a_n13019_20097# a_n13019_19765# 0.296303f
+C103 a_n13555_22325# a_n13555_21827# 0.299959f
+C104 differential_pair_0.D4 differential_pair_0.plus 0.696395f
+C105 AVSS a_n9219_21163# 0.108351f
+C106 differential_pair_0.D4 digital_0.D3 0.071036f
+C107 AVSS a_n547_21495# 0.066638f
+C108 a_n9219_19433# differential_pair_0.plus 0.043579f
+C109 a_n9219_21827# AVSS 0.108459f
+C110 VENA VBGSC 0.310129f
+C111 a_n9219_21993# a_n9219_22159# 0.303024f
+C112 a_n9219_20263# a_n9219_20429# 0.623462f
+C113 pmos_startup_0.D3 digital_0.S1 0.25949f
+C114 TRIM1 DVDD 0.272527f
+C115 pmos_current_bgr_0.D2 a_n13019_20097# 0.037198f
+C116 AVSS a_3789_20595# 0.402082f
+C117 a_n9219_22159# a_n9219_22325# 0.797698f
+C118 a_n547_20263# digital_0.D3 0.066105f
+C119 a_968_14999# resistor_op_tt_0.A 0.095322f
+C120 digital_0.S2 pmos_iptat_0.G 1.99756f
+C121 digital_0.svbgtc a_3789_22325# 0.0266f
+C122 AVSS a_3789_20263# 0.064308f
+C123 a_3789_19765# digital_0.S3 0.013148f
+C124 a_n9219_21661# a_n9219_21495# 0.500869f
+C125 differential_pair_0.S bjt_0.A 2.19599f
+C126 AVSS a_n4883_19931# 0.064308f
+C127 a_n4883_20263# a_n4883_20429# 0.623462f
+C128 VENA DVDD 1.24097f
+C129 pmos_startup_0.D3 pmos_startup_0.D4 0.4948f
+C130 a_n547_19931# digital_0.svbgsc 0.05619f
+C131 AVSS a_n547_21993# 0.076301f
+C132 pmos_startup_0.D2 differential_pair_0.plus 0.258285f
+C133 AVSS bjt_0.A 15.0313f
+C134 a_n547_20097# AVSS 0.064308f
+C135 a_8125_21329# a_8125_21163# 1.01742f
+C136 pmos_iptat_0.G bjt_0.B 0.288975f
+C137 AVSS digital_0.S3 6.45216f
+C138 pmos_current_bgr_0.D2 a_n13019_19765# 0.037198f
+C139 a_3789_19433# digital_0.D3 0.024892f
+C140 a_n547_22325# a_n547_22491# 0.302205f
+C141 TRIM0 bjt_0.B 0.991563f
+C142 pmos_current_bgr_2_0.D4 bjt_0.A 0.826386f
+C143 resistor_op_tt_0.D differential_pair_0.plus 0.015935f
+C144 pmos_current_bgr_2_0.D4 digital_0.S3 0.198865f
+C145 a_n9219_21495# a_n4883_21329# 0.059007f
+C146 digital_0.S2 differential_pair_0.S 0.4852f
+C147 a_3789_21329# a_3789_20997# 0.302205f
+C148 a_n9219_19599# AVSS 0.064308f
+C149 a_n4883_21329# a_n4883_21163# 0.797698f
+C150 a_n547_21163# digital_0.svbgsc 0.082607f
+C151 DVDD digital_0.D3 0.176172f
+C152 TRIM3 bjt_0.A 0.207404f
+C153 AVSS a_n9219_20429# 0.064308f
+C154 TRIM3 digital_0.S3 0.875846f
+C155 pmos_iptat_0.G pmos_current_bgr_0.D2 4.11669f
+C156 a_3789_21495# a_3789_21329# 0.299959f
+C157 digital_0.S2 AVSS 5.35059f
+C158 bjt_0.A resistor_op_tt_0.C 1.76512f
+C159 a_n547_19765# digital_0.S3 0.012243f
+C160 a_n4883_19765# a_n4883_19931# 0.623462f
+C161 differential_pair_0.plus a_n9219_20997# 0.040817f
+C162 a_8125_21993# digital_0.vdde 0.010985f
+C163 bjt_0.A DVSS 0.0418f
+C164 AVSS a_n13555_22159# 0.10462f
+C165 a_n9219_19931# AVSS 0.064308f
+C166 a_n547_19599# digital_0.svbgsc 0.056534f
+C167 digital_0.S3 resistor_op_tt_0.C 0.051774f
+C168 digital_0.S3 DVSS 3.52669f
+C169 a_8125_21329# a_8125_21827# 0.318357f
+C170 AVSS a_n13019_20097# 0.448977f
+C171 ENA AVSS 0.087208f
+C172 a_n9219_19433# pmos_startup_0.D2 0.150937f
+C173 differential_pair_0.plus pmos_current_bgr_2_0.D3 0.630783f
+C174 a_3789_20429# a_3789_20595# 0.623462f
+C175 digital_0.S2 pmos_current_bgr_2_0.D4 0.815526f
+C176 a_3789_22325# a_3789_22491# 0.322755f
+C177 a_n4883_19765# digital_0.S3 0.01424f
+C178 resistor_op_tt_0.D differential_pair_0.D4 0.011485f
+C179 a_n547_20429# a_n547_20595# 0.623462f
+C180 digital_0.D3 pmos_current_bgr_2_0.D3 0.76348f
+C181 a_n4883_20097# AVSS 0.064308f
+C182 VENA digital_0.svbgsc 0.117219f
+C183 a_n9219_19599# a_n9219_19765# 0.623462f
+C184 a_3789_20429# a_3789_20263# 0.623462f
+C185 bjt_0.B AVSS 24.0918f
+C186 digital_0.S2 resistor_op_tt_0.C 0.055398f
+C187 a_n547_19433# AVSS 0.386106f
+C188 digital_0.S2 DVSS 3.54073f
+C189 a_n9219_19931# a_n9219_19765# 0.623462f
+C190 digital_0.svbgtc a_3789_20595# 0.061069f
+C191 AVSS a_n13019_19765# 0.169948f
+C192 a_n9219_20595# differential_pair_0.plus 0.038482f
+C193 pmos_current_bgr_2_0.D4 bjt_0.B 0.302161f
+C194 digital_0.svbgtc a_3789_20263# 0.056984f
+C195 differential_pair_0.plus a_n9219_21495# 0.235995f
+C196 ENA DVSS 0.114628f
+C197 differential_pair_0.plus digital_0.svbgsc 0.078861f
+C198 a_968_14999# differential_pair_0.plus 0.02193f
+C199 differential_pair_0.D4 pmos_current_bgr_2_0.D3 1.34064f
+C200 a_n13555_22159# a_n13555_21827# 0.046388f
+C201 AVSS a_n4883_20595# 0.402082f
+C202 DVDD VBGTC 0.323734f
+C203 a_n547_21329# digital_0.svbgsc 0.056119f
+C204 digital_0.D3 digital_0.svbgsc 4.68703f
+C205 a_n4883_21495# a_n547_21495# 0.913766f
+C206 TRIM3 bjt_0.B 0.34294f
+C207 differential_pair_0.S pmos_iptat_0.G 1.28118f
+C208 a_n4883_20997# a_n4883_21163# 0.322755f
+C209 digital_0.vdde bjt_0.A 1.00847f
+C210 digital_0.svbgsc a_n547_20997# 0.06054f
+C211 pmos_current_bgr_0.D2 AVSS 4.4875f
+C212 digital_0.vdde digital_0.S3 0.554752f
+C213 bjt_0.B resistor_op_tt_0.C 0.038212f
+C214 a_n4883_19599# AVSS 0.064308f
+C215 DVDD VBGSC 0.670741f
+C216 a_n9219_20263# AVSS 0.064308f
+C217 bjt_0.B DVSS 0.197925f
+C218 digital_0.svbgtc bjt_0.A 0.10072f
+C219 a_3789_21661# a_3789_21827# 0.347563f
+C220 a_3789_21661# a_3789_21329# 0.046388f
+C221 pmos_iptat_0.G AVSS 40.8175f
+C222 digital_0.svbgtc digital_0.S3 0.244176f
+C223 a_968_14999# a_968_14833# 0.322622f
+C224 a_n547_22159# digital_0.svbgsc 0.028015f
+C225 TRIM0 AVSS 0.026407f
+C226 pmos_current_bgr_2_0.D4 pmos_iptat_0.G 2.49131f
+C227 a_n9219_21993# differential_pair_0.plus 0.344984f
+C228 differential_pair_0.D4 digital_0.svbgsc 0.663284f
+C229 digital_0.S2 digital_0.vdde 0.426609f
+C230 a_n547_22325# a_n547_22159# 0.797698f
+C231 a_n9219_21661# a_n9219_21329# 0.022047f
+C232 pmos_current_bgr_0.D2 resistor_op_tt_0.C 0.806149f
+C233 pmos_startup_0.D3 differential_pair_0.plus 0.039792f
+C234 pmos_startup_0.D2 pmos_current_bgr_2_0.D3 0.013661f
+C235 a_n547_20263# digital_0.svbgsc 0.05613f
+C236 a_n13555_21163# differential_pair_0.plus 0.01812f
+C237 digital_0.S2 digital_0.svbgtc 0.022111f
+C238 pmos_startup_0.D3 digital_0.D3 0.013322f
+C239 ENA digital_0.vdde 0.578707f
+C240 pmos_iptat_0.G resistor_op_tt_0.C 14.422799f
+C241 VREF a_n17355_21495# 0.041189f
+C242 a_n13555_21329# differential_pair_0.plus 0.022008f
+C243 AVSS a_3789_19765# 0.064308f
+C244 a_n4883_19599# a_n4883_19765# 0.623462f
+C245 a_3789_22159# AVSS 0.103615f
+C246 digital_0.svbgsc VBGTC 0.028715f
+C247 TRIM0 DVSS 3.02399f
+C248 differential_pair_0.S AVSS 3.99144f
+C249 AVSS a_n17355_21661# 0.119953f
+C250 bjt_0.B digital_0.vdde 0.919223f
+C251 a_n9219_21827# a_n9219_22159# 0.022047f
+C252 VBGSC digital_0.svbgsc 0.261484f
+C253 a_n4883_20097# a_n4883_20263# 0.623462f
+C254 pmos_startup_0.D3 differential_pair_0.D4 0.074948f
+C255 pmos_current_bgr_2_0.D4 differential_pair_0.S 0.570746f
+C256 TRIM2 bjt_0.A 0.05463f
+C257 TRIM2 digital_0.S3 0.57114f
+C258 VREF differential_pair_0.plus 0.607563f
+C259 a_3789_19433# digital_0.svbgsc 0.246266f
+C260 pmos_current_bgr_2_0.D4 AVSS 3.0647f
+C261 resistor_op_tt_0.D a_968_14999# 0.021974f
+C262 pmos_current_bgr_0.D2 digital_0.vdde 2.54837f
+C263 AVSS a_n4883_22159# 0.102856f
+C264 differential_pair_0.S resistor_op_tt_0.C 0.454922f
+C265 DVDD digital_0.svbgsc 0.087729f
+C266 TRIM3 AVSS 0.702896f
+C267 bjt_0.A digital_0.S1 0.544301f
+C268 AVSS a_n9219_19765# 0.064308f
+C269 pmos_iptat_0.G digital_0.vdde 30.7875f
+C270 a_n547_19765# AVSS 0.064308f
+C271 a_n9219_20595# a_n9219_20997# 0.107068f
+C272 digital_0.S1 digital_0.S3 5.26974f
+C273 AVSS resistor_op_tt_0.C 3.7957f
+C274 a_3789_19931# a_3789_20097# 0.623462f
+C275 digital_0.S2 TRIM2 0.879798f
+C276 a_3789_19599# digital_0.S3 0.018465f
+C277 AVSS DVSS 0.044436f
+C278 TRIM0 digital_0.vdde 0.044218f
+C279 a_n4883_19765# AVSS 0.064308f
+C280 AVSS a_n13555_21827# 0.097752f
+C281 pmos_startup_0.D3 pmos_startup_0.D2 1.00362f
+C282 pmos_current_bgr_2_0.D4 resistor_op_tt_0.C 3.39114f
+C283 digital_0.svbgsc pmos_current_bgr_2_0.D3 0.142109f
+C284 a_n9219_21661# a_n9219_21163# 0.299959f
+C285 a_n9219_21827# a_n9219_21661# 0.321283f
+C286 bjt_0.A pmos_startup_0.D4 0.305817f
+C287 differential_pair_0.plus a_n9219_21329# 0.043885f
+C288 pmos_startup_0.D4 digital_0.S3 0.292979f
+C289 a_n547_20429# digital_0.D3 0.065878f
+C290 digital_0.S2 digital_0.S1 8.93985f
+C291 a_n13555_21495# AVSS 0.110876f
+C292 TRIM3 DVSS 1.29951f
+C293 bjt_0.B TRIM2 0.643707f
+C294 a_3789_20595# a_3789_20997# 0.107068f
+C295 resistor_op_tt_0.A bjt_0.A 0.55279f
+C296 a_3789_20429# AVSS 0.064308f
+C297 differential_pair_0.S digital_0.vdde 0.033047f
+C298 digital_0.svbgtc a_3789_19765# 0.057195f
+C299 pmos_current_bgr_0.D2 IPTAT 0.014774f
+C300 a_n9219_21495# a_n4883_21163# 0.30301f
+C301 AVSS a_3789_21163# 0.107567f
+C302 digital_0.svbgtc a_3789_22159# 0.302111f
+C303 AVSS a_n9219_22491# 0.402751f
+C304 digital_0.svbgtc differential_pair_0.S 0.29759f
+C305 differential_pair_0.plus a_n9219_20097# 0.034539f
+C306 a_n547_21163# a_n547_21495# 0.046388f
+C307 VREF pmos_startup_0.D2 0.11565f
+C308 AVSS digital_0.vdde 1.37912p
+C309 pmos_iptat_0.G IPTAT 2.39857f
+C310 bjt_0.B digital_0.S1 11.0983f
+C311 pmos_startup_0.D3 pmos_current_bgr_2_0.D3 0.454454f
+C312 a_n547_19433# digital_0.S1 0.136988f
+C313 a_n547_22325# digital_0.svbgsc 0.334269f
+C314 digital_0.svbgtc AVSS 2.90766f
+C315 a_n547_19931# a_n547_20097# 0.623462f
+C316 a_n547_20263# a_n547_20429# 0.623462f
+C317 AVSS a_n4883_20263# 0.064308f
+C318 pmos_current_bgr_2_0.D4 digital_0.vdde 8.637239f
+C319 digital_0.S2 resistor_op_tt_0.A 0.080048f
+C320 a_n4883_21661# AVSS 0.092592f
+C321 AVDD VBGTC 0.015326f
+C322 digital_0.svbgtc pmos_current_bgr_2_0.D4 0.027475f
+C323 TRIM3 digital_0.vdde 0.043857f
+C324 bjt_0.B pmos_startup_0.D4 0.487834f
+C325 a_n9219_21993# a_n9219_21495# 0.680987f
+C326 a_n9219_21993# digital_0.svbgsc 0.731995f
+C327 AVDD VBGSC 1.56991f
+C328 digital_0.vdde resistor_op_tt_0.C 14.3063f
+C329 a_n13555_21993# a_n13555_22325# 0.022047f
+C330 digital_0.vdde DVSS 0.30604f
+C331 a_n4883_21495# AVSS 0.804718f
+C332 pmos_iptat_0.G digital_0.S1 0.553901f
+C333 a_n13555_21661# AVSS 0.098141f
+C334 digital_0.svbgtc resistor_op_tt_0.C 0.400731f
+C335 TRIM1 bjt_0.A 0.018331f
+C336 bjt_0.B resistor_op_tt_0.A 0.010918f
+C337 digital_0.svbgtc DVSS 0.126406f
+C338 TRIM0 digital_0.S1 0.559735f
+C339 differential_pair_0.plus a_n9219_21163# 0.11059f
+C340 a_n547_19599# digital_0.S3 0.017284f
+C341 AVSS IPTAT 1.06145f
+C342 a_n9219_21827# differential_pair_0.plus 0.012903f
+C343 AVDD DVDD 0.23636f
+C344 a_n547_21329# a_n547_21495# 0.299945f
+C345 digital_0.D3 a_n547_21495# 0.112982f
+C346 pmos_iptat_0.G pmos_startup_0.D4 0.155303f
+C347 a_3789_22159# a_3789_22491# 0.302205f
+C348 a_n17355_21495# bjt_0.A 0.336821f
+C349 TRIM2 AVSS 0.025495f
+C350 a_n9219_21993# a_n9219_22325# 0.059007f
+C351 digital_0.S2 TRIM1 0.571413f
+C352 a_3789_19599# a_3789_19765# 0.623462f
+C353 AVSS a_3789_22491# 0.402751f
+C354 a_n9219_22491# digital_0.vdde 0.034126f
+C355 a_n9219_20997# a_n9219_21329# 0.322755f
+C356 digital_0.svbgtc a_3789_20429# 0.057008f
+C357 a_n13555_21661# a_n13555_21827# 0.353716f
+C358 AVSS a_n547_20595# 0.402082f
+C359 IPTAT resistor_op_tt_0.C 0.310753f
+C360 AVSS a_968_15663# 0.637896f
+C361 digital_0.svbgtc a_3789_21163# 0.057321f
+C362 differential_pair_0.plus bjt_0.A 8.768731f
+C363 AVSS digital_0.S1 13.9919f
+C364 digital_0.svbgtc digital_0.vdde 0.680487f
+C365 differential_pair_0.plus digital_0.S3 0.649845f
+C366 a_n13555_21329# a_n13555_21163# 0.797698f
+C367 digital_0.D3 bjt_0.A 0.099606f
+C368 a_n547_20097# digital_0.D3 0.066435f
+C369 digital_0.D3 a_n547_21993# 0.287636f
+C370 TRIM3 TRIM2 2.61765f
+C371 AVSS a_n9219_22159# 0.107567f
+C372 a_3789_19599# AVSS 0.064308f
+C373 digital_0.D3 digital_0.S3 7.78651f
+C374 bjt_0.B TRIM1 0.395629f
+C375 a_n13555_21495# a_n13555_21661# 0.797698f
+C376 TRIM2 DVSS 1.30928f
+C377 VENA ENA 0.174156f
+C378 pmos_current_bgr_2_0.D4 digital_0.S1 0.206549f
+C379 a_n9219_19599# differential_pair_0.plus 0.038476f
+C380 a_8125_19599# AVSS 0.442292f
+C381 a_n547_19433# a_n547_19599# 0.623462f
+C382 AVDD digital_0.svbgsc 0.030926f
+C383 a_n547_22159# a_n547_21993# 0.299945f
+C384 AVSS pmos_startup_0.D4 3.95171f
+C385 differential_pair_0.plus a_n9219_20429# 0.03423f
+C386 a_n9219_21329# a_n9219_21495# 0.303019f
+C387 digital_0.S2 differential_pair_0.plus 0.094148f
+C388 a_n547_20429# digital_0.svbgsc 0.056293f
+C389 differential_pair_0.D4 bjt_0.A 0.648312f
+C390 differential_pair_0.S resistor_op_tt_0.A 0.136561f
+C391 digital_0.S1 resistor_op_tt_0.C 0.112835f
+C392 digital_0.S2 digital_0.D3 4.0908f
+C393 a_n9219_19931# differential_pair_0.plus 0.034714f
+C394 differential_pair_0.D4 digital_0.S3 0.166954f
+C395 digital_0.S1 DVSS 3.54359f
+C396 a_n9219_19433# bjt_0.A 0.11009f
+C397 pmos_current_bgr_2_0.D4 pmos_startup_0.D4 0.117883f
+C398 a_n4883_19433# digital_0.S3 0.030348f
+C399 a_n547_20263# a_n547_20097# 0.623462f
+C400 AVSS resistor_op_tt_0.A 2.82115f
+C401 a_n4883_21661# a_n4883_21495# 0.715281f
+C402 digital_0.vdde IPTAT 3.69017f
+C403 TRIM0 TRIM1 2.41492f
+C404 bjt_0.B differential_pair_0.plus 0.579489f
+C405 a_8125_21993# a_8125_21163# 0.015687f
+C406 a_3789_22325# a_3789_21827# 0.299959f
+C407 pmos_current_bgr_0.D2 a_n17355_21495# 0.480303f
+C408 a_n9219_19433# a_n9219_19599# 0.623462f
+C409 pmos_current_bgr_2_0.D4 resistor_op_tt_0.A 0.493191f
+C410 pmos_startup_0.D4 resistor_op_tt_0.C 0.018412f
+C411 a_n13555_21993# a_n13555_22159# 0.299959f
+C412 AVSS a_n9219_21661# 0.108459f
+C413 bjt_0.B digital_0.D3 0.659318f
+C414 TRIM2 digital_0.vdde 0.043976f
+C415 a_n547_19433# digital_0.D3 0.108915f
+C416 AVSS a_3789_20997# 0.403388f
+C417 a_n9219_20997# a_n9219_21163# 0.302205f
+C418 digital_0.vdde a_3789_22491# 0.034126f
+C419 a_n547_19931# AVSS 0.064308f
+C420 AVSS a_n547_22491# 0.402751f
+C421 pmos_startup_0.D2 bjt_0.A 2.15499f
+C422 resistor_op_tt_0.A resistor_op_tt_0.C 1.57173f
+C423 pmos_startup_0.D2 digital_0.S3 0.045156f
+C424 a_3789_21495# AVSS 0.108459f
+C425 a_n9219_22491# a_n9219_22159# 0.322755f
+C426 a_3789_19433# digital_0.S3 0.027097f
+C427 pmos_current_bgr_0.D2 differential_pair_0.plus 0.02866f
+C428 digital_0.svbgsc a_n4883_22325# 0.023463f
+C429 a_n4883_20997# a_n4883_20595# 0.107068f
+C430 digital_0.vdde digital_0.S1 1.85643f
+C431 resistor_op_tt_0.D bjt_0.A 1.33987f
+C432 a_n9219_20263# differential_pair_0.plus 0.034246f
+C433 differential_pair_0.D4 bjt_0.B 0.042755f
+C434 a_8125_21993# a_8125_21827# 1.01742f
+C435 resistor_op_tt_0.D digital_0.S3 0.058992f
+C436 pmos_iptat_0.G differential_pair_0.plus 4.07223f
+C437 AVSS a_8125_20263# 0.44235f
+C438 AVSS a_n4883_21329# 0.108351f
+C439 AVSS a_n547_21163# 0.09151f
+C440 DVDD bjt_0.A 0.102569f
+C441 digital_0.svbgtc digital_0.S1 0.023459f
+C442 DVDD digital_0.S3 0.090586f
+C443 digital_0.svbgtc a_3789_19599# 0.057528f
+C444 pmos_iptat_0.G digital_0.D3 0.158678f
+C445 ENA VBGTC 0.370716f
+C446 TRIM1 AVSS 0.023969f
+C447 a_n547_19931# a_n547_19765# 0.623462f
+C448 a_n547_19599# AVSS 0.064308f
+C449 ENA VBGSC 0.033222f
+C450 a_n9219_21163# a_n9219_21495# 0.059007f
+C451 a_n17355_21495# a_n17355_21661# 0.713176f
+C452 digital_0.vdde pmos_startup_0.D4 1.28508f
+C453 digital_0.svbgtc a_8125_19599# 0.129585f
+C454 a_n547_21495# digital_0.svbgsc 0.08563f
+C455 a_n9219_21993# a_n4883_22325# 0.30301f
+C456 bjt_0.A pmos_current_bgr_2_0.D3 1.48667f
+C457 a_8125_21329# AVSS 0.241153f
+C458 a_3789_20263# a_3789_20097# 0.623462f
+C459 VENA AVSS 0.036878f
+C460 AVSS a_n17355_21495# 0.22873f
+C461 digital_0.S3 pmos_current_bgr_2_0.D3 0.041398f
+C462 digital_0.S2 DVDD 0.113291f
+C463 differential_pair_0.D4 pmos_iptat_0.G 0.030354f
+C464 a_n4883_19599# a_n4883_19433# 0.623462f
+C465 DVDD ENA 2.19687f
+C466 TRIM1 DVSS 1.31221f
+C467 differential_pair_0.S differential_pair_0.plus 1.63329f
+C468 a_n547_19599# a_n547_19765# 0.623462f
+C469 differential_pair_0.plus a_n17355_21661# 0.036006f
+C470 digital_0.S1 IPTAT 0.010471f
+C471 differential_pair_0.S digital_0.D3 0.100546f
+C472 AVSS a_3789_21661# 0.088534f
+C473 pmos_startup_0.D2 a_n13019_19765# 0.30156f
+C474 a_3789_21163# a_3789_20997# 0.322755f
+C475 resistor_op_tt_0.D bjt_0.B 0.733515f
+C476 a_n13555_20997# a_n13555_21163# 0.322755f
+C477 AVSS differential_pair_0.plus 7.93431f
+C478 digital_0.S2 pmos_current_bgr_2_0.D3 1.25359f
+C479 a_n9219_21827# a_n9219_21993# 0.884243f
+C480 digital_0.svbgsc bjt_0.A 0.068573f
+C481 bjt_0.B DVDD 0.260509f
+C482 a_n547_21329# AVSS 0.106973f
+C483 a_n547_20097# digital_0.svbgsc 0.05615f
+C484 digital_0.svbgsc a_n547_21993# 0.772735f
+C485 a_n13555_21329# a_n13555_20997# 0.302205f
+C486 AVSS digital_0.D3 3.7528f
+C487 digital_0.vdde a_n547_22491# 0.034126f
+C488 digital_0.svbgsc digital_0.S3 0.634125f
+C489 VENA DVSS 3.32281f
+C490 AVSS a_n547_20997# 0.403388f
+C491 a_3789_21495# a_3789_21163# 0.022047f
+C492 a_n4883_20997# AVSS 0.403388f
+C493 a_n9219_21827# a_n9219_22325# 0.299959f
+C494 digital_0.svbgtc a_3789_20997# 0.061396f
+C495 pmos_startup_0.D2 pmos_current_bgr_0.D2 0.183269f
+C496 pmos_current_bgr_2_0.D4 differential_pair_0.plus 0.701706f
+C497 a_n547_22325# a_n547_21993# 0.037223f
+C498 pmos_current_bgr_2_0.D4 digital_0.D3 0.104994f
+C499 pmos_startup_0.D2 pmos_iptat_0.G 0.097733f
+C500 differential_pair_0.S differential_pair_0.D4 0.306688f
+C501 AVSS a_968_14833# 0.860519f
+C502 digital_0.svbgtc a_3789_21495# 0.390663f
+C503 a_n547_22159# AVSS 0.106973f
+C504 a_n9219_20595# a_n9219_20429# 0.623462f
+C505 bjt_0.B pmos_current_bgr_2_0.D3 0.870778f
+C506 a_n13555_21993# AVSS 0.10969f
+C507 differential_pair_0.plus a_n9219_19765# 0.035905f
+C508 a_n13555_22325# a_n13555_22491# 0.322755f
+C509 TRIM3 digital_0.D3 0.75703f
+C510 differential_pair_0.plus resistor_op_tt_0.C 1.26384f
+C511 differential_pair_0.D4 AVSS 2.80214f
+C512 digital_0.S2 digital_0.svbgsc 0.054389f
+C513 resistor_op_tt_0.D pmos_iptat_0.G 0.11066p
+C514 a_n547_19765# digital_0.D3 0.068639f
+C515 digital_0.D3 resistor_op_tt_0.C 0.035863f
+C516 TRIM1 digital_0.vdde 0.043997f
+C517 a_8125_19931# AVSS 0.146044f
+C518 digital_0.D3 DVSS 3.28202f
+C519 AVSS a_n4883_19433# 0.387507f
+C520 a_n9219_19433# AVSS 0.378666f
+C521 a_n4883_22491# a_n4883_22325# 0.322755f
+C522 differential_pair_0.plus a_n13555_21827# 0.021428f
+C523 ENA digital_0.svbgsc 0.012827f
+C524 pmos_startup_0.D3 bjt_0.A 0.114147f
+C525 a_n547_20263# AVSS 0.064308f
+C526 pmos_current_bgr_2_0.D4 differential_pair_0.D4 2.37779f
+C527 pmos_startup_0.D3 digital_0.S3 0.035591f
+C528 TRIM0 DVDD 0.271271f
+C529 digital_0.S1 pmos_startup_0.D4 0.341128f
+C530 VENA digital_0.vdde 0.059997f
+C531 AVSS VBGTC 0.08207f
+C532 a_n13555_21495# differential_pair_0.plus 0.064234f
+C533 bjt_0.B digital_0.svbgsc 0.200083f
+C534 a_n4883_21495# a_n4883_21329# 0.299994f
+C535 a_n4883_21495# a_n547_21163# 0.299994f
+C536 pmos_iptat_0.G pmos_current_bgr_2_0.D3 2.1715f
+C537 differential_pair_0.D4 resistor_op_tt_0.C 8.23193f
+C538 digital_0.svbgtc VENA 0.101471f
+C539 a_n547_19433# digital_0.svbgsc 0.056744f
+C540 a_968_15663# resistor_op_tt_0.A 0.22591f
+C541 AVSS VBGSC 0.049876f
+C542 a_n13555_21993# a_n13555_21827# 0.797698f
+C543 a_3789_21661# a_3789_21163# 0.299959f
+C544 resistor_op_tt_0.A digital_0.S1 0.084706f
+C545 digital_0.S2 pmos_startup_0.D3 0.046996f
+C546 pmos_startup_0.D2 AVSS 3.22448f
+C547 a_3789_19433# AVSS 0.387507f
+C548 VREF bjt_0.A 2.17783f
+C549 differential_pair_0.plus digital_0.vdde 0.521867f
+C550 digital_0.svbgtc a_3789_21661# 0.095623f
+C551 a_n13555_21495# a_n13555_21993# 0.321283f
+C552 digital_0.D3 digital_0.vdde 0.651627f
+C553 resistor_op_tt_0.D AVSS 10.1305f
+C554 a_n9219_21329# a_n9219_21163# 0.797698f
+C555 pmos_current_bgr_2_0.D4 pmos_startup_0.D2 0.045348f
+C556 digital_0.svbgtc differential_pair_0.plus 0.092638f
+C557 DVSS VBGTC 0.806301f
+C558 DVDD AVSS 0.225905f
+C559 a_3789_19931# a_3789_19765# 0.623462f
+C560 digital_0.svbgtc digital_0.D3 0.02211f
+C561 pmos_startup_0.D3 bjt_0.B 0.570947f
+C562 VBGSC DVSS 0.75471f
+C563 TRIM1 TRIM2 2.9847f
+C564 digital_0.vdde a_968_14833# 0.027476f
+C565 TRIM0 digital_0.svbgsc 0.063487f
+C566 AVSS a_8125_21163# 0.513692f
+C567 differential_pair_0.S pmos_current_bgr_2_0.D3 3.80396f
+C568 pmos_startup_0.D2 resistor_op_tt_0.C 0.237727f
+C569 AVSS a_n9219_20997# 0.403388f
+C570 AVSS a_3789_19931# 0.064308f
+C571 differential_pair_0.D4 digital_0.vdde 6.76066f
+C572 VREF a_n13019_20097# 0.012869f
+C573 AVSS pmos_current_bgr_2_0.D3 24.2971f
+C574 TRIM3 DVDD 0.272319f
+C575 a_n4883_21495# a_n547_21329# 0.023463f
+C576 a_n4883_21495# digital_0.D3 0.408916f
+C577 a_n13555_21661# differential_pair_0.plus 0.115314f
+C578 digital_0.svbgtc differential_pair_0.D4 0.060139f
+C579 DVDD DVSS 31.1569f
+C580 TRIM1 digital_0.S1 0.872895f
+C581 pmos_current_bgr_2_0.D4 pmos_current_bgr_2_0.D3 5.43725f
+C582 pmos_startup_0.D3 pmos_iptat_0.G 0.087605f
+C583 differential_pair_0.S digital_0.svbgsc 0.276301f
+C584 AVSS a_3789_20097# 0.064308f
+C585 a_8125_21827# AVSS 0.241153f
+C586 digital_0.vdde VBGTC 0.509459f
+C587 a_n9219_20595# AVSS 0.402082f
+C588 AVSS a_n9219_21495# 0.66734f
+C589 a_n13555_22491# a_n13555_22159# 0.302205f
+C590 AVSS a_n4883_21163# 0.106973f
+C591 VREF a_n13019_19765# 0.012983f
+C592 pmos_current_bgr_2_0.D3 resistor_op_tt_0.C 2.8735f
+C593 digital_0.svbgtc VBGTC 0.322341f
+C594 AVSS digital_0.svbgsc 3.25292f
+C595 AVSS a_968_14999# 1.89547f
+C596 VBGSC digital_0.vdde 0.010285f
+C597 AVDD ENA 1.67659f
+C598 a_3789_22159# a_3789_21827# 0.046388f
+C599 pmos_startup_0.D2 digital_0.vdde 3.64603f
+C600 a_n547_22325# AVSS 0.103438f
+C601 VREF pmos_current_bgr_0.D2 0.609665f
+C602 pmos_current_bgr_2_0.D4 digital_0.svbgsc 0.07373f
+C603 differential_pair_0.plus a_968_15663# 0.035492f
+C604 a_n4883_22159# digital_0.svbgsc 0.299994f
+C605 digital_0.svbgtc a_3789_19433# 0.012987f
+C606 resistor_op_tt_0.D digital_0.vdde 0.507608f
+C607 digital_0.D3 a_n547_20595# 0.069419f
+C608 AVSS a_3789_21827# 0.095771f
+C609 AVSS a_3789_21329# 0.10156f
+C610 VREF pmos_iptat_0.G 0.73132f
+C611 a_n547_20997# a_n547_20595# 0.107068f
+C612 differential_pair_0.plus digital_0.S1 0.169294f
+C613 DVDD digital_0.vdde 1.87984f
+C614 digital_0.D3 digital_0.S1 3.52601f
+C615 a_n547_19765# digital_0.svbgsc 0.056277f
+C616 digital_0.svbgsc resistor_op_tt_0.C 0.061566f
+C617 a_968_14999# resistor_op_tt_0.C 0.016685f
+C618 a_n9219_21993# AVSS 0.688677f
+C619 digital_0.svbgsc DVSS 0.617942f
+C620 digital_0.svbgtc DVDD 0.054498f
+C621 AVSS a_n9219_22325# 0.102856f
+C622 a_n9219_19931# a_n9219_20097# 0.623462f
+C623 pmos_startup_0.D3 AVSS 2.17595f
+C624 a_n13555_20997# bjt_0.A 0.025669f
+C625 a_n13555_21163# AVSS 0.111238f
+C626 a_n13555_22325# a_n13555_22159# 0.797698f
+C627 digital_0.S1 a_968_14833# 0.042422f
+C628 differential_pair_0.plus pmos_startup_0.D4 0.089175f
+C629 digital_0.vdde pmos_current_bgr_2_0.D3 1.08992f
+C630 differential_pair_0.D4 a_968_15663# 0.313454f
+C631 a_n13555_21329# AVSS 0.11342f
+C632 a_n9219_21993# a_n4883_22159# 0.059007f
+C633 digital_0.D3 pmos_startup_0.D4 0.028412f
+C634 digital_0.svbgtc a_3789_19931# 0.056936f
+C635 pmos_startup_0.D3 pmos_current_bgr_2_0.D4 0.624588f
+C636 differential_pair_0.D4 digital_0.S1 0.053277f
+C637 a_n547_21495# a_n547_21993# 0.346549f
+C638 a_n4883_19433# digital_0.S1 0.14712f
+C639 AVDD VSUBS 1.56322f
+C640 ENA VSUBS 2.21353f
+C641 VBGSC VSUBS 1.02962f
+C642 VENA VSUBS 1.05927f
+C643 VBGTC VSUBS 1.37706f
+C644 TRIM0 VSUBS 1.31594f
+C645 TRIM1 VSUBS 1.40978f
+C646 TRIM2 VSUBS 1.5843f
+C647 TRIM3 VSUBS 2.59612f
+C648 IPTAT VSUBS 0.475142f
+C649 VREF VSUBS 1.92239f
+C650 DVSS VSUBS 4.60315f
+C651 AVSS VSUBS 0.239125p
+C652 DVDD VSUBS 52.8782f
+C653 a_968_14833# VSUBS 0.235369f $ **FLOATING
+C654 a_968_14999# VSUBS 0.443244f $ **FLOATING
+C655 resistor_op_tt_0.D VSUBS 1.61427f $ **FLOATING
+C656 a_968_15663# VSUBS 0.221512f $ **FLOATING
+C657 differential_pair_0.S VSUBS 1.05025f $ **FLOATING
+C658 resistor_op_tt_0.A VSUBS 0.956022f $ **FLOATING
+C659 pmos_startup_0.D3 VSUBS 2.63736f $ **FLOATING
+C660 pmos_startup_0.D4 VSUBS 0.790323f $ **FLOATING
+C661 differential_pair_0.D4 VSUBS 5.79135f $ **FLOATING
+C662 pmos_current_bgr_2_0.D3 VSUBS 19.402199f $ **FLOATING
+C663 pmos_current_bgr_2_0.D4 VSUBS 6.10807f $ **FLOATING
+C664 pmos_iptat_0.G VSUBS 19.814402f $ **FLOATING
+C665 resistor_op_tt_0.C VSUBS 6.23507f $ **FLOATING
+C666 digital_0.S2 VSUBS 5.15348f $ **FLOATING
+C667 digital_0.S3 VSUBS 7.84577f $ **FLOATING
+C668 bjt_0.B VSUBS 3.85192f $ **FLOATING
+C669 digital_0.S1 VSUBS 10.059f $ **FLOATING
+C670 a_3789_19433# VSUBS 0.237255f $ **FLOATING
+C671 a_n547_19433# VSUBS 0.237255f $ **FLOATING
+C672 a_n4883_19433# VSUBS 0.237255f $ **FLOATING
+C673 a_n9219_19433# VSUBS 0.237255f $ **FLOATING
+C674 a_3789_19599# VSUBS 0.237255f $ **FLOATING
+C675 a_n547_19599# VSUBS 0.237255f $ **FLOATING
+C676 a_n4883_19599# VSUBS 0.237255f $ **FLOATING
+C677 a_n9219_19599# VSUBS 0.237255f $ **FLOATING
+C678 pmos_startup_0.D2 VSUBS 1.95242f $ **FLOATING
+C679 a_8125_19599# VSUBS 0.246802f $ **FLOATING
+C680 a_3789_19765# VSUBS 0.237255f $ **FLOATING
+C681 a_n547_19765# VSUBS 0.237255f $ **FLOATING
+C682 a_n4883_19765# VSUBS 0.237255f $ **FLOATING
+C683 a_n9219_19765# VSUBS 0.237255f $ **FLOATING
+C684 a_3789_19931# VSUBS 0.237255f $ **FLOATING
+C685 a_n547_19931# VSUBS 0.237255f $ **FLOATING
+C686 a_n4883_19931# VSUBS 0.237255f $ **FLOATING
+C687 a_n9219_19931# VSUBS 0.237255f $ **FLOATING
+C688 a_n13019_19765# VSUBS 0.236959f $ **FLOATING
+C689 a_8125_19931# VSUBS 0.246802f $ **FLOATING
+C690 a_3789_20097# VSUBS 0.237255f $ **FLOATING
+C691 a_n547_20097# VSUBS 0.237255f $ **FLOATING
+C692 a_n4883_20097# VSUBS 0.237255f $ **FLOATING
+C693 a_n9219_20097# VSUBS 0.237255f $ **FLOATING
+C694 a_3789_20263# VSUBS 0.237255f $ **FLOATING
+C695 a_n547_20263# VSUBS 0.237255f $ **FLOATING
+C696 a_n4883_20263# VSUBS 0.237255f $ **FLOATING
+C697 a_n9219_20263# VSUBS 0.237255f $ **FLOATING
+C698 a_n13019_20097# VSUBS 0.236959f $ **FLOATING
+C699 a_8125_20263# VSUBS 0.246802f $ **FLOATING
+C700 a_3789_20429# VSUBS 0.237255f $ **FLOATING
+C701 a_n547_20429# VSUBS 0.237255f $ **FLOATING
+C702 a_n4883_20429# VSUBS 0.237255f $ **FLOATING
+C703 a_n9219_20429# VSUBS 0.237255f $ **FLOATING
+C704 a_3789_20595# VSUBS 0.237255f $ **FLOATING
+C705 a_n547_20595# VSUBS 0.237255f $ **FLOATING
+C706 a_n4883_20595# VSUBS 0.237255f $ **FLOATING
+C707 a_n9219_20595# VSUBS 0.237255f $ **FLOATING
+C708 a_3789_20997# VSUBS 0.237255f $ **FLOATING
+C709 a_n547_20997# VSUBS 0.237255f $ **FLOATING
+C710 a_n4883_20997# VSUBS 0.237255f $ **FLOATING
+C711 a_n9219_20997# VSUBS 0.237255f $ **FLOATING
+C712 a_n13555_20997# VSUBS 0.239651f $ **FLOATING
+C713 a_3789_21163# VSUBS 0.242839f $ **FLOATING
+C714 a_3789_21329# VSUBS 0.272316f $ **FLOATING
+C715 a_n547_21163# VSUBS 0.259265f $ **FLOATING
+C716 a_n547_21329# VSUBS 0.242839f $ **FLOATING
+C717 a_n4883_21163# VSUBS 0.242839f $ **FLOATING
+C718 a_n4883_21329# VSUBS 0.287847f $ **FLOATING
+C719 a_n9219_21163# VSUBS 0.287847f $ **FLOATING
+C720 a_n9219_21329# VSUBS 0.242839f $ **FLOATING
+C721 a_n13555_21163# VSUBS 0.242839f $ **FLOATING
+C722 a_n13555_21329# VSUBS 0.285361f $ **FLOATING
+C723 bjt_0.A VSUBS 6.89757f $ **FLOATING
+C724 a_8125_21163# VSUBS 0.293776f $ **FLOATING
+C725 a_n9219_21495# VSUBS 0.721262f $ **FLOATING
+C726 a_8125_21329# VSUBS 0.260601f $ **FLOATING
+C727 a_3789_21495# VSUBS 0.242839f $ **FLOATING
+C728 a_3789_21661# VSUBS 0.250073f $ **FLOATING
+C729 a_n547_21495# VSUBS 0.23711f $ **FLOATING
+C730 a_n4883_21495# VSUBS 0.950122f $ **FLOATING
+C731 differential_pair_0.plus VSUBS 5.46454f $ **FLOATING
+C732 a_n9219_21661# VSUBS 0.242839f $ **FLOATING
+C733 a_n13555_21495# VSUBS 0.242839f $ **FLOATING
+C734 a_n13555_21661# VSUBS 0.26776f $ **FLOATING
+C735 digital_0.D3 VSUBS 3.58453f $ **FLOATING
+C736 a_n4883_21661# VSUBS 0.243647f $ **FLOATING
+C737 a_n17355_21661# VSUBS 0.236973f $ **FLOATING
+C738 a_3789_21827# VSUBS 0.257977f $ **FLOATING
+C739 digital_0.svbgtc VSUBS 2.47288f $ **FLOATING
+C740 a_n547_21993# VSUBS 0.240184f $ **FLOATING
+C741 digital_0.svbgsc VSUBS 2.65051f $ **FLOATING
+C742 a_n9219_21827# VSUBS 0.242839f $ **FLOATING
+C743 a_n9219_21993# VSUBS 0.968415f $ **FLOATING
+C744 a_n13555_21827# VSUBS 0.26776f $ **FLOATING
+C745 a_n13555_21993# VSUBS 0.242839f $ **FLOATING
+C746 a_n17355_21495# VSUBS 0.243751f $ **FLOATING
+C747 a_8125_21827# VSUBS 0.260601f $ **FLOATING
+C748 pmos_current_bgr_0.D2 VSUBS 1.74283f $ **FLOATING
+C749 a_8125_21993# VSUBS 0.303901f $ **FLOATING
+C750 a_3789_22159# VSUBS 0.293435f $ **FLOATING
+C751 a_3789_22325# VSUBS 0.242839f $ **FLOATING
+C752 a_n547_22159# VSUBS 0.242839f $ **FLOATING
+C753 a_n547_22325# VSUBS 0.291712f $ **FLOATING
+C754 a_n4883_22159# VSUBS 0.292662f $ **FLOATING
+C755 a_n4883_22325# VSUBS 0.242839f $ **FLOATING
+C756 a_n9219_22159# VSUBS 0.242839f $ **FLOATING
+C757 a_n9219_22325# VSUBS 0.292662f $ **FLOATING
+C758 a_n13555_22159# VSUBS 0.293435f $ **FLOATING
+C759 a_n13555_22325# VSUBS 0.242839f $ **FLOATING
+C760 a_3789_22491# VSUBS 0.305449f $ **FLOATING
+C761 a_n547_22491# VSUBS 0.305449f $ **FLOATING
+C762 a_n4883_22491# VSUBS 0.305449f $ **FLOATING
+C763 a_n9219_22491# VSUBS 0.305449f $ **FLOATING
+C764 a_n13555_22491# VSUBS 0.305449f $ **FLOATING
+C765 digital_0.vdde VSUBS 1.63679p $ **FLOATING
+.ends

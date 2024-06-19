@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717771017
+timestamp 1718385698
 << nwell >>
 rect -191 -536 1237 466
 << nsubdiff >>
@@ -54,7 +54,7 @@ rect -40 -52 -6 -18
 rect 1052 -52 1086 -18
 rect 1167 -52 1201 -18
 << metal1 >>
-rect 494 250 552 436
+rect 389 303 660 349
 rect 824 303 856 349
 rect 487 74 497 250
 rect 549 74 559 250
@@ -79,7 +79,7 @@ rect 1046 -58 1213 -52
 rect 1046 -135 1092 -58
 rect 487 -320 497 -144
 rect 549 -320 559 -144
-rect 494 -506 552 -320
+rect 390 -419 661 -373
 << via1 >>
 rect 497 74 549 250
 rect 497 -320 549 -144
@@ -112,12 +112,12 @@ timestamp 1717771017
 transform 1 0 523 0 1 -268
 box -523 -164 523 198
 << labels >>
-flabel metal1 1139 -39 1139 -39 0 FreeSans 1600 0 0 0 DVDD
-port 1 nsew
-flabel metal1 514 -451 514 -451 0 FreeSans 1600 0 0 0 AVDD
+flabel metal1 848 330 848 330 0 FreeSans 160 0 0 0 G
+port 0 nsew
+flabel metal1 982 -44 982 -44 0 FreeSans 160 0 0 0 VDDE
 port 2 nsew
-flabel metal1 61 -5 61 -5 0 FreeSans 1600 0 0 0 VDDE
+flabel metal2 528 57 528 57 0 FreeSans 160 0 0 0 AVDD
 port 3 nsew
-flabel metal1 846 332 846 332 0 FreeSans 1600 0 0 0 G
+flabel metal1 1123 -45 1123 -45 0 FreeSans 160 0 0 0 DVDD
 port 4 nsew
 << end >>

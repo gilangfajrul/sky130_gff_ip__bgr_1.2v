@@ -12,7 +12,7 @@ Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_KQ9YC9 in circuit res_trim (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_5N3J8V in circuit res_trim (0)(1 instance)
 
 Class res_trim (0):  Merged 41 parallel devices.
 Class res_trim (1):  Merged 4 parallel devices.
@@ -28,12 +28,12 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: res_trim                        |Circuit 2: res_trim                        
 -------------------------------------------|-------------------------------------------
-A                                          |A                                          
 AVSS                                       |AVSS                                       
 1                                          |1                                          
+A                                          |A                                          
+B                                          |B                                          
 2                                          |2                                          
 3                                          |3                                          
-B                                          |B                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes res_trim and res_trim are equivalent.

@@ -12,9 +12,9 @@ lab=vdde}
 N 260 -370 260 -355 {
 lab=vdde}
 N 100 -325 155 -325 {
-lab=D10}
+lab=d10}
 N 155 -325 220 -325 {
-lab=D10}
+lab=d10}
 N 260 -295 260 -285 {
 lab=d2}
 N 60 -295 60 -285 {
@@ -31,15 +31,15 @@ N 740 -335 740 -330 {
 lab=vdde}
 N 740 -335 780 -335 {
 lab=vdde}
-N 515 -185 515 -160 {
+N 230 -165 230 -140 {
 lab=vdde}
-N 515 -190 515 -185 {
+N 230 -170 230 -165 {
 lab=vdde}
-N 515 -190 555 -190 {
+N 230 -170 270 -170 {
 lab=vdde}
-N 515 -130 555 -130 {
+N 230 -110 270 -110 {
 lab=vdde}
-N 515 -160 515 -130 {
+N 230 -140 230 -110 {
 lab=vdde}
 C {sky130_fd_pr/pfet3_01v8.sym} 395 -325 0 0 {name=M10
 L=10
@@ -124,7 +124,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 760 -335 1 0 {name=p10 sig_type=std_logic lab=vdde}
-C {sky130_fd_pr/pfet3_01v8.sym} 535 -160 0 0 {name=M3
+C {sky130_fd_pr/pfet3_01v8.sym} 250 -140 0 0 {name=M3
 L=10
 W=1
 body=vdde
@@ -139,7 +139,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 535 -190 1 0 {name=p12 sig_type=std_logic lab=vdde}
+C {devices/lab_pin.sym} 250 -170 1 0 {name=p12 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 630 -280 3 0 {name=p7 sig_type=std_logic lab=D10}
 C {devices/lab_pin.sym} 780 -275 3 0 {name=p9 sig_type=std_logic lab=D2}
 C {devices/lab_pin.sym} 160 -325 3 0 {name=p3 sig_type=std_logic lab=d10}

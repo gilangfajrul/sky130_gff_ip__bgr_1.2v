@@ -48,14 +48,13 @@ C {devices/vsource.sym} 100 -160 0 0 {name=V1 value="ac 1 sin(1.8 1 1)" savecurr
 *ac 1 sin(1.8 1 1)
 *pulse(0 1.8 2ns 2ns)}
 C {devices/vdd.sym} 100 -205 0 0 {name=l3 lab=VDD}
-C {devices/code.sym} 560 -185 0 0 {name=ngspice only_toplevel=false value="
-.include ~/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.pex.spice
+C {devices/code.sym} 565 -185 0 0 {name=ngspice only_toplevel=false value="
 .option savecurrents
 .control
 save all
 op
 remzerovec
-write bgr_op5_block_tb.raw
+write bgr_op5_block_ps_tb.raw
 
 set appendwrite
 set wr_singlescale
@@ -64,7 +63,7 @@ option numdgt=3
 
 dc temp -40 85 1
 remzerovec
-write bgr_op5_block_tb.raw
+write bgr_op5_block_ps_tb.raw
 *write VREFFS.raw vref
 *plot (ptat-ctat)
 *plot ctat
@@ -85,7 +84,7 @@ print vref_tc
 
 ******PSRR******
 ac dec 1000 1 10Meg
-write bgr_op5_block_tb.raw
+write bgr_op5_block_ps_tb.raw
 *write PSRRFS.raw vdb(vref)
 remzerovec
 plot vdb(vref)
@@ -94,7 +93,7 @@ meas ac psrr find vdb(vref) at=1k
 
 ****Power****
 tran 10ms 500ms
-write bgr_op5_block_tb.raw
+write bgr_op5_block_ps_tb.raw
 set altshow
 show >> bgr_op5.lis
 remzerovec
@@ -108,7 +107,7 @@ print ave_power
 
 *******LS******
 dc v1 0 3.5 0.05
-write bgr_op5_block_tb.raw
+write bgr_op5_block_ps_tb.raw
 remzerovec
 plot vdd vref
 meas dc vbg_27 find v(vref) at=1.8
@@ -140,4 +139,4 @@ C {devices/gnd.sym} 275 -155 1 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 275 -115 0 0 {name=p5 sig_type=std_logic lab=trim}
 C {devices/gnd.sym} 275 -95 1 0 {name=l4 lab=GND}
 C {devices/vdd.sym} 370 -260 0 0 {name=l5 lab=VDD}
-C {/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block.sym} 75 -25 0 0 {name=x1}
+C {/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.sym} 35 25 0 0 {name=x1}
