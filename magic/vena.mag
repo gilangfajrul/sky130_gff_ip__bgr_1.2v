@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1718385342
+timestamp 1720108080
 << psubdiff >>
 rect -176 410 -116 444
 rect 690 410 750 444
@@ -17,25 +17,27 @@ rect -176 -8 -142 384
 rect 716 -8 750 384
 rect -116 -68 690 -34
 << poly >>
-rect -92 360 0 376
-rect -92 326 -76 360
-rect -42 326 0 360
-rect -92 310 0 326
-rect -30 288 0 310
+rect -30 288 0 289
+rect -30 66 0 88
+rect -92 50 0 66
+rect -92 16 -76 50
+rect -42 16 0 50
+rect -92 0 0 16
 rect 574 50 666 66
 rect 574 16 616 50
 rect 650 16 666 50
 rect 574 0 666 16
 << polycont >>
-rect -76 326 -42 360
+rect -76 16 -42 50
 rect 616 16 650 50
 << locali >>
 rect -176 410 -116 444
 rect 690 410 750 444
 rect -176 384 -142 410
 rect 716 384 750 410
-rect -76 360 -42 376
-rect -76 288 -42 326
+rect -76 288 -42 289
+rect -76 50 -42 88
+rect -76 0 -42 16
 rect 616 50 650 99
 rect 616 0 650 16
 rect -176 -34 -142 -8
@@ -43,31 +45,26 @@ rect 716 -34 750 -8
 rect -176 -68 -116 -34
 rect 690 -68 750 -34
 << viali >>
-rect -176 326 -142 360
-rect -76 326 -42 360
+rect -76 16 -42 50
 rect 616 16 650 50
-rect 716 16 750 50
 << metal1 >>
-rect -182 360 -36 372
-rect -182 326 -176 360
-rect -142 326 -76 360
-rect -42 326 -36 360
-rect -182 314 -36 326
 rect 254 320 320 366
-rect -82 288 -36 314
+rect -82 288 -36 289
 rect 264 266 310 288
+rect -82 52 -36 88
 rect 6 52 52 90
 rect 522 52 568 95
-rect 6 6 568 52
-rect 610 62 656 97
-rect 610 50 756 62
-rect 610 16 616 50
-rect 650 16 716 50
-rect 750 16 756 50
-rect 610 4 756 16
+rect 610 52 656 97
+rect -82 50 656 52
+rect -82 16 -76 50
+rect -42 16 616 50
+rect 650 16 656 50
+rect -82 6 656 16
+rect -82 4 -36 6
+rect 610 4 656 6
 use sky130_fd_pr__nfet_01v8_lvt_SJFSNB  sky130_fd_pr__nfet_01v8_lvt_SJFSNB_1
 timestamp 1717911345
-transform 1 0 -15 0 1 188
+transform -1 0 -15 0 -1 188
 box -73 -126 73 126
 use sky130_fd_pr__nfet_01v8_lvt_SJFSNB  sky130_fd_pr__nfet_01v8_lvt_SJFSNB_2
 timestamp 1717911345
@@ -84,6 +81,6 @@ flabel metal1 282 32 282 32 0 FreeSans 160 0 0 0 D
 port 1 nsew
 flabel metal1 288 280 288 280 0 FreeSans 160 0 0 0 S
 port 2 nsew
-flabel metal1 702 30 702 30 0 FreeSans 160 0 0 0 DVSS
+flabel psubdiffcont 726 91 726 91 0 FreeSans 160 0 0 0 DVSS
 port 3 nsew
 << end >>

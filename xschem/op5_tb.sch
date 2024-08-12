@@ -29,7 +29,7 @@ N 390 -255 405 -255 {
 lab=out}
 N 405 -195 405 -185 {
 lab=GND}
-C {devices/vsource.sym} 35 -350 0 0 {name=V1 value=1.8 savecurrent=false}
+C {devices/vsource.sym} 35 -350 0 0 {name=V1 value=1.7424 savecurrent=false}
 C {devices/vdd.sym} 35 -395 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 35 -305 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} 30 -230 0 0 {name=V2 value=0.685 savecurrent=false}
@@ -54,7 +54,7 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 C {devices/launcher.sym} 595 -270 0 0 {name=h3
 descr="Netlist & sim" 
 tclcommand="xschem netlist; xschem simulate"}
-C {devices/simulator_commands_shown.sym} 740 -625 0 0 {name=COMMANDS1
+C {devices/simulator_commands_shown.sym} 755 -722.5 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -92,7 +92,8 @@ meas ac gain_margin find vdb(out) when vp(out)='-pi'
 meas ac '-3db_voutbw' when vdb(out)='gain_max-3'
 let phase='vp(out)/pi*180'
 plot phase vdb(out)
-wrdata op5_tb.csv vdb(out) phase
+*wrdata op5_tb.txt vdb(out) phase
+write op5_vdb_vp.raw vdb(out) phase
 
 .endc
 "}
@@ -107,4 +108,4 @@ value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 405 -185 0 0 {name=l7 lab=GND}
-C {/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/xschem/op5_TT.sym} 0 -170 0 0 {name=x1}
+C {op5.sym} -42.5 -185 0 0 {name=x1}

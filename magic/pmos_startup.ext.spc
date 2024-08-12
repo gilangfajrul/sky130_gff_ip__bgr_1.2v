@@ -18,10 +18,10 @@ X0 a_15_n100# a_n15_n126# a_n73_n100# w_n109_n162# sky130_fd_pr__pfet_01v8 ad=0.
 
 .subckt pmos_startup D3 D2 D4 VDDE
 Xsky130_fd_pr__pfet_01v8_CVRJBD_1 D3 D2 D3 D3 VDDE VDDE sky130_fd_pr__pfet_01v8_CVRJBD
-Xsky130_fd_pr__pfet_01v8_8RMJP2_0 VDDE VDDE VDDE D2 D4 VDDE sky130_fd_pr__pfet_01v8_8RMJP2
-Xsky130_fd_pr__pfet_01v8_2XUZHN_1 D4 VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_2 VDDE VDDE D3 VDDE sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_3 D2 VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_4 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_8RMJP2_0 D2 D4 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_8RMJP2
+Xsky130_fd_pr__pfet_01v8_2XUZHN_0 D2 VDDE D2 D2 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_1 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_2 D3 VDDE D3 D3 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_4 D4 VDDE D4 D4 sky130_fd_pr__pfet_01v8_2XUZHN
 .ends
 

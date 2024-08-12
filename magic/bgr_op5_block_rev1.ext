@@ -1,0 +1,233 @@
+timestamp 1720948602
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use bjt bjt_0 0 -1 7195 1 0 1540
+use digital digital_0 0 1 1450 -1 0 12249
+use resistor_op_tt resistor_op_tt_0 0 -1 4860 1 0 15108
+use pmos_startup pmos_startup_0 -1 0 -3176 0 1 15183
+use pmos_iptat pmos_iptat_0 1 0 -12328 0 1 14730
+use differential_pair differential_pair_0 1 0 3459 0 1 14898
+use pmos_current_bgr_2 pmos_current_bgr_2_0 -1 0 -3210 0 1 17072
+use pmos_current_bgr pmos_current_bgr_0 1 0 -16475 0 1 17121
+use nmos_tail_current nmos_tail_current_0 -1 0 8378 0 1 16054
+use nmos_startup nmos_startup_0 1 0 -1078 0 1 16928
+use resistorstart resistorstart_0 1 0 -13132 0 -1 20778
+use res_trim res_trim_0 0 -1 8672 1 0 17734
+use resist_const resist_const_0 1 0 -19769 0 1 24804
+use cap_op cap_op_0 1 0 -5617 0 1 11002
+port "AVDD" 12 9111 11252 9111 11252 m2
+port "TRIM0" 7 9111 10193 9111 10193 m1
+port "TRIM1" 6 9111 10113 9111 10113 m1
+port "TRIM2" 5 9111 10033 9111 10033 m1
+port "TRIM3" 4 9111 9954 9111 9954 m1
+port "VBGSC" 8 9111 10379 9111 10379 m2
+port "ENA" 11 9111 10941 9111 10941 m1
+port "VENA" 9 9111 10471 9111 10471 m2
+port "VBGTC" 10 9111 10564 9111 10564 m2
+port "IPTAT" 15 -17769 15128 -17769 15128 m2
+port "AVSS" 2 -17203 19230 -17203 19230 m4
+port "VREF" 3 -16596 19440 -16596 19440 m2
+port "DVDD" 13 9110 9871 9110 9871 m1
+port "DVSS" 14 9110 9790 9110 9790 m1
+node "AVDD" 0 0 9111 11252 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_1926_10388#" 0 0 1926 10388 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_n1720_8972#" 0 0 -1720 8972 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_n2679_15357#" 0 0 -2679 15357 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_n3123_16582#" 0 0 -3123 16582 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "TRIM0" 0 0 9111 10193 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "TRIM1" 0 0 9111 10113 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "TRIM2" 0 0 9111 10033 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "TRIM3" 0 0 9111 9954 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VBGSC" 0 0 9111 10379 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ENA" 0 0 9111 10941 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VENA" 0 0 9111 10471 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VBGTC" 0 0 9111 10564 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_773_11390#" 0 0 773 11390 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_8369_15650#" 0 0 8369 15650 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_4659_15762#" 0 0 4659 15762 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_2063_15174#" 0 0 2063 15174 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n1198_15175#" 0 0 -1198 15175 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n3189_15351#" 0 0 -3189 15351 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "IPTAT" 0 0 -17769 15128 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n6595_15563#" 0 0 -6595 15563 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n7949_15494#" 0 0 -7949 15494 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n11736_15462#" 0 0 -11736 15462 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n12144_15579#" 0 0 -12144 15579 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_2709_15240#" 0 0 2709 15240 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_856_15845#" 0 0 856 15845 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n102_16094#" 0 0 -102 16094 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n3302_16282#" 0 0 -3302 16282 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n8030_16333#" 0 0 -8030 16333 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n2188_17275#" 0 0 -2188 17275 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n7744_18369#" 0 0 -7744 18369 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n13011_19608#" 0 0 -13011 19608 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n13013_20441#" 0 0 -13013 20441 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n13038_20772#" 0 0 -13038 20772 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "AVSS" 0 0 -17203 19230 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n17336_21162#" 0 0 -17336 21162 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n17074_21338#" 0 0 -17074 21338 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_4418_11812#" 0 0 4418 11812 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n540_21836#" 0 0 -540 21836 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_342_22002#" 0 0 342 22002 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n17365_22159#" 0 0 -17365 22159 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VREF" 0 0 -16596 19440 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DVDD" 0 0 9110 9871 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DVSS" 0 0 9110 9790 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_250_1487#" 0 0 250 1487 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_536_10202#" 0 0 536 10202 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n17708_n206#" 0 0 -17708 -206 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "dw_n17914_n412#" 0 0 -17914 -412 dnw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resist_const_0/F" "res_trim_0/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "res_trim_0/A" "m1_n540_21836#"
+merge "m1_n540_21836#" "digital_0/D3"
+merge "digital_0/D3" "digital_0/trim_0/D"
+merge "digital_0/trim_0/D" "m1_773_11390#"
+merge "digital_0/trim_2/m1_245_858#" "TRIM1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_tail_current_0/D4" "differential_pair_0/S" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "differential_pair_0/S" "m1_8369_15650#"
+merge "digital_0/vena_1/DVSS" "digital_0/trim_3/DVSS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/trim_3/DVSS" "digital_0/trim_1/DVSS"
+merge "digital_0/trim_1/DVSS" "digital_0/trim_0/DVSS"
+merge "digital_0/trim_0/DVSS" "digital_0/DVSS"
+merge "digital_0/DVSS" "bjt_0/VSUBS"
+merge "bjt_0/VSUBS" "VSUBS"
+merge "VSUBS" "DVSS"
+merge "DVSS" "w_536_10202#"
+merge "digital_0/trim_1/m1_245_858#" "TRIM2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_tail_current_0/D1" "pmos_current_bgr_2_0/D4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_2_0/D4" "m2_n3123_16582#"
+merge "digital_0/trim_0/m1_245_858#" "TRIM3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_iptat_0/D" "IPTAT" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resist_const_0/AVSS" "resistorstart_0/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resistorstart_0/B" "m1_n13013_20441#"
+merge "m1_n13013_20441#" "m1_n13038_20772#"
+merge "m1_n13038_20772#" "resistorstart_0/AVSS"
+merge "resistorstart_0/AVSS" "resistorstart_0/sky130_fd_pr__res_high_po_0p35_9NXREG_0/a_n746_n10918#"
+merge "resistorstart_0/sky130_fd_pr__res_high_po_0p35_9NXREG_0/a_n746_n10918#" "res_trim_0/AVSS"
+merge "res_trim_0/AVSS" "res_trim_0/sky130_fd_pr__res_high_po_0p35_KQ9YC9_0/a_n746_n7926#"
+merge "res_trim_0/sky130_fd_pr__res_high_po_0p35_KQ9YC9_0/a_n746_n7926#" "nmos_startup_0/AVSS"
+merge "nmos_startup_0/AVSS" "nmos_tail_current_0/AVSS"
+merge "nmos_tail_current_0/AVSS" "m1_4659_15762#"
+merge "m1_4659_15762#" "m1_856_15845#"
+merge "m1_856_15845#" "resistor_op_tt_0/B"
+merge "resistor_op_tt_0/B" "differential_pair_0/AVSS"
+merge "differential_pair_0/AVSS" "m1_n1198_15175#"
+merge "m1_n1198_15175#" "resistor_op_tt_0/AVSS"
+merge "resistor_op_tt_0/AVSS" "w_n17708_n206#"
+merge "w_n17708_n206#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n7864_3880#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n7864_3880#" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,4]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,4]/Emitter" "bjt_0/AVSS"
+merge "bjt_0/AVSS" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,4]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,4]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,4]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,4]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,4]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,4]/Emitter" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n7864_160#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n7864_160#" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,3]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,3]/Emitter" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1,3]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1,3]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,3]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,3]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,3]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,3]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,3]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,3]/Emitter" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,2]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,2]/Emitter" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1,2]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1,2]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,2]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,2]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,2]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,2]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,2]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,2]/Emitter" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,1]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,1]/Emitter" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1,1]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1,1]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,1]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,1]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,1]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,1]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,1]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,1]/Emitter" "bjt_0/w_n53_n53#"
+merge "bjt_0/w_n53_n53#" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,0]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0,0]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1,0]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1,0]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,0]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2,0]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,0]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,0]/Collector" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,0]/Collector"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,0]/Collector" "w_250_1487#"
+merge "w_250_1487#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n7864_n3560#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n7864_n3560#" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,0]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[4,0]/Emitter" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_4132_n7320#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_4132_n7320#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_4172_n7280#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_4172_n7280#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_120_n7320#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_120_n7320#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_160_n7280#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_160_n7280#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_n3892_n7320#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_n3892_n7320#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n3852_n7280#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n3852_n7280#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_n7904_n7320#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_n7904_n7320#" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n7864_n7280#"
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/c1_n7864_n7280#" "AVSS"
+merge "nmos_tail_current_0/D3" "pmos_iptat_0/G" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_iptat_0/G" "pmos_current_bgr_0/D10"
+merge "pmos_current_bgr_0/D10" "pmos_iptat_0/sky130_fd_pr__pfet_01v8_8RMJP2_0/a_n2029_n162#"
+merge "pmos_iptat_0/sky130_fd_pr__pfet_01v8_8RMJP2_0/a_n2029_n162#" "cap_op_0/A"
+merge "cap_op_0/A" "m1_n11736_15462#"
+merge "res_trim_0/sky130_fd_pr__res_high_po_0p35_KQ9YC9_0/a_n118_7364#" "digital_0/S1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/S1" "digital_0/trim_2/S"
+merge "digital_0/trim_2/S" "m1_n7744_18369#"
+merge "digital_0/pmos_ena_0/G" "ENA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resist_const_0/sky130_fd_pr__res_high_po_0p35_SU58NF_0/a_48_n9156#" "digital_0/SVBGTC" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/SVBGTC" "m1_4418_11812#"
+merge "nmos_tail_current_0/D2" "pmos_current_bgr_2_0/D3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_2_0/D3" "m1_n102_16094#"
+merge "pmos_current_bgr_0/G10" "pmos_current_bgr_2_0/D8" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_2_0/D8" "m1_n8030_16333#"
+merge "m1_n8030_16333#" "differential_pair_0/D3"
+merge "differential_pair_0/D3" "resistor_op_tt_0/C"
+merge "resistor_op_tt_0/C" "m1_2063_15174#"
+merge "res_trim_0/1" "digital_0/S3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/S3" "digital_0/trim_0/S"
+merge "digital_0/trim_0/S" "m2_n2679_15357#"
+merge "resist_const_0/sky130_fd_pr__res_high_po_0p35_SU58NF_0/a_214_n4820#" "digital_0/SVBGSC" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/SVBGSC" "digital_0/vena_1/sky130_fd_pr__nfet_01v8_lvt_U8VHVM_0/a_n29_n131#"
+merge "digital_0/vena_1/sky130_fd_pr__nfet_01v8_lvt_U8VHVM_0/a_n29_n131#" "m1_342_22002#"
+merge "digital_0/pmos_ena_0/AVDD" "digital_0/AVDD" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/AVDD" "AVDD"
+merge "res_trim_0/sky130_fd_pr__res_high_po_0p35_KQ9YC9_0/a_n616_2668#" "digital_0/trim_3/S" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/trim_3/S" "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,3]/Emitter"
+merge "bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[3,3]/Emitter" "m1_n2188_17275#"
+merge "pmos_current_bgr_2_0/vdde" "pmos_current_bgr_2_0/VDDE" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_2_0/VDDE" "m1_n6595_15563#"
+merge "m1_n6595_15563#" "pmos_current_bgr_0/vdde"
+merge "pmos_current_bgr_0/vdde" "digital_0/pmos_ena_0/sky130_fd_pr__pfet_01v8_9XC4R9_0/a_n487_n236#"
+merge "digital_0/pmos_ena_0/sky130_fd_pr__pfet_01v8_9XC4R9_0/a_n487_n236#" "digital_0/pmos_ena_0/sky130_fd_pr__pfet_01v8_2ZH9EN_3/a_n73_n200#"
+merge "digital_0/pmos_ena_0/sky130_fd_pr__pfet_01v8_2ZH9EN_3/a_n73_n200#" "digital_0/VDDE"
+merge "digital_0/VDDE" "m1_n7949_15494#"
+merge "m1_n7949_15494#" "m1_n12144_15579#"
+merge "m1_n12144_15579#" "pmos_startup_0/VDDE"
+merge "pmos_startup_0/VDDE" "pmos_iptat_0/VDDE"
+merge "pmos_iptat_0/VDDE" "dw_n17914_n412#"
+merge "resistorstart_0/A" "pmos_startup_0/D2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_startup_0/D2" "m1_n13011_19608#"
+merge "resist_const_0/C" "pmos_current_bgr_0/D1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_0/D1" "m1_n17365_22159#"
+merge "resist_const_0/D" "nmos_startup_0/G1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_startup_0/G1" "differential_pair_0/sky130_fd_pr__nfet_01v8_G26DVX_0/a_n2629_n145#"
+merge "differential_pair_0/sky130_fd_pr__nfet_01v8_G26DVX_0/a_n2629_n145#" "pmos_startup_0/D4"
+merge "pmos_startup_0/D4" "pmos_startup_0/sky130_fd_pr__pfet_01v8_2XUZHN_4/a_n73_n100#"
+merge "pmos_startup_0/sky130_fd_pr__pfet_01v8_2XUZHN_4/a_n73_n100#" "bjt_0/A"
+merge "bjt_0/A" "m1_n17074_21338#"
+merge "nmos_tail_current_0/S2" "resistor_op_tt_0/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resistor_op_tt_0/A" "m1_2709_15240#"
+merge "res_trim_0/2" "digital_0/S2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/S2" "digital_0/trim_2/D"
+merge "digital_0/trim_2/D" "digital_0/trim_1/S"
+merge "digital_0/trim_1/S" "m2_1926_10388#"
+merge "digital_0/DVDD" "DVDD" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/VENA" "VENA" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "differential_pair_0/D4" "pmos_current_bgr_2_0/sky130_fd_pr__pfet_01v8_2XUZHN_0/a_15_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_2_0/sky130_fd_pr__pfet_01v8_2XUZHN_0/a_15_n100#" "m1_n3302_16282#"
+merge "resist_const_0/E" "resist_const_0/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resist_const_0/B" "differential_pair_0/sky130_fd_pr__nfet_01v8_G26DVX_0/a_29_n145#"
+merge "differential_pair_0/sky130_fd_pr__nfet_01v8_G26DVX_0/a_29_n145#" "differential_pair_0/PLUS"
+merge "differential_pair_0/PLUS" "m1_n17336_21162#"
+merge "resistor_op_tt_0/D" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_4132_120#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0/m3_4132_120#" "m2_n1720_8972#"
+merge "digital_0/vena_1/sky130_fd_pr__nfet_01v8_lvt_SJFSNB_1/a_15_n100#" "VBGSC" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_startup_0/D1" "pmos_startup_0/D3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_startup_0/D3" "m1_n3189_15351#"
+merge "resist_const_0/A" "pmos_current_bgr_0/sky130_fd_pr__pfet_01v8_2XUZHN_6/a_n73_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_0/sky130_fd_pr__pfet_01v8_2XUZHN_6/a_n73_n100#" "VREF"
+merge "digital_0/trim_3/m1_245_858#" "TRIM0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "digital_0/vena_0/sky130_fd_pr__nfet_01v8_lvt_SJFSNB_2/a_15_n100#" "VBGTC" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

@@ -19,9 +19,9 @@ X0 a_15_n100# a_n15_n126# a_n73_n100# w_n109_n162# sky130_fd_pr__pfet_01v8 ad=0.
 .subckt pmos_iptat VDDE D G
 Xsky130_fd_pr__pfet_01v8_CVRJBD_1 G D G D VDDE VDDE sky130_fd_pr__pfet_01v8_CVRJBD
 Xsky130_fd_pr__pfet_01v8_8RMJP2_0 G D VDDE G D VDDE sky130_fd_pr__pfet_01v8_8RMJP2
-Xsky130_fd_pr__pfet_01v8_2XUZHN_0 VDDE VDDE D VDDE sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_2 D VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_3 VDDE VDDE D VDDE sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_4 D VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_0 D VDDE D D sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_2 D VDDE D D sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_3 D VDDE D D sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_4 D VDDE D D sky130_fd_pr__pfet_01v8_2XUZHN
 .ends
 

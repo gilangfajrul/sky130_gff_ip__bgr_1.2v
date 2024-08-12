@@ -14,9 +14,9 @@ X0 a_15_n100# a_n15_n126# a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2
 
 .subckt nmos_startup AVSS D1 G1
 Xsky130_fd_pr__nfet_01v8_CJRLGR_0 D1 G1 D1 D1 AVSS D1 AVSS G1 AVSS sky130_fd_pr__nfet_01v8_CJRLGR
-Xsky130_fd_pr__nfet_01v8_6H9P4D_0 AVSS D1 AVSS AVSS sky130_fd_pr__nfet_01v8_6H9P4D
-Xsky130_fd_pr__nfet_01v8_6H9P4D_1 D1 AVSS AVSS AVSS sky130_fd_pr__nfet_01v8_6H9P4D
-Xsky130_fd_pr__nfet_01v8_6H9P4D_3 AVSS D1 AVSS AVSS sky130_fd_pr__nfet_01v8_6H9P4D
-Xsky130_fd_pr__nfet_01v8_6H9P4D_4 D1 AVSS AVSS AVSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_6H9P4D_0 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_6H9P4D_1 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_6H9P4D_3 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_6H9P4D_4 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8_6H9P4D
 .ends
 

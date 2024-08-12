@@ -1,0 +1,375 @@
+timestamp 1720189102
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use vena vena_1 -1 0 1812 0 1 2878
+use vena vena_0 1 0 124 0 1 2878
+use trim trim_3 0 1 1039 -1 0 2580
+use trim trim_2 0 1 1039 -1 0 1688
+use trim trim_1 0 1 1039 -1 0 796
+use trim trim_0 0 1 1039 -1 0 -96
+use pmos_ena pmos_ena_0 1 0 477 0 1 3871
+port "S3" 0 90 -385 90 -385 m2
+port "S2" 4 88 497 88 497 m2
+port "S1" 8 80 1406 80 1406 m2
+port "S0" 9 85 2292 85 2292 m2
+port "AVDD" 17 997 3548 997 3548 m2
+port "D3" 1 81 -637 81 -637 m1
+port "trim3" 2 4 -400 4 -400 m1
+port "trim2" 5 6 471 6 471 m1
+port "trim1" 6 1 1360 1 1360 m1
+port "trim0" 7 8 2255 8 2255 m1
+port "VBGSC" 13 1243 2906 1243 2906 m1
+port "VBGTC" 14 627 2906 627 2906 m1
+port "SVBGSC" 15 1523 2973 1523 2973 m1
+port "SVBGTC" 16 407 2974 407 2974 m1
+port "VENA" 10 955 3219 955 3219 m1
+port "ENA" 18 987 3469 987 3469 m1
+port "VDDE" 19 1460 4028 1460 4028 m1
+port "DVSS" 21 1880 3304 1880 3304 pw
+port "DVDD" 20 1637 3482 1637 3482 dnw
+node "S3" 0 9.41138 90 -385 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1924 178 0 0 0 0 0 0 0 0
+node "S2" 0 6.95893 88 497 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1508 162 0 0 0 0 0 0 0 0
+node "S1" 0 7.04139 80 1406 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 936 140 0 0 0 0 0 0 0 0
+node "S0" 0 9.88654 85 2292 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1872 176 0 0 0 0 0 0 0 0
+node "AVDD" 0 18.8643 997 3548 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1040 144 0 0 0 0 0 0 0 0
+node "D3" 0 8.64996 81 -637 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1288 148 0 0 0 0 0 0 0 0 0 0
+node "trim3" 0 5.34458 4 -400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 920 132 0 0 0 0 0 0 0 0 0 0
+node "m1_932_146#" 2 128.034 932 146 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8784 388 34736 1440 0 0 0 0 0 0 0 0
+node "trim2" 0 2.50419 6 471 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 874 130 0 0 0 0 0 0 0 0 0 0
+node "m1_932_1038#" 2 119.236 932 1038 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8784 388 34476 1430 0 0 0 0 0 0 0 0
+node "trim1" 0 2.10879 1 1360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 736 124 0 0 0 0 0 0 0 0 0 0
+node "m1_932_1930#" 2 121.407 932 1930 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8784 388 33800 1404 0 0 0 0 0 0 0 0
+node "trim0" 0 3.25834 8 2255 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 644 120 0 0 0 0 0 0 0 0 0 0
+node "VBGSC" 0 2.76039 1243 2906 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1058 138 0 0 0 0 0 0 0 0 0 0
+node "VBGTC" 1 2.40473 627 2906 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 368 108 0 0 0 0 0 0 0 0 0 0
+node "SVBGSC" 0 7.18352 1523 2973 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 736 124 0 0 0 0 0 0 0 0 0 0
+node "SVBGTC" 0 7.28158 407 2974 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 782 126 0 0 0 0 0 0 0 0 0 0
+node "VENA" 2 138.899 955 3219 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33350 1542 0 0 0 0 0 0 0 0 0 0
+node "ENA" 0 25.1507 987 3469 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1656 164 0 0 0 0 0 0 0 0 0 0
+node "VDDE" 0 23.2363 1460 4028 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1152 136 0 0 0 0 0 0 0 0 0 0
+node "DVSS" 26556 0 1880 3304 pw 10244432 18332 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "DVDD" 93108 57793.2 1637 3482 dnw 0 0 15543360 17236 4785352 33464 0 0 1279016 34568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 587656 34568 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_932_1038#" "S2" 1.55556
+cap "S1" "DVSS" 13.7941
+cap "DVDD" "S3" 3.4031
+cap "m1_932_1930#" "ENA" 0.00586246
+cap "m1_932_1930#" "VENA" 2.68167
+cap "DVDD" "VBGSC" 0.601545
+cap "S3" "m1_932_146#" 1.84978
+cap "DVDD" "S1" 2.43755
+cap "DVDD" "DVSS" 30733.3
+cap "DVSS" "SVBGTC" 17.6185
+cap "m1_932_1930#" "AVDD" 0.657184
+cap "trim2" "DVSS" 18.1191
+cap "S3" "trim3" 2.69654
+cap "S3" "D3" 0.580801
+cap "m1_932_146#" "DVSS" 209.873
+cap "DVDD" "SVBGTC" 0.412441
+cap "DVDD" "trim2" 1.27458
+cap "trim3" "DVSS" 16.9477
+cap "DVDD" "m1_932_146#" 14.9447
+cap "D3" "DVSS" 18.2437
+cap "trim1" "DVSS" 17.4713
+cap "VENA" "ENA" 6.13953
+cap "DVDD" "trim3" 2.44197
+cap "trim2" "trim3" 2.24142
+cap "DVDD" "D3" 3.80667
+cap "VBGTC" "VENA" 1.10692
+cap "m1_932_146#" "trim3" 0.000686516
+cap "DVDD" "trim1" 1.07333
+cap "trim1" "trim2" 2.19285
+cap "m1_932_1930#" "S1" 0.823271
+cap "S3" "S2" 1.61111
+cap "DVSS" "VDDE" 3.69815
+cap "ENA" "AVDD" 3.67543
+cap "m1_932_1930#" "DVSS" 207.719
+cap "VENA" "AVDD" 0.391565
+cap "S2" "S1" 1
+cap "DVDD" "VDDE" 1.29339
+cap "DVDD" "m1_932_1930#" 13.2745
+cap "S2" "DVSS" 16.5463
+cap "m1_932_1038#" "DVSS" 206.113
+cap "DVDD" "S2" 2.43755
+cap "trim0" "DVSS" 18.071
+cap "VENA" "VBGSC" 3.18239
+cap "SVBGSC" "DVSS" 17.3073
+cap "VBGTC" "VBGSC" 3.10429
+cap "DVDD" "m1_932_1038#" 13.4144
+cap "S0" "S1" 1
+cap "DVDD" "trim0" 0.939164
+cap "DVSS" "ENA" 3.07776
+cap "VENA" "DVSS" 180.29
+cap "S0" "DVSS" 20.5139
+cap "m1_932_1038#" "m1_932_146#" 12.86
+cap "SVBGSC" "DVDD" 0.38818
+cap "S2" "D3" 0.0121506
+cap "SVBGSC" "SVBGTC" 0.629696
+cap "VBGTC" "DVSS" 14.6124
+cap "DVDD" "ENA" 0.995822
+cap "DVDD" "VENA" 3.06365
+cap "S0" "DVDD" 2.43755
+cap "DVSS" "AVDD" 6.17713
+cap "VBGTC" "DVDD" 0.671238
+cap "trim1" "trim0" 2.18575
+cap "DVDD" "AVDD" 0.914362
+cap "m1_932_1930#" "m1_932_1038#" 12.4727
+cap "S3" "DVSS" 16.8203
+cap "VBGSC" "DVSS" 18.9898
+cap "DVDD" "trim_1/DVSS" 216.169
+cap "DVDD" "trim_1/D" 4.3409
+cap "DVDD" "trim_0/D" 74.408
+cap "trim_1/D" "trim_1/DVSS" -2.4406
+cap "trim_1/DVSS" "trim_0/D" 315.183
+cap "DVDD" "trim_0/G" 70.7645
+cap "trim_0/G" "trim_1/DVSS" 412.277
+cap "trim_1/G" "trim_1/D" 1.47161
+cap "trim_1/G" "trim_0/G" 2.09681
+cap "trim_1/D" "trim_2/D" 23.5876
+cap "trim_1/D" "trim_0/D" 350.61
+cap "trim_0/D" "trim_2/D" -0.0121506
+cap "trim_0/G" "trim_1/D" 56.0075
+cap "trim_0/G" "DVDD" 73.2065
+cap "DVDD" "trim_1/D" 7.29062
+cap "trim_1/G" "trim_0/G" 3.21752
+cap "trim_1/G" "trim_1/D" 1.28655
+cap "trim_0/D" "trim_1/DVSS" 176.429
+cap "trim_0/G" "trim_1/DVSS" 330.572
+cap "trim_0/D" "trim_1/D" 195.603
+cap "trim_1/DVSS" "trim_1/D" 60.1331
+cap "trim_2/D" "trim_1/D" 23.8932
+cap "trim_0/D" "DVDD" 67.2525
+cap "DVDD" "trim_1/DVSS" 210.035
+cap "DVDD" "trim_3/D" -0.161403
+cap "trim_3/G" "trim_3/D" 1.47161
+cap "trim_2/D" "trim_1/D" 370.199
+cap "trim_2/G" "trim_3/D" 49.6483
+cap "trim_2/G" "DVDD" 63.9915
+cap "trim_2/D" "vena_1/DVSS" 21.2199
+cap "trim_3/D" "trim_3/S" 23.8932
+cap "trim_2/G" "trim_3/G" -1.09287
+cap "trim_0/G" "trim_1/G" 2.09681
+cap "trim_3/D" "trim_1/D" 0.921635
+cap "DVDD" "trim_1/D" 11.8686
+cap "trim_0/D" "trim_2/D" 0.921635
+cap "trim_3/D" "vena_1/DVSS" -58.7433
+cap "DVDD" "vena_1/DVSS" 148.237
+cap "trim_1/G" "trim_2/D" 58.7047
+cap "trim_2/G" "vena_1/DVSS" 353.873
+cap "trim_0/G" "trim_2/D" 1.47161
+cap "trim_3/D" "trim_1/G" 1.47161
+cap "vena_1/DVSS" "trim_1/D" 185.356
+cap "DVDD" "trim_1/G" 68.4859
+cap "trim_2/G" "trim_1/G" 4.24219
+cap "trim_3/D" "trim_2/D" 63.4188
+cap "trim_1/G" "trim_1/D" 0.0175039
+cap "DVDD" "trim_2/D" 6.49563
+cap "trim_2/G" "trim_2/D" 1.48911
+cap "trim_1/G" "vena_1/DVSS" 413.131
+cap "trim_0/D" "trim_2/D" 0.725073
+cap "vena_1/DVSS" "trim_1/G" 332.597
+cap "vena_1/DVSS" "trim_1/D" 103.59
+cap "trim_3/D" "trim_1/G" 1.28655
+cap "trim_3/D" "trim_1/D" 0.725073
+cap "DVDD" "trim_2/G" 65.0648
+cap "vena_1/DVSS" "trim_2/D" 76.7232
+cap "trim_3/D" "trim_3/G" 1.28655
+cap "trim_3/D" "trim_2/D" 47.7611
+cap "trim_0/G" "trim_1/G" 3.21752
+cap "trim_2/G" "trim_1/G" 6.43504
+cap "DVDD" "trim_1/G" 69.7604
+cap "trim_0/G" "trim_2/D" 1.28655
+cap "DVDD" "trim_1/D" 10.3847
+cap "trim_2/G" "trim_2/D" 1.2879
+cap "trim_3/D" "trim_3/S" 23.8932
+cap "DVDD" "trim_2/D" 8.62468
+cap "trim_1/G" "trim_1/D" 0.00134645
+cap "trim_3/D" "vena_1/DVSS" 8.6184
+cap "trim_2/D" "trim_1/D" 219.444
+cap "vena_1/DVSS" "trim_2/G" 285.058
+cap "DVDD" "vena_1/DVSS" 148.237
+cap "trim_3/D" "DVDD" 2.43755
+cap "vena_0/D" "trim_2/D" 0.110662
+cap "trim_2/G" "pmos_ena_0/DVDD" 4.6956
+cap "vena_1/DVSS" "trim_3/D" 289.408
+cap "vena_1/DVSS" "trim_3/S" -4.99308
+cap "vena_0/D" "trim_3/S" 0.384069
+cap "vena_0/D" "trim_3/D" 120.014
+cap "vena_0/S" "pmos_ena_0/DVDD" -0.412441
+cap "pmos_ena_0/G" "trim_3/S" 1.24885
+cap "pmos_ena_0/G" "trim_3/D" 1.20414
+cap "trim_2/D" "pmos_ena_0/DVDD" 8.18262
+cap "trim_2/G" "trim_3/G" 5.34216
+cap "vena_0/D" "vena_1/G" 3.26663
+cap "vena_1/G" "vena_1/DVSS" 146.505
+cap "pmos_ena_0/DVDD" "trim_3/S" 0.644189
+cap "pmos_ena_0/DVDD" "trim_3/D" 15.7424
+cap "trim_3/D" "trim_3/G" 0.0175039
+cap "vena_0/D" "vena_1/DVSS" 286.204
+cap "trim_2/G" "trim_3/D" 9.05641
+cap "vena_0/D" "pmos_ena_0/G" 0.995984
+cap "trim_2/G" "trim_3/S" 1.47161
+cap "vena_1/S" "vena_0/S" -0.314848
+cap "trim_2/D" "trim_3/D" 331.367
+cap "vena_0/D" "pmos_ena_0/DVDD" 12.2045
+cap "vena_1/DVSS" "pmos_ena_0/DVDD" 152.018
+cap "trim_2/D" "trim_3/S" 0.921635
+cap "trim_3/D" "trim_3/S" 32.1202
+cap "vena_1/DVSS" "trim_3/G" 417.229
+cap "pmos_ena_0/AVDD" "trim_3/S" 0.599241
+cap "pmos_ena_0/AVDD" "trim_3/D" -0.208992
+cap "vena_0/D" "trim_3/G" 1.82735
+cap "vena_1/G" "trim_2/D" 0.222891
+cap "vena_0/D" "vena_1/D" 6.57997
+cap "trim_2/G" "vena_1/DVSS" 59.9049
+cap "vena_0/D" "trim_2/G" 0.138166
+cap "vena_1/G" "trim_3/D" 10.2609
+cap "vena_1/G" "trim_3/S" 0.784296
+cap "vena_1/DVSS" "vena_0/S" -15.1017
+cap "pmos_ena_0/DVDD" "trim_3/G" 68.8213
+cap "vena_1/DVSS" "trim_2/D" 164.598
+cap "vena_1/S" "pmos_ena_0/DVDD" -0.38818
+cap "trim_2/D" "trim_3/D" 195.576
+cap "trim_2/D" "vena_1/DVSS" 87.0364
+cap "trim_2/D" "vena_1/D" 0.110662
+cap "trim_3/S" "pmos_ena_0/DVDD" 2.78768
+cap "vena_1/S" "vena_0/S" -0.314848
+cap "vena_1/DVSS" "vena_1/S" -14.7905
+cap "trim_2/D" "vena_1/G" 0.222891
+cap "vena_1/DVSS" "pmos_ena_0/DVDD" 150.661
+cap "trim_3/S" "vena_1/DVSS" 11.695
+cap "trim_2/G" "pmos_ena_0/DVDD" 4.6956
+cap "trim_3/D" "pmos_ena_0/DVDD" 13.4587
+cap "trim_3/S" "trim_2/G" 1.28655
+cap "trim_3/S" "trim_3/D" 23.8948
+cap "trim_3/G" "pmos_ena_0/DVDD" 69.7604
+cap "vena_1/D" "pmos_ena_0/DVDD" 12.2742
+cap "trim_3/S" "vena_1/D" 0.384069
+cap "trim_3/S" "pmos_ena_0/AVDD" 0.481503
+cap "vena_1/D" "vena_0/D" 6.57997
+cap "vena_1/DVSS" "trim_2/G" 47.5381
+cap "vena_1/DVSS" "trim_3/D" 187.825
+cap "pmos_ena_0/G" "trim_3/S" 0.501935
+cap "vena_1/DVSS" "trim_3/G" 336.647
+cap "vena_1/D" "vena_1/DVSS" 281.827
+cap "vena_1/D" "trim_2/G" 0.138166
+cap "trim_3/G" "trim_2/G" 6.43504
+cap "trim_3/D" "trim_3/G" 0.00134645
+cap "vena_1/D" "trim_3/D" 120.014
+cap "trim_3/S" "vena_1/G" 0.721586
+cap "trim_3/D" "pmos_ena_0/AVDD" 0.0865129
+cap "vena_1/D" "trim_3/G" 1.82735
+cap "pmos_ena_0/G" "trim_3/D" 0.516847
+cap "trim_2/D" "pmos_ena_0/DVDD" 6.86686
+cap "trim_2/D" "trim_3/S" 0.725073
+cap "pmos_ena_0/G" "vena_1/D" 0.995984
+cap "trim_3/D" "vena_1/G" 8.84104
+cap "vena_1/DVSS" "vena_1/G" 146.505
+cap "vena_1/D" "vena_1/G" 2.22889
+cap "vena_0/D" "vena_1/G" 62.0168
+cap "vena_1/G" "pmos_ena_0/VDDE" 27.5449
+cap "trim_3/S" "pmos_ena_0/G" 0.0732716
+cap "vena_1/G" "pmos_ena_0/G" 67.3669
+cap "vena_1/DVSS" "pmos_ena_0/DVDD" 196.638
+cap "vena_0/S" "vena_1/DVSS" 2.45603
+cap "pmos_ena_0/AVDD" "trim_3/D" -0.179371
+cap "pmos_ena_0/VDDE" "trim_3/D" 0.00560571
+cap "pmos_ena_0/G" "trim_3/D" 1.41531
+cap "vena_1/G" "trim_3/D" 7.18728
+cap "pmos_ena_0/AVDD" "pmos_ena_0/DVDD" 1.87164
+cap "pmos_ena_0/AVDD" "vena_1/DVSS" 4.72538
+cap "pmos_ena_0/VDDE" "pmos_ena_0/DVDD" 23.9353
+cap "vena_0/D" "pmos_ena_0/DVDD" 12.2141
+cap "vena_0/S" "pmos_ena_0/VDDE" 0.0175008
+cap "pmos_ena_0/VDDE" "vena_1/DVSS" 88.2959
+cap "vena_0/D" "vena_1/DVSS" 76.7234
+cap "pmos_ena_0/G" "pmos_ena_0/DVDD" 0.852879
+cap "vena_0/D" "vena_1/S" 0.000272084
+cap "vena_1/G" "pmos_ena_0/DVDD" 75.5758
+cap "pmos_ena_0/G" "vena_1/DVSS" 58.2585
+cap "trim_3/G" "pmos_ena_0/AVDD" 0.0461477
+cap "vena_1/G" "vena_1/DVSS" 229.239
+cap "pmos_ena_0/AVDD" "pmos_ena_0/G" -2.55238
+cap "vena_1/G" "pmos_ena_0/AVDD" -0.00919126
+cap "trim_3/S" "pmos_ena_0/AVDD" 0.565523
+cap "vena_0/D" "pmos_ena_0/VDDE" 0.0056693
+cap "vena_1/D" "vena_0/D" 9.19171
+cap "vena_0/D" "pmos_ena_0/G" 4.21558
+cap "pmos_ena_0/G" "trim_3/S" 0.0724111
+cap "vena_1/G" "trim_3/D" 5.78545
+cap "pmos_ena_0/DVDD" "pmos_ena_0/AVDD" 2.12746
+cap "pmos_ena_0/G" "vena_1/D" 4.25165
+cap "pmos_ena_0/VDDE" "vena_1/G" 25.2689
+cap "vena_1/S" "vena_1/DVSS" 2.45603
+cap "vena_1/G" "pmos_ena_0/AVDD" -0.0275738
+cap "pmos_ena_0/DVDD" "vena_1/G" 81.1898
+cap "vena_1/S" "pmos_ena_0/VDDE" 0.203603
+cap "vena_1/D" "vena_0/D" 9.19171
+cap "vena_1/D" "vena_1/DVSS" 76.7234
+cap "pmos_ena_0/VDDE" "trim_3/S" 0.0102057
+cap "pmos_ena_0/G" "vena_1/DVSS" 55.2268
+cap "pmos_ena_0/VDDE" "vena_1/D" 0.0436262
+cap "trim_3/S" "pmos_ena_0/AVDD" 0.448518
+cap "pmos_ena_0/G" "trim_3/D" 0.733881
+cap "pmos_ena_0/DVDD" "vena_1/D" 12.2141
+cap "vena_1/D" "vena_1/G" 60.979
+cap "pmos_ena_0/G" "pmos_ena_0/AVDD" -1.12305
+cap "pmos_ena_0/DVDD" "pmos_ena_0/G" 1.02162
+cap "pmos_ena_0/G" "vena_1/G" 73.7041
+cap "trim_3/G" "pmos_ena_0/AVDD" 0.1769
+cap "pmos_ena_0/VDDE" "vena_1/DVSS" 78.5268
+cap "pmos_ena_0/AVDD" "vena_1/DVSS" 4.21047
+cap "vena_1/D" "vena_0/S" 0.000272084
+cap "pmos_ena_0/VDDE" "trim_3/D" 0.0447683
+cap "pmos_ena_0/DVDD" "vena_1/DVSS" 211.971
+cap "trim_3/D" "pmos_ena_0/AVDD" 0.0718017
+cap "vena_1/G" "vena_1/DVSS" 218.079
+cap "pmos_ena_0/DVDD" "pmos_ena_0/VDDE" 26.1599
+cap "vena_1/DVSS" "pmos_ena_0/G" 4.19233
+cap "pmos_ena_0/VDDE" "vena_1/DVSS" 12.2213
+cap "pmos_ena_0/DVDD" "pmos_ena_0/G" 59.3882
+cap "pmos_ena_0/DVDD" "vena_1/DVSS" 10.0162
+cap "pmos_ena_0/AVDD" "vena_1/DVSS" 0.263467
+cap "pmos_ena_0/VDDE" "pmos_ena_0/DVDD" 9.84995
+cap "pmos_ena_0/AVDD" "pmos_ena_0/DVDD" 1.44595
+cap "pmos_ena_0/G" "vena_1/DVSS" 3.82716
+cap "pmos_ena_0/DVDD" "pmos_ena_0/VDDE" 10.3726
+cap "vena_1/DVSS" "pmos_ena_0/AVDD" 0.232828
+cap "vena_1/DVSS" "pmos_ena_0/VDDE" 11.0963
+cap "pmos_ena_0/DVDD" "vena_1/DVSS" 8.96572
+cap "pmos_ena_0/DVDD" "pmos_ena_0/G" 59.1479
+cap "pmos_ena_0/DVDD" "pmos_ena_0/AVDD" 1.17771
+merge "vena_0/G" "vena_1/G" -1150.36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2806 -306 0 0 0 0 0 0 0 0 0 0
+merge "vena_1/G" "VENA"
+merge "trim_3/S" "S0" -186.265 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1872 -176 0 0 0 0 0 0 0 0
+merge "trim_3/DVSS" "vena_0/DVSS" -5331 0 0 0 0 0 0 0 0 0 0 -214200 -12804 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -214200 -12804 0 0 0 0 0 0 0 0 0 0 0 0
+merge "vena_0/DVSS" "vena_1/DVSS"
+merge "vena_1/DVSS" "trim_0/DVSS"
+merge "trim_0/DVSS" "trim_1/DVSS"
+merge "trim_1/DVSS" "trim_2/DVSS"
+merge "trim_2/DVSS" "DVSS"
+merge "trim_1/G" "trim2" -930.968 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -874 -130 0 0 0 0 0 0 0 0 0 0
+merge "trim_3/D" "trim_2/S" -1462.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8196 -416 -1716 -274 0 0 0 0 0 0 0 0
+merge "trim_2/S" "m1_932_1930#"
+merge "m1_932_1930#" "S1"
+merge "pmos_ena_0/G" "ENA" -375.266 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1656 -164 0 0 0 0 0 0 0 0 0 0
+merge "trim_1/S" "S2" -1459.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8196 -416 -2964 -322 0 0 0 0 0 0 0 0
+merge "S2" "trim_2/D"
+merge "trim_2/D" "m1_932_1038#"
+merge "trim_0/S" "S3" -1341.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8196 -416 -3640 -348 0 0 0 0 0 0 0 0
+merge "S3" "trim_1/D"
+merge "trim_1/D" "m1_932_146#"
+merge "pmos_ena_0/VDDE" "VDDE" -335.928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1152 -136 0 0 0 0 0 0 0 0 0 0
+merge "pmos_ena_0/AVDD" "AVDD" -46.1845 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1040 -144 0 0 0 0 0 0 0 0
+merge "pmos_ena_0/DVDD" "DVDD" -6969.76 0 0 0 0 0 -2796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "trim_3/G" "trim0" -927.881 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -644 -120 0 0 0 0 0 0 0 0 0 0
+merge "vena_0/S" "SVBGTC" -12.2544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -782 -126 0 0 0 0 0 0 0 0 0 0
+merge "vena_1/S" "SVBGSC" -12.1564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -736 -124 0 0 0 0 0 0 0 0 0 0
+merge "trim_2/G" "trim1" -930.572 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -736 -124 0 0 0 0 0 0 0 0 0 0
+merge "trim_0/G" "trim3" -923.449 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -920 -132 0 0 0 0 0 0 0 0 0 0
+merge "vena_0/D" "VBGTC" -560.635 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -368 -108 0 0 0 0 0 0 0 0 0 0
+merge "trim_0/D" "D3" -964.886 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1288 -148 0 0 0 0 0 0 0 0 0 0
+merge "vena_1/D" "VBGSC" -560.99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1058 -138 0 0 0 0 0 0 0 0 0 0

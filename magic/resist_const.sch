@@ -211,58 +211,6 @@ N 1765 -1070 1845 -1070 {
 lab=avss}
 N 1875 -1090 1895 -1090 {
 lab=F}
-N 1720 -805 1740 -805 {
-lab=#net42}
-N 1640 -805 1660 -805 {
-lab=avss}
-N 1690 -785 1770 -785 {
-lab=avss}
-N 1800 -805 1820 -805 {
-lab=#net43}
-N 1770 -785 1850 -785 {
-lab=avss}
-N 1850 -785 1930 -785 {
-lab=avss}
-N 1960 -805 1980 -805 {
-lab=#net44}
-N 1930 -785 2010 -785 {
-lab=avss}
-N 1880 -805 1900 -805 {
-lab=#net45}
-N 2040 -805 2060 -805 {
-lab=#net46}
-N 1960 -575 1980 -575 {
-lab=avss}
-N 2040 -575 2060 -575 {
-lab=#net46}
-N 2060 -805 2060 -575 {
-lab=#net46}
-N 1730 -340 1750 -340 {
-lab=#net47}
-N 1650 -340 1670 -340 {
-lab=avss}
-N 1700 -320 1780 -320 {
-lab=avss}
-N 1810 -340 1830 -340 {
-lab=#net48}
-N 1780 -320 1860 -320 {
-lab=avss}
-N 1860 -320 1940 -320 {
-lab=avss}
-N 1970 -340 1990 -340 {
-lab=#net49}
-N 1940 -320 2020 -320 {
-lab=avss}
-N 1890 -340 1910 -340 {
-lab=#net50}
-N 2050 -340 2070 -340 {
-lab=#net51}
-N 1970 -110 1990 -110 {
-lab=avss}
-N 2050 -110 2070 -110 {
-lab=#net51}
-N 2070 -340 2070 -110 {
-lab=#net51}
 N 865 -660 865 -640 {
 lab=#net13}
 N 865 -660 925 -660 {
@@ -273,12 +221,60 @@ N 1075 -895 1075 -875 {
 lab=#net26}
 N 1015 -895 1075 -895 {
 lab=#net26}
-N 1015 -895 1015 -875 {
-lab=#net26}
 N 865 -640 865 -575 {
 lab=#net13}
 N 1075 -875 1075 -810 {
 lab=#net26}
+N 1015 -895 1015 -860 {
+lab=#net26}
+N 1810 -895 1830 -895 {
+lab=#net42}
+N 1730 -895 1750 -895 {
+lab=#net43}
+N 1780 -875 1860 -875 {
+lab=avss}
+N 1890 -895 1910 -895 {
+lab=#net44}
+N 1860 -875 1940 -875 {
+lab=avss}
+N 1940 -875 2020 -875 {
+lab=avss}
+N 2050 -895 2070 -895 {
+lab=#net45}
+N 2020 -875 2100 -875 {
+lab=avss}
+N 1970 -895 1990 -895 {
+lab=#net46}
+N 1700 -875 1780 -875 {
+lab=avss}
+N 1650 -895 1670 -895 {
+lab=avss}
+N 2130 -895 2150 -895 {
+lab=avss}
+N 1810 -725 1830 -725 {
+lab=#net47}
+N 1730 -725 1750 -725 {
+lab=#net48}
+N 1780 -705 1860 -705 {
+lab=avss}
+N 1890 -725 1910 -725 {
+lab=#net49}
+N 1860 -705 1940 -705 {
+lab=avss}
+N 1940 -705 2020 -705 {
+lab=avss}
+N 2050 -725 2070 -725 {
+lab=#net50}
+N 2020 -705 2100 -705 {
+lab=avss}
+N 1970 -725 1990 -725 {
+lab=#net51}
+N 1700 -705 1780 -705 {
+lab=avss}
+N 1650 -725 1670 -725 {
+lab=avss}
+N 2130 -725 2150 -725 {
+lab=avss}
 C {sky130_fd_pr/res_high_po_0p35.sym} 495 -1040 3 0 {name=R1
 L=17
 model=res_high_po_0p35
@@ -490,85 +486,6 @@ spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 1805 -1070 3 0 {name=p12 sig_type=std_logic lab=avss}
 C {devices/iopin.sym} 1735 -1090 2 0 {name=p14 lab=E}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1690 -805 3 0 {name=R48
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1770 -805 3 0 {name=R49
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1850 -805 3 0 {name=R50
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1930 -805 3 0 {name=R51
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2010 -805 3 0 {name=R52
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2010 -575 3 0 {name=R57
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {devices/lab_pin.sym} 1810 -785 3 0 {name=p22 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 1640 -805 0 0 {name=p15 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 1960 -575 0 0 {name=p21 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1700 -340 3 0 {name=R53
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1780 -340 3 0 {name=R54
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1860 -340 3 0 {name=R55
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1940 -340 3 0 {name=R56
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2020 -340 3 0 {name=R58
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_0p35.sym} 2020 -110 3 0 {name=R59
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {devices/lab_pin.sym} 1820 -320 3 0 {name=p23 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 1650 -340 0 0 {name=p24 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 1970 -110 0 0 {name=p25 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 2020 -90 3 0 {name=p26 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 2010 -555 3 0 {name=p27 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/res_high_po_0p35.sym} 895 -640 3 0 {name=R60
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
-C {devices/lab_pin.sym} 895 -620 3 0 {name=p28 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1045 -875 1 1 {name=R61
-L=17
-model=res_high_po_0p35
-spiceprefix=X
-mult=1}
 C {sky130_fd_pr/res_high_po_0p35.sym} 1125 -810 3 0 {name=R28
 L=17
 model=res_high_po_0p35
@@ -609,4 +526,83 @@ L=17
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/lab_pin.sym} 1045 -855 1 1 {name=p31 sig_type=std_logic lab=avss}
+C {sky130_fd_pr/res_high_po_0p35.sym} 895 -640 3 0 {name=R48
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/lab_pin.sym} 895 -620 3 0 {name=p15 sig_type=std_logic lab=avss}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1045 -860 3 0 {name=R49
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/lab_pin.sym} 1045 -840 3 0 {name=p21 sig_type=std_logic lab=avss}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1700 -895 3 0 {name=R50
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1940 -895 3 0 {name=R51
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 2020 -895 3 0 {name=R52
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 2100 -895 3 0 {name=R53
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/ngspice_probe.sym} 1980 -895 0 0 {name=r54}
+C {devices/lab_pin.sym} 1910 -875 3 0 {name=p22 sig_type=std_logic lab=avss}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1780 -895 3 0 {name=R55
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1860 -895 3 0 {name=R56
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/lab_pin.sym} 2150 -895 2 0 {name=p23 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 1650 -895 0 0 {name=p24 sig_type=std_logic lab=avss}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1700 -725 3 0 {name=R57
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1940 -725 3 0 {name=R58
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 2020 -725 3 0 {name=R59
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 2100 -725 3 0 {name=R60
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/ngspice_probe.sym} 1980 -725 0 0 {name=r61}
+C {devices/lab_pin.sym} 1910 -705 3 0 {name=p25 sig_type=std_logic lab=avss}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1780 -725 3 0 {name=R63
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1860 -725 3 0 {name=R64
+L=17
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/lab_pin.sym} 2150 -725 2 0 {name=p26 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 1650 -725 0 0 {name=p27 sig_type=std_logic lab=avss}

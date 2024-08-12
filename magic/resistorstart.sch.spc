@@ -33,13 +33,13 @@ XR29 net29 net28 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR30 net25 net29 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR31 net30 AVSS AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR32 net31 net30 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR33 net33 net31 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR34 net32 net33 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR35 AVSS net32 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR38 net34 AVSS AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR39 net35 net34 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR40 net37 net35 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR41 net36 net37 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
-XR42 AVSS net36 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR33 net32 net31 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR34 net33 net32 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR35 AVSS net33 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR36 net34 AVSS AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR37 net35 net34 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR38 net36 net35 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR39 net37 net36 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR40 AVSS net37 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 .ends
 .end

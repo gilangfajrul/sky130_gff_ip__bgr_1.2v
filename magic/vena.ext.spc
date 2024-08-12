@@ -11,8 +11,8 @@ X1 a_n29_n131# a_n229_n157# a_n287_n131# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0.
 .ends
 
 .subckt vena G D S DVSS
-Xsky130_fd_pr__nfet_01v8_lvt_SJFSNB_1 DVSS D DVSS DVSS sky130_fd_pr__nfet_01v8_lvt_SJFSNB
-Xsky130_fd_pr__nfet_01v8_lvt_SJFSNB_2 D DVSS DVSS DVSS sky130_fd_pr__nfet_01v8_lvt_SJFSNB
+Xsky130_fd_pr__nfet_01v8_lvt_SJFSNB_1 D D D DVSS sky130_fd_pr__nfet_01v8_lvt_SJFSNB
+Xsky130_fd_pr__nfet_01v8_lvt_SJFSNB_2 D D D DVSS sky130_fd_pr__nfet_01v8_lvt_SJFSNB
 Xsky130_fd_pr__nfet_01v8_lvt_U8VHVM_0 D G D G S DVSS sky130_fd_pr__nfet_01v8_lvt_U8VHVM
 .ends
 

@@ -62,7 +62,7 @@ lab=#net3}
 N 1960 285 1960 290 {
 lab=#net1}
 C {sky130_fd_pr/res_high_po_0p35.sym} 2005 210 3 0 {name=R2
-L=17
+L=\{L\}
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
@@ -75,7 +75,7 @@ C {devices/code.sym} 2205 245 0 0 {name=params only_toplevel=false value="
 C {devices/iopin.sym} 2135 210 1 0 {name=p2 lab=A}
 C {devices/iopin.sym} 1635 210 2 0 {name=p1 lab=B}
 C {sky130_fd_pr/res_high_po_0p35.sym} 2085 210 3 0 {name=R3
-L=17
+L=\{L\}
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}

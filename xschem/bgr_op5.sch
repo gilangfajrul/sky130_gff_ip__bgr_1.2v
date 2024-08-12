@@ -7,15 +7,7 @@ S {}
 E {}
 N 195 -55 195 -45 {
 lab=avss}
-N 295 -45 400 -45 {
-lab=avss}
-N 400 -55 400 -45 {
-lab=avss}
-N 195 -45 290 -45 {
-lab=avss}
-N 295 -85 295 -45 {
-lab=avss}
-N 295 -85 360 -85 {
+N 390 -55 390 -45 {
 lab=avss}
 N 195 -620 195 -605 {
 lab=vdde}
@@ -29,8 +21,6 @@ N 290 -575 355 -575 {
 lab=out}
 N 195 -130 195 -115 {
 lab=#net1}
-N 295 -45 295 -40 {
-lab=avss}
 N 195 -375 195 -360 {
 lab=start}
 N 395 -375 395 -360 {
@@ -41,10 +31,8 @@ N -135 -280 -110 -280 {
 lab=ena}
 N -70 -250 -70 -235 {
 lab=vdde}
-N 400 -125 400 -115 {
+N 390 -125 390 -115 {
 lab=ctat}
-N 235 -85 290 -85 {
-lab=avss}
 N 395 -545 395 -535 {
 lab=vref}
 N 395 -395 395 -375 {
@@ -67,10 +55,6 @@ N 320 -365 380 -365 {
 lab=ptat}
 N 460 -490 460 -395 {
 lab=vena}
-N 290 -85 295 -85 {
-lab=avss}
-N 290 -45 295 -45 {
-lab=avss}
 N 195 -360 195 -190 {
 lab=start}
 N 355 -575 495 -575 {
@@ -89,17 +73,23 @@ N 265 -372.5 265 -365 {
 lab=start}
 N 290 -500 290 -492.5 {
 lab=out}
+N 195 -45 390 -45 {
+lab=avss}
+N 235 -85 350 -85 {
+lab=avss}
+N 295 -85 295 -45 {
+lab=avss}
 C {sky130_fd_pr/pnp_05v5.sym} 215 -85 0 1 {name=Q1
 model=pnp_05v5_W3p40L3p40
 m=1
 spiceprefix=X
 }
-C {sky130_fd_pr/pnp_05v5.sym} 380 -85 0 0 {name=Q2
+C {sky130_fd_pr/pnp_05v5.sym} 370 -85 0 0 {name=Q2
 model=pnp_05v5_W3p40L3p40
 m=8
 spiceprefix=X
 }
-C {devices/code.sym} 645 -345 0 0 {name=params only_toplevel=false value="
+C {devices/code.sym} 665 -470 0 0 {name=params only_toplevel=false value="
 .param L8=10
 .param W8=1
 .param L10=1
@@ -108,7 +98,7 @@ C {devices/code.sym} 645 -345 0 0 {name=params only_toplevel=false value="
 "}
 C {devices/ammeter.sym} 195 -160 0 0 {name=Vctat savecurrent=true}
 C {devices/lab_pin.sym} 395 -390 0 1 {name=p1 sig_type=std_logic lab=ptat}
-C {devices/lab_pin.sym} 400 -125 0 0 {name=p2 sig_type=std_logic lab=ctat}
+C {devices/lab_pin.sym} 390 -125 0 0 {name=p2 sig_type=std_logic lab=ctat}
 C {devices/lab_pin.sym} 305 -575 0 1 {name=p3 sig_type=std_logic lab=out}
 C {sky130_fd_pr/pfet3_01v8.sym} 375 -575 0 0 {name=M1
 L=\{L8\}
@@ -142,10 +132,10 @@ spiceprefix=X
 }
 C {devices/ngspice_probe.sym} 195 -370 0 0 {name=r3}
 C {devices/lab_pin.sym} -70 -235 0 0 {name=p5 sig_type=std_logic lab=vdde}
-C {devices/ammeter.sym} 400 -155 0 0 {name=Vctat1 savecurrent=true}
+C {devices/ammeter.sym} 390 -155 0 1 {name=Vctat1 savecurrent=true}
 C {Resistor492k_1.sym} 625 -495 0 0 {name=x2}
 C {Resistor492k_1.sym} -35 -495 0 1 {name=x3}
-C {Resistor50k_1.sym} 535 -670 1 0 {name=x4}
+C {Resistor50k_1.sym} 255 -670 3 1 {name=x4}
 C {devices/ngspice_probe.sym} 395 -540 0 0 {name=r1}
 C {Startup.sym} -125 -145 0 0 {name=x5}
 C {devices/lab_pin.sym} 240 -365 3 0 {name=p13 sig_type=std_logic lab=start}
@@ -192,13 +182,13 @@ C {devices/iopin.sym} 500 -365 0 0 {name=p9 lab=vbgsc}
 C {devices/lab_pin.sym} 335 -432.5 2 0 {name=p25 sig_type=std_logic lab=avss}
 C {devices/iopin.sym} 460 -440 0 0 {name=p15 lab=vena}
 C {devices/iopin.sym} -70 -325 3 0 {name=p16 lab=avdd}
-C {devices/iopin.sym} 295 -40 1 0 {name=p17 lab=avss}
-C {devices/lab_pin.sym} 455 -320 2 0 {name=p18 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} 455 -220 0 0 {name=p20 lab=dvss}
-C {devices/iopin.sym} 455 -300 0 0 {name=p21 lab=trim0}
-C {devices/iopin.sym} 455 -280 0 0 {name=p22 lab=trim1}
-C {devices/iopin.sym} 455 -260 0 0 {name=p23 lab=trim2}
-C {devices/iopin.sym} 455 -240 0 0 {name=p24 lab=trim3}
+C {devices/iopin.sym} 295 -45 1 0 {name=p17 lab=avss}
+C {devices/lab_pin.sym} 335 -320 2 1 {name=p18 sig_type=std_logic lab=avss}
+C {devices/iopin.sym} 335 -220 0 1 {name=p20 lab=dvss}
+C {devices/iopin.sym} 335 -300 0 1 {name=p21 lab=trim0}
+C {devices/iopin.sym} 335 -280 0 1 {name=p22 lab=trim1}
+C {devices/iopin.sym} 335 -260 0 1 {name=p23 lab=trim2}
+C {devices/iopin.sym} 335 -240 0 1 {name=p24 lab=trim3}
 C {devices/lab_pin.sym} 355 -485 0 0 {name=p26 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 235 -485 2 0 {name=p27 sig_type=std_logic lab=avss}
 C {devices/iopin.sym} -55 -185 2 0 {name=p28 lab=dvdd}
@@ -223,7 +213,7 @@ spiceprefix=X
 C {op5.sym} 360 -75 3 0 {name=x1}
 C {sky130_fd_pr/pfet3_01v8.sym} -90 -280 0 0 {name=M6
 L=2
-W=1
+W=2
 body=DVDD
 nf=1
 mult=4

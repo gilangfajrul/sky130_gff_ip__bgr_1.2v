@@ -1,0 +1,46 @@
+timestamp 1720284839
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__res_high_po_0p35_RXTQM4 sky130_fd_pr__res_high_po_0p35_RXTQM4_0 1 0 175 0 1 4156
+port "C" 2 252 2360 252 2360 m1
+port "A" 1 318 2324 318 2324 m2
+port "D" 4 327 5983 327 5983 m2
+port "B" 3 257 5949 257 5949 m1
+port "AVSS" 5 -245 2304 -245 2304 m1
+node "C" 0 0 252 2360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 0 0 318 2324 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_565_4092#" 0 0 565 4092 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n99_4131#" 0 0 -99 4131 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n100_4024#" 0 0 -100 4024 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n265_4096#" 0 0 -265 4096 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 0 0 327 5983 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 0 0 257 5949 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "AVSS" 0 0 -245 2304 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_214_n484#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n284_n484#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n284_n484#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_48_52#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_48_52#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n118_52#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n118_52#" "m1_n100_4024#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_48_n484#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n118_n484#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n118_n484#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n284_52#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n284_52#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_214_52#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_214_52#" "m1_n99_4131#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_48_1352#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n118_1352#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n118_1352#" "B"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n450_n484#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n450_52#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n450_52#" "m1_n265_4096#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_380_1352#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n450_1352#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n450_1352#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/VSUBS"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/VSUBS" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n450_n1784#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n450_n1784#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_380_n1784#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_380_n1784#" "AVSS"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_214_1352#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n284_1352#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n284_1352#" "D"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_214_n1784#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n284_n1784#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n284_n1784#" "A"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_380_n484#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_380_52#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_380_52#" "m1_565_4092#"
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_48_n1784#" "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n118_n1784#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_n118_n1784#" "C"

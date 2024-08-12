@@ -119,7 +119,7 @@ print ls
 
 .endc
 "}
-C {sky130_fd_pr/corner.sym} 675 -185 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 675 -185 0 0 {name=CORNER only_toplevel=false corner=ss}
 C {devices/gnd.sym} 370 -50 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} -5 -105 0 0 {name=l7 lab=GND}
 C {devices/vsource.sym} -5 -150 0 0 {name=V2 value="1.8" savecurrent=false

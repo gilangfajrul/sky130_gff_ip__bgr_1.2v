@@ -33,13 +33,13 @@ Xsky130_fd_pr__pfet_01v8_C2SJBD_0 vdde vdde vdde D10 G10 D10 G10 vdde vdde vdde 
 Xsky130_fd_pr__pfet_01v8_8WJJP2_1 vdde G10 D10 vdde G10 vdde vdde vdde vdde D10 sky130_fd_pr__pfet_01v8_8WJJP2
 Xsky130_fd_pr__pfet_01v8_HVJJBB_0 D1 vdde D2 D10 D10 vdde D2 D10 vdde D10 sky130_fd_pr__pfet_01v8_HVJJBB
 Xsky130_fd_pr__pfet_01v8_HVJJBB_1 D1 vdde D2 D10 D10 vdde D2 D10 vdde D10 sky130_fd_pr__pfet_01v8_HVJJBB
-Xsky130_fd_pr__pfet_01v8_2XUZHN_0 vdde vdde D2 vdde sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_1 D10 vdde vdde vdde sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_2 D2 vdde vdde vdde sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_3 D2 vdde vdde vdde sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_4 D10 vdde vdde vdde sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_5 vdde vdde D10 vdde sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_6 vdde vdde D2 vdde sky130_fd_pr__pfet_01v8_2XUZHN
-Xsky130_fd_pr__pfet_01v8_2XUZHN_8 vdde vdde D10 vdde sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_0 D2 vdde D2 D2 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_1 D10 vdde D10 D10 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_2 D2 vdde D2 D2 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_3 D2 vdde D2 D2 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_4 D10 vdde D10 D10 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_5 D10 vdde D10 D10 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_6 D2 vdde D2 D2 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_8 D10 vdde D10 D10 sky130_fd_pr__pfet_01v8_2XUZHN
 .ends
 

@@ -84,9 +84,9 @@ Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZDN in circuit pmos_ena (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9XCE2A in circuit pmos_ena (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_CVHEWD in circuit pmos_ena (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2ZH9EN in circuit pmos_ena (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_CVH45E in circuit pmos_ena (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9XC4R9 in circuit pmos_ena (0)(1 instance)
 
 Class pmos_ena (0):  Merged 6 parallel devices.
 Subcircuit summary:
@@ -103,8 +103,8 @@ Circuit 1: pmos_ena                        |Circuit 2: pmos_ena
 -------------------------------------------|-------------------------------------------
 G                                          |G                                          
 AVDD                                       |avdd                                       
+DVDD                                       |dvdd                                       
 VDDE                                       |VDDE                                       
-DVDD                                       |DVDD                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes pmos_ena and pmos_ena are equivalent.
@@ -150,8 +150,8 @@ Circuit 1: vena                            |Circuit 2: vena
 -------------------------------------------|-------------------------------------------
 G                                          |G                                          
 S                                          |S                                          
-D                                          |D                                          
 DVSS                                       |DVSS                                       
+D                                          |D                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes vena and vena are equivalent.
@@ -243,25 +243,25 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: digital                         |Circuit 2: digital                         
 -------------------------------------------|-------------------------------------------
+DVSS                                       |dvss                                       
 S1                                         |s1                                         
 S2                                         |s2                                         
 S3                                         |s3                                         
-vena                                       |vena                                       
-dvss                                       |dvss                                       
+VENA                                       |vena                                       
 S0                                         |s0                                         
 trim0                                      |trim0                                      
 trim3                                      |trim3                                      
 D3                                         |d3                                         
-trim2                                      |trim2                                      
 trim1                                      |trim1                                      
-svbgsc                                     |svbgsc                                     
-svbgtc                                     |svbgtc                                     
-vbgsc                                      |vbgsc                                      
-vbgtc                                      |vbgtc                                      
+trim2                                      |trim2                                      
+SVBGSC                                     |svbgsc                                     
+SVBGTC                                     |svbgtc                                     
+VBGSC                                      |vbgsc                                      
+VBGTC                                      |vbgtc                                      
 AVDD                                       |avdd                                       
-dvdd                                       |dvdd                                       
-ena                                        |ena                                        
-vdde                                       |vdde                                       
+ENA                                        |ena                                        
+DVDD                                       |dvdd                                       
+VDDE                                       |vdde                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes digital and digital are equivalent.
@@ -290,10 +290,10 @@ D3                                         |D3
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes pmos_startup and pmos_startup are equivalent.
-Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_5N3J8V in circuit res_trim (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_KQ9YC9 in circuit res_trim (0)(1 instance)
 
 Class res_trim (0):  Merged 41 parallel devices.
-Class res_trim (1):  Merged 4 parallel devices.
+Class res_trim (1):  Merged 3 parallel devices.
 Subcircuit summary:
 Circuit 1: res_trim                        |Circuit 2: res_trim                        
 -------------------------------------------|-------------------------------------------
@@ -306,12 +306,12 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: res_trim                        |Circuit 2: res_trim                        
 -------------------------------------------|-------------------------------------------
+A                                          |A                                          
 AVSS                                       |AVSS                                       
 1                                          |1                                          
-A                                          |A                                          
-B                                          |B                                          
 2                                          |2                                          
 3                                          |3                                          
+B                                          |B                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes res_trim and res_trim are equivalent.
@@ -390,13 +390,13 @@ D9                                         |D9
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes pmos_current_bgr_2 and pmos_current_bgr_2 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_4E8R5J in circuit resistor_op_tt (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_RXTQM4 in circuit resistor_op_tt (0)(1 instance)
 
-Class resistor_op_tt (0):  Merged 7 parallel devices.
-Class resistor_op_tt (0):  Merged 1 series devices.
+Class resistor_op_tt (0):  Merged 6 parallel devices.
+Class resistor_op_tt (0):  Merged 2 series devices.
 Class resistor_op_tt (0):  Merged 1 parallel devices.
-Class resistor_op_tt (1):  Merged 4 parallel devices.
-Class resistor_op_tt (1):  Merged 1 series devices.
+Class resistor_op_tt (1):  Merged 6 parallel devices.
+Class resistor_op_tt (1):  Merged 2 series devices.
 Class resistor_op_tt (1):  Merged 1 parallel devices.
 Subcircuit summary:
 Circuit 1: resistor_op_tt                  |Circuit 2: resistor_op_tt                  
@@ -412,10 +412,10 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: resistor_op_tt                  |Circuit 2: resistor_op_tt                  
 -------------------------------------------|-------------------------------------------
-A                                          |a                                          
-B                                          |b                                          
 C                                          |c                                          
+B                                          |b                                          
 D                                          |d                                          
+A                                          |a                                          
 AVSS                                       |AVSS                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
@@ -442,17 +442,17 @@ Subcircuit pins:
 Circuit 1: nmos_tail_current               |Circuit 2: nmos_tail_current               
 -------------------------------------------|-------------------------------------------
 D1                                         |D1                                         
-D3                                         |D3                                         
 D4                                         |D4                                         
+D3                                         |D3                                         
 S2                                         |S2                                         
 D2                                         |D2                                         
 AVSS                                       |AVSS                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes nmos_tail_current and nmos_tail_current are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_BAH34H in circuit differential_pair (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_N7TR4F in circuit differential_pair (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_4VSDG9 in circuit differential_pair (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_2A7GYR in circuit differential_pair (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_G26DVX in circuit differential_pair (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_7RJ44K in circuit differential_pair (0)(1 instance)
 
 Class differential_pair (0):  Merged 4 parallel devices.
 Subcircuit summary:
@@ -469,16 +469,16 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: differential_pair               |Circuit 2: differential_pair               
 -------------------------------------------|-------------------------------------------
-AVSS                                       |AVSS                                       
+PLUS                                       |plus                                       
+MINUS                                      |minus                                      
 S                                          |S                                          
-D3                                         |D3                                         
+AVSS                                       |AVSS                                       
 D4                                         |D4                                         
-plus                                       |plus                                       
-minus                                      |minus                                      
+D3                                         |D3                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes differential_pair and differential_pair are equivalent.
-Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_NUNB4Q in circuit resist_const (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_SU58NF in circuit resist_const (0)(1 instance)
 
 Class resist_const (0):  Merged 49 series devices.
 Class resist_const (0):  Merged 1 parallel devices.
@@ -494,13 +494,13 @@ Number of nets: 11                         |Number of nets: 11
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
 Netlists match uniquely with property errors.
-sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:39 vs. sky130_fd_pr__res_high_po_0p35:R17:
+sky130_fd_pr__res_high_po_0p35_SU58NF_0/sky130_fd_pr__res_high_po_0p35:39 vs. sky130_fd_pr__res_high_po_0p35:R17:
  l circuit1: 136   circuit2: 119   (delta=13.3%, cutoff=1%)
-sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:20 vs. sky130_fd_pr__res_high_po_0p35:R28:
+sky130_fd_pr__res_high_po_0p35_SU58NF_0/sky130_fd_pr__res_high_po_0p35:20 vs. sky130_fd_pr__res_high_po_0p35:R28:
  l circuit1: 153   circuit2: 170   (delta=10.5%, cutoff=1%)
-sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:5 vs. sky130_fd_pr__res_high_po_0p35:R44:
+sky130_fd_pr__res_high_po_0p35_SU58NF_0/sky130_fd_pr__res_high_po_0p35:5 vs. sky130_fd_pr__res_high_po_0p35:R44:
  l circuit1: 221   circuit2: 204   (delta=8%, cutoff=1%)
-sky130_fd_pr__res_high_po_0p35_NUNB4Q_0/sky130_fd_pr__res_high_po_0p35:21 vs. sky130_fd_pr__res_high_po_0p35:R6:
+sky130_fd_pr__res_high_po_0p35_SU58NF_0/sky130_fd_pr__res_high_po_0p35:21 vs. sky130_fd_pr__res_high_po_0p35:R6:
  l circuit1: 102   circuit2: 119   (delta=15.4%, cutoff=1%)
 
 Subcircuit pins:
@@ -558,7 +558,7 @@ differential_pair (1)                      |differential_pair (1)
 resist_const (1)                           |resist_const (1)                           
 cap_op (1)                                 |cap_op (1)                                 
 Number of devices: 14                      |Number of devices: 14                      
-Number of nets: 36                         |Number of nets: 36                         
+Number of nets: 35                         |Number of nets: 35                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 

@@ -92,12 +92,10 @@ lab=bias}
 N 155 -120 190 -120 {
 lab=#net7}
 N 250 -120 265 -120 {
-lab=AVSS}
+lab=#net8}
 N 855 -255 925 -255 {
 lab=AVSS}
 N 325 -120 340 -120 {
-lab=AVSS}
-N 265 -120 325 -120 {
 lab=AVSS}
 C {devices/lab_pin.sym} 520 -75 0 0 {name=p7 sig_type=std_logic lab=bias
 value=0.9}
@@ -179,8 +177,8 @@ C {devices/code.sym} 745 -105 0 0 {name=params only_toplevel=false value="
 
 **************
 *differential Pair
-.param L4=10
-.param W4=0.8
+.param L4=13
+.param W4=0.9
 
 **************
 *NMOS current control
@@ -287,10 +285,10 @@ spiceprefix=X
 C {devices/lab_pin.sym} 250 -175 0 0 {name=p2 sig_type=std_logic lab=bias
 value=0.9}
 C {sky130_fd_pr/res_high_po_0p35.sym} 220 -120 1 0 {name=R4
-L=3
+L=4.5
 model=res_high_po_0p35
 spiceprefix=X
-mult=4}
+mult=2}
 C {sky130_fd_pr/nfet3_01v8.sym} 505 -165 0 0 {name=M4
 L=\{L4\}
 W=\{W4\}
@@ -307,12 +305,12 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/res_high_po_0p35.sym} 855 -235 1 0 {name=R1
-L=3
+L=4.5
 model=res_high_po_0p35
 spiceprefix=X
 mult=2}
 C {sky130_fd_pr/res_high_po_0p35.sym} 925 -235 1 0 {name=R2
-L=3
+L=4.5
 model=res_high_po_0p35
 spiceprefix=X
 mult=2}
@@ -327,3 +325,10 @@ C {devices/ngspice_probe.sym} 340 -245 0 0 {name=r3}
 C {devices/ngspice_probe.sym} 155 -240 0 0 {name=r5}
 C {devices/ngspice_probe.sym} 525 -240 0 0 {name=r6}
 C {devices/ngspice_probe.sym} 710 -245 0 0 {name=r7}
+C {devices/ngspice_probe.sym} 560 -115 0 0 {name=r8}
+C {sky130_fd_pr/res_high_po_0p35.sym} 295 -120 1 0 {name=R9
+L=4.5
+model=res_high_po_0p35
+spiceprefix=X
+mult=2}
+C {devices/lab_pin.sym} 295 -140 2 0 {name=p15 sig_type=std_logic lab=AVSS}

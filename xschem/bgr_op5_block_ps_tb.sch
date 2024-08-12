@@ -56,7 +56,6 @@ op
 remzerovec
 write bgr_op5_block_ps_tb.raw
 
-set appendwrite
 set wr_singlescale
 set wr_vecnames
 option numdgt=3

@@ -5,9 +5,9 @@ XM8 D8 D9 VDDE vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=2
 XM9 D9 D9 VDDE vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=2
 XM3 D3 D4 VDDE vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=2
 XM4 D4 D4 VDDE vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=2
-XM1 D8 VDDE VDDE vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=2
-XM2 D3 VDDE VDDE vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=2
-XM5 D4 VDDE VDDE vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=2
-XM6 D9 VDDE VDDE vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=2
+XM1 D9 D9 D9 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=2
+XM2 D4 D4 D4 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=2
+XM5 D8 D8 D8 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=2
+XM6 D3 D3 D3 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=2
 .ends
 .end

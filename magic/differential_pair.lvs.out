@@ -13,9 +13,9 @@ Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_BAH34H in circuit differential_pair (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_N7TR4F in circuit differential_pair (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_4VSDG9 in circuit differential_pair (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_2A7GYR in circuit differential_pair (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_G26DVX in circuit differential_pair (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_7RJ44K in circuit differential_pair (0)(1 instance)
 
 Class differential_pair (0):  Merged 4 parallel devices.
 Subcircuit summary:
@@ -32,12 +32,12 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: differential_pair               |Circuit 2: differential_pair               
 -------------------------------------------|-------------------------------------------
-AVSS                                       |AVSS                                       
+PLUS                                       |plus                                       
+MINUS                                      |minus                                      
 S                                          |S                                          
-D3                                         |D3                                         
+AVSS                                       |AVSS                                       
 D4                                         |D4                                         
-plus                                       |plus                                       
-minus                                      |minus                                      
+D3                                         |D3                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes differential_pair and differential_pair are equivalent.

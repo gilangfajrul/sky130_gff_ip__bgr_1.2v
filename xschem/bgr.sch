@@ -227,16 +227,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 375 -150 0 0 {name=R3
-L=3.5
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 575 -150 0 0 {name=R2
-L=19
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
 C {devices/simulator_commands_shown.sym} 945 -985 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
@@ -252,7 +242,8 @@ set appendwrite
 dc temp -40 85 1
 remzerovec
 write bgr.raw
-plot (ptat-ctat) ctat
+plot (ptat-ctat)
+plot ctat
 plot vref
 
 ********TC********
@@ -288,6 +279,7 @@ print ave_power
 dc v1 0 3.5 0.1
 write bgr.raw
 remzerovec
+plot vdd vref
 meas dc vref_max max v(vref) from=1.62 to=1.98
 meas dc vref_min min v(vref) from=1.62 to=1.98
 let ls='(vref_max-vref_min)/(1.98-1.62)'
@@ -295,3 +287,13 @@ print ls
 
 .endc
 "}
+C {sky130_fd_pr/res_high_po_0p35.sym} 375 -150 0 0 {name=R1
+L=10
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 575 -150 0 0 {name=R2
+L=57
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}

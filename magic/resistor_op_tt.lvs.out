@@ -12,13 +12,13 @@ Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_4E8R5J in circuit resistor_op_tt (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_RXTQM4 in circuit resistor_op_tt (0)(1 instance)
 
-Class resistor_op_tt (0):  Merged 7 parallel devices.
-Class resistor_op_tt (0):  Merged 1 series devices.
+Class resistor_op_tt (0):  Merged 6 parallel devices.
+Class resistor_op_tt (0):  Merged 2 series devices.
 Class resistor_op_tt (0):  Merged 1 parallel devices.
-Class resistor_op_tt (1):  Merged 4 parallel devices.
-Class resistor_op_tt (1):  Merged 1 series devices.
+Class resistor_op_tt (1):  Merged 6 parallel devices.
+Class resistor_op_tt (1):  Merged 2 series devices.
 Class resistor_op_tt (1):  Merged 1 parallel devices.
 Subcircuit summary:
 Circuit 1: resistor_op_tt                  |Circuit 2: resistor_op_tt                  
@@ -34,10 +34,10 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: resistor_op_tt                  |Circuit 2: resistor_op_tt                  
 -------------------------------------------|-------------------------------------------
-A                                          |a                                          
-B                                          |b                                          
 C                                          |c                                          
+B                                          |b                                          
 D                                          |d                                          
+A                                          |a                                          
 AVSS                                       |AVSS                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.

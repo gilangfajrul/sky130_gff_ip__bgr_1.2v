@@ -28,9 +28,9 @@ Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_l
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZDN in circuit pmos_ena (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9XCE2A in circuit pmos_ena (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_CVHEWD in circuit pmos_ena (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2ZH9EN in circuit pmos_ena (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_CVH45E in circuit pmos_ena (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9XC4R9 in circuit pmos_ena (0)(1 instance)
 
 Class pmos_ena (0):  Merged 6 parallel devices.
 Subcircuit summary:
@@ -47,8 +47,8 @@ Circuit 1: pmos_ena                        |Circuit 2: pmos_ena
 -------------------------------------------|-------------------------------------------
 G                                          |G                                          
 AVDD                                       |avdd                                       
+DVDD                                       |dvdd                                       
 VDDE                                       |VDDE                                       
-DVDD                                       |DVDD                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes pmos_ena and pmos_ena are equivalent.
@@ -94,8 +94,8 @@ Circuit 1: vena                            |Circuit 2: vena
 -------------------------------------------|-------------------------------------------
 G                                          |G                                          
 S                                          |S                                          
-D                                          |D                                          
 DVSS                                       |DVSS                                       
+D                                          |D                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes vena and vena are equivalent.
@@ -116,25 +116,25 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: digital                         |Circuit 2: digital                         
 -------------------------------------------|-------------------------------------------
+DVSS                                       |dvss                                       
 S1                                         |s1                                         
 S2                                         |s2                                         
 S3                                         |s3                                         
-vena                                       |vena                                       
-dvss                                       |dvss                                       
+VENA                                       |vena                                       
 S0                                         |s0                                         
 trim0                                      |trim0                                      
 trim3                                      |trim3                                      
 D3                                         |d3                                         
-trim2                                      |trim2                                      
 trim1                                      |trim1                                      
-svbgsc                                     |svbgsc                                     
-svbgtc                                     |svbgtc                                     
-vbgsc                                      |vbgsc                                      
-vbgtc                                      |vbgtc                                      
+trim2                                      |trim2                                      
+SVBGSC                                     |svbgsc                                     
+SVBGTC                                     |svbgtc                                     
+VBGSC                                      |vbgsc                                      
+VBGTC                                      |vbgtc                                      
 AVDD                                       |avdd                                       
-dvdd                                       |dvdd                                       
-ena                                        |ena                                        
-vdde                                       |vdde                                       
+ENA                                        |ena                                        
+DVDD                                       |dvdd                                       
+VDDE                                       |vdde                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes digital and digital are equivalent.

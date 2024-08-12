@@ -32,7 +32,7 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: pmos_current_bgr_2              |Circuit 2: pmos_current_bgr_2              
 -------------------------------------------|-------------------------------------------
-vdde                                       |VDDE                                       
+VDDE                                       |VDDE                                       
 D3                                         |D3                                         
 D8                                         |D8                                         
 D4                                         |D4                                         

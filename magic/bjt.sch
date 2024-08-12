@@ -25,13 +25,11 @@ N 270 -130 275 -130 {
 lab=AVSS}
 N 270 -90 275 -90 {
 lab=AVSS}
-N 525 -175 565 -175 {
+N 560 -215 600 -215 {
 lab=AVSS}
-N 525 -205 525 -175 {
+N 560 -275 560 -215 {
 lab=AVSS}
-N 525 -235 525 -205 {
-lab=AVSS}
-N 525 -235 565 -235 {
+N 560 -275 600 -275 {
 lab=AVSS}
 C {sky130_fd_pr/pnp_05v5.sym} 195 -130 0 1 {name=Q1
 model=pnp_05v5_W3p40L3p40
@@ -46,9 +44,9 @@ spiceprefix=X
 C {devices/iopin.sym} 275 -85 1 0 {name=p17 lab=AVSS}
 C {devices/iopin.sym} 175 -160 3 0 {name=p1 lab=A}
 C {devices/iopin.sym} 380 -160 3 0 {name=p2 lab=B}
-C {sky130_fd_pr/pnp_05v5.sym} 545 -205 0 0 {name=Q3
+C {sky130_fd_pr/pnp_05v5.sym} 580 -245 0 0 {name=Q3
 model=pnp_05v5_W3p40L3p40
 m=16
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 525 -175 0 0 {name=p3 sig_type=std_logic lab=AVSS}
+C {devices/lab_pin.sym} 560 -245 0 0 {name=p3 sig_type=std_logic lab=AVSS}

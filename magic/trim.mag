@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1718385237
+timestamp 1720107662
 << psubdiff >>
 rect -176 945 -116 979
 rect 690 945 750 979
@@ -49,32 +49,24 @@ rect 716 -1087 750 -1061
 rect -176 -1121 -116 -1087
 rect 690 -1121 750 -1087
 << viali >>
-rect -176 -88 -142 -54
 rect -76 -88 -42 -54
 rect 616 -88 650 -54
-rect 716 -88 750 -54
 << metal1 >>
 rect 245 858 330 904
 rect -82 -42 -36 26
-rect -182 -54 -36 -42
-rect -182 -88 -176 -54
-rect -142 -88 -76 -54
-rect -42 -88 -36 -54
-rect -182 -100 -36 -88
-rect -82 -168 -36 -100
-rect 6 -48 52 44
+rect 6 -42 52 44
 rect 251 38 261 814
 rect 313 38 323 814
-rect 522 -48 568 46
-rect 6 -94 568 -48
-rect 6 -172 52 -94
-rect 522 -170 568 -94
+rect 522 -42 568 46
 rect 610 -42 656 26
-rect 610 -54 756 -42
-rect 610 -88 616 -54
-rect 650 -88 716 -54
-rect 750 -88 756 -54
-rect 610 -100 756 -88
+rect -82 -54 656 -42
+rect -82 -88 -76 -54
+rect -42 -88 616 -54
+rect 650 -88 656 -54
+rect -82 -100 656 -88
+rect -82 -168 -36 -100
+rect 6 -172 52 -100
+rect 522 -170 568 -100
 rect 610 -168 656 -100
 rect 251 -956 261 -180
 rect 313 -956 323 -180
@@ -111,12 +103,12 @@ timestamp 1717913857
 transform 1 0 287 0 1 -599
 box -287 -457 287 457
 << labels >>
-flabel metal1 -116 -68 -116 -68 0 FreeSans 160 0 0 0 DVSS
-port 0 nsew
 flabel metal2 286 14 286 14 0 FreeSans 160 0 0 0 S
 port 1 nsew
 flabel metal1 282 -1026 282 -1026 0 FreeSans 160 0 0 0 G
 port 2 nsew
-flabel metal1 548 -136 548 -136 0 FreeSans 160 0 0 0 D
-port 3 nsew
+flabel metal1 547 -151 547 -151 0 FreeSans 160 0 0 0 D
+port 4 nsew
+flabel psubdiffcont -165 -68 -165 -68 0 FreeSans 160 0 0 0 DVSS
+port 7 nsew
 << end >>

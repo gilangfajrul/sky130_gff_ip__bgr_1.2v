@@ -369,8 +369,8 @@ Circuit res_trim contains 48 device instances.
   Class: sky130_fd_pr__res_high_po_0p35 instances:  48
 Circuit contains 6 nets.
 Contents of circuit 2:  Circuit: 'res_trim'
-Circuit res_trim contains 11 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  11
+Circuit res_trim contains 10 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
 Circuit contains 6 nets.
 
 Circuit was modified by parallel/series device merging.
@@ -467,11 +467,11 @@ Circuit 1 contains 5 nets,    Circuit 2 contains 5 nets.
 Contents of circuit 1:  Circuit: 'resistor_op_tt'
 Circuit resistor_op_tt contains 12 device instances.
   Class: sky130_fd_pr__res_high_po_0p35 instances:  12
-Circuit contains 8 nets.
+Circuit contains 9 nets.
 Contents of circuit 2:  Circuit: 'resistor_op_tt'
-Circuit resistor_op_tt contains 9 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:   9
-Circuit contains 8 nets.
+Circuit resistor_op_tt contains 12 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  12
+Circuit contains 9 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
@@ -488,6 +488,7 @@ Circuit contains 7 nets.
 Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
 Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
 
+No more changes can be made to series/parallel networks.
 No more changes can be made to series/parallel networks.
 No more changes can be made to series/parallel networks.
 
@@ -607,7 +608,7 @@ Circuit bgr_op5_block_rev1 contains 14 device instances.
   Class: nmos_startup          instances:   1
   Class: pmos_current_bgr_2    instances:   1
   Class: resist_const          instances:   1
-Circuit contains 36 nets.
+Circuit contains 35 nets.
 Contents of circuit 2:  Circuit: 'bgr_op5_block_rev1'
 Circuit bgr_op5_block_rev1 contains 14 device instances.
   Class: res_trim              instances:   1
@@ -624,10 +625,10 @@ Circuit bgr_op5_block_rev1 contains 14 device instances.
   Class: nmos_startup          instances:   1
   Class: pmos_current_bgr_2    instances:   1
   Class: resist_const          instances:   1
-Circuit contains 36 nets.
+Circuit contains 35 nets.
 
 Circuit 1 contains 14 devices, Circuit 2 contains 14 devices.
-Circuit 1 contains 36 nets,    Circuit 2 contains 36 nets.
+Circuit 1 contains 35 nets,    Circuit 2 contains 35 nets.
 
 
 Final result: 

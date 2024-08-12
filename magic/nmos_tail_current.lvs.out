@@ -35,8 +35,8 @@ Subcircuit pins:
 Circuit 1: nmos_tail_current               |Circuit 2: nmos_tail_current               
 -------------------------------------------|-------------------------------------------
 D1                                         |D1                                         
-D3                                         |D3                                         
 D4                                         |D4                                         
+D3                                         |D3                                         
 S2                                         |S2                                         
 D2                                         |D2                                         
 AVSS                                       |AVSS                                       

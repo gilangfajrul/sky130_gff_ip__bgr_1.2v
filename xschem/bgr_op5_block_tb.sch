@@ -49,7 +49,6 @@ C {devices/vsource.sym} 100 -160 0 0 {name=V1 value="ac 1 sin(1.8 1 1)" savecurr
 *pulse(0 1.8 2ns 2ns)}
 C {devices/vdd.sym} 100 -205 0 0 {name=l3 lab=VDD}
 C {devices/code.sym} 560 -185 0 0 {name=ngspice only_toplevel=false value="
-.include ~/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.pex.spice
 .option savecurrents
 .control
 save all

@@ -25,8 +25,8 @@ C {devices/iopin.sym} 590 -310 0 0 {name=p78 lab=vena}
 C {devices/lab_pin.sym} 590 -400 2 0 {name=p74 sig_type=std_logic lab=vena}
 C {/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/pmos_ena.sym} 940 -400 2 0 {name=x4}
 C {devices/iopin.sym} 790 -370 2 0 {name=p64 lab=avdd}
-C {devices/iopin.sym} 790 -390 2 0 {name=p32 lab=dvdd}
-C {devices/iopin.sym} 790 -410 2 0 {name=p33 lab=ena}
+C {devices/iopin.sym} 790 -410 2 0 {name=p32 lab=dvdd}
+C {devices/iopin.sym} 790 -390 2 0 {name=p33 lab=ena}
 C {devices/iopin.sym} 590 -605 0 0 {name=p1 lab=dvss}
 C {devices/iopin.sym} 590 -625 0 0 {name=p3 lab=s3}
 C {devices/iopin.sym} 590 -565 0 0 {name=p4 lab=d3}

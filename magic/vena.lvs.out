@@ -31,8 +31,8 @@ Circuit 1: vena                            |Circuit 2: vena
 -------------------------------------------|-------------------------------------------
 G                                          |G                                          
 S                                          |S                                          
-D                                          |D                                          
 DVSS                                       |DVSS                                       
+D                                          |D                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes vena and vena are equivalent.

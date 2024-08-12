@@ -19,28 +19,28 @@ N 260 -295 260 -285 {
 lab=d2}
 N 60 -295 60 -285 {
 lab=d1}
-N 590 -335 590 -310 {
+N 545 -255 585 -255 {
 lab=vdde}
-N 590 -340 590 -335 {
+N 545 -315 545 -255 {
 lab=vdde}
-N 590 -340 630 -340 {
+N 545 -315 585 -315 {
 lab=vdde}
-N 740 -330 740 -305 {
-lab=vdde}
-N 740 -335 740 -330 {
-lab=vdde}
-N 740 -335 780 -335 {
-lab=vdde}
-N 230 -165 230 -140 {
-lab=vdde}
-N 230 -170 230 -165 {
-lab=vdde}
-N 230 -170 270 -170 {
-lab=vdde}
-N 230 -110 270 -110 {
-lab=vdde}
-N 230 -140 230 -110 {
-lab=vdde}
+N 385 -190 385 -160 {
+lab=d10}
+N 385 -190 425 -190 {
+lab=d10}
+N 540 -185 540 -155 {
+lab=d2}
+N 540 -185 580 -185 {
+lab=d2}
+N 385 -130 425 -130 {
+lab=d10}
+N 385 -160 385 -130 {
+lab=d10}
+N 540 -125 580 -125 {
+lab=d2}
+N 540 -155 540 -125 {
+lab=d2}
 C {sky130_fd_pr/pfet3_01v8.sym} 395 -325 0 0 {name=M10
 L=10
 W=1
@@ -92,39 +92,8 @@ C {devices/iopin.sym} 375 -325 2 0 {name=p2 lab=g10}
 C {devices/iopin.sym} 415 -295 1 0 {name=p4 lab=d10}
 C {devices/iopin.sym} 260 -285 1 0 {name=p5 lab=d2}
 C {devices/iopin.sym} 60 -285 1 0 {name=p6 lab=d1}
-C {sky130_fd_pr/pfet3_01v8.sym} 610 -310 0 0 {name=M1
-L=0.15
-W=1
-body=vdde
-nf=1
-mult=4
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 610 -340 1 0 {name=p8 sig_type=std_logic lab=vdde}
-C {sky130_fd_pr/pfet3_01v8.sym} 760 -305 0 0 {name=M2
-L=0.15
-W=1
-body=vdde
-nf=1
-mult=4
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 760 -335 1 0 {name=p10 sig_type=std_logic lab=vdde}
-C {sky130_fd_pr/pfet3_01v8.sym} 250 -140 0 0 {name=M3
+C {devices/lab_pin.sym} 160 -325 3 0 {name=p3 sig_type=std_logic lab=d10}
+C {sky130_fd_pr/pfet3_01v8.sym} 565 -285 0 0 {name=M1
 L=10
 W=1
 body=vdde
@@ -139,7 +108,36 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 250 -170 1 0 {name=p12 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 630 -280 3 0 {name=p7 sig_type=std_logic lab=D10}
-C {devices/lab_pin.sym} 780 -275 3 0 {name=p9 sig_type=std_logic lab=D2}
-C {devices/lab_pin.sym} 160 -325 3 0 {name=p3 sig_type=std_logic lab=d10}
+C {devices/lab_pin.sym} 545 -315 1 0 {name=p7 sig_type=std_logic lab=vdde}
+C {sky130_fd_pr/pfet3_01v8.sym} 405 -160 0 0 {name=M3
+L=0.15
+W=1
+body=vdde
+nf=1
+mult=4
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 425 -130 3 0 {name=p8 sig_type=std_logic lab=d10}
+C {sky130_fd_pr/pfet3_01v8.sym} 560 -155 0 0 {name=M4
+L=0.15
+W=1
+body=vdde
+nf=1
+mult=4
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 580 -125 3 0 {name=p10 sig_type=std_logic lab=d2}

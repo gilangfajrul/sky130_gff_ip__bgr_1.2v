@@ -30,8 +30,8 @@ Circuit res_trim contains 48 device instances.
   Class: sky130_fd_pr__res_high_po_0p35 instances:  48
 Circuit contains 6 nets.
 Contents of circuit 2:  Circuit: 'res_trim'
-Circuit res_trim contains 11 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  11
+Circuit res_trim contains 10 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
 Circuit contains 6 nets.
 
 Circuit was modified by parallel/series device merging.

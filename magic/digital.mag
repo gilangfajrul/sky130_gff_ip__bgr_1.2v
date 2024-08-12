@@ -1,161 +1,147 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1718522076
+timestamp 1720189102
 << dnwell >>
-rect -122 -3938 2442 1539
+rect -317 -1120 2253 4928
 << nwell >>
-rect -202 1333 2522 1619
-rect -202 -3732 84 1333
-rect 2236 -3732 2522 1333
-rect -202 -4018 2522 -3732
+rect -397 4722 2333 5008
+rect -397 -914 -111 4722
+rect 2047 -914 2333 4722
+rect -397 -1200 2333 -914
 << pwell >>
-rect 100 -3716 2220 472
+rect -108 -870 2044 3346
 << nsubdiff >>
-rect -165 1562 2485 1582
-rect -165 1528 -85 1562
-rect 2405 1528 2485 1562
-rect -165 1508 2485 1528
-rect -165 1502 -91 1508
-rect -165 -3901 -145 1502
-rect -111 -3901 -91 1502
-rect -165 -3907 -91 -3901
-rect 2411 1502 2485 1508
-rect 2411 -3901 2431 1502
-rect 2465 -3901 2485 1502
-rect 2411 -3907 2485 -3901
-rect -165 -3927 2485 -3907
-rect -165 -3961 -85 -3927
-rect 2405 -3961 2485 -3927
-rect -165 -3981 2485 -3961
+rect -360 4951 2296 4971
+rect -360 4917 -280 4951
+rect 2216 4917 2296 4951
+rect -360 4897 2296 4917
+rect -360 4891 -286 4897
+rect -360 -1083 -340 4891
+rect -306 -1083 -286 4891
+rect -360 -1089 -286 -1083
+rect 2222 4891 2296 4897
+rect 2222 -1083 2242 4891
+rect 2276 -1083 2296 4891
+rect 2222 -1089 2296 -1083
+rect -360 -1109 2296 -1089
+rect -360 -1143 -280 -1109
+rect 2216 -1143 2296 -1109
+rect -360 -1163 2296 -1143
 << nsubdiffcont >>
-rect -85 1528 2405 1562
-rect -145 -3901 -111 1502
-rect 2431 -3901 2465 1502
-rect -85 -3961 2405 -3927
+rect -280 4917 2216 4951
+rect -340 -1083 -306 4891
+rect 2242 -1083 2276 4891
+rect -280 -1143 2216 -1109
 << locali >>
-rect -145 1528 -85 1562
-rect 2405 1528 2465 1562
-rect -145 1502 -111 1528
-rect -145 -3927 -111 -3901
-rect 2431 1502 2465 1528
-rect 2431 -3927 2465 -3901
-rect -145 -3961 -85 -3927
-rect 2405 -3961 2465 -3927
+rect -340 4917 -280 4951
+rect 2216 4917 2276 4951
+rect -340 4891 -306 4917
+rect -340 -1109 -306 -1083
+rect 2242 4891 2276 4917
+rect 2242 -1109 2276 -1083
+rect -340 -1143 -280 -1109
+rect 2216 -1143 2276 -1109
 << metal1 >>
-rect 1457 1327 1493 1373
-rect 679 692 725 732
-rect 1683 692 1729 707
-rect 155 332 175 390
-rect 763 338 1579 384
-rect 808 289 854 306
-rect 1982 290 2028 306
-rect 550 106 596 134
-rect 1724 106 1770 123
-rect 185 -586 231 -559
-rect 265 -851 275 -799
-rect 1051 -851 1061 -799
-rect 1259 -851 1269 -799
-rect 2045 -851 2055 -799
-rect 192 -1472 210 -1463
-rect 265 -1743 275 -1691
-rect 1051 -1743 1061 -1691
-rect 1259 -1743 1269 -1691
-rect 2045 -1743 2055 -1691
-rect 197 -2364 210 -2349
-rect 265 -2635 275 -2583
-rect 1051 -2635 1061 -2583
-rect 1259 -2635 1269 -2583
-rect 2045 -2635 2055 -2583
-rect 195 -3249 222 -3232
-rect 1075 -3518 1091 -3498
+rect 1443 4009 1475 4045
+rect 978 3452 1014 3498
+rect 603 3198 1328 3244
+rect 388 2966 434 2983
+rect 1502 2966 1548 2982
+rect 623 2884 631 2930
+rect 1233 2884 1256 2930
+rect -7 2248 39 2262
+rect 932 1930 942 2052
+rect 994 1930 1004 2052
+rect -7 1356 39 1372
+rect 932 1038 942 1160
+rect 994 1038 1004 1160
+rect -7 464 39 483
+rect 932 146 942 268
+rect 994 146 1004 268
+rect -7 -409 39 -389
+rect 71 -664 99 -618
 << via1 >>
-rect 275 -851 1051 -799
-rect 1269 -851 2045 -799
-rect 275 -1743 1051 -1691
-rect 1269 -1743 2045 -1691
-rect 275 -2635 1051 -2583
-rect 1269 -2635 2045 -2583
+rect 942 1930 994 2052
+rect 942 1038 994 1160
+rect 942 146 994 268
 << metal2 >>
-rect 1134 1062 1186 1088
-rect 1045 -593 1277 -541
-rect 275 -799 2045 -789
-rect 1051 -851 1269 -799
-rect 275 -861 2045 -851
-rect 1124 -1466 1196 -861
-rect 275 -1691 2045 -1681
-rect 1051 -1743 1269 -1691
-rect 275 -1753 2045 -1743
-rect 1124 -2370 1196 -1753
-rect 275 -2583 2045 -2573
-rect 1051 -2635 1269 -2583
-rect 275 -2645 2045 -2635
-rect 1124 -3252 1196 -2645
+rect 974 3541 1026 3561
+rect 73 2267 109 2319
+rect 942 2052 994 2062
+rect 73 1375 91 1427
+rect 942 1412 994 1930
+rect 942 1160 994 1170
+rect 73 483 102 535
+rect 942 507 994 1038
+rect 942 268 994 278
+rect 73 -409 110 -357
+rect 942 -390 994 146
 use pmos_ena  pmos_ena_0
-timestamp 1718385698
-transform 1 0 637 0 1 1024
-box -191 -536 1237 466
+timestamp 1720109855
+transform 1 0 477 0 1 3871
+box -176 -521 1222 851
 use trim  trim_0
-timestamp 1718385237
-transform 0 -1 1089 1 0 -854
-box -182 -1121 756 979
+timestamp 1720107662
+transform 0 1 1039 -1 0 -96
+box -176 -1121 750 979
 use trim  trim_1
-timestamp 1718385237
-transform 0 -1 1089 1 0 -1746
-box -182 -1121 756 979
+timestamp 1720107662
+transform 0 1 1039 -1 0 796
+box -176 -1121 750 979
 use trim  trim_2
-timestamp 1718385237
-transform 0 -1 1089 1 0 -2638
-box -182 -1121 756 979
+timestamp 1720107662
+transform 0 1 1039 -1 0 1688
+box -176 -1121 750 979
 use trim  trim_3
-timestamp 1718385237
-transform 0 -1 1089 1 0 -3530
-box -182 -1121 756 979
+timestamp 1720107662
+transform 0 1 1039 -1 0 2580
+box -176 -1121 750 979
 use vena  vena_0
-timestamp 1718385342
-transform 1 0 286 0 1 18
-box -182 -68 756 444
+timestamp 1720108080
+transform 1 0 124 0 1 2878
+box -176 -68 750 444
 use vena  vena_1
-timestamp 1718385342
-transform -1 0 2034 0 1 18
-box -182 -68 756 444
+timestamp 1720108080
+transform -1 0 1812 0 1 2878
+box -176 -68 750 444
 << labels >>
-flabel metal1 1718 700 1718 700 0 FreeSans 1600 0 0 0 dvdd
+flabel metal2 90 -385 90 -385 0 FreeSans 160 0 0 0 S3
+port 0 nsew
+flabel metal1 81 -637 81 -637 0 FreeSans 160 0 0 0 D3
 port 1 nsew
-flabel metal1 1139 362 1139 362 0 FreeSans 1600 0 0 0 vena
+flabel metal1 4 -400 4 -400 0 FreeSans 160 0 0 0 trim3
 port 2 nsew
-flabel metal1 163 360 163 360 0 FreeSans 1600 0 0 0 dvss
-port 3 nsew
-flabel metal1 705 702 705 702 0 FreeSans 1600 0 0 0 vdde
+flabel metal2 88 497 88 497 0 FreeSans 160 0 0 0 S2
+port 4 nsew
+flabel metal1 6 471 6 471 0 FreeSans 160 0 0 0 trim2
 port 5 nsew
-flabel metal1 569 115 569 115 0 FreeSans 1600 0 0 0 svbgsc
+flabel metal1 1 1360 1 1360 0 FreeSans 160 0 0 0 trim1
 port 6 nsew
-flabel metal1 1746 115 1746 115 0 FreeSans 1600 0 0 0 svbgtc
+flabel metal1 8 2255 8 2255 0 FreeSans 160 0 0 0 trim0
 port 7 nsew
-flabel metal2 1154 -1941 1154 -1941 0 FreeSans 1600 0 0 0 S2
+flabel metal2 80 1406 80 1406 0 FreeSans 160 0 0 0 S1
+port 8 nsew
+flabel metal2 85 2292 85 2292 0 FreeSans 160 0 0 0 S0
+port 9 nsew
+flabel metal1 955 3219 955 3219 0 FreeSans 160 0 0 0 VENA
 port 10 nsew
-flabel metal2 1152 -1056 1152 -1056 0 FreeSans 1600 0 0 0 S1
-port 12 nsew
-flabel metal2 1166 -2761 1166 -2761 0 FreeSans 1600 0 0 0 S3
+flabel metal1 1243 2906 1243 2906 0 FreeSans 160 0 0 0 VBGSC
 port 13 nsew
-flabel metal1 1083 -3507 1083 -3507 0 FreeSans 1600 0 0 0 D3
+flabel metal1 627 2906 627 2906 0 FreeSans 160 0 0 0 VBGTC
 port 14 nsew
-flabel metal1 2009 296 2009 296 0 FreeSans 1600 0 0 0 vbgtc
+flabel metal1 1523 2973 1523 2973 0 FreeSans 160 0 0 0 SVBGSC
 port 15 nsew
-flabel metal1 818 299 818 299 0 FreeSans 1600 0 0 0 vbgsc
+flabel metal1 407 2974 407 2974 0 FreeSans 160 0 0 0 SVBGTC
 port 16 nsew
-flabel metal1 207 -574 207 -574 0 FreeSans 1600 0 0 0 trim0
+flabel metal2 997 3548 997 3548 0 FreeSans 160 0 0 0 AVDD
 port 17 nsew
-flabel metal1 200 -1468 200 -1468 0 FreeSans 1600 0 0 0 trim1
+flabel metal1 987 3469 987 3469 0 FreeSans 160 0 0 0 ENA
 port 18 nsew
-flabel metal1 203 -2356 203 -2356 0 FreeSans 1600 0 0 0 trim2
+flabel metal1 1460 4028 1460 4028 0 FreeSans 160 0 0 0 VDDE
 port 19 nsew
-flabel metal1 211 -3240 211 -3240 0 FreeSans 1600 0 0 0 trim3
+flabel dnwell 1637 3482 1637 3482 0 FreeSans 160 0 0 0 DVDD
 port 20 nsew
-flabel metal1 1486 1358 1486 1358 0 FreeSans 1600 0 0 0 ena
+flabel pwell 1880 3304 1880 3304 0 FreeSans 160 0 0 0 DVSS
 port 21 nsew
-flabel metal2 1093 -575 1093 -575 0 FreeSans 1600 0 0 0 S0
-port 22 nsew
-flabel metal2 1152 1070 1152 1070 0 FreeSans 1600 0 0 0 AVDD
-port 23 nsew
 << end >>

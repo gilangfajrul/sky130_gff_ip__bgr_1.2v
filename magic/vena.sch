@@ -5,10 +5,12 @@ K {}
 V {}
 S {}
 E {}
-N 265 -120 265 -90 {
-lab=#net1}
-N 265 -120 305 -120 {
-lab=#net1}
+N 270 -35 310 -35 {
+lab=D}
+N 270 -95 270 -35 {
+lab=D}
+N 270 -95 310 -95 {
+lab=D}
 C {sky130_fd_pr/nfet3_01v8_lvt.sym} 115 -90 2 1 {name=M4
 W=1
 L=1
@@ -27,7 +29,8 @@ spiceprefix=X
 C {devices/iopin.sym} 135 -120 3 0 {name=p1 lab=S}
 C {devices/iopin.sym} 95 -90 2 0 {name=p2 lab=G}
 C {devices/iopin.sym} 135 -60 1 0 {name=p3 lab=D}
-C {sky130_fd_pr/nfet3_01v8_lvt.sym} 285 -90 2 1 {name=M1
+C {devices/iopin.sym} 265 -120 3 0 {name=p4 lab=DVSS}
+C {sky130_fd_pr/nfet3_01v8_lvt.sym} 290 -65 2 1 {name=M1
 W=1
 L=0.15
 nf=1
@@ -42,5 +45,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 305 -60 3 0 {name=p5 sig_type=std_logic lab=D}
-C {devices/iopin.sym} 265 -120 3 0 {name=p4 lab=DVSS}
+C {devices/lab_pin.sym} 270 -95 0 0 {name=p5 sig_type=std_logic lab=D}
