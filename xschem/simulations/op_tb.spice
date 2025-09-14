@@ -1,0 +1,119 @@
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/xschem/op_tb.sch
+**.subckt op_tb
+V1 Vvdd GND 1.8
+V2 vp GND 0.67
+V3 vn GND ac 1 sin(0.671 1) dc 0.67
+x1 out Vvdd Vgnd vp vn Vgnd Vvdd op
+V4 Vgnd GND 0
+C1 out Vgnd 5p m=1
+**** begin user architecture code
+
+
+
+.option savecurrents
+.control
+  remzerovec
+  unset appendwrite
+
+  * === Save gm, id, gds for all MOSFETs ===
+  save all
+  * Tail/bias transistors
+  save @m.x1.xm0a.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm0a.msky130_fd_pr__nfet_01v8[id] @m.x1.xm0a.msky130_fd_pr__nfet_01v8[gds]
+  save @m.x1.xm0b.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm0b.msky130_fd_pr__nfet_01v8[id] @m.x1.xm0b.msky130_fd_pr__nfet_01v8[gds]
+  save @m.x1.xm0c.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm0c.msky130_fd_pr__nfet_01v8[id] @m.x1.xm0c.msky130_fd_pr__nfet_01v8[gds]
+
+  * Differential pair
+  save @m.x1.xm1a.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm1a.msky130_fd_pr__nfet_01v8[id] @m.x1.xm1a.msky130_fd_pr__nfet_01v8[gds]
+  save @m.x1.xm1b.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm1b.msky130_fd_pr__nfet_01v8[id] @m.x1.xm1b.msky130_fd_pr__nfet_01v8[gds]
+
+  * Active load PMOS
+  save @m.x1.xm2a.msky130_fd_pr__pfet_01v8[gm] @m.x1.xm2a.msky130_fd_pr__pfet_01v8[id] @m.x1.xm2a.msky130_fd_pr__pfet_01v8[gds]
+  save @m.x1.xm2b.msky130_fd_pr__pfet_01v8[gm] @m.x1.xm2b.msky130_fd_pr__pfet_01v8[id] @m.x1.xm2b.msky130_fd_pr__pfet_01v8[gds]
+
+  * 2nd stage PMOS
+  save @m.x1.xm3.msky130_fd_pr__pfet_01v8[gm] @m.x1.xm3.msky130_fd_pr__pfet_01v8[id] @m.x1.xm3.msky130_fd_pr__pfet_01v8[gds]
+
+  *--- Operating Point ---
+  op
+  show
+
+  * Write OP results
+  write op_tb.raw
+  set appendwrite
+
+  *--- Transient Analysis ---
+  tran 0.1n 100n
+  meas tran ave_v avg Vvdd
+  meas tran ave_i avg i(v4)
+  let average_power = ave_i * ave_v
+  print average_power
+  write op_tb.raw
+
+  *--- AC Analysis ---
+  ac dec 100 0.1 10e12
+  meas ac GBW when vdb(out)=0
+  meas ac vout0dbphaserad find vp(out) when vdb(out)=0
+  let vout0dbphasedeg = vout0dbphaserad/pi*180
+  print vout0dbphasedeg
+  let phase_margin = vout0dbphasedeg + 180
+  print phase_margin
+  meas ac gain_max max vdb(out)
+  let phase = vp(out)/pi*180
+  plot phase vdb(out)
+
+  * Final write
+  write op_tb.raw
+.endc
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  op.sym # of pins=7
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/xschem/op.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/xschem/op.sch
+.subckt op out vdd vss vp vn psubs nwell
+*.iopin vss
+*.iopin vdd
+*.opin out
+*.ipin vp
+*.ipin vn
+*.iopin psubs
+*.iopin nwell
+XM3 out net1 vdd nwell sky130_fd_pr__pfet_01v8 L={l3} W={w3} nf={nf3} ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1b net1 vn net2 psubs sky130_fd_pr__nfet_01v8 L={l1} W={w1} nf={nf1} ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1a net3 vp net2 psubs sky130_fd_pr__nfet_01v8 L={l1} W={w1} nf={nf1} ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR1 net4 net1 vss sky130_fd_pr__res_high_po_0p35 L={lrz} mult=1 m=1
+XC1 out net4 sky130_fd_pr__cap_mim_m3_1 W={wc} L={wc} MF={mc} m={mc}
+**** begin user architecture code
+
+
+.include ../sizing_opamp.spice
+
+
+**** end user architecture code
+XM2a net3 net3 vdd nwell sky130_fd_pr__pfet_01v8 L={l2} W={w2} nf={nf2} ad='int(({nf2} + 1)/2) * {w2} / {nf2} * 0.29' as='int(({nf2} + 2)/2) * {w2} / {nf2} * 0.29'
++ pd='2*int(({nf2} + 1)/2) * ({w2} / {nf2} + 0.29)' ps='2*int(({nf2} + 2)/2) * ({w2} / {nf2} + 0.29)' nrd='0.29 / {w2} ' nrs='0.29 / {w2} '
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2b net1 net3 vdd nwell sky130_fd_pr__pfet_01v8 L={l2} W={w2} nf={nf2} ad='int(({nf2} + 1)/2) * {w2} / {nf2} * 0.29' as='int(({nf2} + 2)/2) * {w2} / {nf2} * 0.29'
++ pd='2*int(({nf2} + 1)/2) * ({w2} / {nf2} + 0.29)' ps='2*int(({nf2} + 2)/2) * ({w2} / {nf2} + 0.29)' nrd='0.29 / {w2} ' nrs='0.29 / {w2} '
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM0a bias bias vss psubs sky130_fd_pr__nfet_01v8 L={l0} W={w0} nf={nf0} ad='int(({nf0} + 1)/2) * {w0} / {nf0} * 0.29' as='int(({nf0} + 2)/2) * {w0} / {nf0} * 0.29'
++ pd='2*int(({nf0} + 1)/2) * ({w0} / {nf0} + 0.29)' ps='2*int(({nf0} + 2)/2) * ({w0} / {nf0} + 0.29)' nrd='0.29 / {w0} ' nrs='0.29 / {w0} '
++ sa=0 sb=0 sd=0 mult=1 m=1
+I0 vdd bias {i_tail}
+XM0b net2 bias vss psubs sky130_fd_pr__nfet_01v8 L={l0} W={w0} nf={nf0} ad='int(({nf0} + 1)/2) * {w0} / {nf0} * 0.29' as='int(({nf0} + 2)/2) * {w0} / {nf0} * 0.29'
++ pd='2*int(({nf0} + 1)/2) * ({w0} / {nf0} + 0.29)' ps='2*int(({nf0} + 2)/2) * ({w0} / {nf0} + 0.29)' nrd='0.29 / {w0} ' nrs='0.29 / {w0} '
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM0c out bias vss psubs sky130_fd_pr__nfet_01v8 L={l0} W={w0} nf={nf0} ad='int(({nf0} + 1)/2) * {w0} / {nf0} * 0.29' as='int(({nf0} + 2)/2) * {w0} / {nf0} * 0.29'
++ pd='2*int(({nf0} + 1)/2) * ({w0} / {nf0} + 0.29)' ps='2*int(({nf0} + 2)/2) * ({w0} / {nf0} + 0.29)' nrd='0.29 / {w0} ' nrs='0.29 / {w0} '
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end

@@ -28,7 +28,7 @@ This work is proposed for Efabless 2024 Chipalooza Challenge. This project is cu
 
 ## Graph
 ### Vbg
-![Vbg](https://github.com/gilangfajrul/sky130_gff_ip__bgr_1.2v/blob/main/docs/vbg.png)
+![Vbg](../sky130_gff_ip__bgr_1.2v/docs/vbg.png)
 ### PSRR
 ![PSRR](https://github.com/gilangfajrul/sky130_gff_ip__bgr_1.2v/blob/main/docs/PSRR.png)
 ### Start-Up Time

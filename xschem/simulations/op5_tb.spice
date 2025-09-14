@@ -1,0 +1,130 @@
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/xschem/op5_tb.sch
+**.subckt op5_tb
+V1 VDD GND 1.7424
+V2 - GND 0.685
+V3 + GND ac 1 sin(0.685 1 1) dc 0.685
+C1 out GND 1p m=1
+x1 out VDD GND + - op5
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+
+
+.option savecurrents
+.control
+save all
+op
+remzerovec
+write op5_tb.raw
+set appendwrite
+set wr_singlescale
+set wr_vecnames
+option numdgt=3
+
+tran 0.1n 100n
+meas tran ave_v avg vdd
+meas tran ave_i avg i(v1)
+let average_power=(-ave_i*ave_v)
+print average_power
+set altshow
+show >> op5_tb.lis
+write op5_tb.raw
+
+ac dec 100 0.1 10e12
+remzerovec
+write op5_tb.raw
+meas ac GBW when vdb(out)=0
+meas ac vout0dbphaserad find vp(out) when vdb(out)=0
+let vout0dbphasedeg='vout0dbphaserad/pi*180'
+print vout0dbphasedeg
+let phase_margin='vout0dbphasedeg+180'
+print phase_margin
+meas ac gain_max max vdb(out)
+meas ac gain_margin find vdb(out) when vp(out)='-pi'
+meas ac '-3db_voutbw' when vdb(out)='gain_max-3'
+let phase='vp(out)/pi*180'
+plot phase vdb(out)
+*wrdata op5_tb.txt vdb(out) phase
+write op5_vdb_vp.raw vdb(out) phase
+
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  op5.sym # of pins=5
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/xschem/op5.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/xschem/op5.sch
+.subckt op5 out VDDE AVSS + -
+*.iopin AVSS
+*.iopin -
+*.iopin +
+*.iopin VDDE
+*.iopin out
+XM8 net1 net2 VDDE vdde sky130_fd_pr__pfet_01v8 L={L7} W={W7} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM9 net2 net2 VDDE vdde sky130_fd_pr__pfet_01v8 L={L7} W={W7} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM5 net3 bias AVSS AVSS sky130_fd_pr__nfet_01v8 L={L6} W={W6} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM10 out net1 VDDE vdde sky130_fd_pr__pfet_01v8 L={L2} W={W2} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+**** begin user architecture code
+
+
+**************
+*PMOS cms
+.param L1=10
+.param W1=1
+
+**************
+*PMOS current differential
+.param L7=10
+.param W7=1
+
+**************
+*differential Pair
+.param L4=13
+.param W4=0.9
+
+**************
+*NMOS current control
+.param L6=20
+.param W6=1
+
+**************
+*Second Stage
+.param L2=10
+.param W2=1
+
+
+**** end user architecture code
+XM11 out bias AVSS AVSS sky130_fd_pr__nfet_01v8 L={L6} W={W6} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM3 net1 + net3 AVSS sky130_fd_pr__nfet_01v8 L={L4} W={W4} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 bias net6 VDDE vdde sky130_fd_pr__pfet_01v8 L={L1} W={W1} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 net6 net6 VDDE vdde sky130_fd_pr__pfet_01v8 L={L1} W={W1} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM6 net6 bias net7 AVSS sky130_fd_pr__nfet_01v8 L={L6} W={W6} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM7 bias bias AVSS AVSS sky130_fd_pr__nfet_01v8 L={L6} W={W6} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XR4 net7 net8 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=2 m=2
+XM4 net2 - net3 AVSS sky130_fd_pr__nfet_01v8 L={L4} W={W4} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XR1 net1 net4 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=2 m=2
+XR2 net4 net5 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=2 m=2
+XC1 out net5 sky130_fd_pr__cap_mim_m3_1 W=17 L=17 MF=4 m=4
+XR9 net8 AVSS AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=2 m=2
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end
