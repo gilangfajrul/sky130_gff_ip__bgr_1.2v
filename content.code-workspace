@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../examples/analog-course/content"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

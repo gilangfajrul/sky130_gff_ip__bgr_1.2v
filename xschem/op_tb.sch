@@ -1,4 +1,4 @@
-v {xschem version=3.4.8RC file_version=1.2}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
@@ -46,66 +46,6 @@ tclcommand="set show_hidden_texts 1; xschem annotate_op"
 C {devices/launcher.sym} 585 -270 0 0 {name=h3
 descr="Netlist & sim" 
 tclcommand="xschem netlist; xschem simulate"}
-C {devices/simulator_commands_shown.sym} 730 -1045 0 0 {name=COMMANDS1
-simulator=ngspice
-only_toplevel=false 
-value="
-.option savecurrents
-.control
-  remzerovec
-  unset appendwrite
-
-  * === Save gm, id, gds for all MOSFETs ===
-  save all
-  * Tail/bias transistors
-  save @m.x1.xm0a.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm0a.msky130_fd_pr__nfet_01v8[id] @m.x1.xm0a.msky130_fd_pr__nfet_01v8[gds]
-  save @m.x1.xm0b.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm0b.msky130_fd_pr__nfet_01v8[id] @m.x1.xm0b.msky130_fd_pr__nfet_01v8[gds]
-  save @m.x1.xm0c.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm0c.msky130_fd_pr__nfet_01v8[id] @m.x1.xm0c.msky130_fd_pr__nfet_01v8[gds]
-
-  * Differential pair
-  save @m.x1.xm1a.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm1a.msky130_fd_pr__nfet_01v8[id] @m.x1.xm1a.msky130_fd_pr__nfet_01v8[gds]
-  save @m.x1.xm1b.msky130_fd_pr__nfet_01v8[gm] @m.x1.xm1b.msky130_fd_pr__nfet_01v8[id] @m.x1.xm1b.msky130_fd_pr__nfet_01v8[gds]
-
-  * Active load PMOS
-  save @m.x1.xm2a.msky130_fd_pr__pfet_01v8[gm] @m.x1.xm2a.msky130_fd_pr__pfet_01v8[id] @m.x1.xm2a.msky130_fd_pr__pfet_01v8[gds]
-  save @m.x1.xm2b.msky130_fd_pr__pfet_01v8[gm] @m.x1.xm2b.msky130_fd_pr__pfet_01v8[id] @m.x1.xm2b.msky130_fd_pr__pfet_01v8[gds]
-
-  * 2nd stage PMOS
-  save @m.x1.xm3.msky130_fd_pr__pfet_01v8[gm] @m.x1.xm3.msky130_fd_pr__pfet_01v8[id] @m.x1.xm3.msky130_fd_pr__pfet_01v8[gds]
-
-  *--- Operating Point ---
-  op
-  show
-
-  * Write OP results
-  write op_tb.raw
-  set appendwrite
-
-  *--- Transient Analysis ---
-  tran 0.1n 100n
-  meas tran ave_v avg Vvdd
-  meas tran ave_i avg i(v4)
-  let average_power = ave_i * ave_v
-  print average_power
-  write op_tb.raw
-
-  *--- AC Analysis ---
-  ac dec 100 0.1 10e12
-  meas ac GBW when vdb(out)=0
-  meas ac vout0dbphaserad find vp(out) when vdb(out)=0
-  let vout0dbphasedeg = vout0dbphaserad/pi*180
-  print vout0dbphasedeg
-  let phase_margin = vout0dbphasedeg + 180
-  print phase_margin
-  meas ac gain_max max vdb(out)
-  let phase = vp(out)/pi*180
-  plot phase vdb(out)
-
-  * Final write
-  write op_tb.raw
-.endc
-
-"}
 C {op.sym} 280 -250 0 0 {name=x1}
 C {lab_pin.sym} 280 -390 0 0 {name=p3 sig_type=std_logic lab=Vvdd}
 C {lab_pin.sym} 30 -520 2 0 {name=p4 sig_type=std_logic lab=Vvdd}
@@ -128,10 +68,37 @@ C {lab_pin.sym} 460 -160 2 0 {name=p9 sig_type=std_logic lab=Vgnd
 C {lab_pin.sym} 460 -140 2 0 {name=p10 sig_type=std_logic lab=Vvdd}
 C {capa.sym} 480 -220 0 0 {name=C1
 m=1
-value=5p
+value=50f
 footprint=1206
 device="ceramic capacitor"}
 C {lab_pin.sym} 500 -250 2 0 {name=p11 sig_type=std_logic lab=out
 }
 C {sky130_fd_pr/corner.sym} 600 -440 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {title.sym} 170 0 0 0 {name=l2 author="GFF"}
+C {devices/code_shown.sym} 830 -630 0 0 {name=NGSPICE only_toplevel=true 
+value="
+.temp 27
+.control
+option sparse
+save all
+op
+write ota-5t_tb-ac.raw
+set appendwrite
+
+ac dec 101 1k 100MEG
+write ota-5t_tb-ac.raw
+plot 20*log10(v_out)
+
+meas ac dcgain MAX vmag(v_out) FROM=10 TO=10k
+let f3db = dcgain/sqrt(2)
+meas ac fbw WHEN vmag(v_out)=f3db FALL=1
+let gainerror=(dcgain-1)/1
+print dcgain
+print fbw
+print gainerror
+
+noise v(v_out) Vin dec 101 1k 100MEG
+print onoise_total
+
+.endc
+"}
