@@ -35,12 +35,12 @@ N 30 -330 30 -320 {
 lab=v_ss}
 C {devices/vsource.sym} 30 -490 0 0 {name=Vdd value=1.8 savecurrent=false}
 C {devices/gnd.sym} 30 -450 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} 30 -240 0 0 {name=Vinn value="0.9" savecurrent=false}
+C {devices/vsource.sym} 30 -240 0 0 {name=Vinn value="0.7" savecurrent=false}
 C {devices/launcher.sym} 580 -75 0 0 {name=h15
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {devices/launcher.sym} 580 -140 0 0 {name=h3
+C {devices/launcher.sym} 580 -125 0 0 {name=h3
 descr="Netlist & sim" 
 tclcommand="xschem netlist; xschem simulate"}
 C {op.sym} 280 -280 0 0 {name=x1}
@@ -64,7 +64,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {sky130_fd_pr/corner.sym} 570 -300 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {title.sym} 160 -30 0 0 {name=l2 author="GFF"}
-C {devices/code_shown.sym} 740 -700 0 0 {name=NGSPICE only_toplevel=true 
+C {devices/code_shown.sym} 745 -745 0 0 {name=NGSPICE only_toplevel=true 
 value="
 .temp 27
 .option savecurrents
@@ -77,6 +77,7 @@ set appendwrite
 
 ac dec 101 1 100MEG
 write op_tb-ac.raw
+meas ac Gain_max max vdb(v_out)
 meas ac phase_margin find vp(v_out) when vdb(v_out)=0
 let phase_marginconv = 'phase_margin/pi*180+180'
 print phase_marginconv
@@ -102,7 +103,7 @@ value=".include ./op_tb-ac.save
 "}
 C {lab_pin.sym} 500 -280 2 0 {name=p6 sig_type=std_logic lab=v_out
 }
-C {devices/vsource.sym} 30 -360 0 0 {name=Vinp value="ac 1 sin(0.9 1 1) dc 0.9" savecurrent=false}
+C {devices/vsource.sym} 30 -360 0 0 {name=Vinp value="ac 1 dc 0.7" savecurrent=false}
 C {lab_pin.sym} 30 -400 2 0 {name=p2 sig_type=std_logic lab=v_inp
 }
 C {lab_pin.sym} 30 -280 2 0 {name=p11 sig_type=std_logic lab=v_inn

@@ -51,7 +51,7 @@ C {devices/iopin.sym} 210 -340 0 1 {name=p9 lab=vss}
 C {devices/iopin.sym} 210 -360 0 1 {name=p3 lab=vdd}
 C {sky130_fd_pr/nfet3_01v8.sym} 490 -300 0 0 {name=M1
 L=5
-W=1.35
+W=2.5
 body=psubs
 nf=1
 mult=1
@@ -78,7 +78,7 @@ C {code.sym} 1050 -350 0 0 {name=load only_toplevel=false value="
 .include ./sizing_opamp.spice
 "}
 C {sky130_fd_pr/pfet3_01v8.sym} 530 -440 0 1 {name=M3
-W=1.25
+W=4
 L=5
 body=nwell
 nf=1
@@ -93,7 +93,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 400 -200 0 1 {name=M6
-W=4
+W=24
 L=5
 body=psubs
 nf=1
@@ -111,7 +111,7 @@ C {devices/lab_pin.sym} 350 -160 0 0 {name=p6 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 350 -500 0 0 {name=p17 sig_type=std_logic lab=vdd}
 C {isource.sym} 380 -370 0 0 {name=I0 value=20e-6}
 C {sky130_fd_pr/nfet3_01v8.sym} 580 -200 0 0 {name=M5
-W=0.75
+W=2
 L=5
 body=psubs
 nf=1
@@ -127,7 +127,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} 930 -360 2 0 {name=p2 sig_type=std_logic lab=vo_out}
 C {sky130_fd_pr/pfet3_01v8.sym} 860 -440 0 0 {name=M7
-W=8.5
+W=23.5
 L=5
 body=nwell
 nf=1
@@ -142,7 +142,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 860 -200 0 0 {name=M8
-W=0.55
+W=2.5
 L=5
 body=psubs
 nf=1
@@ -158,7 +158,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 720 -300 0 1 {name=M2
 L=5
-W=1.35
+W=2.5
 body=psubs
 nf=1
 mult=1
@@ -172,7 +172,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8.sym} 680 -440 0 0 {name=M4
-W=1.25
+W=4
 L=5
 body=nwell
 nf=1
