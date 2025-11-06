@@ -5,9 +5,9 @@ V {}
 S {}
 F {}
 E {}
-N 1100 -70 1100 -60 {
+N 1430 -120 1430 -110 {
 lab=avss}
-N 1220 -70 1220 -60 {
+N 1550 -120 1550 -110 {
 lab=avss}
 N 375 -630 375 -615 {
 lab=vdde}
@@ -29,7 +29,7 @@ N 45 -290 70 -290 {
 lab=ena}
 N 110 -260 110 -245 {
 lab=vdde}
-N 1220 -140 1220 -130 {
+N 1550 -190 1550 -180 {
 lab=ctat}
 N 575 -555 575 -545 {
 lab=vref}
@@ -39,9 +39,9 @@ N 375 -555 375 -545 {
 lab=#net1}
 N 375 -405 375 -385 {
 lab=start}
-N 455 -145 520 -145 {
+N 615 -435 680 -435 {
 lab=#net2}
-N 455 -180 520 -180 {
+N 615 -470 680 -470 {
 lab=#net3}
 N 375 -375 385 -375 {
 lab=start}
@@ -51,7 +51,7 @@ N 385 -375 445 -375 {
 lab=start}
 N 500 -375 560 -375 {
 lab=ptat}
-N 480 -210 480 -115 {
+N 640 -500 640 -405 {
 lab=vena}
 N 535 -585 675 -585 {
 lab=out}
@@ -69,47 +69,45 @@ N 445 -382.5 445 -375 {
 lab=start}
 N 470 -510 470 -502.5 {
 lab=out}
-N 1220 -230 1220 -200 {lab=#net4}
-N 1300 -360 1330 -360 {lab=avss}
-N 1300 -340 1330 -340 {lab=trim0}
-N 1300 -320 1330 -320 {lab=trim1}
-N 1300 -300 1330 -300 {lab=trim2}
-N 1300 -280 1330 -280 {lab=trim3}
-N 1300 -260 1330 -260 {lab=dvss}
-N 1140 -100 1180 -100 {lab=avss}
-N 1100 -60 1220 -60 {lab=avss}
-N 1160 -100 1160 -60 {lab=avss}
-N 1190 -400 1190 -390 {lab=#net5}
-N 1190 -390 1220 -390 {lab=#net5}
-N 1130 -400 1130 -390 {lab=#net6}
-N 1100 -390 1130 -390 {lab=#net6}
-N 1100 -390 1100 -210 {lab=#net6}
-N 1100 -210 1100 -200 {lab=#net6}
-N 1100 -140 1100 -130 {lab=#net7}
-N 1330 -430 1330 -390 {lab=#net5}
-N 1220 -390 1330 -390 {lab=#net5}
-N 990 -430 990 -390 {lab=#net6}
-N 990 -390 1100 -390 {lab=#net6}
-C {sky130_fd_pr/pnp_05v5.sym} 1120 -100 0 1 {name=Q1
+N 1550 -280 1550 -250 {lab=#net4}
+N 1630 -410 1660 -410 {lab=avss}
+N 1630 -390 1660 -390 {lab=trim0}
+N 1630 -370 1660 -370 {lab=trim1}
+N 1630 -350 1660 -350 {lab=trim2}
+N 1630 -330 1660 -330 {lab=trim3}
+N 1630 -310 1660 -310 {lab=dvss}
+N 1470 -150 1510 -150 {lab=avss}
+N 1430 -110 1550 -110 {lab=avss}
+N 1490 -150 1490 -110 {lab=avss}
+N 1520 -450 1520 -440 {lab=#net5}
+N 1520 -440 1550 -440 {lab=#net5}
+N 1460 -450 1460 -440 {lab=#net6}
+N 1430 -440 1460 -440 {lab=#net6}
+N 1430 -440 1430 -260 {lab=#net6}
+N 1430 -260 1430 -250 {lab=#net6}
+N 1430 -190 1430 -180 {lab=#net7}
+N 1660 -480 1660 -440 {lab=#net5}
+N 1550 -440 1660 -440 {lab=#net5}
+C {sky130_fd_pr/pnp_05v5.sym} 1450 -150 0 1 {name=Q1
 model=pnp_05v5_W3p40L3p40
 m=1
 spiceprefix=X
 }
-C {sky130_fd_pr/pnp_05v5.sym} 1200 -100 0 0 {name=Q2
+C {sky130_fd_pr/pnp_05v5.sym} 1530 -150 0 0 {name=Q2
 model=pnp_05v5_W3p40L3p40
 m=8
 spiceprefix=X
 }
-C {devices/code.sym} 675 -110 0 0 {name=params only_toplevel=false value="
+C {devices/code.sym} 75 -580 0 0 {name=params only_toplevel=false value="
 .param L8=10
 .param W8=1
 .param L10=1
 .param W10=1
 .param R=492k
 "}
-C {devices/ammeter.sym} 1100 -170 0 0 {name=Vctat savecurrent=true}
+C {devices/ammeter.sym} 1430 -220 0 0 {name=Vctat savecurrent=true}
 C {devices/lab_pin.sym} 575 -400 0 1 {name=p1 sig_type=std_logic lab=ptat}
-C {devices/lab_pin.sym} 1220 -140 0 0 {name=p2 sig_type=std_logic lab=ctat}
+C {devices/lab_pin.sym} 1550 -190 0 0 {name=p2 sig_type=std_logic lab=ctat}
 C {devices/lab_pin.sym} 485 -585 0 1 {name=p3 sig_type=std_logic lab=out}
 C {sky130_fd_pr/pfet3_01v8.sym} 555 -585 0 0 {name=M1
 L=\{L8\}
@@ -143,17 +141,17 @@ spiceprefix=X
 }
 C {devices/ngspice_probe.sym} 375 -380 0 0 {name=r3}
 C {devices/lab_pin.sym} 110 -245 0 0 {name=p5 sig_type=std_logic lab=vdde}
-C {devices/ammeter.sym} 1220 -170 0 1 {name=Vctat1 savecurrent=true}
-C {Resistor492k_1.sym} 1280 -720 1 0 {name=x2}
-C {Resistor492k_1.sym} 1040 -720 3 1 {name=x3}
-C {Resistor50k_1.sym} 1340 -880 1 0 {name=x4}
+C {devices/ammeter.sym} 1550 -220 0 1 {name=Vctat1 savecurrent=true}
+C {Resistor492k_1.sym} 1610 -770 1 0 {name=x2}
+C {Resistor492k_1.sym} 1405 -445 0 1 {name=x3}
+C {Resistor50k_1.sym} 1670 -930 1 0 {name=x4}
 C {devices/ngspice_probe.sym} 575 -550 0 0 {name=r1}
-C {Startup.sym} 665 -115 0 0 {name=x5}
+C {Startup.sym} 55 -155 0 0 {name=x5}
 C {devices/lab_pin.sym} 420 -375 3 0 {name=p13 sig_type=std_logic lab=start}
-C {devices/ngspice_probe.sym} 525 -180 0 0 {name=r2}
-C {devices/ngspice_probe.sym} 500 -145 0 0 {name=r4}
-C {devices/ngspice_probe.sym} 480 -165 0 0 {name=r5}
-C {sky130_fd_pr/nfet3_01v8_lvt.sym} 500 -210 0 0 {name=M3
+C {devices/ngspice_probe.sym} 685 -470 0 0 {name=r2}
+C {devices/ngspice_probe.sym} 660 -435 0 0 {name=r4}
+C {devices/ngspice_probe.sym} 640 -455 0 0 {name=r5}
+C {sky130_fd_pr/nfet3_01v8_lvt.sym} 660 -500 0 0 {name=M3
 W=1
 L=1
 nf=1
@@ -168,7 +166,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8_lvt.sym} 500 -115 2 1 {name=M4
+C {sky130_fd_pr/nfet3_01v8_lvt.sym} 660 -405 2 1 {name=M4
 W=1
 L=1
 nf=1
@@ -183,18 +181,18 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 895 -355 1 0 {name=p6 sig_type=std_logic lab=vdde}
+C {devices/lab_pin.sym} 285 -395 1 0 {name=p6 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 425 -442.5 0 0 {name=p7 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 470 -630 1 0 {name=p10 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 895 -205 3 0 {name=p19 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 285 -245 3 0 {name=p19 sig_type=std_logic lab=avss}
 C {devices/iopin.sym} 45 -290 2 0 {name=p14 lab=ena}
-C {devices/iopin.sym} 520 -240 0 0 {name=p8 lab=vbgtc}
-C {devices/iopin.sym} 520 -85 0 0 {name=p9 lab=vbgsc}
+C {devices/iopin.sym} 680 -530 0 0 {name=p8 lab=vbgtc}
+C {devices/iopin.sym} 680 -375 0 0 {name=p9 lab=vbgsc}
 C {devices/lab_pin.sym} 515 -442.5 2 0 {name=p25 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} 480 -160 0 0 {name=p15 lab=vena}
+C {devices/iopin.sym} 640 -450 0 0 {name=p15 lab=vena}
 C {devices/iopin.sym} 110 -335 3 0 {name=p16 lab=avdd}
 C {devices/iopin.sym} 120 -60 2 0 {name=p17 lab=avss}
-C {devices/lab_pin.sym} 1330 -360 2 0 {name=p18 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 1660 -410 2 0 {name=p18 sig_type=std_logic lab=avss}
 C {devices/iopin.sym} 120 -80 0 1 {name=p20 lab=dvss}
 C {devices/iopin.sym} 120 -160 0 1 {name=p21 lab=trim0}
 C {devices/iopin.sym} 120 -140 0 1 {name=p22 lab=trim1}
@@ -236,10 +234,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {op.sym} 1160 -480 1 1 {name=x6}
-C {devices/lab_pin.sym} 1330 -340 2 0 {name=p12 sig_type=std_logic lab=trim0}
-C {devices/lab_pin.sym} 1330 -320 2 0 {name=p29 sig_type=std_logic lab=trim1}
-C {devices/lab_pin.sym} 1330 -300 2 0 {name=p30 sig_type=std_logic lab=trim2}
-C {devices/lab_pin.sym} 1330 -280 2 0 {name=p31 sig_type=std_logic lab=trim3}
-C {devices/lab_pin.sym} 1330 -260 2 0 {name=p32 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 1220 -60 2 0 {name=p33 sig_type=std_logic lab=avss}
+C {op.sym} 1490 -530 1 1 {name=x6}
+C {devices/lab_pin.sym} 1660 -390 2 0 {name=p12 sig_type=std_logic lab=trim0}
+C {devices/lab_pin.sym} 1660 -370 2 0 {name=p29 sig_type=std_logic lab=trim1}
+C {devices/lab_pin.sym} 1660 -350 2 0 {name=p30 sig_type=std_logic lab=trim2}
+C {devices/lab_pin.sym} 1660 -330 2 0 {name=p31 sig_type=std_logic lab=trim3}
+C {devices/lab_pin.sym} 1660 -310 2 0 {name=p32 sig_type=std_logic lab=dvss}
+C {devices/lab_pin.sym} 1550 -110 2 0 {name=p33 sig_type=std_logic lab=avss}
