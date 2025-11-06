@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 35 -320 35 -305 {
 lab=GND}
@@ -58,6 +58,7 @@ C {devices/simulator_commands_shown.sym} 755 -722.5 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
+.include ./op5_tb.save
 .option savecurrents
 .control
 save all
@@ -90,7 +91,7 @@ print phase_margin
 meas ac gain_max max vdb(out)
 meas ac gain_margin find vdb(out) when vp(out)='-pi'
 meas ac '-3db_voutbw' when vdb(out)='gain_max-3'
-let phase='vp(out)/pi*180'
+let phase='vp(out)/pi*180+180'
 plot phase vdb(out)
 *wrdata op5_tb.txt vdb(out) phase
 write op5_vdb_vp.raw vdb(out) phase

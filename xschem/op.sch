@@ -127,7 +127,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} 930 -360 2 0 {name=p2 sig_type=std_logic lab=vo_out}
 C {sky130_fd_pr/pfet3_01v8.sym} 860 -440 0 0 {name=M7
-W=23.5
+W=20
 L=5
 body=nwell
 nf=1
@@ -187,9 +187,9 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/res_high_po_0p35.sym} 760 -360 3 0 {name=R1
-L=10
+L=1
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 760 -340 0 1 {name=p12 sig_type=std_logic lab=vss}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 830 -360 1 1 {name=C1 model=cap_mim_m3_1 W=128 L=128 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 830 -360 1 1 {name=C1 model=cap_mim_m3_1 W=12 L=12 MF=9 spiceprefix=X}
