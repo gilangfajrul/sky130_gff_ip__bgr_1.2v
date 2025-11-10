@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 C {pmos_current_bgr.sym} 875 -730 0 0 {name=x4}
 C {pmos_current_bgr_2.sym} 1490 -1035 0 1 {name=x16}
@@ -29,7 +29,7 @@ C {devices/lab_pin.sym} 1340 -1015 0 0 {name=p66 sig_type=std_logic lab=net4}
 C {devices/lab_pin.sym} 1340 -775 0 0 {name=p67 sig_type=std_logic lab=net4}
 C {devices/lab_pin.sym} 1340 -1075 0 0 {name=p68 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 1025 -945 2 0 {name=p69 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 1025 -770 2 0 {name=p70 sig_type=std_logic lab=vdde}
+C {devices/lab_pin.sym} 1025 -760 2 0 {name=p70 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 1340 -915 0 0 {name=p71 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 520 -980 2 0 {name=p72 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 520 -760 2 0 {name=p73 sig_type=std_logic lab=avss}
@@ -45,20 +45,19 @@ C {devices/lab_pin.sym} 1340 -875 0 0 {name=p85 sig_type=std_logic lab=net7}
 C {devices/lab_pin.sym} 1025 -655 2 0 {name=p86 sig_type=std_logic lab=net7}
 C {devices/lab_pin.sym} 1025 -595 2 0 {name=p87 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1025 -555 2 0 {name=p88 sig_type=std_logic lab=net8}
-C {devices/lab_pin.sym} 1025 -730 2 0 {name=p89 sig_type=std_logic lab=net8}
+C {devices/lab_pin.sym} 1025 -740 2 0 {name=p89 sig_type=std_logic lab=net8}
 C {devices/lab_pin.sym} 1025 -575 2 0 {name=p90 sig_type=std_logic lab=net9}
 C {devices/lab_pin.sym} 1340 -735 0 0 {name=p109 sig_type=std_logic lab=net9}
 C {devices/lab_pin.sym} 1340 -655 0 0 {name=p110 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1340 -715 0 0 {name=p111 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 1025 -750 2 0 {name=p112 sig_type=std_logic lab=net4}
 C {devices/lab_pin.sym} 1340 -695 0 0 {name=p113 sig_type=std_logic lab=net4}
 C {devices/lab_pin.sym} 1340 -1165 0 0 {name=p114 sig_type=std_logic lab=net8}
 C {devices/lab_pin.sym} 1340 -675 0 0 {name=p115 sig_type=std_logic lab=net10}
 C {devices/lab_pin.sym} 1340 -1145 0 0 {name=p116 sig_type=std_logic lab=net10}
 C {devices/lab_pin.sym} 1340 -935 0 0 {name=p117 sig_type=std_logic lab=net8}
-C {devices/lab_pin.sym} 1025 -710 2 0 {name=p118 sig_type=std_logic lab=net11}
+C {devices/lab_pin.sym} 1025 -720 2 0 {name=p118 sig_type=std_logic lab=net11}
 C {devices/lab_pin.sym} 1340 -495 0 0 {name=p119 sig_type=std_logic lab=net11}
-C {devices/lab_pin.sym} 1025 -690 2 0 {name=p120 sig_type=std_logic lab=vref}
+C {devices/lab_pin.sym} 1025 -700 2 0 {name=p120 sig_type=std_logic lab=vref}
 C {devices/lab_pin.sym} 1340 -595 0 0 {name=p121 sig_type=std_logic lab=net5}
 C {devices/lab_pin.sym} 1340 -615 0 0 {name=p122 sig_type=std_logic lab=net6}
 C {devices/lab_pin.sym} 1340 -475 0 0 {name=p123 sig_type=std_logic lab=net6}
