@@ -13,29 +13,28 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_C2SJBD in circuit pmos_current_bgr (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_8WJJP2 in circuit pmos_current_bgr (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_HVJJBB in circuit pmos_current_bgr (0)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_2XUZHN in circuit pmos_current_bgr (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PDVD34 in circuit pmos_current_bgr (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_P4G5X4 in circuit pmos_current_bgr (0)(4 instances)
 
-Class pmos_current_bgr (0):  Merged 18 parallel devices.
+Class pmos_current_bgr (0):  Merged 8 parallel devices.
 Subcircuit summary:
 Circuit 1: pmos_current_bgr                |Circuit 2: pmos_current_bgr                
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (24->6)            |sky130_fd_pr__pfet_01v8 (24->6)            
-Number of devices: 6                       |Number of devices: 6                       
-Number of nets: 5                          |Number of nets: 5                          
+sky130_fd_pr__pfet_01v8 (12->4)            |sky130_fd_pr__pfet_01v8 (12->4)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: pmos_current_bgr                |Circuit 2: pmos_current_bgr                
 -------------------------------------------|-------------------------------------------
-D2                                         |d2                                         
-G10                                        |g10                                        
-D1                                         |d1                                         
-D10                                        |d10                                        
 vdde                                       |vdde                                       
+d10                                        |d10                                        
+d2                                         |d2                                         
+d1                                         |d1                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes pmos_current_bgr and pmos_current_bgr are equivalent.
