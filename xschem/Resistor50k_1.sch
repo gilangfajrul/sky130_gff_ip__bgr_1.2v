@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 1955 210 1975 210 {
 lab=#net1}
@@ -72,7 +72,7 @@ C {devices/code.sym} 2205 245 0 0 {name=params only_toplevel=false value="
 .param L1=1
 .param W1=4
 "}
-C {devices/iopin.sym} 2135 210 1 0 {name=p2 lab=A}
+C {devices/iopin.sym} 2135 210 0 0 {name=p2 lab=A}
 C {devices/iopin.sym} 1635 210 2 0 {name=p1 lab=B}
 C {sky130_fd_pr/res_high_po_0p35.sym} 2085 210 3 0 {name=R3
 L=\{L\}
@@ -163,9 +163,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/iopin.sym} 2035 230 1 0 {name=p7 lab=avss}
-C {devices/iopin.sym} 2060 340 2 0 {name=p3 lab=dvss}
-C {devices/lab_pin.sym} 2060 340 2 0 {name=p4 sig_type=std_logic lab=dvss}
+C {devices/iopin.sym} 1580 275 0 1 {name=p7 lab=avss}
+C {devices/iopin.sym} 1580 250 2 0 {name=p3 lab=dvss}
+C {devices/lab_pin.sym} 2030 230 3 0 {name=p4 sig_type=std_logic lab=avss}
 C {devices/iopin.sym} 1930 330 1 0 {name=p5 lab=trim3}
 C {devices/iopin.sym} 1850 330 1 0 {name=p6 lab=trim2}
 C {devices/iopin.sym} 1770 330 1 0 {name=p8 lab=trim1}

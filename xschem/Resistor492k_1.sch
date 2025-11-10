@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 1955 210 1975 210 {
 lab=#net1}
@@ -209,11 +209,8 @@ model=res_high_po_0p35
 spiceprefix=X
 mult=1}
 C {devices/iopin.sym} 1875 210 2 0 {name=p2 lab=A}
-C {devices/iopin.sym} 2125 440 3 0 {name=p3 lab=VBGTC}
 C {devices/ngspice_probe.sym} 2125 440 0 0 {name=r62}
 C {devices/iopin.sym} 2055 1135 0 0 {name=p1 lab=B}
-C {devices/iopin.sym} 2045 440 3 0 {name=p4 lab=VBGSC}
-C {devices/iopin.sym} 2120 210 3 0 {name=p5 lab=VBG}
 C {sky130_fd_pr/res_high_po_0p35.sym} 1925 1135 3 0 {name=R21
 L=\{L\}
 model=res_high_po_0p35
@@ -224,8 +221,15 @@ L=\{L\}
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/iopin.sym} 2060 230 1 0 {name=p6 lab=avss}
+C {devices/iopin.sym} 1695 795 0 1 {name=p6 lab=avss}
 C {devices/lab_pin.sym} 2055 460 3 0 {name=p7 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 2050 695 3 0 {name=p8 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 2050 930 3 0 {name=p9 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1960 1155 3 0 {name=p10 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 2125 440 1 0 {name=p11 sig_type=std_logic lab=VBGTC}
+C {devices/lab_pin.sym} 2045 440 1 0 {name=p12 sig_type=std_logic lab=VBGSC}
+C {devices/lab_pin.sym} 2055 230 3 0 {name=p13 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 2125 210 1 0 {name=p14 sig_type=std_logic lab=VBG}
+C {opin.sym} 1695 735 0 0 {name=p15 lab=VBG}
+C {opin.sym} 1695 755 0 0 {name=p16 lab=VBGTC}
+C {opin.sym} 1695 775 0 0 {name=p17 lab=VBGSC}

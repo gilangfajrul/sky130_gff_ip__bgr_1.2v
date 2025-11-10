@@ -1,34 +1,36 @@
 ** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/xschem/op.sch
-**.subckt op out vdd gnd plus minus psubs nwell
-*.iopin gnd
+**.subckt op vo_out vdd vss vi_p vi_n psubs nwell
+*.iopin vss
 *.iopin vdd
-*.opin out
-*.ipin plus
-*.ipin minus
+*.opin vo_out
+*.ipin vi_p
+*.ipin vi_n
 *.iopin psubs
 *.iopin nwell
-XM3 out net1 vdd nwell sky130_fd_pr__pfet_01v8 L={l3} W={w3} nf={nf3} ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM1b net1 minus net2 psubs sky130_fd_pr__nfet_01v8 L={l1} W={w1} nf={nf1} ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM1a net3 plus net2 psubs sky130_fd_pr__nfet_01v8 L={l1} W={w1} nf={nf1} ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XR1 net4 net1 AVSS sky130_fd_pr__res_high_po_0p35 L=21 mult=1 m=1
-XC1 out net4 sky130_fd_pr__cap_mim_m3_1 W=16 L=16 MF=9 m=9
-I0 net2 gnd {i_tail}
-I1 out gnd {i_ss}
-XM2a net3 net3 vdd nwell sky130_fd_pr__pfet_01v8 L={l2} W={w2} nf={nf2} ad='int(({nf2} + 1)/2) * {w2} / {nf2} * 0.29' as='int(({nf2} + 2)/2) * {w2} / {nf2} * 0.29'
-+ pd='2*int(({nf2} + 1)/2) * ({w2} / {nf2} + 0.29)' ps='2*int(({nf2} + 2)/2) * ({w2} / {nf2} + 0.29)' nrd='0.29 / {w2} ' nrs='0.29 / {w2} '
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM2b net1 net3 vdd nwell sky130_fd_pr__pfet_01v8 L={l2} W={w2} nf={nf2} ad='int(({nf2} + 1)/2) * {w2} / {nf2} * 0.29' as='int(({nf2} + 2)/2) * {w2} / {nf2} * 0.29'
-+ pd='2*int(({nf2} + 1)/2) * ({w2} / {nf2} + 0.29)' ps='2*int(({nf2} + 2)/2) * ({w2} / {nf2} + 0.29)' nrd='0.29 / {w2} ' nrs='0.29 / {w2} '
-+ sa=0 sb=0 sd=0 mult=1 m=1
-**** begin user architecture code
-
-
-.include ../sizing_opamp.spice
-
-
-**** end user architecture code
+XM1a net3 vi_n net1 psubs sky130_fd_pr__nfet_01v8 L=5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2a net3 net3 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1 m=1
+XM6a net4 net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=3 nf=1 ad=0.87 as=0.87 pd=6.58 ps=6.58 nrd=0.0966666666666667
++ nrs=0.0966666666666667 sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net1 net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=3 nf=1 ad=0.87 as=0.87 pd=6.58 ps=6.58 nrd=0.0966666666666667
++ nrs=0.0966666666666667 sa=0 sb=0 sd=0 mult=1 m=1
+XM4 vo_out net2 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=27 nf=1 ad=7.83 as=7.83 pd=54.58 ps=54.58 nrd=0.0107407407407407
++ nrs=0.0107407407407407 sa=0 sb=0 sd=0 mult=1 m=1
+XM5 vo_out net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=4.5 nf=1 ad=1.305 as=1.305 pd=9.58 ps=9.58 nrd=0.0644444444444444
++ nrs=0.0644444444444444 sa=0 sb=0 sd=0 mult=1 m=1
+XM1b net2 vi_p net1 psubs sky130_fd_pr__nfet_01v8 L=5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2b net2 net3 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
++ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1 m=1
+XC1 vo_out net5 sky130_fd_pr__cap_mim_m3_1 W=12 L=12 MF=9 m=9
+XM6b net6 net4 net7 psubs sky130_fd_pr__nfet_01v8 L=5 W=3 nf=1 ad=0.87 as=0.87 pd=6.58 ps=6.58 nrd=0.0966666666666667
++ nrs=0.0966666666666667 sa=0 sb=0 sd=0 mult=1 m=1
+XM0b net6 net6 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=11.5 nf=1 ad=3.335 as=3.335 pd=23.58 ps=23.58 nrd=0.0252173913043478
++ nrs=0.0252173913043478 sa=0 sb=0 sd=0 mult=1 m=1
+XM0a net4 net6 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=11.5 nf=1 ad=3.335 as=3.335 pd=23.58 ps=23.58 nrd=0.0252173913043478
++ nrs=0.0252173913043478 sa=0 sb=0 sd=0 mult=1 m=1
+XR2 vss net7 vss sky130_fd_pr__res_high_po_0p35 L=1 mult=1 m=1
+XR1 net5 net2 vss sky130_fd_pr__res_high_po_0p35 L=1 mult=1 m=1
 **.ends
 .end

@@ -5,241 +5,160 @@ V {}
 S {}
 F {}
 E {}
-N 1100 -70 1100 -60 {
+N 490 -120 490 -110 {
 lab=avss}
-N 1220 -70 1220 -60 {
+N 610 -120 610 -110 {
 lab=avss}
-N 375 -630 375 -615 {
-lab=vdde}
-N 375 -630 575 -630 {
-lab=vdde}
-N 575 -630 575 -615 {
-lab=vdde}
-N 415 -585 470 -585 {
-lab=out}
-N 470 -585 535 -585 {
-lab=out}
-N 375 -385 375 -370 {
-lab=start}
-N 575 -385 575 -370 {
-lab=ptat}
-N 110 -335 110 -320 {
-lab=avdd}
-N 45 -290 70 -290 {
-lab=ena}
-N 110 -260 110 -245 {
-lab=vdde}
-N 1220 -140 1220 -130 {
+N 610 -190 610 -180 {
 lab=ctat}
-N 575 -555 575 -545 {
-lab=vref}
-N 575 -405 575 -385 {
-lab=ptat}
-N 375 -555 375 -545 {
-lab=#net1}
-N 375 -405 375 -385 {
-lab=start}
-N 455 -145 520 -145 {
-lab=#net2}
-N 455 -180 520 -180 {
-lab=#net3}
-N 375 -375 385 -375 {
-lab=start}
-N 560 -375 575 -375 {
-lab=ptat}
-N 385 -375 445 -375 {
-lab=start}
-N 500 -375 560 -375 {
-lab=ptat}
-N 480 -210 480 -115 {
-lab=vena}
-N 535 -585 675 -585 {
-lab=out}
-N 575 -630 715 -630 {
-lab=vdde}
-N 715 -630 715 -615 {
-lab=vdde}
-N 470 -585 470 -510 {
-lab=out}
-N 500 -380 500 -375 {
-lab=ptat}
-N 500 -382.5 500 -380 {
-lab=ptat}
-N 445 -382.5 445 -375 {
-lab=start}
-N 470 -510 470 -502.5 {
-lab=out}
-N 1220 -230 1220 -200 {lab=#net4}
-N 1300 -360 1330 -360 {lab=avss}
-N 1300 -340 1330 -340 {lab=trim0}
-N 1300 -320 1330 -320 {lab=trim1}
-N 1300 -300 1330 -300 {lab=trim2}
-N 1300 -280 1330 -280 {lab=trim3}
-N 1300 -260 1330 -260 {lab=dvss}
-N 1140 -100 1180 -100 {lab=avss}
-N 1100 -60 1220 -60 {lab=avss}
-N 1160 -100 1160 -60 {lab=avss}
-N 1190 -400 1190 -390 {lab=#net5}
-N 1190 -390 1220 -390 {lab=#net5}
-N 1130 -400 1130 -390 {lab=#net6}
-N 1100 -390 1130 -390 {lab=#net6}
-N 1100 -390 1100 -210 {lab=#net6}
-N 1100 -210 1100 -200 {lab=#net6}
-N 1100 -140 1100 -130 {lab=#net7}
-N 1330 -430 1330 -390 {lab=#net5}
-N 1220 -390 1330 -390 {lab=#net5}
-N 990 -430 990 -390 {lab=#net6}
-N 990 -390 1100 -390 {lab=#net6}
-C {sky130_fd_pr/pnp_05v5.sym} 1120 -100 0 1 {name=Q1
+N 610 -280 610 -250 {lab=#net1}
+N 690 -410 720 -410 {lab=avss}
+N 690 -390 720 -390 {lab=trim0}
+N 690 -370 720 -370 {lab=trim1}
+N 690 -350 720 -350 {lab=trim2}
+N 690 -330 720 -330 {lab=trim3}
+N 690 -310 720 -310 {lab=dvss}
+N 530 -150 570 -150 {lab=avss}
+N 490 -110 610 -110 {lab=avss}
+N 550 -150 550 -110 {lab=avss}
+N 580 -450 580 -440 {lab=#net2}
+N 580 -440 610 -440 {lab=#net2}
+N 520 -450 520 -440 {lab=#net3}
+N 490 -440 520 -440 {lab=#net3}
+N 490 -440 490 -260 {lab=#net3}
+N 490 -260 490 -250 {lab=#net3}
+N 490 -190 490 -180 {lab=#net4}
+N 720 -480 720 -440 {lab=#net2}
+N 610 -440 720 -440 {lab=#net2}
+N 380 -480 380 -440 {lab=#net3}
+N 380 -440 490 -440 {lab=#net3}
+N 550 -110 550 -90 {lab=avss}
+N 800 -510 820 -510 {lab=avss}
+N 280 -510 300 -510 {lab=avss}
+N 550 -710 550 -650 {lab=#net5}
+N 550 -710 680 -710 {lab=#net5}
+N 720 -680 720 -640 {lab=#net6}
+N 420 -710 550 -710 {lab=#net5}
+N 380 -680 380 -640 {lab=#net7}
+N 380 -760 380 -740 {lab=avdd}
+N 380 -760 720 -760 {lab=avdd}
+N 720 -760 720 -740 {lab=avdd}
+C {sky130_fd_pr/pnp_05v5.sym} 510 -150 0 1 {name=Q1
 model=pnp_05v5_W3p40L3p40
 m=1
 spiceprefix=X
-}
-C {sky130_fd_pr/pnp_05v5.sym} 1200 -100 0 0 {name=Q2
+author="Gilang Fajrul Falah"}
+C {sky130_fd_pr/pnp_05v5.sym} 590 -150 0 0 {name=Q2
 model=pnp_05v5_W3p40L3p40
 m=8
 spiceprefix=X
-}
-C {devices/code.sym} 675 -110 0 0 {name=params only_toplevel=false value="
+author="Gilang Fajrul Falah"}
+C {devices/code.sym} 815 -250 0 0 {name=params only_toplevel=false value="
 .param L8=10
 .param W8=1
 .param L10=1
 .param W10=1
 .param R=492k
-"}
-C {devices/ammeter.sym} 1100 -170 0 0 {name=Vctat savecurrent=true}
-C {devices/lab_pin.sym} 575 -400 0 1 {name=p1 sig_type=std_logic lab=ptat}
-C {devices/lab_pin.sym} 1220 -140 0 0 {name=p2 sig_type=std_logic lab=ctat}
-C {devices/lab_pin.sym} 485 -585 0 1 {name=p3 sig_type=std_logic lab=out}
-C {sky130_fd_pr/pfet3_01v8.sym} 555 -585 0 0 {name=M1
-L=\{L8\}
-W=\{W8\}
-body=vdde
-nf=1
-mult=4
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet3_01v8.sym} 395 -585 0 1 {name=M2
-L=\{L8\}
-W=\{W8\}
-body=vdde
-nf=1
-mult=4
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/ngspice_probe.sym} 375 -380 0 0 {name=r3}
-C {devices/lab_pin.sym} 110 -245 0 0 {name=p5 sig_type=std_logic lab=vdde}
-C {devices/ammeter.sym} 1220 -170 0 1 {name=Vctat1 savecurrent=true}
-C {Resistor492k_1.sym} 1280 -720 1 0 {name=x2}
-C {Resistor492k_1.sym} 1040 -720 3 1 {name=x3}
-C {Resistor50k_1.sym} 1340 -880 1 0 {name=x4}
-C {devices/ngspice_probe.sym} 575 -550 0 0 {name=r1}
-C {Startup.sym} 665 -115 0 0 {name=x5}
-C {devices/lab_pin.sym} 420 -375 3 0 {name=p13 sig_type=std_logic lab=start}
-C {devices/ngspice_probe.sym} 525 -180 0 0 {name=r2}
-C {devices/ngspice_probe.sym} 500 -145 0 0 {name=r4}
-C {devices/ngspice_probe.sym} 480 -165 0 0 {name=r5}
-C {sky130_fd_pr/nfet3_01v8_lvt.sym} 500 -210 0 0 {name=M3
+"
+author="Gilang Fajrul Falah"}
+C {devices/ammeter.sym} 490 -220 0 0 {name=Vctat savecurrent=true
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 610 -190 0 0 {name=p2 sig_type=std_logic lab=ctat
+author="Gilang Fajrul Falah"}
+C {devices/ammeter.sym} 610 -220 0 1 {name=Vctat1 savecurrent=true
+author="Gilang Fajrul Falah"}
+C {Resistor492k_1.sym} 670 -770 1 0 {name=x2
+author="Gilang Fajrul Falah"}
+C {Resistor492k_1.sym} 430 -770 3 1 {name=x3
+author="Gilang Fajrul Falah"}
+C {Resistor50k_1.sym} 730 -930 1 0 {name=x4
+author="Gilang Fajrul Falah"}
+C {Startup.sym} 90 -145 0 0 {name=x5
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 320 -385 1 0 {name=p6 sig_type=std_logic lab=vdde
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 320 -235 3 0 {name=p19 sig_type=std_logic lab=avss
+author="Gilang Fajrul Falah"}
+C {devices/iopin.sym} 160 -350 2 0 {name=p16 lab=avdd
+author="Gilang Fajrul Falah"}
+C {devices/iopin.sym} 160 -310 2 0 {name=p17 lab=avss
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 720 -410 2 0 {name=p18 sig_type=std_logic lab=avss
+author="Gilang Fajrul Falah"}
+C {devices/iopin.sym} 160 -330 0 1 {name=p20 lab=dvss
+author="Gilang Fajrul Falah"}
+C {devices/iopin.sym} 160 -370 2 0 {name=p28 lab=dvdd
+author="Gilang Fajrul Falah"}
+C {op.sym} 550 -530 1 1 {name=x6
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 720 -390 2 0 {name=p12 sig_type=std_logic lab=trim0
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 720 -370 2 0 {name=p29 sig_type=std_logic lab=trim1
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 720 -350 2 0 {name=p30 sig_type=std_logic lab=trim2
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 720 -330 2 0 {name=p31 sig_type=std_logic lab=trim3
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 720 -310 2 0 {name=p32 sig_type=std_logic lab=dvss
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 550 -90 2 0 {name=p33 sig_type=std_logic lab=avss
+author="Gilang Fajrul Falah"}
+C {ipin.sym} 160 -290 0 0 {name=p1 lab=trim[0..3]
+author="Gilang Fajrul Falah"}
+C {ipin.sym} 160 -270 0 0 {name=p3 lab=vena
+author="Gilang Fajrul Falah"}
+C {ipin.sym} 160 -250 0 0 {name=p5 lab=ena
+author="Gilang Fajrul Falah"}
+C {opin.sym} 160 -230 0 0 {name=p7 lab=vref
+author="Gilang Fajrul Falah"}
+C {opin.sym} 160 -210 0 0 {name=p10 lab=vbgsc
+author="Gilang Fajrul Falah"}
+C {opin.sym} 160 -190 0 0 {name=p4 lab=vbgtc
+author="Gilang Fajrul Falah"}
+C {opin.sym} 160 -170 0 0 {name=p8 lab=iptat
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 500 -650 1 0 {name=p9 sig_type=std_logic lab=avss
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 480 -650 1 0 {name=p11 sig_type=std_logic lab=avdd
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 820 -510 2 0 {name=p13 sig_type=std_logic lab=avss
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 280 -510 2 1 {name=p14 sig_type=std_logic lab=avss
+author="Gilang Fajrul Falah"}
+C {title.sym} 160 -30 0 0 {name=l1 author="Gilang Fajrul Falah"}
+C {sky130_fd_pr/pfet3_01v8.sym} 700 -710 0 0 {name=M1
 W=1
-L=1
+L=0.15
+body=VDD
 nf=1
-mult=2
-body=DVSS
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
+model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8_lvt.sym} 500 -115 2 1 {name=M4
+C {sky130_fd_pr/pfet3_01v8.sym} 400 -710 0 1 {name=M2
 W=1
-L=1
+L=0.15
+body=VDD
 nf=1
-mult=2
-body=DVSS
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 895 -355 1 0 {name=p6 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 425 -442.5 0 0 {name=p7 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 470 -630 1 0 {name=p10 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 895 -205 3 0 {name=p19 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} 45 -290 2 0 {name=p14 lab=ena}
-C {devices/iopin.sym} 520 -240 0 0 {name=p8 lab=vbgtc}
-C {devices/iopin.sym} 520 -85 0 0 {name=p9 lab=vbgsc}
-C {devices/lab_pin.sym} 515 -442.5 2 0 {name=p25 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} 480 -160 0 0 {name=p15 lab=vena}
-C {devices/iopin.sym} 110 -335 3 0 {name=p16 lab=avdd}
-C {devices/iopin.sym} 120 -60 2 0 {name=p17 lab=avss}
-C {devices/lab_pin.sym} 1330 -360 2 0 {name=p18 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} 120 -80 0 1 {name=p20 lab=dvss}
-C {devices/iopin.sym} 120 -160 0 1 {name=p21 lab=trim0}
-C {devices/iopin.sym} 120 -140 0 1 {name=p22 lab=trim1}
-C {devices/iopin.sym} 120 -120 0 1 {name=p23 lab=trim2}
-C {devices/iopin.sym} 120 -100 0 1 {name=p24 lab=trim3}
-C {devices/lab_pin.sym} 535 -495 0 0 {name=p26 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 415 -495 2 0 {name=p27 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} 120 -180 2 0 {name=p28 lab=dvdd}
-C {devices/iopin.sym} 575 -550 0 0 {name=p4 lab=vref}
-C {devices/iopin.sym} 715 -555 0 0 {name=p11 lab=iptat}
-C {sky130_fd_pr/pfet3_01v8.sym} 695 -585 0 0 {name=M5
-L=\{L8\}
-W=\{W8\}
-body=vdde
-nf=1
-mult=4
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
+mult=1
+ad="expr('int((@nf + 1)/2) * @W / @nf * 0.29')"
+pd="expr('2*int((@nf + 1)/2) * (@W / @nf + 0.29)')"
+as="expr('int((@nf + 2)/2) * @W / @nf * 0.29')"
+ps="expr('2*int((@nf + 2)/2) * (@W / @nf + 0.29)')"
+nrd="expr('0.29 / @W ')" nrs="expr('0.29 / @W ')"
 sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {op5.sym} 540 -85 3 0 {name=x1}
-C {sky130_fd_pr/pfet3_01v8.sym} 90 -290 0 0 {name=M6
-L=2
-W=2
-body=DVDD
-nf=1
-mult=4
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {op.sym} 1160 -480 1 1 {name=x6}
-C {devices/lab_pin.sym} 1330 -340 2 0 {name=p12 sig_type=std_logic lab=trim0}
-C {devices/lab_pin.sym} 1330 -320 2 0 {name=p29 sig_type=std_logic lab=trim1}
-C {devices/lab_pin.sym} 1330 -300 2 0 {name=p30 sig_type=std_logic lab=trim2}
-C {devices/lab_pin.sym} 1330 -280 2 0 {name=p31 sig_type=std_logic lab=trim3}
-C {devices/lab_pin.sym} 1330 -260 2 0 {name=p32 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 1220 -60 2 0 {name=p33 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 550 -760 1 0 {name=p15 sig_type=std_logic lab=avdd
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 670 -530 1 0 {name=p21 sig_type=std_logic lab=avdd
+author="Gilang Fajrul Falah"}
+C {devices/lab_pin.sym} 430 -530 1 0 {name=p22 sig_type=std_logic lab=avss
+author="Gilang Fajrul Falah"}

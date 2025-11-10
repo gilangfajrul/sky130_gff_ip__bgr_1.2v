@@ -58,31 +58,31 @@ print onoise_total
 *.ipin vi_n
 *.iopin psubs
 *.iopin nwell
-XM1 net3 vi_n net1 psubs sky130_fd_pr__nfet_01v8 L=5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM3 net3 net3 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
-+ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1 m=1
-XM6 net4 net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=3 nf=1 ad=0.87 as=0.87 pd=6.58 ps=6.58 nrd=0.0966666666666667
-+ nrs=0.0966666666666667 sa=0 sb=0 sd=0 mult=1 m=1
-XM5 net1 net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=3 nf=1 ad=0.87 as=0.87 pd=6.58 ps=6.58 nrd=0.0966666666666667
-+ nrs=0.0966666666666667 sa=0 sb=0 sd=0 mult=1 m=1
-XM7 vo_out net2 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=27 nf=1 ad=7.83 as=7.83 pd=54.58 ps=54.58 nrd=0.0107407407407407
-+ nrs=0.0107407407407407 sa=0 sb=0 sd=0 mult=1 m=1
-XM8 vo_out net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=4.5 nf=1 ad=1.305 as=1.305 pd=9.58 ps=9.58 nrd=0.0644444444444444
-+ nrs=0.0644444444444444 sa=0 sb=0 sd=0 mult=1 m=1
-XM2 net2 vi_p net1 psubs sky130_fd_pr__nfet_01v8 L=5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM4 net2 net3 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=6 nf=1 ad=1.74 as=1.74 pd=12.58 ps=12.58 nrd=0.0483333333333333
-+ nrs=0.0483333333333333 sa=0 sb=0 sd=0 mult=1 m=1
-XR1 net5 net2 vss sky130_fd_pr__res_high_po_0p35 L=1 mult=1 m=1
+XM1a net3 vi_n net1 psubs sky130_fd_pr__nfet_01v8 L=5 W=3.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2a net3 net3 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=8.5 nf=1 ad=2.465 as=2.465 pd=17.58 ps=17.58 nrd=0.0341176470588235
++ nrs=0.0341176470588235 sa=0 sb=0 sd=0 mult=1 m=1
+XM0a net4 net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM0b net1 net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM4 vo_out net2 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=23.5 nf=1 ad=6.815 as=6.815 pd=47.58 ps=47.58 nrd=0.0123404255319149
++ nrs=0.0123404255319149 sa=0 sb=0 sd=0 mult=1 m=1
+XM5 vo_out net4 vss psubs sky130_fd_pr__nfet_01v8 L=5 W=2 nf=1 ad=0.58 as=0.58 pd=4.58 ps=4.58 nrd=0.145 nrs=0.145 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM1b net2 vi_p net1 psubs sky130_fd_pr__nfet_01v8 L=5 W=3.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2b net2 net3 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=8.5 nf=1 ad=2.465 as=2.465 pd=17.58 ps=17.58 nrd=0.0341176470588235
++ nrs=0.0341176470588235 sa=0 sb=0 sd=0 mult=1 m=1
 XC1 vo_out net5 sky130_fd_pr__cap_mim_m3_1 W=12 L=12 MF=9 m=9
-XM9 net6 net4 net7 psubs sky130_fd_pr__nfet_01v8 L=5 W=3 nf=1 ad=0.87 as=0.87 pd=6.58 ps=6.58 nrd=0.0966666666666667
-+ nrs=0.0966666666666667 sa=0 sb=0 sd=0 mult=1 m=1
-XM10 net6 net6 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=11.5 nf=1 ad=3.335 as=3.335 pd=23.58 ps=23.58 nrd=0.0252173913043478
-+ nrs=0.0252173913043478 sa=0 sb=0 sd=0 mult=1 m=1
-XM11 net4 net6 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=11.5 nf=1 ad=3.335 as=3.335 pd=23.58 ps=23.58 nrd=0.0252173913043478
-+ nrs=0.0252173913043478 sa=0 sb=0 sd=0 mult=1 m=1
-XR2 vss net7 vss sky130_fd_pr__res_high_po_0p35 L=1 mult=1 m=1
+XM3 net6 net4 net7 psubs sky130_fd_pr__nfet_01v8 L=5 W=4 nf=1 ad=1.16 as=1.16 pd=8.58 ps=8.58 nrd=0.0725 nrs=0.0725 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM6a net6 net6 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM6b net4 net6 vdd nwell sky130_fd_pr__pfet_01v8 L=5 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0
++ mult=1 m=1
+XR1 net5 net2 vss sky130_fd_pr__res_high_po_0p35 L=1 mult=1 m=1
+R2 net7 vss 46k m=1
 .ends
 
 .GLOBAL GND

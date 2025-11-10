@@ -1,14 +1,14 @@
-Netgen 1.5.272 compiled on Sen 18 Mar 2024 02:03:33  CST
+Netgen 1.5.300 compiled on Tue Sep 30 09:49:28 PM CEST 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
-Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/cap_op.ext.spc
+Reading netlist file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/cap_op.ext.spc
 Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
 Creating placeholder cell definition.
-Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/cap_op.sch.spc
+Reading netlist file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/cap_op.sch.spc
 Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
 Creating placeholder cell definition.
 
-Reading setup file /home/gilang_fajrul/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Reading setup file /foss/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl
 
 No property area found for device sky130_fd_pr__cap_mim_m3_1
 No property value found for device sky130_fd_pr__cap_mim_m3_1
@@ -20,37 +20,37 @@ No property value found for device sky130_fd_pr__cap_mim_m3_1
 No property mult found for device sky130_fd_pr__cap_mim_m3_1
 No property perim found for device sky130_fd_pr__cap_mim_m3_1
 No property mf found for device sky130_fd_pr__cap_mim_m3_1
-Comparison output logged to file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/cap_op.lvs.out
-Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/cap_op.lvs.out" enabled
+Comparison output logged to file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/cap_op.lvs.out
+Logging to file "/foss/designs/sky130_gff_ip__bgr_1.2v/magic/cap_op.lvs.out" enabled
 Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
 
 Contents of circuit 1:  Circuit: 'cap_op'
-Circuit cap_op contains 16 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:  16
-Circuit contains 3 nets.
+Circuit cap_op contains 4 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   4
+Circuit contains 2 nets.
 Contents of circuit 2:  Circuit: 'cap_op'
-Circuit cap_op contains 3 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
-Circuit contains 3 nets.
+Circuit cap_op contains 1 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+Circuit contains 2 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'cap_op'
-Circuit cap_op contains 3 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
-Circuit contains 3 nets.
+Circuit cap_op contains 1 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+Circuit contains 2 nets.
 Contents of circuit 2:  Circuit: 'cap_op'
-Circuit cap_op contains 3 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
-Circuit contains 3 nets.
+Circuit cap_op contains 1 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+Circuit contains 2 nets.
 
-Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
-Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 2 nets,    Circuit 2 contains 2 nets.
 
 
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/cap_op.lvs.out" disabled
+Logging to file "/foss/designs/sky130_gff_ip__bgr_1.2v/magic/cap_op.lvs.out" disabled
 LVS Done.

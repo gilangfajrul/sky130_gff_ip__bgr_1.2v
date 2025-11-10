@@ -1,37 +1,21 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1718554435
+timestamp 1762701392
 << metal3 >>
-rect -4288 -2028 -3898 -1932
-rect -6354 -4018 -6258 -3628
-rect -2321 -4065 -2225 -3675
-rect -4369 -5748 -3902 -5652
+rect -775 1694 528 1794
+rect -766 -378 -666 32
+rect 3732 -336 3832 74
+rect -865 -2107 89 -2008
 << metal4 >>
-rect -8858 1692 3764 1788
-rect -6 1690 3764 1692
-rect -10344 -7792 -10248 1395
-rect -8365 -8015 -8267 618
-rect -292 -2030 3883 -1934
-rect -6354 -3792 -6258 -3603
-rect -2321 -3792 -2225 -3535
-rect -6354 -3888 3906 -3792
-rect -6354 -4132 -6258 -3888
-rect -2321 -4064 -2225 -3888
-rect 1691 -7826 1787 -3996
-rect 3670 -7828 3768 -3996
-rect -8739 -9372 448 -9371
-rect -8739 -9467 3764 -9372
-rect -348 -9470 3764 -9467
-use sky130_fd_pr__cap_mim_m3_1_SXWHWZ  sky130_fd_pr__cap_mim_m3_1_SXWHWZ_0
-timestamp 1716453347
-transform 1 0 -4133 0 1 -3840
-box -7904 -7320 7904 7320
+rect -2810 -214 3990 -110
+use sky130_fd_pr__cap_mim_m3_1_TVJG6P  sky130_fd_pr__cap_mim_m3_1_TVJG6P_0
+timestamp 1762701392
+transform 1 0 -333 0 1 -160
+box -4165 -3800 4165 3800
 << labels >>
-flabel metal4 -3508 -3840 -3508 -3840 0 FreeSans 1600 0 0 0 A
+flabel metal4 3936 -161 3936 -161 0 FreeSans 160 0 0 0 A
 port 0 nsew
-flabel metal3 -4163 -1986 -4163 -1986 0 FreeSans 1600 0 0 0 B
+flabel metal3 3777 -279 3777 -279 0 FreeSans 160 0 0 0 B
 port 1 nsew
-flabel metal4 1734 -7606 1734 -7606 0 FreeSans 1600 0 0 0 AVSS
-port 3 nsew
 << end >>

@@ -1,14 +1,14 @@
-Netgen 1.5.272 compiled on Sen 18 Mar 2024 02:03:33  CST
+Netgen 1.5.300 compiled on Tue Sep 30 09:49:28 PM CEST 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
-Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.ext.spc
+Reading netlist file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.ext.spc
 Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
 Creating placeholder cell definition.
-Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.sch.spc
+Reading netlist file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.sch.spc
 Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
 Creating placeholder cell definition.
 
-Reading setup file /home/gilang_fajrul/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Reading setup file /foss/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl
 
 Model sky130_fd_pr__res_high_po_0p35 pin 1 == 2
 No property w found for device sky130_fd_pr__res_high_po_0p35
@@ -21,8 +21,8 @@ No property w found for device sky130_fd_pr__res_high_po_0p35
 No property w found for device sky130_fd_pr__res_high_po_0p35
 No property value found for device sky130_fd_pr__res_high_po_0p35
 No property w found for device sky130_fd_pr__res_high_po_0p35
-Comparison output logged to file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out
-Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out" enabled
+Comparison output logged to file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out
+Logging to file "/foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out" enabled
 Circuit sky130_fd_pr__res_high_po_0p35 contains no devices.
 
 Contents of circuit 1:  Circuit: 'resistor_op_tt'
@@ -56,5 +56,5 @@ No more changes can be made to series/parallel networks.
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out" disabled
+Logging to file "/foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.lvs.out" disabled
 LVS Done.
