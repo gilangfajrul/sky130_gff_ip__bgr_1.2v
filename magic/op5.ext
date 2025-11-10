@@ -1,0 +1,69 @@
+timestamp 1762786734
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use secondstage secondstage_0 1 0 -801 0 1 10039
+use resistor_op_tt resistor_op_tt_0 0 -1 5238 -1 0 9265
+use pmos_current_bgr_2 pmos_current_bgr_2_0 -1 0 8259 0 1 11400
+use nmos_tail_current nmos_tail_current_0 -1 0 8043 0 -1 8158
+use differential_pair differential_pair_0 1 0 4032 0 1 8666
+use cap_op cap_op_0 1 0 -5288 0 1 10081
+port "out" 2 -1313 10453 -1311 10453 m3
+port "plus" 3 6567 9067 6567 9067 m2
+port "AVSS" 0 4348 8395 4348 8395 m2
+port "minus" 1 5954 9068 5954 9068 m1
+port "vdde" 4 3667 9996 3667 9996 m1
+node "out" 0 0 -1313 10453 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m2_n294_7538#" 0 0 -294 7538 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "plus" 0 0 6567 9067 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_2880_8370#" 0 0 2880 8370 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "AVSS" 0 0 4348 8395 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_2973_8579#" 0 0 2973 8579 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_6308_8368#" 0 0 6308 8368 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "minus" 0 0 5954 9068 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n841_9063#" 0 0 -841 9063 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_2798_8162#" 0 0 2798 8162 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_n1283_9056#" 0 0 -1283 9056 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdde" 0 0 3667 9996 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_3222_8462#" 0 0 3222 8462 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_2613_8981#" 0 0 2613 8981 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_3657_9584#" 0 0 3657 9584 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3528_9950#" 0 0 3528 9950 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "secondstage_0/d10" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_TVJG6P_0/C2_1_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_TVJG6P_0/C2_1_1" "out"
+merge "differential_pair_0/S" "nmos_tail_current_0/D4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_tail_current_0/D4" "m1_6308_8368#"
+merge "nmos_tail_current_0/D3" "cap_op_0/sky130_fd_pr__cap_mim_m3_1_TVJG6P_0/C2_1_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "cap_op_0/sky130_fd_pr__cap_mim_m3_1_TVJG6P_0/C2_1_0" "m2_n294_7538#"
+merge "pmos_current_bgr_2_0/VSUBS" "resistor_op_tt_0/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resistor_op_tt_0/B" "secondstage_0/VSUBS"
+merge "secondstage_0/VSUBS" "m1_n841_9063#"
+merge "m1_n841_9063#" "differential_pair_0/AVSS"
+merge "differential_pair_0/AVSS" "AVSS"
+merge "AVSS" "resistor_op_tt_0/AVSS"
+merge "resistor_op_tt_0/AVSS" "m1_2973_8579#"
+merge "m1_2973_8579#" "nmos_tail_current_0/AVSS"
+merge "nmos_tail_current_0/AVSS" "cap_op_0/VSUBS"
+merge "cap_op_0/VSUBS" "VSUBS"
+merge "pmos_current_bgr_2_0/D3" "nmos_tail_current_0/sky130_fd_pr__nfet_01v8_3YKU97_0/a_n2000_n124#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_tail_current_0/sky130_fd_pr__nfet_01v8_3YKU97_0/a_n2000_n124#" "m1_2798_8162#"
+merge "pmos_current_bgr_2_0/sky130_fd_pr__pfet_01v8_2XUZHN_1/a_15_n100#" "nmos_tail_current_0/D1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_tail_current_0/D1" "m1_3222_8462#"
+merge "pmos_current_bgr_2_0/D8" "secondstage_0/m1_4106_343#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "secondstage_0/m1_4106_343#" "differential_pair_0/D3"
+merge "differential_pair_0/D3" "resistor_op_tt_0/sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_48_n1784#"
+merge "resistor_op_tt_0/sky130_fd_pr__res_high_po_0p35_RXTQM4_0/a_48_n1784#" "m1_2613_8981#"
+merge "cap_op_0/A" "resistor_op_tt_0/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resistor_op_tt_0/D" "m1_n1283_9056#"
+merge "differential_pair_0/PLUS" "plus" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_2_0/D9" "differential_pair_0/D4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "differential_pair_0/D4" "m1_3657_9584#"
+merge "differential_pair_0/MINUS" "minus" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_current_bgr_2_0/VDDE" "secondstage_0/vdde" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "secondstage_0/vdde" "vdde"
+merge "vdde" "w_3528_9950#"
+merge "nmos_tail_current_0/S2" "resistor_op_tt_0/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resistor_op_tt_0/A" "m1_2880_8370#"

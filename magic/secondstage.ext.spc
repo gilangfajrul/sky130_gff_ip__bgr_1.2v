@@ -14,8 +14,8 @@ X3 S1_0 G0_0 D0_0 w_n2123_n418# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29
 
 .subckt secondstage g10 d10 vdde
 Xsky130_fd_pr__pfet_01v8_P4G5X4_0 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
-Xsky130_fd_pr__pfet_01v8_P4G5X4_1 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
 Xsky130_fd_pr__pfet_01v8_P4G5X4_2 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
+Xsky130_fd_pr__pfet_01v8_P4G5X4_1 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
 Xsky130_fd_pr__pfet_01v8_P4G5X4_3 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
 Xsky130_fd_pr__pfet_01v8_LDV24K_0 d10 g10 d10 g10 vdde g10 vdde g10 vdde d10 d10 vdde
 + sky130_fd_pr__pfet_01v8_LDV24K

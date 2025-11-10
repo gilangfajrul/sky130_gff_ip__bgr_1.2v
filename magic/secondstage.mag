@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1762705629
+timestamp 1762780584
 << nwell >>
 rect -172 -89 4426 929
 << nsubdiff >>
@@ -171,19 +171,19 @@ timestamp 1762704772
 transform 1 0 2127 0 1 420
 box -2123 -418 2123 418
 use sky130_fd_pr__pfet_01v8_P4G5X4  sky130_fd_pr__pfet_01v8_P4G5X4_0
-timestamp 1762704772
+timestamp 1762752159
 transform 1 0 4229 0 1 638
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_P4G5X4  sky130_fd_pr__pfet_01v8_P4G5X4_1
-timestamp 1762704772
+timestamp 1762752159
 transform 1 0 4229 0 1 202
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_P4G5X4  sky130_fd_pr__pfet_01v8_P4G5X4_2
-timestamp 1762704772
+timestamp 1762752159
 transform 1 0 25 0 1 202
 box -109 -162 109 162
 use sky130_fd_pr__pfet_01v8_P4G5X4  sky130_fd_pr__pfet_01v8_P4G5X4_3
-timestamp 1762704772
+timestamp 1762752159
 transform 1 0 25 0 1 638
 box -109 -162 109 162
 << labels >>

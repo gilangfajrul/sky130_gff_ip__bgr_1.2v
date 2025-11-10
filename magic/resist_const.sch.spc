@@ -1,4 +1,4 @@
-** sch_path: /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/resist_const.sch
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resist_const.sch
 .subckt resist_const F E C A avss VBGTC VBGSC D B
 *.PININFO A:B VBGTC:B B:B VBGSC:B avss:B C:B D:B F:B E:B
 XR1 net1 A avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
@@ -62,4 +62,3 @@ XR60 avss net50 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR63 net47 net48 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR64 net49 net47 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 .ends
-.end

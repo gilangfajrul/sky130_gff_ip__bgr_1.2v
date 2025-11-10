@@ -123,18 +123,18 @@ S3                                         |s3
 VENA                                       |vena                                       
 S0                                         |s0                                         
 trim0                                      |trim0                                      
-trim3                                      |trim3                                      
-D3                                         |d3                                         
 trim1                                      |trim1                                      
 trim2                                      |trim2                                      
-SVBGSC                                     |svbgsc                                     
-SVBGTC                                     |svbgtc                                     
-VBGSC                                      |vbgsc                                      
-VBGTC                                      |vbgtc                                      
+trim3                                      |trim3                                      
+D3                                         |d3                                         
 AVDD                                       |avdd                                       
 ENA                                        |ena                                        
 DVDD                                       |dvdd                                       
 VDDE                                       |vdde                                       
+SVBGTC                                     |svbgtc                                     
+SVBGSC                                     |svbgsc                                     
+VBGTC                                      |vbgtc                                      
+VBGSC                                      |vbgsc                                      
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes digital and digital are equivalent.
