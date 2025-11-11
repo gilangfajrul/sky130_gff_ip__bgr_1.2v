@@ -68,12 +68,13 @@ X2 a_2029_n318# G1_0 S1_0 w_n2123_n418# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 
 X3 S1_0 G0_0 D0_0 w_n2123_n418# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=10
 .ends
 
-.subckt secondstage G vdde g10
-Xsky130_fd_pr__pfet_01v8_P4G5X4_0 G G vdde G sky130_fd_pr__pfet_01v8_P4G5X4
-Xsky130_fd_pr__pfet_01v8_P4G5X4_1 G G vdde G sky130_fd_pr__pfet_01v8_P4G5X4
-Xsky130_fd_pr__pfet_01v8_P4G5X4_2 G G vdde G sky130_fd_pr__pfet_01v8_P4G5X4
-Xsky130_fd_pr__pfet_01v8_P4G5X4_3 G G vdde G sky130_fd_pr__pfet_01v8_P4G5X4
-Xsky130_fd_pr__pfet_01v8_LDV24K_0 G g10 G g10 vdde g10 vdde g10 vdde G G vdde sky130_fd_pr__pfet_01v8_LDV24K
+.subckt secondstage vdde d10 g10
+Xsky130_fd_pr__pfet_01v8_P4G5X4_0 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
+Xsky130_fd_pr__pfet_01v8_P4G5X4_1 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
+Xsky130_fd_pr__pfet_01v8_P4G5X4_2 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
+Xsky130_fd_pr__pfet_01v8_P4G5X4_3 d10 d10 vdde d10 sky130_fd_pr__pfet_01v8_P4G5X4
+Xsky130_fd_pr__pfet_01v8_LDV24K_0 d10 g10 d10 g10 vdde g10 vdde g10 vdde d10 d10 vdde
++ sky130_fd_pr__pfet_01v8_LDV24K
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_3YKU97 a_n2058_n69# a_n2000_n124# a_2000_n69# VSUBS
@@ -155,7 +156,7 @@ Xsky130_fd_pr__cap_mim_m3_1_TVJG6P_0 B A B B A B sky130_fd_pr__cap_mim_m3_1_TVJG
 Xpmos_current_bgr_2_0 nmos_tail_current_0/D2 differential_pair_0/D4 secondstage_0/g10
 + vdde nmos_tail_current_0/D1 pmos_current_bgr_2
 Xresistor_op_tt_0 resistor_op_tt_0/A AVSS cap_op_0/A AVSS secondstage_0/g10 resistor_op_tt
-Xsecondstage_0 out vdde secondstage_0/g10 secondstage
+Xsecondstage_0 vdde out secondstage_0/g10 secondstage
 Xnmos_tail_current_0 nmos_tail_current_0/D1 differential_pair_0/S out resistor_op_tt_0/A
 + AVSS nmos_tail_current_0/D2 nmos_tail_current
 Xdifferential_pair_0 AVSS differential_pair_0/S plus minus secondstage_0/g10 differential_pair_0/D4

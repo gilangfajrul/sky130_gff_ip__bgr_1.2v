@@ -14,22 +14,22 @@ Cell pin lists are equivalent.
 Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
 Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_SU58NF in circuit resist_const (0)(1 instance)
 
-Class resist_const (0):  Merged 49 series devices.
+Class resist_const (0):  Merged 50 series devices.
 Class resist_const (0):  Merged 1 parallel devices.
-Class resist_const (1):  Merged 49 series devices.
+Class resist_const (1):  Merged 50 series devices.
 Class resist_const (1):  Merged 1 parallel devices.
 Subcircuit summary:
 Circuit 1: resist_const                    |Circuit 2: resist_const                    
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__res_high_po_0p35 (60->10)    |sky130_fd_pr__res_high_po_0p35 (60->10)    
-Number of devices: 10                      |Number of devices: 10                      
-Number of nets: 11                         |Number of nets: 11                         
+sky130_fd_pr__res_high_po_0p35 (60->9)     |sky130_fd_pr__res_high_po_0p35 (60->9)     
+Number of devices: 9                       |Number of devices: 9                       
+Number of nets: 9                          |Number of nets: 9                          
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
 Netlists match uniquely with property errors.
 sky130_fd_pr__res_high_po_0p35_SU58NF_0/sky130_fd_pr__res_high_po_0p35:40 vs. sky130_fd_pr__res_high_po_0p35:R17:
- l circuit1: 136   circuit2: 119   (delta=13.3%, cutoff=1%)
+ l circuit1: 170   circuit2: 153   (delta=10.5%, cutoff=1%)
 sky130_fd_pr__res_high_po_0p35_SU58NF_0/sky130_fd_pr__res_high_po_0p35:20 vs. sky130_fd_pr__res_high_po_0p35:R28:
  l circuit1: 153   circuit2: 170   (delta=10.5%, cutoff=1%)
 sky130_fd_pr__res_high_po_0p35_SU58NF_0/sky130_fd_pr__res_high_po_0p35:5 vs. sky130_fd_pr__res_high_po_0p35:R44:
@@ -43,11 +43,9 @@ Circuit 1: resist_const                    |Circuit 2: resist_const
 VBGTC                                      |VBGTC                                      
 VBGSC                                      |VBGSC                                      
 A                                          |A                                          
+F                                          |F                                          
 C                                          |C                                          
 D                                          |D                                          
-B                                          |B                                          
-E                                          |E                                          
-F                                          |F                                          
 AVSS                                       |avss                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.

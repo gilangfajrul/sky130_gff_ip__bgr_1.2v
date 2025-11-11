@@ -5,33 +5,33 @@ V {}
 S {}
 F {}
 E {}
-N 60 -370 60 -355 {
+N 170 -380 170 -365 {
 lab=vdde}
-N 60 -370 260 -370 {
+N 170 -380 370 -380 {
 lab=vdde}
-N 260 -370 260 -355 {
+N 370 -380 370 -365 {
 lab=vdde}
-N 100 -325 155 -325 {
+N 210 -335 265 -335 {
 lab=d10}
-N 155 -325 220 -325 {
+N 265 -335 330 -335 {
 lab=d10}
-N 260 -295 260 -285 {
+N 370 -305 370 -295 {
 lab=d2}
-N 60 -295 60 -285 {
+N 170 -305 170 -295 {
 lab=d1}
-N 415 -275 455 -275 {
+N 525 -285 565 -285 {
 lab=d1}
-N 415 -335 415 -275 {
+N 525 -345 525 -285 {
 lab=d1}
-N 415 -335 455 -335 {
+N 525 -345 565 -345 {
 lab=d1}
-N 555 -275 595 -275 {
+N 665 -285 705 -285 {
 lab=d2}
-N 555 -335 555 -275 {
+N 665 -345 665 -285 {
 lab=d2}
-N 555 -335 595 -335 {
+N 665 -345 705 -345 {
 lab=d2}
-C {sky130_fd_pr/pfet3_01v8.sym} 240 -325 0 0 {name=M7
+C {sky130_fd_pr/pfet3_01v8.sym} 350 -335 0 0 {name=M7
 L=10
 W=1
 body=vdde
@@ -46,7 +46,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8.sym} 80 -325 0 1 {name=M8
+C {sky130_fd_pr/pfet3_01v8.sym} 190 -335 0 1 {name=M8
 L=10
 W=1
 body=vdde
@@ -61,11 +61,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 260 -285 1 0 {name=p5 lab=d2}
-C {devices/iopin.sym} 60 -285 1 0 {name=p6 lab=d1}
-C {devices/iopin.sym} 260 -285 1 0 {name=p5 lab=d2}
-C {devices/iopin.sym} 60 -285 1 0 {name=p6 lab=d1}
-C {sky130_fd_pr/pfet3_01v8.sym} 435 -305 0 0 {name=M1
+C {devices/iopin.sym} 370 -295 1 0 {name=p5 lab=d2}
+C {devices/iopin.sym} 170 -295 1 0 {name=p6 lab=d1}
+C {sky130_fd_pr/pfet3_01v8.sym} 545 -315 0 0 {name=M1
 >>>>>>> 25322b5b182d16601128d72be30c75f3ebbda486
 L=0.15
 W=1
@@ -81,9 +79,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 155 -325 1 0 {name=p4 lab=d10}
-C {devices/lab_pin.sym} 415 -335 1 0 {name=p7 sig_type=std_logic lab=d1}
-C {sky130_fd_pr/pfet3_01v8.sym} 575 -305 0 0 {name=M2
+C {devices/iopin.sym} 265 -335 1 0 {name=p4 lab=d10}
+C {devices/lab_pin.sym} 525 -345 1 0 {name=p7 sig_type=std_logic lab=d1}
+C {sky130_fd_pr/pfet3_01v8.sym} 685 -315 0 0 {name=M2
 L=0.15
 W=1
 body=vdde
@@ -98,5 +96,5 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 555 -335 1 0 {name=p1 sig_type=std_logic lab=d2}
-C {devices/iopin.sym} 160 -370 3 0 {name=p2 lab=vdde}
+C {devices/lab_pin.sym} 665 -345 1 0 {name=p1 sig_type=std_logic lab=d2}
+C {devices/iopin.sym} 270 -380 3 0 {name=p2 lab=vdde}

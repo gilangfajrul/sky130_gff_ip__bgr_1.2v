@@ -28,26 +28,26 @@ Circuit sky130_fd_pr__res_high_po_0p35 contains no devices.
 Contents of circuit 1:  Circuit: 'resist_const'
 Circuit resist_const contains 60 device instances.
   Class: sky130_fd_pr__res_high_po_0p35 instances:  60
-Circuit contains 60 nets.
+Circuit contains 59 nets.
 Contents of circuit 2:  Circuit: 'resist_const'
 Circuit resist_const contains 60 device instances.
   Class: sky130_fd_pr__res_high_po_0p35 instances:  60
-Circuit contains 60 nets.
+Circuit contains 59 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'resist_const'
-Circuit resist_const contains 10 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
-Circuit contains 11 nets.
+Circuit resist_const contains 9 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   9
+Circuit contains 9 nets.
 Contents of circuit 2:  Circuit: 'resist_const'
-Circuit resist_const contains 10 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
-Circuit contains 11 nets.
+Circuit resist_const contains 9 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   9
+Circuit contains 9 nets.
 
-Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
-Circuit 1 contains 11 nets,    Circuit 2 contains 11 nets.
+Circuit 1 contains 9 devices, Circuit 2 contains 9 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
 
 
 Final result: 

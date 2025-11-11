@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1762753955
+timestamp 1762875002
 << nwell >>
 rect -227 -676 8487 506
 << nsubdiff >>
@@ -283,10 +283,6 @@ timestamp 1762752159
 transform 1 0 4130 0 1 -382
 box -4181 -200 4181 200
 << labels >>
-rlabel polycont 8313 -546 8313 -546 0 G
-port 2 nsew
-rlabel polycont -53 -546 -53 -546 0 G
-port 2 nsew
 flabel metal2 6185 -580 6185 -580 0 FreeSans 160 0 0 0 vdde
 port 3 nsew
 flabel metal2 8329 -97 8329 -97 0 FreeSans 160 0 0 0 d10

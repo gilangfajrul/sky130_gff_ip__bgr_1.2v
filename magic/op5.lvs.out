@@ -130,9 +130,9 @@ Circuit 1: secondstage                     |Circuit 2: secondstage
 -------------------------------------------|-------------------------------------------
 g10                                        |g10                                        
 vdde                                       |vdde                                       
-G                                          |d10 **Mismatch**                           
+d10                                        |d10                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists for secondstage and secondstage altered to match.
+Cell pin lists are equivalent.
 Device classes secondstage and secondstage are equivalent.
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_3YKU97 in circuit nmos_tail_current (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_P5G96Q in circuit nmos_tail_current (0)(5 instances)

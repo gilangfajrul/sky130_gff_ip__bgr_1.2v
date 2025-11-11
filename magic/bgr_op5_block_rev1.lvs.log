@@ -1,7 +1,7 @@
-Netgen 1.5.272 compiled on Sen 18 Mar 2024 02:03:33  CST
+Netgen 1.5.300 compiled on Tue Sep 30 09:49:28 PM CEST 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
-Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.ext.spc
+Reading netlist file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.ext.spc
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
@@ -14,26 +14,44 @@ Call to undefined subcircuit sky130_fd_pr__pnp_05v5_W3p40L3p40
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
 Creating placeholder cell definition.
-Reading netlist file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.sch.spc
+Reading netlist file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.sch.spc
 Call to undefined subcircuit pmos_current_bgr
 Creating placeholder cell definition.
-Call to undefined subcircuit pmos_current_bgr_2
-Creating placeholder cell definition.
-Call to undefined subcircuit nmos_tail_current
-Creating placeholder cell definition.
-Call to undefined subcircuit pmos_iptat
-Creating placeholder cell definition.
-Call to undefined subcircuit differential_pair
-Creating placeholder cell definition.
 Call to undefined subcircuit bjt
-Creating placeholder cell definition.
-Call to undefined subcircuit cap_op
-Creating placeholder cell definition.
-Call to undefined subcircuit resistor_op_tt
 Creating placeholder cell definition.
 Call to undefined subcircuit res_trim
 Creating placeholder cell definition.
 Call to undefined subcircuit resist_const
+Creating placeholder cell definition.
+Call to undefined subcircuit digital
+Creating placeholder cell definition.
+Call to undefined subcircuit op5
+Creating placeholder cell definition.
+Call to undefined subcircuit startupcir
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pnp_05v5_W3p40L3p40
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
+Creating placeholder cell definition.
+Call to undefined subcircuit trim
+Creating placeholder cell definition.
+Call to undefined subcircuit pmos_ena
+Creating placeholder cell definition.
+Call to undefined subcircuit vena
+Creating placeholder cell definition.
+Call to undefined subcircuit secondstage
+Creating placeholder cell definition.
+Call to undefined subcircuit resistor_op_tt
+Creating placeholder cell definition.
+Call to undefined subcircuit pmos_current_bgr_2
+Creating placeholder cell definition.
+Call to undefined subcircuit differential_pair
+Creating placeholder cell definition.
+Call to undefined subcircuit cap_op
+Creating placeholder cell definition.
+Call to undefined subcircuit nmos_tail_current
 Creating placeholder cell definition.
 Call to undefined subcircuit nmos_startup
 Creating placeholder cell definition.
@@ -41,28 +59,14 @@ Call to undefined subcircuit pmos_startup
 Creating placeholder cell definition.
 Call to undefined subcircuit resistorstart
 Creating placeholder cell definition.
-Call to undefined subcircuit digital
-Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8_lvt
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__pnp_05v5_W3p40L3p40
-Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
 Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__res_high_po_0p35
-Creating placeholder cell definition.
-Call to undefined subcircuit trim
-Creating placeholder cell definition.
-Call to undefined subcircuit vena
-Creating placeholder cell definition.
-Call to undefined subcircuit pmos_ena
-Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__nfet_01v8_lvt
-Creating placeholder cell definition.
 
-Reading setup file /home/gilang_fajrul/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl
+Reading setup file /foss/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl
 
 Model sky130_fd_pr__res_high_po_0p35 pin 1 == 2
 No property w found for device sky130_fd_pr__res_high_po_0p35
@@ -163,14 +167,89 @@ No property mf found for device sky130_fd_pr__cap_mim_m3_1
 No property mult found for device sky130_fd_pr__pnp_05v5_W3p40L3p40
 No property mult found for device sky130_fd_pr__pnp_05v5_W3p40L3p40
 No property mult found for device sky130_fd_pr__rf_pnp_05v5_W3p40L3p40
-Comparison output logged to file /home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.lvs.out
-Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.lvs.out" enabled
-Circuit sky130_fd_pr__pfet_01v8 contains no devices.
-Circuit sky130_fd_pr__nfet_01v8_lvt contains no devices.
+Comparison output logged to file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.lvs.out
+Logging to file "/foss/designs/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.lvs.out" enabled
 Circuit sky130_fd_pr__nfet_01v8 contains no devices.
 Circuit sky130_fd_pr__res_high_po_0p35 contains no devices.
-Circuit sky130_fd_pr__pnp_05v5_W3p40L3p40 contains no devices.
+Circuit sky130_fd_pr__pfet_01v8 contains no devices.
+Circuit sky130_fd_pr__nfet_01v8_lvt contains no devices.
 Circuit sky130_fd_pr__cap_mim_m3_1 contains no devices.
+Circuit sky130_fd_pr__pnp_05v5_W3p40L3p40 contains no devices.
+
+Contents of circuit 1:  Circuit: 'nmos_startup'
+Circuit nmos_startup contains 8 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'nmos_startup'
+Circuit nmos_startup contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 3 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'nmos_startup'
+Circuit nmos_startup contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'nmos_startup'
+Circuit nmos_startup contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 3 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'resistorstart'
+Circuit resistorstart contains 40 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  40
+Circuit contains 40 nets.
+Contents of circuit 2:  Circuit: 'resistorstart'
+Circuit resistorstart contains 40 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  40
+Circuit contains 40 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'resistorstart'
+Circuit resistorstart contains 2 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   2
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'resistorstart'
+Circuit resistorstart contains 2 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   2
+Circuit contains 3 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'pmos_startup'
+Circuit pmos_startup contains 8 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'pmos_startup'
+Circuit pmos_startup contains 8 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'pmos_startup'
+Circuit pmos_startup contains 7 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'pmos_startup'
+Circuit pmos_startup contains 7 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+Circuit contains 4 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
 
 Contents of circuit 1:  Circuit: 'pmos_ena'
 Circuit pmos_ena contains 8 device instances.
@@ -247,198 +326,6 @@ Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
 Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
 
 
-Contents of circuit 1:  Circuit: 'nmos_startup'
-Circuit nmos_startup contains 8 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   8
-Circuit contains 3 nets.
-Contents of circuit 2:  Circuit: 'nmos_startup'
-Circuit nmos_startup contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   2
-Circuit contains 3 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'nmos_startup'
-Circuit nmos_startup contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   2
-Circuit contains 3 nets.
-Contents of circuit 2:  Circuit: 'nmos_startup'
-Circuit nmos_startup contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   2
-Circuit contains 3 nets.
-
-Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
-Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
-
-
-Contents of circuit 1:  Circuit: 'resistorstart'
-Circuit resistorstart contains 40 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  40
-Circuit contains 40 nets.
-Contents of circuit 2:  Circuit: 'resistorstart'
-Circuit resistorstart contains 40 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  40
-Circuit contains 40 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'resistorstart'
-Circuit resistorstart contains 2 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:   2
-Circuit contains 3 nets.
-Contents of circuit 2:  Circuit: 'resistorstart'
-Circuit resistorstart contains 2 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:   2
-Circuit contains 3 nets.
-
-Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
-Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
-
-
-Contents of circuit 1:  Circuit: 'pmos_iptat'
-Circuit pmos_iptat contains 8 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   8
-Circuit contains 3 nets.
-Contents of circuit 2:  Circuit: 'pmos_iptat'
-Circuit pmos_iptat contains 2 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   2
-Circuit contains 3 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'pmos_iptat'
-Circuit pmos_iptat contains 2 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   2
-Circuit contains 3 nets.
-Contents of circuit 2:  Circuit: 'pmos_iptat'
-Circuit pmos_iptat contains 2 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   2
-Circuit contains 3 nets.
-
-Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
-Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
-
-
-Contents of circuit 1:  Circuit: 'digital'
-Circuit digital contains 7 device instances.
-  Class: trim                  instances:   4
-  Class: pmos_ena              instances:   1
-  Class: vena                  instances:   2
-Circuit contains 19 nets.
-Contents of circuit 2:  Circuit: 'digital'
-Circuit digital contains 7 device instances.
-  Class: trim                  instances:   4
-  Class: pmos_ena              instances:   1
-  Class: vena                  instances:   2
-Circuit contains 19 nets.
-
-Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
-Circuit 1 contains 19 nets,    Circuit 2 contains 19 nets.
-
-
-Contents of circuit 1:  Circuit: 'pmos_startup'
-Circuit pmos_startup contains 8 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   8
-Circuit contains 4 nets.
-Contents of circuit 2:  Circuit: 'pmos_startup'
-Circuit pmos_startup contains 8 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   8
-Circuit contains 4 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'pmos_startup'
-Circuit pmos_startup contains 7 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   7
-Circuit contains 4 nets.
-Contents of circuit 2:  Circuit: 'pmos_startup'
-Circuit pmos_startup contains 7 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   7
-Circuit contains 4 nets.
-
-Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
-Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
-
-
-Contents of circuit 1:  Circuit: 'res_trim'
-Circuit res_trim contains 48 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  48
-Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'res_trim'
-Circuit res_trim contains 10 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
-Circuit contains 6 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'res_trim'
-Circuit res_trim contains 7 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:   7
-Circuit contains 6 nets.
-Contents of circuit 2:  Circuit: 'res_trim'
-Circuit res_trim contains 7 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:   7
-Circuit contains 6 nets.
-
-Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
-Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
-
-
-Contents of circuit 1:  Circuit: 'pmos_current_bgr'
-Circuit pmos_current_bgr contains 24 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:  24
-Circuit contains 5 nets.
-Contents of circuit 2:  Circuit: 'pmos_current_bgr'
-Circuit pmos_current_bgr contains 6 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   6
-Circuit contains 5 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'pmos_current_bgr'
-Circuit pmos_current_bgr contains 6 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   6
-Circuit contains 5 nets.
-Contents of circuit 2:  Circuit: 'pmos_current_bgr'
-Circuit pmos_current_bgr contains 6 device instances.
-  Class: sky130_fd_pr__pfet_01v8 instances:   6
-Circuit contains 5 nets.
-
-Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
-Circuit 1 contains 5 nets,    Circuit 2 contains 5 nets.
-
-
-Contents of circuit 1:  Circuit: 'bjt'
-Circuit bjt contains 25 device instances.
-  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:  25
-Circuit contains 3 nets.
-Contents of circuit 2:  Circuit: 'bjt'
-Circuit bjt contains 3 device instances.
-  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
-Circuit contains 3 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'bjt'
-Circuit bjt contains 3 device instances.
-  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
-Circuit contains 3 nets.
-Contents of circuit 2:  Circuit: 'bjt'
-Circuit bjt contains 3 device instances.
-  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
-Circuit contains 3 nets.
-
-Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
-Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
-
-
 Contents of circuit 1:  Circuit: 'pmos_current_bgr_2'
 Circuit pmos_current_bgr_2 contains 16 device instances.
   Class: sky130_fd_pr__pfet_01v8 instances:  16
@@ -492,6 +379,31 @@ No more changes can be made to series/parallel networks.
 No more changes can be made to series/parallel networks.
 No more changes can be made to series/parallel networks.
 
+Contents of circuit 1:  Circuit: 'secondstage'
+Circuit secondstage contains 8 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'secondstage'
+Circuit secondstage contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 3 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'secondstage'
+Circuit secondstage contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'secondstage'
+Circuit secondstage contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+Circuit contains 3 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
 Contents of circuit 1:  Circuit: 'nmos_tail_current'
 Circuit nmos_tail_current contains 16 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:  16
@@ -542,93 +454,211 @@ Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
 Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
 
 
-Contents of circuit 1:  Circuit: 'resist_const'
-Circuit resist_const contains 60 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  60
-Circuit contains 60 nets.
-Contents of circuit 2:  Circuit: 'resist_const'
-Circuit resist_const contains 60 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  60
-Circuit contains 60 nets.
-
-Circuit was modified by parallel/series device merging.
-New circuit summary:
-
-Contents of circuit 1:  Circuit: 'resist_const'
-Circuit resist_const contains 10 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
-Circuit contains 11 nets.
-Contents of circuit 2:  Circuit: 'resist_const'
-Circuit resist_const contains 10 device instances.
-  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
-Circuit contains 11 nets.
-
-Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
-Circuit 1 contains 11 nets,    Circuit 2 contains 11 nets.
-
-
 Contents of circuit 1:  Circuit: 'cap_op'
-Circuit cap_op contains 16 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:  16
-Circuit contains 3 nets.
+Circuit cap_op contains 4 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   4
+Circuit contains 2 nets.
 Contents of circuit 2:  Circuit: 'cap_op'
-Circuit cap_op contains 3 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
-Circuit contains 3 nets.
+Circuit cap_op contains 1 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+Circuit contains 2 nets.
 
 Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'cap_op'
-Circuit cap_op contains 3 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
-Circuit contains 3 nets.
+Circuit cap_op contains 1 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+Circuit contains 2 nets.
 Contents of circuit 2:  Circuit: 'cap_op'
-Circuit cap_op contains 3 device instances.
-  Class: sky130_fd_pr__cap_mim_m3_1 instances:   3
+Circuit cap_op contains 1 device instances.
+  Class: sky130_fd_pr__cap_mim_m3_1 instances:   1
+Circuit contains 2 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 2 nets,    Circuit 2 contains 2 nets.
+
+
+Contents of circuit 1:  Circuit: 'startupcir'
+Circuit startupcir contains 3 device instances.
+  Class: pmos_startup          instances:   1
+  Class: resistorstart         instances:   1
+  Class: nmos_startup          instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'startupcir'
+Circuit startupcir contains 3 device instances.
+  Class: pmos_startup          instances:   1
+  Class: resistorstart         instances:   1
+  Class: nmos_startup          instances:   1
+Circuit contains 5 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 5 nets.
+
+
+Contents of circuit 1:  Circuit: 'digital'
+Circuit digital contains 7 device instances.
+  Class: trim                  instances:   4
+  Class: pmos_ena              instances:   1
+  Class: vena                  instances:   2
+Circuit contains 19 nets.
+Contents of circuit 2:  Circuit: 'digital'
+Circuit digital contains 7 device instances.
+  Class: trim                  instances:   4
+  Class: pmos_ena              instances:   1
+  Class: vena                  instances:   2
+Circuit contains 19 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 19 nets,    Circuit 2 contains 19 nets.
+
+
+Contents of circuit 1:  Circuit: 'pmos_current_bgr'
+Circuit pmos_current_bgr contains 12 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  12
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'pmos_current_bgr'
+Circuit pmos_current_bgr contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'pmos_current_bgr'
+Circuit pmos_current_bgr contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'pmos_current_bgr'
+Circuit pmos_current_bgr contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   4
+Circuit contains 4 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'res_trim'
+Circuit res_trim contains 48 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  48
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'res_trim'
+Circuit res_trim contains 10 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  10
+Circuit contains 6 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'res_trim'
+Circuit res_trim contains 7 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   7
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'res_trim'
+Circuit res_trim contains 7 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   7
+Circuit contains 6 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'bjt'
+Circuit bjt contains 25 device instances.
+  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:  25
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'bjt'
+Circuit bjt contains 3 device instances.
+  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
+Circuit contains 3 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'bjt'
+Circuit bjt contains 3 device instances.
+  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
+Circuit contains 3 nets.
+Contents of circuit 2:  Circuit: 'bjt'
+Circuit bjt contains 3 device instances.
+  Class: sky130_fd_pr__pnp_05v5_W3p40L3p40 instances:   3
 Circuit contains 3 nets.
 
 Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
 Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
 
 
-Contents of circuit 1:  Circuit: 'bgr_op5_block_rev1'
-Circuit bgr_op5_block_rev1 contains 14 device instances.
-  Class: res_trim              instances:   1
-  Class: digital               instances:   1
-  Class: pmos_startup          instances:   1
+Contents of circuit 1:  Circuit: 'op5'
+Circuit op5 contains 6 device instances.
   Class: cap_op                instances:   1
-  Class: bjt                   instances:   1
-  Class: resistorstart         instances:   1
   Class: nmos_tail_current     instances:   1
-  Class: pmos_iptat            instances:   1
-  Class: pmos_current_bgr      instances:   1
   Class: differential_pair     instances:   1
   Class: resistor_op_tt        instances:   1
-  Class: nmos_startup          instances:   1
+  Class: secondstage           instances:   1
   Class: pmos_current_bgr_2    instances:   1
-  Class: resist_const          instances:   1
-Circuit contains 35 nets.
-Contents of circuit 2:  Circuit: 'bgr_op5_block_rev1'
-Circuit bgr_op5_block_rev1 contains 14 device instances.
-  Class: res_trim              instances:   1
-  Class: digital               instances:   1
-  Class: pmos_startup          instances:   1
+Circuit contains 12 nets.
+Contents of circuit 2:  Circuit: 'op5'
+Circuit op5 contains 6 device instances.
   Class: cap_op                instances:   1
-  Class: bjt                   instances:   1
-  Class: resistorstart         instances:   1
   Class: nmos_tail_current     instances:   1
-  Class: pmos_iptat            instances:   1
-  Class: pmos_current_bgr      instances:   1
   Class: differential_pair     instances:   1
   Class: resistor_op_tt        instances:   1
-  Class: nmos_startup          instances:   1
+  Class: secondstage           instances:   1
   Class: pmos_current_bgr_2    instances:   1
-  Class: resist_const          instances:   1
-Circuit contains 35 nets.
+Circuit contains 12 nets.
 
-Circuit 1 contains 14 devices, Circuit 2 contains 14 devices.
-Circuit 1 contains 35 nets,    Circuit 2 contains 35 nets.
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 12 nets,    Circuit 2 contains 12 nets.
+
+
+Contents of circuit 1:  Circuit: 'resist_const'
+Circuit resist_const contains 60 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  60
+Circuit contains 59 nets.
+Contents of circuit 2:  Circuit: 'resist_const'
+Circuit resist_const contains 60 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:  60
+Circuit contains 59 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'resist_const'
+Circuit resist_const contains 9 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   9
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'resist_const'
+Circuit resist_const contains 9 device instances.
+  Class: sky130_fd_pr__res_high_po_0p35 instances:   9
+Circuit contains 9 nets.
+
+Circuit 1 contains 9 devices, Circuit 2 contains 9 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Contents of circuit 1:  Circuit: 'bgr_op5_block_rev1'
+Circuit bgr_op5_block_rev1 contains 7 device instances.
+  Class: res_trim              instances:   1
+  Class: digital               instances:   1
+  Class: op5                   instances:   1
+  Class: bjt                   instances:   1
+  Class: pmos_current_bgr      instances:   1
+  Class: startupcir            instances:   1
+  Class: resist_const          instances:   1
+Circuit contains 24 nets.
+Contents of circuit 2:  Circuit: 'bgr_op5_block_rev1'
+Circuit bgr_op5_block_rev1 contains 7 device instances.
+  Class: res_trim              instances:   1
+  Class: digital               instances:   1
+  Class: op5                   instances:   1
+  Class: bjt                   instances:   1
+  Class: pmos_current_bgr      instances:   1
+  Class: startupcir            instances:   1
+  Class: resist_const          instances:   1
+Circuit contains 24 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 24 nets,    Circuit 2 contains 24 nets.
 
 
 Final result: 
@@ -638,5 +668,5 @@ Circuits match uniquely.
 The following cells had property errors:
  resist_const
 
-Logging to file "/home/gilang_fajrul/chipalooza/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.lvs.out" disabled
+Logging to file "/foss/designs/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.lvs.out" disabled
 LVS Done.

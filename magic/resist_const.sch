@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N 525 -1040 545 -1040 {
 lab=#net1}
@@ -104,112 +104,112 @@ lab=#net14}
 N 525 -340 545 -340 {
 lab=#net19}
 N 605 -115 625 -115 {
-lab=B}
-N 1155 -1040 1175 -1040 {
 lab=#net20}
+N 1155 -1040 1175 -1040 {
+lab=#net21}
 N 1075 -1040 1095 -1040 {
 lab=C}
 N 1125 -1020 1205 -1020 {
 lab=avss}
 N 1235 -1040 1255 -1040 {
-lab=#net21}
+lab=#net22}
 N 1205 -1020 1285 -1020 {
 lab=avss}
 N 1285 -1020 1365 -1020 {
 lab=avss}
 N 1395 -1040 1415 -1040 {
-lab=#net22}
+lab=#net23}
 N 1365 -1020 1445 -1020 {
 lab=avss}
 N 1315 -1040 1335 -1040 {
-lab=#net23}
-N 1475 -1040 1495 -1040 {
 lab=#net24}
-N 1155 -810 1175 -810 {
+N 1475 -1040 1495 -1040 {
 lab=#net25}
-N 1075 -810 1095 -810 {
+N 1155 -810 1175 -810 {
 lab=#net26}
+N 1075 -810 1095 -810 {
+lab=#net27}
 N 1125 -790 1205 -790 {
 lab=avss}
 N 1235 -810 1255 -810 {
-lab=#net27}
+lab=#net28}
 N 1205 -790 1285 -790 {
 lab=avss}
 N 1285 -790 1365 -790 {
 lab=avss}
 N 1395 -810 1415 -810 {
-lab=#net28}
+lab=#net29}
 N 1365 -790 1445 -790 {
 lab=avss}
 N 1315 -810 1335 -810 {
-lab=#net29}
-N 1475 -810 1495 -810 {
-lab=#net24}
-N 1155 -575 1175 -575 {
 lab=#net30}
+N 1475 -810 1495 -810 {
+lab=#net25}
+N 1155 -575 1175 -575 {
+lab=#net31}
 N 1075 -575 1095 -575 {
-lab=#net26}
+lab=#net27}
 N 1125 -555 1205 -555 {
 lab=avss}
 N 1235 -575 1255 -575 {
-lab=#net31}
+lab=#net32}
 N 1205 -555 1285 -555 {
 lab=avss}
 N 1285 -555 1365 -555 {
 lab=avss}
 N 1395 -575 1415 -575 {
-lab=#net32}
+lab=#net33}
 N 1365 -555 1445 -555 {
 lab=avss}
 N 1315 -575 1335 -575 {
-lab=#net33}
-N 1475 -575 1495 -575 {
 lab=#net34}
-N 1075 -340 1095 -340 {
+N 1475 -575 1495 -575 {
 lab=#net35}
+N 1075 -340 1095 -340 {
+lab=#net36}
 N 1125 -320 1205 -320 {
 lab=avss}
 N 1235 -340 1255 -340 {
-lab=#net36}
+lab=#net37}
 N 1205 -320 1285 -320 {
 lab=avss}
 N 1285 -320 1365 -320 {
 lab=avss}
 N 1395 -340 1415 -340 {
-lab=#net37}
+lab=#net38}
 N 1365 -320 1445 -320 {
 lab=avss}
 N 1315 -340 1335 -340 {
-lab=#net38}
-N 1475 -340 1495 -340 {
-lab=#net34}
-N 1495 -1040 1495 -810 {
-lab=#net24}
-N 1075 -810 1075 -580 {
-lab=#net26}
-N 1075 -580 1075 -575 {
-lab=#net26}
-N 1495 -575 1495 -340 {
-lab=#net34}
-N 1155 -115 1175 -115 {
 lab=#net39}
-N 1075 -115 1095 -115 {
+N 1475 -340 1495 -340 {
 lab=#net35}
+N 1495 -1040 1495 -810 {
+lab=#net25}
+N 1075 -810 1075 -580 {
+lab=#net27}
+N 1075 -580 1075 -575 {
+lab=#net27}
+N 1495 -575 1495 -340 {
+lab=#net35}
+N 1155 -115 1175 -115 {
+lab=#net40}
+N 1075 -115 1095 -115 {
+lab=#net36}
 N 1125 -95 1205 -95 {
 lab=avss}
 N 1075 -120 1075 -115 {
-lab=#net35}
+lab=#net36}
 N 1075 -340 1075 -120 {
-lab=#net35}
+lab=#net36}
 N 1155 -340 1175 -340 {
-lab=#net40}
+lab=#net41}
 N 1235 -115 1255 -115 {
 lab=D}
-N 1795 -1090 1815 -1090 {
-lab=#net41}
-N 1765 -1070 1845 -1070 {
+N 685 -115 705 -115 {
+lab=#net42}
+N 655 -95 735 -95 {
 lab=avss}
-N 1875 -1090 1895 -1090 {
+N 765 -115 785 -115 {
 lab=F}
 N 865 -660 865 -640 {
 lab=#net13}
@@ -218,33 +218,33 @@ lab=#net13}
 N 925 -660 925 -640 {
 lab=#net13}
 N 1075 -895 1075 -875 {
-lab=#net26}
+lab=#net27}
 N 1015 -895 1075 -895 {
-lab=#net26}
+lab=#net27}
 N 865 -640 865 -575 {
 lab=#net13}
 N 1075 -875 1075 -810 {
-lab=#net26}
+lab=#net27}
 N 1015 -895 1015 -860 {
-lab=#net26}
+lab=#net27}
 N 1810 -895 1830 -895 {
-lab=#net42}
-N 1730 -895 1750 -895 {
 lab=#net43}
+N 1730 -895 1750 -895 {
+lab=#net44}
 N 1780 -875 1860 -875 {
 lab=avss}
 N 1890 -895 1910 -895 {
-lab=#net44}
+lab=#net45}
 N 1860 -875 1940 -875 {
 lab=avss}
 N 1940 -875 2020 -875 {
 lab=avss}
 N 2050 -895 2070 -895 {
-lab=#net45}
+lab=#net46}
 N 2020 -875 2100 -875 {
 lab=avss}
 N 1970 -895 1990 -895 {
-lab=#net46}
+lab=#net47}
 N 1700 -875 1780 -875 {
 lab=avss}
 N 1650 -895 1670 -895 {
@@ -252,23 +252,23 @@ lab=avss}
 N 2130 -895 2150 -895 {
 lab=avss}
 N 1810 -725 1830 -725 {
-lab=#net47}
-N 1730 -725 1750 -725 {
 lab=#net48}
+N 1730 -725 1750 -725 {
+lab=#net49}
 N 1780 -705 1860 -705 {
 lab=avss}
 N 1890 -725 1910 -725 {
-lab=#net49}
+lab=#net50}
 N 1860 -705 1940 -705 {
 lab=avss}
 N 1940 -705 2020 -705 {
 lab=avss}
 N 2050 -725 2070 -725 {
-lab=#net50}
+lab=#net51}
 N 2020 -705 2100 -705 {
 lab=avss}
 N 1970 -725 1990 -725 {
-lab=#net51}
+lab=#net52}
 N 1700 -705 1780 -705 {
 lab=avss}
 N 1650 -725 1670 -725 {
@@ -358,7 +358,6 @@ mult=1}
 C {devices/iopin.sym} 445 -1040 2 0 {name=p2 lab=A}
 C {devices/iopin.sym} 695 -810 3 0 {name=p3 lab=VBGTC}
 C {devices/ngspice_probe.sym} 695 -810 0 0 {name=r62}
-C {devices/iopin.sym} 625 -115 0 0 {name=p1 lab=B}
 C {devices/iopin.sym} 615 -810 3 0 {name=p4 lab=VBGSC}
 C {sky130_fd_pr/res_high_po_0p35.sym} 575 -115 3 0 {name=R22
 L=17
@@ -473,19 +472,18 @@ C {devices/lab_pin.sym} 1250 -555 3 0 {name=p18 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1250 -320 3 0 {name=p19 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1160 -95 3 0 {name=p20 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1245 -1020 3 0 {name=p16 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1765 -1090 3 0 {name=R46
+C {sky130_fd_pr/res_high_po_0p35.sym} 655 -115 3 0 {name=R46
 L=17
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/iopin.sym} 1895 -1090 0 0 {name=p5 lab=F}
-C {sky130_fd_pr/res_high_po_0p35.sym} 1845 -1090 3 0 {name=R47
+C {devices/iopin.sym} 785 -115 0 0 {name=p5 lab=F}
+C {sky130_fd_pr/res_high_po_0p35.sym} 735 -115 3 0 {name=R47
 L=17
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/lab_pin.sym} 1805 -1070 3 0 {name=p12 sig_type=std_logic lab=avss}
-C {devices/iopin.sym} 1735 -1090 2 0 {name=p14 lab=E}
+C {devices/lab_pin.sym} 695 -95 3 0 {name=p12 sig_type=std_logic lab=avss}
 C {sky130_fd_pr/res_high_po_0p35.sym} 1125 -810 3 0 {name=R28
 L=17
 model=res_high_po_0p35
