@@ -15,16 +15,12 @@ C {pmos_iptat.sym} 1490 -935 2 0 {name=x18}
 C {bjt.sym} 875 -355 0 0 {name=x20}
 C {res_trim.sym} 875 -465 0 0 {name=x23}
 C {resist_const.sym} 1490 -535 2 0 {name=x24}
-C {nmos_startup.sym} 370 -860 0 0 {name=x25}
-C {pmos_startup.sym} 370 -950 0 0 {name=x26}
-C {resistorstart.sym} 370 -780 0 0 {name=x27}
 C {digital.sym} 875 -985 0 0 {name=x28}
 C {devices/lab_pin.sym} 1025 -945 2 0 {name=p69 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 1025 -760 2 0 {name=p70 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 1340 -915 0 0 {name=p71 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 520 -980 2 0 {name=p72 sig_type=std_logic lab=vdde}
-C {devices/lab_pin.sym} 520 -760 2 0 {name=p73 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 520 -840 2 0 {name=p74 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 1020 -660 2 0 {name=p72 sig_type=std_logic lab=vdde}
+C {devices/lab_pin.sym} 1020 -640 2 0 {name=p74 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1025 -455 2 0 {name=p78 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1340 -535 0 0 {name=p80 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1025 -375 2 0 {name=p83 sig_type=std_logic lab=net5}
@@ -52,13 +48,7 @@ C {devices/lab_pin.sym} 1025 -1045 2 0 {name=p136 sig_type=std_logic lab=net18}
 C {devices/lab_pin.sym} 1025 -415 2 0 {name=p137 sig_type=std_logic lab=net18}
 C {devices/lab_pin.sym} 1025 -515 2 0 {name=p138 sig_type=std_logic lab=net19}
 C {devices/lab_pin.sym} 1025 -1065 2 0 {name=p139 sig_type=std_logic lab=net19}
-C {devices/lab_pin.sym} 520 -920 2 0 {name=p140 sig_type=std_logic lab=net20}
-C {devices/lab_pin.sym} 520 -880 2 0 {name=p141 sig_type=std_logic lab=net20}
-C {devices/lab_pin.sym} 520 -940 2 0 {name=p142 sig_type=std_logic lab=net21}
-C {devices/lab_pin.sym} 520 -800 2 0 {name=p143 sig_type=std_logic lab=net21}
-C {devices/lab_pin.sym} 520 -780 2 0 {name=p144 sig_type=std_logic lab=avss}
-C {devices/lab_pin.sym} 520 -960 2 0 {name=p145 sig_type=std_logic lab=net5}
-C {devices/lab_pin.sym} 520 -860 2 0 {name=p146 sig_type=std_logic lab=net5}
+C {devices/lab_pin.sym} 1020 -620 2 0 {name=p146 sig_type=std_logic lab=net5}
 C {devices/iopin.sym} 1025 -1125 0 0 {name=p147 lab=trim1}
 C {devices/iopin.sym} 1025 -1105 0 0 {name=p148 lab=trim3}
 C {devices/iopin.sym} 1025 -1025 0 0 {name=p149 lab=trim0}
@@ -79,3 +69,4 @@ C {devices/lab_pin.sym} 1260 -750 0 0 {name=p2 sig_type=std_logic lab=net13}
 C {devices/lab_pin.sym} 1260 -730 0 0 {name=p3 sig_type=std_logic lab=net5}
 C {devices/lab_pin.sym} 1610 -750 2 0 {name=p4 sig_type=std_logic lab=vdde}
 C {devices/lab_pin.sym} 1610 -730 2 0 {name=p5 sig_type=std_logic lab=avss}
+C {startupcir.sym} 870 -640 0 0 {name=x2}

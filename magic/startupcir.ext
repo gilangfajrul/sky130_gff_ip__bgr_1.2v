@@ -1,0 +1,33 @@
+timestamp 1762846550
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use resistorstart resistorstart_0 1 0 33 0 1 -1528
+use pmos_startup pmos_startup_0 -1 0 4417 0 -1 444
+use nmos_startup nmos_startup_0 1 0 4926 0 1 179
+port "avss" 0 77 -1212 77 -1212 m1
+port "out" 1 4652 749 4652 749 m2
+port "vdde" 2 4539 886 4539 886 m1
+node "avss" 0 0 77 -1212 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_5032_n91#" 0 0 5032 -91 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_4404_150#" 0 0 4404 150 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_112_150#" 0 0 112 150 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "out" 0 0 4652 749 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdde" 0 0 4539 886 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_startup_0/AVSS" "pmos_startup_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_startup_0/VSUBS" "resistorstart_0/VSUBS"
+merge "resistorstart_0/VSUBS" "VSUBS"
+merge "VSUBS" "resistorstart_0/B"
+merge "resistorstart_0/B" "m1_5032_n91#"
+merge "m1_5032_n91#" "resistorstart_0/AVSS"
+merge "resistorstart_0/AVSS" "avss"
+merge "pmos_startup_0/sky130_fd_pr__pfet_01v8_2XUZHN_0/a_15_n100#" "resistorstart_0/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "resistorstart_0/A" "m1_112_150#"
+merge "nmos_startup_0/sky130_fd_pr__nfet_01v8_6H9P4D_3/a_n73_n100#" "pmos_startup_0/sky130_fd_pr__pfet_01v8_2XUZHN_2/a_n73_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_startup_0/sky130_fd_pr__pfet_01v8_2XUZHN_2/a_n73_n100#" "m1_4404_150#"
+merge "nmos_startup_0/G1" "pmos_startup_0/sky130_fd_pr__pfet_01v8_2XUZHN_4/a_n73_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_startup_0/sky130_fd_pr__pfet_01v8_2XUZHN_4/a_n73_n100#" "out"
+merge "pmos_startup_0/VDDE" "vdde" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

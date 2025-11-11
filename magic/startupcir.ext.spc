@@ -1,4 +1,24 @@
-* NGSPICE file created from resistorstart.ext - technology: sky130A
+* NGSPICE file created from startupcir.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_CJRLGR a_n287_n255# a_n229_n343# a_229_n255# a_229_55#
++ a_n29_n255# a_n287_55# a_n29_55# a_29_n343# VSUBS
+X0 a_229_55# a_29_n343# a_n29_55# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=1
+X1 a_n29_n255# a_n229_n343# a_n287_n255# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=1
+X2 a_229_n255# a_29_n343# a_n29_n255# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=1
+X3 a_n29_55# a_n229_n343# a_n287_55# VSUBS sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_6H9P4D a_n73_n100# a_15_n100# a_n15_n126# VSUBS
+X0 a_15_n100# a_n15_n126# a_n73_n100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt nmos_startup AVSS D1 G1
+Xsky130_fd_pr__nfet_01v8_CJRLGR_0 D1 G1 D1 D1 AVSS D1 AVSS G1 AVSS sky130_fd_pr__nfet_01v8_CJRLGR
+Xsky130_fd_pr__nfet_01v8_6H9P4D_0 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_6H9P4D_1 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_6H9P4D_3 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8_6H9P4D
+Xsky130_fd_pr__nfet_01v8_6H9P4D_4 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8_6H9P4D
+.ends
 
 .subckt sky130_fd_pr__res_high_po_0p35_9NXREG a_380_2220# a_48_1684# a_380_6556# a_546_n2652#
 + a_546_n6988# a_n118_10356# a_214_6020# a_n284_n6452# a_n616_2220# a_n616_6556# a_n616_n6452#
@@ -69,5 +89,36 @@ Xsky130_fd_pr__res_high_po_0p35_9NXREG_0 m1_8663_1119# m1_8663_787# m1_4327_1119
 + m1_4327_621# m1_8663_123# m1_12999_455# m1_17335_787# m1_21633_289# m1_12999_123#
 + m1_119_456# AVSS m1_8663_621# m1_8663_953# m1_4327_621# AVSS m1_12999_787# m1_17335_787#
 + m1_4327_1119# m1_17335_1285# m1_4327_123# m1_12999_621# m1_21633_621# sky130_fd_pr__res_high_po_0p35_9NXREG
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_CVRJBD a_n2029_n128# a_2029_n64# a_29_n128# a_n2087_n64#
++ w_n2123_n164# a_n29_n64#
+X0 a_2029_n64# a_29_n128# a_n29_n64# w_n2123_n164# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=10
+X1 a_n29_n64# a_n2029_n128# a_n2087_n64# w_n2123_n164# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=10
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_8RMJP2 a_n2029_n162# a_n2087_n136# w_n2123_n198# a_29_n162#
++ a_2029_n136# a_n29_n136#
+X0 a_2029_n136# a_29_n162# a_n29_n136# w_n2123_n198# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=10
+X1 a_n29_n136# a_n2029_n162# a_n2087_n136# w_n2123_n198# sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=10
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_2XUZHN a_n73_n100# w_n109_n162# a_15_n100# a_n15_n126#
+X0 a_15_n100# a_n15_n126# a_n73_n100# w_n109_n162# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt pmos_startup D3 D4 VDDE D2
+Xsky130_fd_pr__pfet_01v8_CVRJBD_1 D3 D2 D3 D3 VDDE VDDE sky130_fd_pr__pfet_01v8_CVRJBD
+Xsky130_fd_pr__pfet_01v8_8RMJP2_0 D2 D4 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_8RMJP2
+Xsky130_fd_pr__pfet_01v8_2XUZHN_0 D2 VDDE D2 D2 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_1 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_2 D3 VDDE D3 D3 sky130_fd_pr__pfet_01v8_2XUZHN
+Xsky130_fd_pr__pfet_01v8_2XUZHN_4 D4 VDDE D4 D4 sky130_fd_pr__pfet_01v8_2XUZHN
+.ends
+
+.subckt startupcir avss out vdde
+Xnmos_startup_0 avss pmos_startup_0/D3 out nmos_startup
+Xresistorstart_0 resistorstart_0/A avss avss resistorstart
+Xpmos_startup_0 pmos_startup_0/D3 out vdde resistorstart_0/A pmos_startup
 .ends
 

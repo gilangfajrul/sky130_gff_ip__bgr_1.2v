@@ -1,3 +1,39 @@
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/startupcir.sch
+.subckt startupcir vdde avss out
+*.PININFO vdde:B avss:B out:O
+x25 net20 out avss nmos_startup
+x26 vdde out net21 net20 pmos_startup
+x27 net21 avss avss resistorstart
+.ends
+
+* expanding   symbol:  nmos_startup.sym # of pins=3
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/nmos_startup.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/nmos_startup.sch
+.subckt nmos_startup D1 G1 AVSS
+*.PININFO AVSS:B D1:B G1:B
+XM1 D1 G1 AVSS AVSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=4
+XM2 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=4
+.ends
+
+
+* expanding   symbol:  pmos_startup.sym # of pins=4
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_startup.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_startup.sch
+.subckt pmos_startup VDDE D4 D2 D3
+*.PININFO VDDE:B D2:B D3:B D4:B
+XM2 D2 D3 VDDE VDDE sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=1
+XM3 D3 D3 VDDE VDDE sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=1
+XM4 D4 D2 VDDE VDDE sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=1
+XM1 D3 D3 D3 VDDE sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM5 D2 D2 D2 VDDE sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM6 D4 D4 D4 VDDE sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM7 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM8 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  resistorstart.sym # of pins=3
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistorstart.sym
 ** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistorstart.sch
 .subckt resistorstart A B AVSS
 *.PININFO A:B B:B AVSS:B
@@ -42,3 +78,4 @@ XR38 net36 net35 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR39 net37 net36 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 XR40 AVSS net37 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
 .ends
+
