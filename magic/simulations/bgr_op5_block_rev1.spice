@@ -1,0 +1,479 @@
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/bgr_op5_block_rev1.sch
+**.subckt bgr_op5_block_rev1 dvss trim1 trim3 trim0 trim2 ena dvdd vbgsc avdd vena vbgtc vref avss
+*.iopin trim1
+*.iopin trim3
+*.iopin trim0
+*.iopin trim2
+*.iopin dvdd
+*.iopin vbgsc
+*.iopin vbgtc
+*.iopin avdd
+*.iopin vena
+*.iopin ena
+*.iopin avss
+*.iopin dvss
+*.iopin vref
+x4 vdde net8 net11 vref pmos_current_bgr
+x20 net5 net16 avss bjt
+x23 net19 net16 net13 avss net17 net18 res_trim
+x24 vref net11 avss net15 net14 net13 net5 resist_const
+x28 net17 dvss trim1 trim3 net13 net19 net18 trim0 trim2 net16 net14 vdde ena dvdd vbgsc avdd net15 vena vbgtc digital
+x1 vdde avss net13 net5 net8 op5
+x2 vdde avss net5 startupcir
+**.ends
+
+* expanding   symbol:  pmos_current_bgr.sym # of pins=4
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_current_bgr.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_current_bgr.sch
+.subckt pmos_current_bgr vdde d10 d1 d2
+*.iopin d2
+*.iopin d1
+*.iopin d10
+*.iopin vdde
+XM7 d2 d10 vdde vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM8 d1 d10 vdde vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM1 d1 d1 d1 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 d2 d2 d2 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  bjt.sym # of pins=3
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/bjt.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/bjt.sch
+.subckt bjt A B AVSS
+*.iopin AVSS
+*.iopin A
+*.iopin B
+XQ1 AVSS AVSS A sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+XQ2 AVSS AVSS B sky130_fd_pr__pnp_05v5_W3p40L3p40 m=8 mult=8
+XQ3 AVSS AVSS AVSS sky130_fd_pr__pnp_05v5_W3p40L3p40 m=16 mult=16
+.ends
+
+
+* expanding   symbol:  res_trim.sym # of pins=6
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/res_trim.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/res_trim.sch
+.subckt res_trim 3 B A AVSS 1 2
+*.iopin B
+*.iopin A
+*.iopin AVSS
+*.iopin 1
+*.iopin 2
+*.iopin 3
+XR1 A 1 AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=2 m=2
+XR4 1 2 AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=1 m=1
+XR5 2 3 AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=8 m=8
+XR6 3 B AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=16 m=16
+XR8 1 2 AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=1 m=1
+XR9 1 2 AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=1 m=1
+XR10 1 2 AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=1 m=1
+XR2 3 3 AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=9 m=9
+XR3 2 2 AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=1 m=1
+XR7 B B AVSS sky130_fd_pr__res_high_po_0p35 L=8.4 mult=8 m=8
+.ends
+
+
+* expanding   symbol:  resist_const.sym # of pins=7
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resist_const.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resist_const.sch
+.subckt resist_const A C avss VBGTC VBGSC F D
+*.iopin A
+*.iopin VBGTC
+*.iopin VBGSC
+*.iopin avss
+*.iopin C
+*.iopin D
+*.iopin F
+XR1 net1 A avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR2 net2 net1 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR3 net4 net2 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR4 net3 net4 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR5 net5 net3 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR8 VBGTC VBGSC avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR9 net8 VBGTC avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR10 net5 net8 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR12 net10 net9 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR13 net12 net10 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR14 net11 net12 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR15 net13 net11 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR17 net15 net19 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR18 net17 net15 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR19 net16 net17 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR20 net13 net16 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR22 net20 net18 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR23 net21 C avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR24 net22 net21 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR25 net24 net22 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR26 net23 net24 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR27 net25 net23 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR30 net30 net28 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR31 net29 net30 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR32 net25 net29 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR33 net31 net27 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR34 net32 net31 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR35 net34 net32 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR36 net33 net34 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR37 net35 net33 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR39 net37 net41 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR40 net39 net37 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR41 net38 net39 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR42 net35 net38 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR44 net40 net36 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR45 D net40 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR46 net42 net20 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR47 F net42 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR28 net26 net27 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR6 net6 net7 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR16 net19 net14 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR11 net9 net7 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR21 net18 net14 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR38 net41 net36 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR29 net28 net26 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR7 VBGSC net6 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR48 net13 net13 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR49 net27 net27 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR50 net44 avss avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR51 net47 net45 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR52 net46 net47 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR53 avss net46 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR55 net43 net44 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR56 net45 net43 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR57 net49 avss avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR58 net52 net50 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR59 net51 net52 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR60 avss net51 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR63 net48 net49 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR64 net50 net48 avss sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  digital.sym # of pins=19
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/digital.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/digital.sch
+.subckt digital s3 dvss trim1 trim3 d3 s1 s2 trim0 trim2 s0 svbgsc vdde ena dvdd vbgsc avdd svbgtc vena vbgtc
+*.iopin trim1
+*.iopin trim0
+*.iopin trim3
+*.iopin trim2
+*.iopin vbgsc
+*.iopin vbgtc
+*.iopin vena
+*.iopin avdd
+*.iopin dvdd
+*.iopin ena
+*.iopin dvss
+*.iopin s3
+*.iopin d3
+*.iopin s2
+*.iopin s0
+*.iopin s1
+*.iopin vdde
+*.iopin svbgsc
+*.iopin svbgtc
+x1 s1 DVSS trim1 s2 trim
+x2 s0 DVSS trim0 s1 trim
+x3 s2 DVSS trim2 s3 trim
+x5 s3 dvss trim3 d3 trim
+x4 avdd ena dvdd vdde pmos_ena
+x6 svbgtc DVSS vena vbgtc vena
+x7 svbgsc DVSS vena vbgsc vena
+.ends
+
+
+* expanding   symbol:  op5.sym # of pins=5
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/op5.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/op5.sch
+.subckt op5 vdde AVSS plus minus out
+*.iopin vdde
+*.iopin AVSS
+*.ipin plus
+*.ipin minus
+*.opin out
+x1 vdde 3 out secondstage
+x2 AVSS 8 3 AVSS 7 resistor_op_tt
+x3 vdde 2 1 3 4 pmos_current_bgr_2
+x4 3 4 AVSS minus plus 5 differential_pair
+x5 out 8 cap_op
+x6 5 2 1 AVSS 7 out nmos_tail_current
+.ends
+
+
+* expanding   symbol:  startupcir.sym # of pins=3
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/startupcir.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/startupcir.sch
+.subckt startupcir vdde avss out
+*.iopin vdde
+*.iopin avss
+*.opin out
+x25 net20 out avss nmos_startup
+x26 vdde out net21 net20 pmos_startup
+x27 net21 avss avss resistorstart
+.ends
+
+
+* expanding   symbol:  trim.sym # of pins=4
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/trim.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/trim.sch
+.subckt trim S DVSS G D
+*.iopin G
+*.iopin D
+*.iopin S
+*.iopin DVSS
+XM1 D G S DVSS sky130_fd_pr__nfet_01v8_lvt L=1 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM2 D D D DVSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+
+* expanding   symbol:  pmos_ena.sym # of pins=4
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_ena.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_ena.sch
+.subckt pmos_ena avdd G dvdd VDDE
+*.iopin G
+*.iopin avdd
+*.iopin VDDE
+*.iopin dvdd
+XM6 VDDE G avdd DVDD sky130_fd_pr__pfet_01v8 L=2 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM1 VDDE VDDE VDDE DVDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+
+* expanding   symbol:  vena.sym # of pins=4
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/vena.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/vena.sch
+.subckt vena S DVSS G D
+*.iopin S
+*.iopin G
+*.iopin D
+*.iopin DVSS
+XM4 D G S DVSS sky130_fd_pr__nfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 D D D DVSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  secondstage.sym # of pins=3
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/secondstage.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/secondstage.sch
+.subckt secondstage vdde g10 d10
+*.iopin vdde
+*.iopin g10
+*.iopin d10
+XM10 d10 g10 vdde vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM1 d10 d10 d10 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+
+* expanding   symbol:  resistor_op_tt.sym # of pins=5
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistor_op_tt.sch
+.subckt resistor_op_tt AVSS d c b a
+*.iopin a
+*.iopin b
+*.iopin AVSS
+*.iopin c
+*.iopin d
+XR3 AVSS net1 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR4 net1 AVSS AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR5 AVSS net2 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR6 net2 AVSS AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR7 a net3 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR8 net3 a AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR9 net3 b AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR12 b net3 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR13 c net4 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR14 net4 c AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR15 net4 d AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+XR16 d net4 AVSS sky130_fd_pr__res_high_po_0p35 L=4.5 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  pmos_current_bgr_2.sym # of pins=5
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_current_bgr_2.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_current_bgr_2.sch
+.subckt pmos_current_bgr_2 VDDE D3 D4 D8 D9
+*.iopin VDDE
+*.iopin D4
+*.iopin D3
+*.iopin D9
+*.iopin D8
+XM8 D8 D9 VDDE vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM9 D9 D9 VDDE vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM3 D3 D4 VDDE vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM4 D4 D4 VDDE vdde sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 D9 D9 D9 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 D4 D4 D4 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM5 D8 D8 D8 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM6 D3 D3 D3 vdde sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  differential_pair.sym # of pins=6
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/differential_pair.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/differential_pair.sch
+.subckt differential_pair D3 D4 AVSS minus plus S
+*.iopin minus
+*.iopin plus
+*.iopin D3
+*.iopin D4
+*.iopin S
+*.iopin AVSS
+XM3 D3 plus S AVSS sky130_fd_pr__nfet_01v8 L=13 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM4 D4 minus S AVSS sky130_fd_pr__nfet_01v8 L=13 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 D3 D3 D3 AVSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 D4 D4 D4 AVSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  cap_op.sym # of pins=2
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/cap_op.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/cap_op.sch
+.subckt cap_op B A
+*.iopin A
+*.iopin B
+XC1 A B sky130_fd_pr__cap_mim_m3_1 W=17 L=17 MF=4 m=4
+.ends
+
+
+* expanding   symbol:  nmos_tail_current.sym # of pins=6
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/nmos_tail_current.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/nmos_tail_current.sch
+.subckt nmos_tail_current D4 D2 D1 AVSS S2 D3
+*.iopin D1
+*.iopin S2
+*.iopin AVSS
+*.iopin D2
+*.iopin D3
+*.iopin D4
+XM6 D1 D2 S2 AVSS sky130_fd_pr__nfet_01v8 L=20 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM5 D2 D2 AVSS AVSS sky130_fd_pr__nfet_01v8 L=20 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM7 D4 D2 AVSS AVSS sky130_fd_pr__nfet_01v8 L=20 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM8 D3 D2 AVSS AVSS sky130_fd_pr__nfet_01v8 L=20 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM1 D2 D2 D2 AVSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM2 D3 D3 D3 AVSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM3 D4 D4 D4 AVSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM4 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+
+* expanding   symbol:  nmos_startup.sym # of pins=3
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/nmos_startup.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/nmos_startup.sch
+.subckt nmos_startup D1 G1 AVSS
+*.iopin AVSS
+*.iopin D1
+*.iopin G1
+XM1 D1 G1 AVSS AVSS sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM2 D1 D1 D1 AVSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+
+* expanding   symbol:  pmos_startup.sym # of pins=4
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_startup.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/pmos_startup.sch
+.subckt pmos_startup VDDE D4 D2 D3
+*.iopin VDDE
+*.iopin D2
+*.iopin D3
+*.iopin D4
+XM2 D2 D3 VDDE VDDE sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 D3 D3 VDDE VDDE sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 D4 D2 VDDE VDDE sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 D3 D3 D3 VDDE sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 D2 D2 D2 VDDE sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 D4 D4 D4 VDDE sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 VDDE VDDE VDDE VDDE sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  resistorstart.sym # of pins=3
+** sym_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistorstart.sym
+** sch_path: /foss/designs/sky130_gff_ip__bgr_1.2v/magic/resistorstart.sch
+.subckt resistorstart A B AVSS
+*.iopin A
+*.iopin B
+*.iopin AVSS
+XR1 net1 A AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR2 net2 net1 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR3 net4 net2 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR4 net3 net4 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR5 net5 net3 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR6 net6 net7 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR7 net8 net6 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR8 net10 net8 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR9 net9 net10 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR10 net5 net9 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR11 net11 net7 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR12 net12 net11 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR13 net14 net12 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR14 net13 net14 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR15 net15 net13 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR16 net16 net17 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR17 net18 net16 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR18 net20 net18 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR19 net19 net20 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR20 net15 net19 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR21 net21 net17 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR22 net22 net21 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR23 net23 net22 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR24 net24 net23 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR25 net25 net24 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR26 net26 B AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR27 net27 net26 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR28 net28 net27 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR29 net29 net28 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR30 net25 net29 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR31 net30 AVSS AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR32 net31 net30 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR33 net32 net31 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR34 net33 net32 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR35 AVSS net33 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR36 net34 AVSS AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR37 net35 net34 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR38 net36 net35 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR39 net37 net36 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+XR40 AVSS net37 AVSS sky130_fd_pr__res_high_po_0p35 L=17 mult=1 m=1
+.ends
+
+.end
