@@ -188,8 +188,8 @@ Xsky130_fd_pr__nfet_01v8_lvt_SJFSNB_2 D D D DVSS sky130_fd_pr__nfet_01v8_lvt_SJF
 Xsky130_fd_pr__nfet_01v8_lvt_U8VHVM_0 D G D G S DVSS sky130_fd_pr__nfet_01v8_lvt_U8VHVM
 .ends
 
-.subckt digital S3 trim3 S2 trim2 trim1 trim0 S1 S0 VENA VBGSC VBGTC SVBGSC SVBGTC
-+ AVDD ENA VDDE DVDD DVSS D3
+.subckt digital AVDD ENA S0 S1 S2 S3 SVBGSC SVBGTC trim0 trim1 trim2 trim3 VBGSC VBGTC
++ VDDE VENA DVDD D3 DVSS
 Xpmos_ena_0 VDDE AVDD DVDD ENA pmos_ena
 Xtrim_0 S3 trim3 D3 DVSS trim
 Xtrim_1 S2 trim2 S3 DVSS trim
@@ -565,9 +565,9 @@ Xsky130_fd_pr__res_high_po_0p35_SU58NF_0 m1_10964_n3465# m1_6628_n2303# m1_15300
 .subckt bgr_op5_block_rev1 avdd avss dvdd dvss ena trim0 trim1 trim2 trim3 vbgsc vbgtc
 + vena vref
 Xstartupcir_0 bjt_0/A avss op5_0/vdde startupcir
-Xdigital_0 res_trim_0/1 trim3 res_trim_0/2 trim2 trim1 trim0 res_trim_0/3 bjt_0/B
-+ vena vbgsc vbgtc digital_0/SVBGSC digital_0/SVBGTC avdd ena op5_0/vdde dvdd dvss
-+ op5_0/plus digital
+Xdigital_0 avdd ena bjt_0/B res_trim_0/3 res_trim_0/2 res_trim_0/1 digital_0/SVBGSC
++ digital_0/SVBGTC trim0 trim1 trim2 trim3 vbgsc vbgtc op5_0/vdde vena dvdd op5_0/plus
++ dvss digital
 Xpmos_current_bgr_0 resist_const_0/C op5_0/out vref op5_0/vdde pmos_current_bgr
 Xres_trim_0 res_trim_0/1 res_trim_0/2 avss bjt_0/B op5_0/plus res_trim_0/3 res_trim
 Xbjt_0 bjt_0/A bjt_0/B avss bjt

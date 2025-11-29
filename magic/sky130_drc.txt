@@ -2,62 +2,536 @@
 <report-database>
  <description>SKY130 DRC runset</description>
  <original-file>bgr_op5_block_rev1.gds</original-file>
- <generator>drc: script='/foss/pdks/sky130A/libs.tech/klayout/drc/sky130A.lydrc'</generator>
+ <generator>drc: script='/foss/pdks/sky130A/libs.tech/klayout/macros/run_drc_full.lydrc'</generator>
  <top-cell>bgr_op5_block_rev1</top-cell>
  <tags>
-  <tag>
-   <name>waived</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>red</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>green</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>blue</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>yellow</name>
-   <description/>
-  </tag>
-  <tag>
-   <name>important</name>
-   <description/>
-  </tag>
  </tags>
  <categories>
   <category>
-   <name>li.1</name>
-   <description>li.1 : min. li width : 0.17um</description>
+   <name>dnwell.1</name>
+   <description>dnwell.1: min. dnwell width : 3.0um</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>li.1a</name>
-   <description>li.1a : min. li width for the cells s8rf2_xcmvpp_hd5_* : 0.14um</description>
+   <name>dnwell.2</name>
+   <description>dnwell.2 : min. dnwell spacing : 6.3um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nwell.1</name>
+   <description>nwell.1 : min. nwell width : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nwell.2a</name>
+   <description>nwell.2a : min. nwell spacing (merged if less) : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nwell.6</name>
+   <description>nwell.6 : min enclosure of nwellHole by dnwell : 1.03um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nwell.9</name>
+   <description>nwell.9 : HVnwell must be enclosed by hv marker</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtp.1</name>
+   <description>hvtp.1 : min. hvtp width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtp.2</name>
+   <description>hvtp.2 : min. hvtp spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>pwde.1</name>
+   <description>pwde.1 : min. pwde width : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>pwde.2</name>
+   <description>pwde.2 : min. pwde inside v20 spacing : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtr.1</name>
+   <description>hvtr.1 : min. hvtr width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtr.2</name>
+   <description>hvtr.2 : min. hvtr spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvtr.2_a</name>
+   <description>hvtr.2_a : hvtr must not overlap hvtp</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>lvtn.1a</name>
+   <description>lvtn.1a : min. lvtn width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>lvtn.2</name>
+   <description>lvtn.2 : min. lvtn spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_lvtn.OVL.2</name>
+   <description>MR_lvtn.OVL.2 : lvtn must not straddle nwell</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ncm.1</name>
+   <description>ncm.1 : min. ncm width : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ncm.2a</name>
+   <description>ncm.2a : min. ncm spacing : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1</name>
+   <description>difftap.1 : min. diff width across areaid:ce : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1_a</name>
+   <description>difftap.1_a : min. diff width in periphery : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.2</name>
+   <description>difftap.2 : min. diff width inside areadid:ce : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1_b</name>
+   <description>difftap.1_b : min. tap width across areaid:ce : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.1_c</name>
+   <description>difftap.1_c : min. tap width in periphery : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>difftap.3</name>
+   <description>difftap.3 : min. difftap spacing : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>tunm.1</name>
+   <description>tunm.1 : min. tunm width : 0.41um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>tunm.2</name>
+   <description>tunm.2 : min. tunm spacing : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_tunm.CON.1</name>
+   <description>MR_tunm.CON.1 : use of layer tunm is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>thkox.1</name>
+   <description>thkox.1 : min. thkox width inside periphery : 0.6um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>thkox.2</name>
+   <description>thkox.2 : min. thkox spacing inside periphery : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_thkox.CON.1</name>
+   <description>MR_thkox.CON.1 : thkox must not straddle diff</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>poly.1a</name>
+   <description>poly.1a : min. poly width : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>poly.2</name>
+   <description>poly.2 : min. poly spacing : 0.21um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>poly.3</name>
+   <description>poly.3 : min. poly spacing inside areaid:core : 0.16um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ldntm.1</name>
+   <description>ldntm.1 : min. ldntm width inside areaid:core : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ldntm.2</name>
+   <description>ldntm.2 : min. ldntm spacing inside areaid:core : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>rpm.1a</name>
+   <description>rpm.1a : min. rpm width : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>rpm.2</name>
+   <description>rpm.2 : min. rpm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>rdl.1</name>
+   <description>rdl.1 : min. rdl width : 10um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>rdl.2</name>
+   <description>rdl.2 : min. rdl spacing : 10um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_rdl.CON.1</name>
+   <description>MR_rdl.CON.1 : use of rdl layer is prohibited</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>urpm.1a</name>
+   <description>urpm.1a : min. rpm width : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>urpm.2</name>
+   <description>urpm.2 : min. rpm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>npc.1</name>
+   <description>npc.1 : min. npc width : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>npc.2</name>
+   <description>npc.2 : min. npc spacing, should be manually merged if less than : 0.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.1</name>
+   <description>nsdm.1 : min. nsdm spacing in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.2</name>
+   <description>nsdm.2 : min. nsdm width in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.3</name>
+   <description>nsdm.3 : min. diff width across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.4</name>
+   <description>nsdm.4 : min. spacing across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.5</name>
+   <description>nsdm.5 : min. nsdm width in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.6</name>
+   <description>nsdm.6 : min. nsdm spacing in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm.6a</name>
+   <description>nsdm.6a : min. nsdm spacing on parallel edges in areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.1</name>
+   <description>psdm.1 : min. psdm spacing in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.2</name>
+   <description>psdm.2 : min. psdm width in periphery : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.3</name>
+   <description>psdm.3 : min. diff width across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.4</name>
+   <description>psdm.4 : min. spacing across areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.5</name>
+   <description>psdm.5 : min. psdm width in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.6</name>
+   <description>psdm.6 : min. psdm spacing in areaid:ce : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>psdm.6a</name>
+   <description>psdm.6a : min. psdm spacing on parallel edges in areaid:ce : 0.38um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsdm_psdm_overlap</name>
+   <description>nsdm_psdm_overlap : nsdm overlaps psdm over active</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.1_c</name>
+   <description>licon.1_c : licon should be rectangle</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_licon.SP.1</name>
+   <description>MR_licon.SP.1: min. licon spacing in periphery : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.1</name>
+   <description>licon.1: min/max. licon length : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.13</name>
+   <description>licon.13:  min. licon on diff spacing to npc in periphery : 0.09um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.13_a</name>
+   <description>licon.13_a:  licon on diff in periphery can't overlap npc</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.17</name>
+   <description>licon.17 : Licons may not overlap both poly and (diff or tap)</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>licon.6</name>
+   <description>licon.6 : npc min enclosure of poly_licon inside areaid:core : 0.045um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsm.1</name>
+   <description>nsm.1 : nsm min. spacing : 4.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>nsm.2</name>
+   <description>nsm.2 : nsm min. width : 3.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>capm.1</name>
+   <description>capm.1 : min. capm width : 1.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>capm.2a</name>
+   <description>capm.2a : min. capm spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>capm.2b</name>
+   <description>capm.2b : min. spacing between met3_bot_plate : 1.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>capm.2b_a</name>
+   <description>capm.2b_a : min. spacing between met3_bot_plate and met3 : 1.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>capm.3</name>
+   <description>capm.3 : min. m3 enclosure of capm : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>capm.4</name>
+   <description>capm.4 : min. capm enclosure of via3 : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>capm.5</name>
+   <description>capm.5 : min. capm spacing to via3 : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>capm.11</name>
+   <description>capm.11 : Min spacing of capm and met3 not overlapping capm : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.1</name>
+   <description>cap2m.1 : min. cap2m width : 1.0um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.2a</name>
+   <description>cap2m.2a : min. cap2m spacing : 0.84um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.2b</name>
+   <description>cap2m.2b : min. cap2m spacing : 1.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.2b_a</name>
+   <description>cap2m.2b_a : min. spacing of m4_bot_plate : 1.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.3</name>
+   <description>cap2m.3 : min. m4 enclosure of cap2m : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.3_a</name>
+   <description>cap2m.3_a : min. m4 enclosure of cap2m : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.4</name>
+   <description>cap2m.4 : min. cap2m enclosure of via4 : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.5</name>
+   <description>cap2m.5 : min. cap2m spacing to via4 : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>cap2m.11</name>
+   <description>cap2m.11 : Min spacing of cap2m and met4 not overlapping cap2m : 0.5um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>li.1</name>
+   <description>li.1 : min. li width outside or crossing areaid:ce : 0.17um</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>li.3</name>
-   <description>li.3 : min. li spacing : 0.17um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>li.3a</name>
-   <description>li.3a : min. li spacing for the cells s8rf2_xcmvpp_hd5_* : 0.14um</description>
+   <description>li.3 : min. li spacing outside or crossing areaid:ce : 0.17um</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>li.5</name>
-   <description>li.5 : min. li enclosure of licon of 2 opposite edges : 0.08um</description>
+   <description>li.5 : min. li enclosure of licon of 2 adjacent edges : 0.08um</description>
    <categories>
    </categories>
   </category>
@@ -68,14 +542,62 @@
    </categories>
   </category>
   <category>
+   <name>li.7</name>
+   <description>li.7 : min. li core spacing : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>li.8</name>
+   <description>li.8 : min. li core width : 0.14um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>MR_li.WID.4</name>
+   <description>MR_li.WID.4 : li:res minimum width : 0.29um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>ct.1</name>
-   <description>ct.1 : minimum/maximum width of mcon : 0.17um</description>
+   <description>ct.1: non-ring mcon should be rectangular</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ct.1_a</name>
+   <description>ct.1_a : minimum width of mcon : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ct.1_b</name>
+   <description>ct.1_b : maximum length of mcon : 0.17um</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>ct.2</name>
    <description>ct.2 : min. mcon spacing : 0.19um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ct.3</name>
+   <description>ct.3 : min. width of ring-shaped mcon : 0.17um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ct.3_a</name>
+   <description>ct.3_a : max. width of ring-shaped mcon : 0.175um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>ct.3_b</name>
+   <description>ct.3_b: ring-shaped mcon must be enclosed by areaid_sl</description>
    <categories>
    </categories>
   </category>
@@ -104,14 +626,26 @@
    </categories>
   </category>
   <category>
+   <name>791_m1.4</name>
+   <description>791_m1.4 : min. m1 enclosure of mcon : 0.03um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>m1.4</name>
-   <description>m1.4 : min. m1 enclosure of mcon : 0.03um</description>
+   <description>m1.4 : mcon periphery must be enclosed by m1</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>m1.4a</name>
    <description>m1.4a : min. m1 enclosure of mcon for specific cells : 0.005um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>m1.4a_a</name>
+   <description>m1.4a_a : mcon periph must be enclosed by met1 for specific cells</description>
    <categories>
    </categories>
   </category>
@@ -123,31 +657,31 @@
   </category>
   <category>
    <name>m1.7</name>
-   <description>m1.7 : min. m1 holes area : 0.14um²</description>
+   <description>m1.7 : min. m1 with holes area : 0.14um²</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>m1.5</name>
-   <description>m1.5 : min. m1 enclosure of mcon of 2 opposite edges : 0.06um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via.4c.5c</name>
-   <description>via.4c.5c : m1 must enclose all via</description>
+   <description>m1.5 : min. m1 enclosure of mcon of 2 adjacent edges : 0.06um</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>via.1a</name>
-   <description>via.1a : minimum/maximum width of via : 0.15um</description>
+   <description>via.1a : via outside of moduleCut should be rectangular</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>via.1b</name>
-   <description>via.1b : minimum/maximum width of via in areaid.mt: 0.15um or 0.23um or 0.28um</description>
+   <name>via.1a_a</name>
+   <description>via.1a_a : min. width of via outside of moduleCut : 0.15um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via.1a_b</name>
+   <description>via.1a_b : maximum length of via : 0.15um</description>
    <categories>
    </categories>
   </category>
@@ -158,26 +692,38 @@
    </categories>
   </category>
   <category>
+   <name>via.3</name>
+   <description>via.3 : min. width of ring-shaped via : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via.3_a</name>
+   <description>via.3_a : max. width of ring-shaped via : 0.205um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via.3_b</name>
+   <description>via.3_b: ring-shaped via must be enclosed by areaid_sl</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>via.4a</name>
    <description>via.4a : min. m1 enclosure of 0.15um via : 0.055um</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>via.4b</name>
-   <description>via.4b : min. m1 enclosure of 0.23um via : 0.03um</description>
+   <name>via.4a_a</name>
+   <description>via.4a_a : 0.15um via must be enclosed by met1</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>via1.5a</name>
-   <description>via1.5a : min. m1 enclosure of 0.15um via of 2 opposite edges : 0.085um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>via1.5b</name>
-   <description>via1.5b : min. m1 enclosure of 0.23um via of 2 opposite edges : 0.06um</description>
+   <name>via.5a</name>
+   <description>via.5a : min. m1 enclosure of 0.15um via of 2 adjacent edges : 0.085um</description>
    <categories>
    </categories>
   </category>
@@ -212,38 +758,44 @@
    </categories>
   </category>
   <category>
-   <name>m2.via</name>
-   <description>m2.via : m2 must enclose via</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
    <name>m2.4</name>
    <description>m2.4 : min. m2 enclosure of via : 0.055um</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>m2.5</name>
-   <description>m2.5 : min. m2 enclosure of via of 2 opposite edges : 0.085um</description>
+   <name>m2.4_a</name>
+   <description>m2.4_a : via in periphery must be enclosed by met2</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>via2</name>
-   <description>via2 : m2 must enclose all via2</description>
+   <name>m2.4_b</name>
+   <description>m2.4_B : min. m2 enclosure of via inside areaid:core : 0.045um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>m2.5</name>
+   <description>m2.5 : min. m2 enclosure of via of 2 adjacent edges : 0.085um</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>via2.1a</name>
-   <description>via2.1a : minimum/maximum width of via2 : 0.2um</description>
+   <description>via2.1a : via2 outside of moduleCut should be rectangular</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>via2.1b</name>
-   <description>via2.1b : minimum/maximum width of via2 in areaid.mt: 0.2um or 1.2um or 1.5um</description>
+   <name>via2.1a_a</name>
+   <description>via2.1a_a : min. width of via2 outside of moduleCut : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via2.1a_b</name>
+   <description>via2.1a_b : maximum length of via2 : 0.2um</description>
    <categories>
    </categories>
   </category>
@@ -254,20 +806,38 @@
    </categories>
   </category>
   <category>
+   <name>via2.3</name>
+   <description>via2.3 : min. width of ring-shaped via2 : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via2.3_a</name>
+   <description>via2.3_a : max. width of ring-shaped via2 : 0.205um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via2.3_b</name>
+   <description>via2.3_b: ring-shaped via2 must be enclosed by areaid_sl</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>via2.4</name>
    <description>via2.4 : min. m2 enclosure of via2 : 0.04um</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>via2.4a</name>
-   <description>via2.4a : min. m2 enclosure of 1.5um via2 : 0.14um</description>
+   <name>via2.4_a</name>
+   <description>via2.4_a : via must be enclosed by met2</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>via2.5</name>
-   <description>via2.5 : min. m2 enclosure of via2 of 2 opposite edges : 0.085um</description>
+   <description>via2.5 : min. m3 enclosure of via2 of 2 adjacent edges : 0.085um</description>
    <categories>
    </categories>
   </category>
@@ -284,20 +854,8 @@
    </categories>
   </category>
   <category>
-   <name>m3.3ab</name>
-   <description>m3.3ab : min. 3um.m3 spacing m3 : 0.4um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3.6</name>
-   <description>m3.6 : min. m3 area : 0.24um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m3.via2</name>
-   <description>m3.via2 : m3 must enclose via2</description>
+   <name>m3.3cd</name>
+   <description>m3.3cd : min. 3um.m3 spacing m3 : 0.4um</description>
    <categories>
    </categories>
   </category>
@@ -308,14 +866,38 @@
    </categories>
   </category>
   <category>
-   <name>via3</name>
-   <description>via3 : m3 must enclose all via3</description>
+   <name>m3.4_a</name>
+   <description>m3.4_a : via2 must be enclosed by met3</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>via3.1a</name>
-   <description>via3.1a : minimum/maximum width of via3 in areaid.mt: 0.2um or 0.8um</description>
+   <name>m3.6</name>
+   <description>m3.6 : min. m3 area : 0.240um²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>m3.7</name>
+   <description>m3.7 : min. m3 holes area : 0.2um²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via3.1</name>
+   <description>via3.1 : via3 outside of moduleCut should be rectangular</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via3.1_a</name>
+   <description>via3.1_a : min. width of via3 outside of moduleCut : 0.2um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via3.1_b</name>
+   <description>via3.1_b : maximum length of via3 : 0.2um</description>
    <categories>
    </categories>
   </category>
@@ -332,8 +914,14 @@
    </categories>
   </category>
   <category>
+   <name>via3.4_a</name>
+   <description>via3.4_a : non-ring via3 must be enclosed by met3</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>via3.5</name>
-   <description>via3.5 : min. m2 enclosure of via3 of 2 opposite edges : 0.09um</description>
+   <description>via3.5 : min. m3 enclosure of via3 of 2 adjacent edges : 0.09um</description>
    <categories>
    </categories>
   </category>
@@ -350,20 +938,14 @@
    </categories>
   </category>
   <category>
+   <name>m4.4a</name>
+   <description>m4.4a : min. m4 area : 0.240um²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>m4.5ab</name>
    <description>m4.5ab : min. 3um.m4 spacing m4 : 0.4um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4.4</name>
-   <description>m4.4 : min. m4 area : 0.24um²</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>m4.via3</name>
-   <description>m4.via3 : m4 must enclose via3</description>
    <categories>
    </categories>
   </category>
@@ -374,8 +956,32 @@
    </categories>
   </category>
   <category>
-   <name>via4.1a</name>
-   <description>via4.1a : minimum/maximum width of via4 : 0.8um</description>
+   <name>m4.3_a</name>
+   <description>m4.3_a : via3 must be enclosed by met4</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>m4.7</name>
+   <description>m4.7 : min. m4 holes area : 0.2um²</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via4.1</name>
+   <description>via4.1 : via4 outside of moduleCut should be rectangular</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via4.1_a</name>
+   <description>via4.1_a : min. width of via4 outside of moduleCut : 0.8um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via4.1_b</name>
+   <description>via4.1_b : maximum length of via4 : 0.8um</description>
    <categories>
    </categories>
   </category>
@@ -386,14 +992,32 @@
    </categories>
   </category>
   <category>
+   <name>via4.3</name>
+   <description>via4.3 : min. width of ring-shaped via4 : 0.8um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via4.3_a</name>
+   <description>via4.3_a : max. width of ring-shaped via4 : 0.805um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>via4.3_b</name>
+   <description>via4.3_b: ring-shaped via4 must be enclosed by areaid_sl</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
    <name>via4.4</name>
    <description>via4.4 : min. m4 enclosure of via4 : 0.19um</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>via4</name>
-   <description>via4 : m4 must enclose all via4</description>
+   <name>via4.4_a</name>
+   <description>via4.4_a : m4 must enclose all via4</description>
    <categories>
    </categories>
   </category>
@@ -410,44 +1034,62 @@
    </categories>
   </category>
   <category>
-   <name>m5.via4</name>
-   <description>m5.via4 : m5 must enclose via4</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
    <name>m5.3</name>
-   <description>m4.3 : min. m5 enclosure of via4 : 0.31um</description>
+   <description>m5.3 : min. m5 enclosure of via4 : 0.31um</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>nsm.1</name>
-   <description>nsm.1 : min. nsm width : 3.0um</description>
+   <name>m5.3_a</name>
+   <description>m5.3_a : via must be enclosed by m5</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>nsm.2</name>
-   <description>nsm.2 : min. nsm spacing : 4.0um</description>
+   <name>m5.4</name>
+   <description>m5.4 : min. m5 area : 4.0um²</description>
    <categories>
    </categories>
   </category>
   <category>
-   <name>nsm.4</name>
-   <description>nsm.4 : min. nsm enclosure of cfom : 3.0um</description>
-   <categories>
-   </categories>
-  </category>
-  <category>
-   <name>nsm.3</name>
-   <description>nsm.3 : min. nsm spacing to cfom : 1.0um</description>
+   <name>m5.7</name>
+   <description>m5.7 : min. m5 holes area : 0.14um²</description>
    <categories>
    </categories>
   </category>
   <category>
    <name>pad.2</name>
    <description>pad.2 : min. pad spacing : 1.27um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>moduleCut.1</name>
+   <description>moduleCut.1 : moduleCut layer is for SkyWater use only</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvi.1</name>
+   <description>hvi.1 : min. hvi width : 0.6um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvi.2a</name>
+   <description>hvi.2a : min. hvi spacing : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvntm.1</name>
+   <description>hvntm.1 : min. hvntm width : 0.7um</description>
+   <categories>
+   </categories>
+  </category>
+  <category>
+   <name>hvntm.2</name>
+   <description>hvntm.2 : min. hvntm spacing : 0.7um</description>
    <categories>
    </categories>
   </category>
@@ -910,906 +1552,7 @@
    <references>
    </references>
   </cell>
-  <cell>
-   <name>op5</name>
-   <variant/>
-   <layout-name>op5</layout-name>
-   <references>
-    <ref>
-     <parent>bgr_op5_block_rev1</parent>
-     <trans>r0 *1 48.93,-30.605</trans>
-    </ref>
-   </references>
-  </cell>
  </cells>
  <items>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (181.175,-5.115;182.235,-5.115)/(182.235,-5.115;181.455,-5.115)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (182.235,-15.105;181.175,-15.105)/(181.455,-15.105;182.235,-15.105)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (181.175,-18.995;182.23,-18.995)/(182.23,-18.995;181.455,-18.995)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (182.23,7.725;182.23,5.715)/(182.23,5.715;182.23,7.445)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (182.23,5.715;181.175,5.715)/(181.455,5.715;182.23,5.715)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (182.23,-18.995;182.23,-19.63)/(182.23,-19.35;182.23,-18.995)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (172.24,-22.05;172.24,-20.99)/(172.24,-21.27;172.24,-22.05)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (179.955,-22.045;179.18,-22.045)/(179.18,-22.045;179.675,-22.045)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (175.29,-20.99;175.29,-22.05)/(175.29,-22.05;175.29,-21.27)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (158.36,-22.05;158.36,-20.99)/(158.36,-21.27;158.36,-22.05)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (161.41,-20.99;161.41,-22.05)/(161.41,-22.05;161.41,-21.27)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (151.42,8.765;152.235,8.765)/(151.955,8.765;151.44,8.765)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (181.175,-12.055;182.235,-12.055)/(182.235,-12.055;181.455,-12.055)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (151.42,1.825;152.48,1.825)/(152.2,1.825;151.42,1.825)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (151.42,-5.115;152.48,-5.115)/(152.2,-5.115;151.42,-5.115)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (182.235,-1.225;181.175,-1.225)/(181.455,-1.225;182.235,-1.225)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (168.35,-14.165;168.35,-15.105)/(168.35,-15.105;168.35,-14.445)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (179.18,-22.045;179.18,-20.99)/(179.18,-21.27;179.18,-22.045)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (165.3,-22.05;165.3,-20.99)/(165.3,-21.27;165.3,-22.05)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (154.47,8.765;154.47,7.71)/(154.47,7.99;154.47,8.765)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (172.24,-15.105;172.24,-14.165)/(172.24,-14.445;172.24,-15.105)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (152.48,5.715;151.42,5.715)/(151.42,5.715;152.2,5.715)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (174.35,-12.055;175.29,-12.055)/(175.29,-12.055;174.63,-12.055)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (179.18,8.765;179.95,8.765)/(179.67,8.765;179.18,8.765)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (165.3,7.71;165.3,8.77)/(165.3,8.77;165.3,7.99)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (159.3,-8.165;158.36,-8.165)/(158.36,-8.165;159.02,-8.165)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (175.29,-8.165;174.35,-8.165)/(174.63,-8.165;175.29,-8.165)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (181.175,1.825;182.235,1.825)/(182.235,1.825;181.455,1.825)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (159.3,-1.225;158.36,-1.225)/(158.36,-1.225;159.02,-1.225)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (158.36,-5.115;159.3,-5.115)/(159.02,-5.115;158.36,-5.115)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (175.29,-1.225;174.35,-1.225)/(174.63,-1.225;175.29,-1.225)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (179.18,7.71;179.18,8.765)/(179.18,8.765;179.18,7.99)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (174.35,-5.115;175.29,-5.115)/(175.29,-5.115;174.63,-5.115)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (165.3,0.885;165.3,1.825)/(165.3,1.825;165.3,1.165)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (175.29,8.77;175.29,7.71)/(175.29,7.99;175.29,8.77)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (172.24,0.885;172.24,1.825)/(172.24,1.825;172.24,1.165)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (161.41,-14.165;161.41,-15.105)/(161.41,-15.105;161.41,-14.445)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (152.48,-8.165;151.42,-8.165)/(151.42,-8.165;152.2,-8.165)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (165.3,-15.105;165.3,-14.165)/(165.3,-14.445;165.3,-15.105)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (152.48,-1.225;151.42,-1.225)/(151.42,-1.225;152.2,-1.225)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (172.24,7.71;172.24,8.77)/(172.24,8.77;172.24,7.99)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (152.61,8.765;154.47,8.765)/(154.47,8.765;152.89,8.765)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (168.35,8.77;168.35,7.71)/(168.35,7.99;168.35,8.77)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (168.35,1.825;168.35,0.885)/(168.35,1.165;168.35,1.825)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (151.42,-12.055;152.48,-12.055)/(152.2,-12.055;151.42,-12.055)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (158.36,-12.055;159.3,-12.055)/(159.02,-12.055;158.36,-12.055)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (161.41,1.825;161.41,0.885)/(161.41,1.165;161.41,1.825)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (161.41,8.77;161.41,7.71)/(161.41,7.99;161.41,8.77)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (158.36,7.71;158.36,8.77)/(158.36,8.77;158.36,7.99)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (168.35,-20.99;168.35,-22.05)/(168.35,-22.05;168.35,-21.27)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (152.235,-22.045;151.42,-22.045)/(151.44,-22.045;151.955,-22.045)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (154.47,-22.045;152.615,-22.045)/(152.895,-22.045;154.47,-22.045)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (182.235,-8.165;181.175,-8.165)/(181.455,-8.165;182.235,-8.165)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (154.47,-20.99;154.47,-22.045)/(154.47,-22.045;154.47,-21.27)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (151.42,-18.995;152.48,-18.995)/(152.2,-18.995;151.42,-18.995)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m1.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (152.48,-15.105;151.42,-15.105)/(151.42,-15.105;152.2,-15.105)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (18.26,18.2;19.16,18.2)/(19.16,18.2;18.66,18.2)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (22.49,8.865;22.49,10.16)/(22.49,9.76;22.49,9.265)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (40.75,18.2;41.65,18.2)/(41.65,18.2;41.15,18.2)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (41.65,8.14;41.65,7.035)/(41.65,7.435;41.65,7.74)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (19.16,29.17;19.16,27.87)/(19.16,28.27;19.16,28.77)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (19.16,10.16;19.16,8.865)/(19.16,9.265;19.16,9.76)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (22.49,27.87;22.49,29.17)/(22.49,28.77;22.49,28.27)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (19.16,19.8;18.26,19.8)/(18.66,19.8;19.16,19.8)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (41.65,22.24;41.65,21.14)/(41.65,21.54;41.65,21.84)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m3.3ab'</category>
-   <cell>bgr_op5_block_rev1</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (41.65,19.8;40.75,19.8)/(41.15,19.8;41.65,19.8)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m4.5ab'</category>
-   <cell>op5</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-40.89,48.41;-39.57,48.41)/(-39.97,48.41;-40.49,48.41)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m4.5ab'</category>
-   <cell>op5</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.57,31.8;-40.89,31.8)/(-40.49,31.8;-39.97,31.8)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m4.5ab'</category>
-   <cell>op5</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-18.4,48.41;-17.08,48.41)/(-17.48,48.41;-18,48.41)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m4.5ab'</category>
-   <cell>op5</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-40.89,67.41;-39.57,67.41)/(-39.97,67.41;-40.49,67.41)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m4.5ab'</category>
-   <cell>op5</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-39.57,50.8;-40.89,50.8)/(-40.49,50.8;-39.97,50.8)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m4.5ab'</category>
-   <cell>op5</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-17.08,31.8;-18.4,31.8)/(-18,31.8;-17.48,31.8)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m4.5ab'</category>
-   <cell>op5</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-18.4,67.41;-17.08,67.41)/(-17.48,67.41;-18,67.41)</value>
-   </values>
-  </item>
-  <item>
-   <tags/>
-   <category>'m4.5ab'</category>
-   <cell>op5</cell>
-   <visited>false</visited>
-   <multiplicity>1</multiplicity>
-   <comment/>
-   <image/>
-   <values>
-    <value>edge-pair: (-17.08,50.8;-18.4,50.8)/(-18,50.8;-17.48,50.8)</value>
-   </values>
-  </item>
  </items>
 </report-database>

@@ -5,7 +5,7 @@ X0 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 **devattr s=462400,2720
 .ends
 
-.subckt bjt AVSS B A
+.subckt bjt A B AVSS
 Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0] AVSS AVSS AVSS sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
 Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[1|0] AVSS AVSS AVSS sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
 Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[2|0] AVSS AVSS AVSS sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1

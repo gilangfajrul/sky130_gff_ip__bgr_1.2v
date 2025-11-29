@@ -1,4 +1,4 @@
-Netgen 1.5.300 compiled on Tue Sep 30 09:49:28 PM CEST 2025
+Netgen 1.5.305 compiled on Thu Nov  6 07:43:51 PM CET 2025
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Reading netlist file /foss/designs/sky130_gff_ip__bgr_1.2v/magic/digital.ext.spc

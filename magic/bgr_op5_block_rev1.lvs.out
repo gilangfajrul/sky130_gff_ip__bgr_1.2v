@@ -600,6 +600,7 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: bgr_op5_block_rev1              |Circuit 2: bgr_op5_block_rev1              
 -------------------------------------------|-------------------------------------------
+vref                                       |vref                                       
 dvss                                       |dvss                                       
 trim1                                      |trim1                                      
 trim3                                      |trim3                                      
@@ -611,7 +612,6 @@ vbgsc                                      |vbgsc
 avdd                                       |avdd                                       
 vena                                       |vena                                       
 vbgtc                                      |vbgtc                                      
-vref                                       |vref                                       
 avss                                       |avss                                       
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.

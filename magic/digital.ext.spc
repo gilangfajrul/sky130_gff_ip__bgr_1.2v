@@ -66,8 +66,8 @@ Xsky130_fd_pr__nfet_01v8_lvt_SJFSNB_2 D D D DVSS sky130_fd_pr__nfet_01v8_lvt_SJF
 Xsky130_fd_pr__nfet_01v8_lvt_U8VHVM_0 D G D G S DVSS sky130_fd_pr__nfet_01v8_lvt_U8VHVM
 .ends
 
-.subckt digital S3 D3 trim3 S2 trim2 trim1 trim0 S1 S0 VENA VBGSC VBGTC SVBGSC SVBGTC
-+ AVDD ENA VDDE DVDD DVSS
+.subckt digital AVDD D3 DVSS ENA S0 S1 S2 S3 SVBGSC SVBGTC trim0 trim1 trim2 trim3
++ VBGSC VBGTC VDDE VENA DVDD
 Xpmos_ena_0 VDDE AVDD DVDD ENA pmos_ena
 Xtrim_0 S3 trim3 D3 DVSS trim
 Xtrim_1 S2 trim2 S3 DVSS trim

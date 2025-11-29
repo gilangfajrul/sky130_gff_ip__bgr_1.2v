@@ -23,19 +23,34 @@ N 400 -210 430 -210 {lab=v_dd}
 N 440 -170 460 -170 {lab=v_dd}
 N 450 -190 460 -190 {lab=v_ss}
 N 430 -170 440 -170 {lab=v_dd}
-N 400 -280 480 -280 {lab=v_out}
+N 400 -280 480 -280 {lab=v_out_acl}
 N 480 -220 480 -210 {lab=v_ss}
 N 450 -210 480 -210 {lab=v_ss}
-N 480 -280 500 -280 {lab=v_out}
+N 480 -280 500 -280 {lab=v_out_acl}
 N 160 -310 200 -310 {lab=v_inp}
-N 160 -250 200 -250 {lab=v_inn}
+N 160 -250 200 -250 {lab=v_out_acl}
 N 30 -400 30 -390 {
 lab=v_inp}
 N 30 -330 30 -320 {
 lab=v_ss}
+N 280 -790 280 -770 {lab=v_dd}
+N 280 -530 280 -520 {lab=v_ss}
+N 400 -600 450 -600 {lab=v_ss}
+N 450 -600 450 -560 {lab=v_ss}
+N 430 -580 430 -540 {lab=v_dd}
+N 400 -580 430 -580 {lab=v_dd}
+N 440 -540 460 -540 {lab=v_dd}
+N 450 -560 460 -560 {lab=v_ss}
+N 430 -540 440 -540 {lab=v_dd}
+N 400 -650 480 -650 {lab=v_out}
+N 480 -590 480 -580 {lab=v_ss}
+N 450 -580 480 -580 {lab=v_ss}
+N 480 -650 500 -650 {lab=v_out}
+N 160 -680 200 -680 {lab=v_inp}
+N 160 -620 200 -620 {lab=v_inn}
 C {devices/vsource.sym} 30 -490 0 0 {name=Vdd value=1.8 savecurrent=false}
 C {devices/gnd.sym} 30 -450 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} 30 -240 0 0 {name=Vinn value="0.7" savecurrent=false}
+C {devices/vsource.sym} 30 -240 0 0 {name=Vinn value="0.9" savecurrent=false}
 C {devices/launcher.sym} 580 -75 0 0 {name=h15
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
@@ -84,6 +99,9 @@ print phase_marginconv
 let phase='vp(v_out)/pi*180+180'
 plot vdb(v_out) phase
 
+let phase='vp(v_out_acl)/pi*180+180'
+plot vdb(v_out_acl) phase
+
 meas ac dcgain MAX vmag(v_out) FROM=10 TO=10k
 let f3db = dcgain/sqrt(2)
 meas ac fbw WHEN vmag(v_out)=f3db FALL=1
@@ -101,16 +119,34 @@ C {devices/code_shown.sym} 770 -110 0 0 {name=SAVE only_toplevel=true
 format="tcleval( @value )"
 value=".include ./op_tb-ac.save
 "}
-C {lab_pin.sym} 500 -280 2 0 {name=p6 sig_type=std_logic lab=v_out
+C {lab_pin.sym} 500 -280 2 0 {name=p6 sig_type=std_logic lab=v_out_acl
 }
-C {devices/vsource.sym} 30 -360 0 0 {name=Vinp value="ac 1 dc 0.7" savecurrent=false}
+C {devices/vsource.sym} 30 -360 0 0 {name=Vinp value="ac 1 dc 0.9" savecurrent=false}
 C {lab_pin.sym} 30 -400 2 0 {name=p2 sig_type=std_logic lab=v_inp
 }
 C {lab_pin.sym} 30 -280 2 0 {name=p11 sig_type=std_logic lab=v_inn
 }
-C {lab_pin.sym} 160 -250 2 1 {name=p5 sig_type=std_logic lab=v_inn
-}
 C {lab_pin.sym} 30 -200 0 1 {name=p12 sig_type=std_logic lab=v_ss
 }
 C {lab_pin.sym} 30 -320 0 1 {name=p13 sig_type=std_logic lab=v_ss
+}
+C {lab_pin.sym} 160 -250 2 1 {name=p5 sig_type=std_logic lab=v_out_acl
+}
+C {op.sym} 280 -650 0 0 {name=x2}
+C {lab_pin.sym} 280 -790 0 0 {name=p14 sig_type=std_logic lab=v_dd}
+C {lab_pin.sym} 160 -680 0 0 {name=p15 sig_type=std_logic lab=v_inp
+}
+C {lab_pin.sym} 280 -520 2 0 {name=p16 sig_type=std_logic lab=v_ss
+}
+C {lab_pin.sym} 460 -560 2 0 {name=p17 sig_type=std_logic lab=v_ss
+}
+C {lab_pin.sym} 460 -540 2 0 {name=p18 sig_type=std_logic lab=v_dd}
+C {capa.sym} 480 -620 0 0 {name=C2
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {lab_pin.sym} 500 -650 2 0 {name=p19 sig_type=std_logic lab=v_out
+}
+C {lab_pin.sym} 160 -620 0 0 {name=p20 sig_type=std_logic lab=v_inn
 }
